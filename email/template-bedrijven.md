@@ -13,7 +13,7 @@ Wat we voor {{bedrijf}} kunnen regelen (vanaf 16 personen, prijzen p.p. excl. bt
 🎾 Toernooi (Mexicano of King of the Court), 2 uur – vanaf €27,50
 🎾 Clinic + toernooi, 3 uur met prijsuitreiking – vanaf €43,00
 
-Erbij kan: borrel met hapjes (€14 p.p.), lunch of diner in het Grand Café, en een vergaderzaal of de congreszaal voor een presentatie of meeting vooraf. Alles onder één dak, één aanspreekpunt, één factuur. Rackets liggen klaar.
+Erbij kan: borrel met hapjes (€14 p.p.), lunch of diner in het Grand Café, en een vergaderzaal (vanaf €270 per dagdeel) of de congreszaal voor een presentatie of meeting vooraf. Alles onder één dak, één aanspreekpunt, één factuur. Rackets liggen klaar.
 
 Wil je een vrijblijvend voorstel? Stuur me het aantal personen, een voorkeursdatum en of jullie liever overdag of 's avonds komen. Ik reageer binnen één werkdag. Een kijkje nemen op de locatie kan ook, dan drinken we een koffie in de skybox boven het Center Court.
 

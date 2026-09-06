@@ -29,14 +29,14 @@ Rekenvoorbeeld pakket D voor 24 personen op een vrijdagmiddag (daluren): 24 × �
 | Borrelarrangement XL | 3 drankjes + 6 borrelhapjes p.p. | €21,00 p.p. |
 | Lunch | lunchgerecht van de kaart + drankje + koffie | €23,50 p.p. |
 | Diner | hoofdgerecht (burger, saté, salade) + 2 drankjes | €31,50 p.p. |
-| Vergaderzaal / kantoor (10–12 pers., 65" scherm, lounge met pantry) | dagdeel van 4 uur | €192 per zaal* |
-| Skybox Londen (6) of Parijs (8) met uitzicht op Center Court | dagdeel van 4 uur | €240 per skybox* |
-| Congreszaal Amsterdam (max 110 pers.) | dagdeel van 4 uur | €480* |
-| Evenementenruimte (20–150 pers., eigen bar, 2 grote schermen, lichtshow) | dagdeel van 4 uur | €600* |
+| Vergaderzaal / kantoor (10–12 pers., 65" scherm, lounge met pantry) | dagdeel (max 4 uur) / hele dag 08:00–17:00 | €270 / €480 per zaal |
+| Skybox Londen (6) of Parijs (8) met uitzicht op Center Court | dagdeel / hele dag | €300 / €600 per skybox |
+| Congreszaal Amsterdam (max 110 pers.) | dagdeel / hele dag | €660 / €1.200 |
+| Evenementenruimte (20–150 pers., eigen bar, 2 grote schermen, lichtshow) | dagdeel overdag / avond 18:00–22:00 / hele dag | €540 / €660 / €1.020 |
 | Extra coach-uur | verlengen clinic of extra coach | €54 per uur |
 | Extra baanuur | daluren / piek / weekend | €36 / €53 / €45 per baan |
 
-\* Zaalprijzen zijn een schatting: Poort Padel publiceert geen zaaltarieven. Vervang de gele inputcellen in de calculator zodra de offerte van Poort Padel binnen is. Workshops (kaarsen schilderen, LEGO-teamchallenge, escape-box, mindfulness) op aanvraag via de partners van Poort Padel.
+Zaalprijzen zijn gebaseerd op de inkooptarieven in het reserveringssysteem van Poort Padel (dagdeel = aaneengesloten blok tot 4 uur; 1 uur kost evenveel als 4 uur) plus 20%. Workshops (kaarsen schilderen, LEGO-teamchallenge, escape-box, mindfulness) op aanvraag via de partners van Poort Padel.
 
 ## 3. Scholen (daluren, onder schooltijd)
 
@@ -61,7 +61,7 @@ Inbegrepen: banen, coaches, leenrackets, ballen, indeling in niveaugroepen, klee
 | Borrelhapje | €0,98 (teamschotel 25 stuks €24,50) | Geverifieerd (menukaart) |
 | Drankje gemiddeld | €3,75 | Aanname (bier/fris niet online) |
 | Lunchgerecht / dinergerecht | €12,50 / €18,50 | Geverifieerd (menukaart) |
-| Zaalhuur | €40–50 per uur, congres €400, eventruimte €500 per dagdeel | Schatting, offerte nodig |
+| Zaalhuur | kantoor €225 / skybox €250 / congreszaal €550 / evenementenruimte €450 per dagdeel; hele dag €400 / €500 / €1.000 / €850; evenementenruimte avond €550 | Geverifieerd (reserveren.poortpadel.nl, 6 sep 2026) |
 
 Verkoopprijs = kostprijs × 1,20, afgerond naar boven op €0,50.
 

@@ -26,5 +26,5 @@ python3 outreach/send_campaign.py             # dry-run van de mailing
 ## Belangrijkste aannames
 
 - Baanhuur is geverifieerd op Playtomic: daluren €30, piek €44, weekend €37,50 per uur (dubbelbaan).
-- Poort Padel publiceert geen prijzen voor events, zalen of arrangementen. Zaalhuur en coachtarief staan als gele aannames in de calculator en moeten bevestigd worden.
+- Zaalhuur is uitgelezen uit de reserveringswizard van Poort Padel (kantoor €225, skybox €250, congreszaal €550, evenementenruimte €450 per dagdeel, excl. btw). Event- en cateringarrangementen zijn bij Poort Padel alleen op offerte; het coachtarief en de horeca-arrangementen staan daarom als gele aannames in de calculator.
 - Alle prijzen excl. btw. Minimum 16 personen per zakelijk event (eis Poort Padel).

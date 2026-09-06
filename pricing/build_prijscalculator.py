@@ -58,11 +58,16 @@ rows = [
     ("koffie", "Koffie/thee per kop", 3.00, "€", "AANNAME", "Niet op online kaart"),
     ("lunch_item", "Lunchgerecht gemiddeld (sandwich €10,50–14,50)", 12.50, "€", "Geverifieerd", "Menukaart PDF"),
     ("diner_item", "Dinergerecht gemiddeld (burger €17,50 / saté €19,50)", 18.50, "€", "Geverifieerd", "Menukaart PDF"),
-    (None, "— Zaalhuur Poort Padel (NIET online; schatting) —", None, None, None, None),
-    ("zaal_kantoor_uur", "Vergaderzaal/kantoor (10–12 pers.) per uur", 40.00, "€/uur", "AANNAME", "Offerte opvragen via reserveren.poortpadel.nl"),
-    ("zaal_skybox_uur", "Skybox Londen/Parijs per uur", 50.00, "€/uur", "AANNAME", "Offerte opvragen"),
-    ("zaal_congres_dagdeel", "Congreszaal Amsterdam (max 110) per dagdeel 4 uur", 400.00, "€/dagdeel", "AANNAME", "Offerte opvragen"),
-    ("zaal_event_dagdeel", "Evenementenruimte (20–150) per dagdeel 4 uur", 500.00, "€/dagdeel", "AANNAME", "Offerte opvragen"),
+    (None, "— Zaalhuur Poort Padel (reserveren.poortpadel.nl, geverifieerd 6 sep 2026, excl. 21% btw) —", None, None, None, None),
+    ("zaal_kantoor_dagdeel", "Vergaderzaal/kantoor (10–12 pers.) per dagdeel (max 4 uur)", 225.00, "€/dagdeel", "Geverifieerd", "AQQO-wizard: 1 uur en 4 uur = €225; ook op zaterdag"),
+    ("zaal_kantoor_dag", "Vergaderzaal/kantoor hele dag 08:00–17:00", 400.00, "€/dag", "Geverifieerd", "AQQO-wizard: 08:00–17:00 = €400"),
+    ("zaal_skybox_dagdeel", "Skybox Londen/Parijs per dagdeel (max 4 uur)", 250.00, "€/dagdeel", "Geverifieerd", "AQQO-wizard: 1 uur en 4 uur = €250"),
+    ("zaal_skybox_dag", "Skybox Londen/Parijs hele dag 08:00–17:00", 500.00, "€/dag", "Geverifieerd", "AQQO-wizard: 08:00–17:00 = €500"),
+    ("zaal_congres_dagdeel", "Congreszaal Amsterdam (max 110) per dagdeel (max 4 uur)", 550.00, "€/dagdeel", "Geverifieerd", "AQQO-wizard: 1 uur en 4 uur = €550"),
+    ("zaal_congres_dag", "Congreszaal Amsterdam hele dag 08:00–17:00", 1000.00, "€/dag", "Geverifieerd", "AQQO-wizard: 08:00–17:00 = €1.000"),
+    ("zaal_event_dagdeel", "Evenementenruimte (20–150) per dagdeel overdag (max 4 uur)", 450.00, "€/dagdeel", "Geverifieerd", "AQQO-wizard: 1 uur en 4 uur = €450"),
+    ("zaal_event_avond", "Evenementenruimte avond 18:00–22:00", 550.00, "€/avond", "Geverifieerd", "AQQO-wizard: 18:00–22:00 = €550"),
+    ("zaal_event_dag", "Evenementenruimte hele dag 08:00–17:00", 850.00, "€/dag", "Geverifieerd", "AQQO-wizard: 08:00–17:00 = €850"),
     (None, "— Scholen —", None, None, None, None),
     ("leerlingen_per_baan", "Leerlingen per baan bij schoolclinic (roterend)", 6, "pers.", "Keuze Lars", "Bij 30 leerlingen = 5 banen"),
     ("afronding", "Verkoopprijs afronden op (bv. 0,50)", 0.50, "€", "Keuze Lars", ""),
@@ -200,10 +205,15 @@ addons = [
     ("Borrelarrangement XL", "3 drankjes + 6 hapjes p.p.", f"=3*{REF['drankje']}+6*{REF['hapje']}", "p.p."),
     ("Lunch", "lunchgerecht + drankje + koffie", f"={REF['lunch_item']}+{REF['drankje']}+{REF['koffie']}", "p.p."),
     ("Diner", "dinergerecht + 2 drankjes", f"={REF['diner_item']}+2*{REF['drankje']}", "p.p."),
-    ("Vergaderzaal/kantoor (10–12 pers.)", "dagdeel 4 uur", f"=4*{REF['zaal_kantoor_uur']}", "per zaal"),
-    ("Skybox Londen/Parijs", "dagdeel 4 uur", f"=4*{REF['zaal_skybox_uur']}", "per zaal"),
-    ("Congreszaal Amsterdam (max 110)", "dagdeel 4 uur", f"={REF['zaal_congres_dagdeel']}", "per zaal"),
-    ("Evenementenruimte (20–150)", "dagdeel 4 uur", f"={REF['zaal_event_dagdeel']}", "per zaal"),
+    ("Vergaderzaal/kantoor (10–12 pers.)", "dagdeel, max 4 uur", f"={REF['zaal_kantoor_dagdeel']}", "per zaal"),
+    ("Vergaderzaal/kantoor (10–12 pers.)", "hele dag 08:00–17:00", f"={REF['zaal_kantoor_dag']}", "per zaal"),
+    ("Skybox Londen (6) / Parijs (8)", "dagdeel, max 4 uur", f"={REF['zaal_skybox_dagdeel']}", "per skybox"),
+    ("Skybox Londen (6) / Parijs (8)", "hele dag 08:00–17:00", f"={REF['zaal_skybox_dag']}", "per skybox"),
+    ("Congreszaal Amsterdam (max 110)", "dagdeel, max 4 uur", f"={REF['zaal_congres_dagdeel']}", "per zaal"),
+    ("Congreszaal Amsterdam (max 110)", "hele dag 08:00–17:00", f"={REF['zaal_congres_dag']}", "per zaal"),
+    ("Evenementenruimte (20–150)", "dagdeel overdag, max 4 uur", f"={REF['zaal_event_dagdeel']}", "per zaal"),
+    ("Evenementenruimte (20–150)", "avond 18:00–22:00", f"={REF['zaal_event_avond']}", "per zaal"),
+    ("Evenementenruimte (20–150)", "hele dag 08:00–17:00", f"={REF['zaal_event_dag']}", "per zaal"),
     ("Extra coach-uur (bv. clinic verlengen)", "1 uur coach", f"={REF['coach_uur']}", "per uur"),
     ("Extra baanuur daluren", "1 baan, 1 uur", f"={REF['baan_dal']}", "per baan"),
     ("Extra baanuur piek", "1 baan, 1 uur", f"={REF['baan_piek']}", "per baan"),
@@ -221,7 +231,7 @@ for naam, samenstelling, kost, eenheid in addons:
     for c in range(1, 6):
         wd.cell(row=r, column=c).border = BOX
     r += 1
-wd.cell(row=r + 1, column=1, value="Zaalhuur is een schatting tot Poort Padel de tarieven bevestigt (geel op tabblad Inputs).").font = Font(name=FONT, size=9)
+wd.cell(row=r + 1, column=1, value="Zaalhuur: inkoopprijzen uit het reserveringssysteem van Poort Padel (AQQO), excl. 21% btw. Een dagdeel is een aaneengesloten blok tot 4 uur.").font = Font(name=FONT, size=9)
 wd.column_dimensions["A"].width = 40
 wd.column_dimensions["B"].width = 32
 wd.column_dimensions["C"].width = 13
@@ -312,7 +322,7 @@ calc = [
     ("Lunch p.p.", f"=B7*'Add-ons'!$D${ADDON_FIRST_ROW + 3}", EUR),
     ("Diner p.p.", f"=B8*'Add-ons'!$D${ADDON_FIRST_ROW + 4}", EUR),
     ("Horeca totaal", "=(B15+B16+B17)*B3", EUR),
-    ("Zaalhuur totaal", f"=B9*'Add-ons'!$D${ADDON_FIRST_ROW + 5}", EUR),
+    ("Zaalhuur totaal (vergaderzalen, dagdeel)", f"=B9*'Add-ons'!$D${ADDON_FIRST_ROW + 5}", EUR),
     ("TOTAAL excl. btw", "=B14+B18+B19", EUR),
     ("Prijs per persoon excl. btw", "=IF(B3>0,B20/B3,0)", EUR),
     ("Waarvan marge All Court Academy (indicatie)", f"=B20-B20/(1+{REF['marge']})", EUR),
@@ -335,12 +345,12 @@ wl = wb.create_sheet("Legenda")
 legend = [
     ("Doel", "Prijslijst voor All Court Academy op basis van inkoop bij Poort Padel plus een winstmarge (standaard 20%)."),
     ("Blauw", "Invoercellen. Aanpassen mag."),
-    ("Geel", "Aanname die nog geverifieerd moet worden bij Poort Padel (zaalhuur, horeca-arrangementen, rackethuur) of intern (coachtarief)."),
+    ("Geel", "Aanname die nog geverifieerd moet worden bij Poort Padel (horeca-arrangementen, rackethuur) of intern (coachtarief)."),
     ("Zwart", "Formules. Niet overschrijven."),
     ("Groen", "Verwijzing naar een ander tabblad."),
     ("Bron baanhuur", "Playtomic, club Poort Padel, tarieven bekeken op 6 en 9 september 2026."),
     ("Bron horeca", "Menukaart Poort Padel (PDF, juni 2026)."),
-    ("Bron zalen", "reserveren.poortpadel.nl (AQQO) – capaciteiten; prijzen niet online."),
+    ("Bron zalen", "reserveren.poortpadel.nl (AQQO) – capaciteiten en prijzen uit stap 2 van de reserveringswizard, 6 sep 2026."),
     ("Btw", "Alle bedragen excl. btw. Sportbeoefening/clinics vallen doorgaans onder 9%, zaalhuur onder 21%. Check met boekhouder."),
 ]
 for i, (k, v) in enumerate(legend, 1):
@@ -352,8 +362,8 @@ wl.column_dimensions["B"].width = 110
 # comments op aannames
 ws[REF["coach_uur"].split("!")[1].replace("$", "")].comment = Comment(
     "Aanname. Vul het werkelijke uurtarief van je coaches in (loonkosten of zzp-tarief).", "Claude")
-ws[REF["zaal_kantoor_uur"].split("!")[1].replace("$", "")].comment = Comment(
-    "Schatting. Poort Padel publiceert geen zaalprijzen; vraag een offerte via reserveren.poortpadel.nl.", "Claude")
+ws[REF["zaal_kantoor_dagdeel"].split("!")[1].replace("$", "")].comment = Comment(
+    "Uitgelezen uit de reserveringswizard op reserveren.poortpadel.nl (stap 2 toont de prijs). 1 uur kost evenveel als 4 uur.", "Claude")
 
 for sheet in wb.worksheets:
     for row in sheet.iter_rows():

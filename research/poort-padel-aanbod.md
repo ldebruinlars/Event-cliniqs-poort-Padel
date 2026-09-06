@@ -39,7 +39,18 @@ Totaal: 6 vergaderruimtes, 2 lounges, 2 skyboxen, 1 congreszaal, 1 evenementenru
 
 Zalen kunnen per uur, dagdeel of hele dag worden gehuurd, of als complete verdieping. Boekingstijden in AQQO: 08:00–22:00 in blokken van 30 min. Zaalopstellingen: receptie, theater, bloktafels, gala diner, carré, U-vorm, cabaret, school, examen, kring, boardroom.
 
-Prijzen van de zalen staan NIET online. AQQO toont alleen beschikbaarheid; de prijs verschijnt pas in het reserveringsproces of via offerte.
+### Zaalprijzen (uit de reserveringswizard op reserveren.poortpadel.nl, stap 2 "Datum & Tijd", uitgelezen 6 september 2026)
+
+Alle bedragen excl. 21% btw. De prijs is per dagdeel: 1 uur kost evenveel als 4 uur aaneengesloten. Zaterdag kost hetzelfde als doordeweeks (getest voor Kantoor 1.1 Koper).
+
+| Ruimte | Dagdeel (max 4 uur) | Hele dag 08:00–17:00 | Avond 18:00–22:00 |
+|---|---|---|---|
+| Kantoor 1.1 Koper (en 2.1 Rejkjavik; overige kantoren naar verwachting gelijk) | €225 | €400 | n.g. |
+| Skybox Londen / Skybox Parijs | €250 | €500 | n.g. |
+| Congreszaal Amsterdam | €550 | €1.000 | n.g. |
+| Evenementenruimte | €450 | €850 | €550 |
+
+n.g. = niet getest. Boeken kan alleen met een account (registreren op reserveren.poortpadel.nl). Toegang tot lounge met pantry is bij de kantoren inbegrepen.
 
 ## 3. Evenementen en arrangementen (zakelijk)
 
@@ -91,10 +102,10 @@ Dranken: wijn per glas €5,00–6,50 (fles €27,50–37,50), cava/prosecco €
 
 Deze inkoopprijzen zijn niet publiek en moeten met Poort Padel worden afgestemd voordat de All Court Academy-prijslijst definitief is:
 
-1. Zaalhuur per uur / dagdeel / dag (kantoren, skyboxen, congreszaal, evenementenruimte).
-2. Prijs van koffie/thee-arrangement, lunchbuffet, borrelarrangement en dinerbuffet per persoon.
-3. Rackethuur per stuk aan de balie.
-4. Eventuele partnerkorting voor All Court Academy op baanhuur bij groepsboekingen.
-5. Prijzen van workshops (externe aanbieders).
+1. Prijs van koffie/thee-arrangement, lunchbuffet, borrelarrangement en dinerbuffet per persoon (alleen losse menukaartprijzen zijn bekend).
+2. Rackethuur per stuk aan de balie.
+3. Eventuele partnerkorting voor All Court Academy op baanhuur en zaalhuur bij groepsboekingen.
+4. Prijzen van workshops (externe aanbieders).
+5. Avondtarief van kantoren, skyboxen en congreszaal (alleen de evenementenruimte is 's avonds getest).
 
-In de prijscalculator staan hiervoor **aannames** (geel gemarkeerd) die je vervangt zodra de offerte van Poort Padel binnen is.
+In de prijscalculator staan hiervoor **aannames** (geel gemarkeerd) die je vervangt zodra Poort Padel ze bevestigt. Zaalhuur en baanhuur zijn geverifieerd.
