@@ -1,0 +1,3 @@
+segment,bedrijf,voornaam,email,plaats,sector,opt_out,notitie
+bedrijven,VOORBEELD Bouwbedrijf Jansen,Kim,info@voorbeeld-bouw.nl,Almere,bouw,0,"Voorbeeldregel: wordt door send_campaign.py overgeslagen. Vervang door echte leads."
+scholen,VOORBEELD Basisschool De Vlinder,,directie@voorbeeld-school.nl,Almere,basisonderwijs,0,"Voorbeeldregel zonder voornaam: aanhef wordt 'Hey team van ...'."

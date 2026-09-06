@@ -1,0 +1,4 @@
+outreach/sent_log.csv
+__pycache__/
+*.pyc
+.~lock.*
