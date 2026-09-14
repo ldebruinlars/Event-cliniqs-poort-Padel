@@ -11,7 +11,7 @@ Doel: het event- en zalenaanbod van Poort Padel (Almere) in kaart brengen, daar 
 | `email/template-bedrijven.md` | Eerste mail aan bedrijven (mail-merge template). |
 | `email/template-scholen.md` | Eerste mail aan scholen. |
 | `email/followup.md` | Opvolgmail na een week. |
-| `outreach/leads.csv` | Leadlijst (kolommen vastgelegd, met voorbeeldregels). Hier komen de bedrijven en scholen in. |
+| `outreach/leads.csv` | Leadlijst met 415 leads: 77 scholen (alle schoolbesturen in Almere) en 338 bedrijven (leden Vereniging Bedrijfskring Almere), verzameld 14 september 2026. |
 | `outreach/send_campaign.py` | Mail-merge script via Gmail SMTP. Dry-run standaard, logt verzonden adressen, respecteert opt-outs. |
 | `outreach/README.md` | Hoe je de leadlijst bouwt (GitHub-scrapers), verstuurt en binnen de spamregels blijft. |
 

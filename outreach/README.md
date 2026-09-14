@@ -1,5 +1,18 @@
 # Outreach – bedrijven en scholen in Almere mailen
 
+## Stand van de leadlijst (14 september 2026)
+
+`outreach/leads.csv` bevat nu **415 leads** die op 14 september 2026 zijn verzameld:
+
+| Segment | Aantal | Bron | Opmerking |
+|---|---|---|---|
+| scholen | 77 | Websites van de schoolbesturen SKO Almere (10), Prisma (20), ASG basis- en speciaal onderwijs (33), ASG voortgezet onderwijs (7), Het Baken (6) en Waldorf Almere (1) | Algemene adressen (info@, directie@, administratie@). De kolom `notitie` bevat het bestuur. |
+| bedrijven | 338 | Ledenlijst Vereniging Bedrijfskring Almere (vba-almere.nl/leden, 365 leden) | Per lid het contactadres van het VBA-profiel. 141 algemene adressen (info@ e.d.), 197 zakelijke adressen van een contactpersoon (`notitie` zegt welke). Website en telefoon staan in `notitie`. |
+
+Bewust niet opgenomen: 26 VBA-leden met alleen een privé-adres (gmail/hotmail e.d.), Poort Padel zelf, en scholen waarvan de site geen e-mailadres toont (Het Samenspel, De Pauw, De Zeeraket, Montessori Almere, Olivijn, De Omnibus, Montessori Lyceum Flevoland, Nautilus College, Aventurijn, Aeres VMBO). Die vul je handmatig aan (bellen of contactformulier).
+
+Wil je meer bedrijven dan de VBA-leden, gebruik dan de scrapers hieronder.
+
 ## Stap 1: leads verzamelen (lijst met bedrijven en scholen)
 
 Er is geen kant-en-klare lijst van "alle bedrijven in Almere" in deze repo. Je bouwt die zelf met een open-source scraper of via publieke bronnen. Twee GitHub-tools die dit goed doen:
