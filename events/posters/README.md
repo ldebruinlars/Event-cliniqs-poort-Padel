@@ -115,6 +115,28 @@ Lars koos variant A van versie 4, met de wens: meer koppels van twee op de achte
 
 Deze versie staat nog niet in Canva: de Canva-koppeling verliep tijdens het uploaden en moet opnieuw geautoriseerd worden in de claude.ai connector-instellingen. Daarna kunnen de zes bestanden hierboven vanuit de Higgsfield-galerij alsnog in Canva Uploads gezet worden.
 
+### Versie 6: de polaroid-poster (stijl 1) met een minder AI-ogende foto
+
+Lars koos de polaroid-poster op foto A2 als beste, met als enige kritiek dat de foto nog te AI oogt. Wat op die foto verraadt dat het AI is: te gladde huid, te gelijkmatig licht zonder flitsschaduw, iedereen perfect geposeerd en lachend, alles even scherp. Zes realisme-passes op precies foto A2, allemaal met behoud van compositie, mensen en ruimte:
+
+| Variant | Model en aanpak | Higgsfield job |
+|---|---|---|
+| R1 | Seedream 5.0 Pro, inpaint-edit: poriën, glans, flitsschaduw, gemengde witbalans, ISO-ruis, aberratie | `d6bf7b67-d020-4606-a148-71f2d2f6ef1f` |
+| R2 | Seedream 4.5, high: Sony A7 IV met flitser-look | `db01737b-c8d8-44fe-a7d5-77f8611a54bd` |
+| R3 | Nano Banana Pro, filmlook: Portra 800 pushed, korrel, halatie rond de discobal, harde flitsschaduw, 2 graden scheef | `88bb82bc-a1ee-4933-a11f-84f637cf8113` |
+| R4 | Nano Banana Pro, candid-imperfecties: mond half open, ogen half dicht, iemand half gedraaid en onscherp, lager handheld standpunt | `383715df-0c43-49b2-8a1d-6f0cf8b84efc` |
+| R5 | GPT Image 2.5 flare, high: Canon R6 met bounce-flitser | `5f091d1e-3074-4f6b-8b5f-a658d3b4ff5b` |
+| R6 | Kling O1: fotorealistische re-render | `9b6aed39-328d-48f6-b59f-b39d276474fe` |
+
+Polaroid-posters (stijl 1, 2K) op de twee meest gecontroleerde edits:
+
+| Poster | Foto | Higgsfield job |
+|---|---|---|
+| Stijl 1 op R3 (filmlook) | `88bb82bc…` | `aad1e917-77a2-4992-b54d-05a1458b812e` |
+| Stijl 1 op R4 (candid) | `383715df…` | `82e56ed4-b34b-47ce-9649-d7407e0bf7d9` |
+
+Wat het meest helpt tegen de AI-look, in volgorde: (1) poses en gezichten onperfect maken (R4), (2) flitser met harde schaduw en gemengde witbalans, (3) korrel en lichte onscherpte (R3). Alleen "meer huidtextuur" vragen helpt weinig. De echte foto blijft de beste oplossing; de compositie van A2 is het draaiboek voor een shoot van 30 minuten in de evenementenruimte.
+
 ## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
