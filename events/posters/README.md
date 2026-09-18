@@ -67,6 +67,39 @@ Posters op variant A (Canva Uploads, naam begint met `Padel Dating poster v2`):
 
 Tip voor het beeld-prompten: benoem het aantal drankjes per persoon en het soort glas expliciet, anders zet het model zowel flessen als glazen neer.
 
+### Versie 3: minder AI-look (feedback: de karakters zien er te AI uit)
+
+Wat Higgsfield hiervoor heeft: Soul 2.0 is hun eigen realisme-model (bedoeld voor UGC en "unaesthetic" echte mensen), Kling O1 en GPT Image 2.5 renderen huid anders dan Nano Banana, en een prompt met camera-onvolmaaktheden (flitser, ISO-ruis, bewegingsonscherpte, glimmende huid, losse haren, kreukels, scheve framing, geen retouche) haalt de glans eraf. Zeven varianten, allemaal in Canva Uploads onder `Padel Dating foto v3 realistisch`:
+
+| Variant | Model en aanpak | Canva asset | Higgsfield job |
+|---|---|---|---|
+| Soul 2.0, twee koppels | re-shoot van de gecorrigeerde foto met eventfotograaf-look, flitser, ISO 1600 | MAHVjQTIt2A | `e3fe5c02-3ccb-4d43-a510-0d9bfa985b34` |
+| Soul 2.0, koppel close-up | re-shoot van variant D (Sanne en Daan voorgrond) | MAHVjV-uL6o | `4664c741-95c6-41ed-85b7-2974ac8f8b39` |
+| GPT Image 2.5 flare, high | documentaire re-render van de gecorrigeerde foto | MAHVjS_6Kqc | `d4a8e12d-f9c6-4f60-8eab-310fb7e729a9` |
+| Kling O1 | fotorealistische re-render van de gecorrigeerde foto | MAHVjddaVY8 | `d30bd0d5-6e1a-4561-8290-e8efc0232bea` |
+| Nano Banana Pro, flash-look | alleen fotokwaliteit aangepast: poriën, glans, ruis, aberratie, lichte bewegingsonscherpte | MAHVjVNho9I | `f981f06e-c43f-49c8-9f72-2f5cff689b63` |
+| Nano Banana Pro, iPhone-snapshot | nieuw met de Elements, iPhone-flitser, scheve framing, ruis in schaduwen | MAHVjU24bvo | `b0b73273-d7b3-423a-b404-b171070e5c21` |
+| 4K upscale | gecorrigeerde foto (versie 2A) naar 3311×4096 voor print | MAHVjZNLrnY | `b98ef900-4e6a-4ac0-b96c-5b7402256dce` |
+
+Eerlijke inschatting: AI-mensen blijven op posterformaat herkenbaar voor wie erop let. De echte oplossing is een echte foto. Twee opties die geen extra tooling vragen:
+
+1. De 66 professionele foto's van de ACA-shoot bij Poort Padel (Google Drive, `ACA_PoortPadel_29mei-*.jpg`). Daar staan echte spelers en de echte hal op; een lachend koppel aan het net werkt als posterfoto.
+2. Een shoot van 30 minuten in de evenementenruimte met vier leden of vrienden, twee statafels, prosecco en de discobal aan. Dat is de compositie van versie 2A, maar dan echt. Met een telefoon en de zaalverlichting is dit in één avond gedaan en meteen bruikbaar voor Instagram.
+
+De AI-versies blijven bruikbaar als moodboard, als tijdelijke poster tot de shoot en voor stories.
+
+### Versie 4: drukkere achtergrond zonder dubbele personen
+
+Lars koos versie 2A (gecorrigeerde drankjes) als beste, met twee wensen: meer mensen op de achtergrond, en geen dubbele personen (op de achtergrond stond een man die op Daan leek). Drie edits op precies die foto; de vier op de voorgrond blijven onveranderd, de achtergrond is vervangen door andere, onderling verschillende singles. In de prompt staat expliciet: geen zwarte polo, geen lime shirt, geen wit cropped shirt, geen groene tanktop op de achtergrond en geen herhaalde gezichten.
+
+| Variant | Achtergrond | Canva asset | Higgsfield job |
+|---|---|---|---|
+| A | 8 tot 10 singles in groepjes van twee en drie aan statafels verder weg | MAHVjYKULjw | `9cd85955-b4c9-4951-b042-3d94a95817b7` |
+| B | volle zaal: ongeveer 12 singles, host met klembord links, bartafel met prosecco rechts | MAHVjUIWEqA | `73dffc2a-679e-4cd5-a045-f3a0f7d684df` |
+| C | 6 singles aan twee tafels plus een host die prosecco inschenkt, iets warmer en donkerder licht | MAHVjWzDxio | `aba1a436-a784-4ec0-8131-9a845fbf09f0` |
+
+Ook toegevoegd: een tweede Soul 2.0-poging (`b4b033f7-76ff-44a1-8c3d-ecaac86ef1a9`, Canva MAHVjdjqJJQ). Let op: Soul 2.0 herschrijft de prompt automatisch en maakte er "model-like features" van, precies wat we niet wilden; het model laat die prompt-verbetering niet uitzetten. Daarom is Nano Banana Pro met een "flitser en ruis"-prompt hier de betere realisme-route.
+
 ## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
