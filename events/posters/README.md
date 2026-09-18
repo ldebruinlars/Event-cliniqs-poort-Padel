@@ -4,18 +4,27 @@ Gemaakt op 18 september 2026 met Higgsfield (beeld) en Canva (bewerkbare poster)
 
 ## Canva (bewerkbaar: datum, prijs, link aanpassen)
 
-Ronde 2 (echte foto's van Poort Padel als achtergrond, aanbevolen):
+Alles staat in het Canva-account dat op 18 september 2026 opnieuw is gekoppeld (eerdere links uit een verkeerd account zijn verwijderd). Open een kandidaat, kies "Bewerken" en pas de datum aan zodra die vaststaat.
+
+Poster A3/A4 op echte foto's (baan als achtergrond, Grand Café als inzet):
 
 | Kandidaat | Link |
 |---|---|
-| 1 | https://www.canva.com/d/yhCmTUQoy-kzaiv |
-| 2 | https://www.canva.com/d/LkFBRYVAbvcH8sD |
-| 3 | https://www.canva.com/d/gy2V81qpWTfGIXj |
-| 4 | https://www.canva.com/d/Wm_ibpd3XYJtfHa |
+| 1 | https://www.canva.com/d/qJQWHpwwdkxXBn2 |
+| 2 | https://www.canva.com/d/77ImA7ECxpaNT3v |
+| 3 | https://www.canva.com/d/L23R3Uxy5XcTRXH |
+| 4 | https://www.canva.com/d/GaU6Np1Gk3kBTo5 |
 
-Ronde 1 (AI-sfeerfoto als achtergrond, ter vergelijking): https://www.canva.com/d/7AgQIxgh0uc-hgY · https://www.canva.com/d/JfvcWdv_aOaRoKm · https://www.canva.com/d/JmvOaZFXIDIr6l3 · https://www.canva.com/d/ESImxkgetvubqKR
+Instagram-post 4:5 op de foto van de evenementenruimte:
 
-Canva-assets (in "Uploads"): echte foto's `Poort Padel foto - ACA les op de baan` (MAHVjZU06lU), `Poort Padel foto - Grand Cafe met zicht op banen` (MAHVjWE95i4), `Poort Padel foto - hal` (MAHVjZ7hhps); `Padel Dating hero 1` (MAHVjL1_t9s), `Padel Dating hero 2` (MAHVjJ3fqo4), `All Court Academy logo` (MAHVjA0-Tj4), `Padel Dating poster AI v1` (MAHVjLNxs0g), `Padel Dating poster AI v2` (MAHVjJ5mh3s).
+| Kandidaat | Link |
+|---|---|
+| 1 | https://www.canva.com/d/_8rjid_MPulCHHm |
+| 2 | https://www.canva.com/d/4TTr4fJ5FwUW6iq |
+| 3 | https://www.canva.com/d/9OhWhjOSmegpXvF |
+| 4 | https://www.canva.com/d/mPUSR34KUnZzCYw |
+
+Canva Uploads in dit account: `All Court Academy logo` (MAHVjfwlfJI); echte foto's `Poort Padel foto - ACA les op de baan` (MAHVjd7xUSc), `Poort Padel foto - Grand Cafe met zicht op banen` (MAHVjdo7nRc), `Poort Padel foto - hal` (MAHVjSDNHGU), `Poort Padel foto - evenementenruimte discobal` (MAHVjYYe3pQ); kant-en-klare posters `Padel Dating poster - echte foto baan (ACA les)` (MAHVjb6vMvA), `- echte foto hal` (MAHVjSTs17g), `- echte foto Grand Cafe` (MAHVja0ojcs), `Padel Dating Instagram 4x5 - echte foto evenementenruimte` (MAHVjaseTz8), `- Instagram Almere Zaken event` (MAHVjXh8aAc), `- Instagram Grand Cafe` (MAHVjapcx3E); AI-versies `Padel Dating poster AI v1` (MAHVjVnMA_k) en `Padel Dating hero 1 (AI sfeerfoto)` (MAHVjRVcO0s).
 
 ## Higgsfield (kant-en-klare beelden)
 
