@@ -2,6 +2,39 @@
 
 Gemaakt op 18 september 2026 met Higgsfield (beeld) en Canva (bewerkbare poster). De afbeeldingen zelf staan niet in deze repo omdat de download vanuit de bouwomgeving geblokkeerd was; alles staat in Lars' Canva-account en Higgsfield-bibliotheek.
 
+## Stijlronde 4: donker, warm en professioneel (avondstijl, aanbevolen)
+
+Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
+
+Canva, poster (halfoto tijdens avondevent):
+
+| Kandidaat | Link |
+|---|---|
+| 1 | https://www.canva.com/d/NCcJHd-oXSETji3 |
+| 2 | https://www.canva.com/d/JbbcrsoSjnzkba3 |
+| 3 | https://www.canva.com/d/HvzFkj_lGGXwxBw |
+| 4 | https://www.canva.com/d/jCaLf1kzCzC5piF |
+
+Canva, Instagram-post 4:5 (evenementenruimte met discobal):
+
+| Kandidaat | Link |
+|---|---|
+| 1 | https://www.canva.com/d/j4s5Y0jgu0w_ZH5 |
+| 2 | https://www.canva.com/d/pFGYpQdV31FGHwp |
+| 3 | https://www.canva.com/d/vQdzyahmz5XV7uC |
+| 4 | https://www.canva.com/d/kx5IqinCrrVxgUy |
+
+Higgsfield-versies (Canva Uploads, naam begint met `Padel Dating avond`): poster op de Instagram-eventfoto (lime-accent), poster op de evenementenruimte (koraal-accent), Instagram-post op het Grand Café.
+
+### Skills en agents die hierbij helpen
+
+| Wat | Waar | Gebruik |
+|---|---|---|
+| Higgsfield workflow `brand-asset-creation` | Higgsfield-connector, `get_workflow_instructions` | Complete brand-agent: vergrendelt logo, palet en typografie en maakt posters, social graphics en mockups die consistent blijven. Regel uit de workflow: logo en exacte tekst nooit in het AI-beeld bakken, maar er als laag overheen leggen (daarom is de Canva-versie leidend voor tekst). |
+| Canva-plugin (`canva-design-feedback`, `canva-implement-feedback`, `canva-edit-design`, `canva-brand-check`, `canva-resize-for-social-media`) | Claude plugin-catalogus | Designfeedback op een gekozen Canva-ontwerp, feedback direct doorvoeren, poster omzetten naar story en Facebook. |
+| Design-plugin (`design:design-critique`) | Claude plugin-catalogus | Professionele kritiek op hiërarchie, typografie, kleur en leesbaarheid. |
+| Marketing-plugin (`marketing:brand-review`, `marketing:campaign-plan`) | Claude plugin-catalogus | Merkconsistentie en een campagneplan voor de lancering. |
+
 ## Stijlronde 3: warm en speels (aanbevolen voor een dating-event)
 
 De eerste twee rondes gebruikten de donkergroene clubstijl. Voor een dating-avond werkt een warmere, speelsere stijl beter. Onderzoek op 18 september 2026: de best scorende speed-dating-templates op Canva ("Pink & Orange Illustrative Speed Dating Night Flyer", "Red and Pink Modern Speed Dating Event", "Pink and Navy Illustrated Speed Dating Event") en echte padel-dating-events (Padel Social Club "Padel Play Dates" Londen, Padel Match, LÕK × Bumble) gebruiken allemaal: crème of lichte achtergrond, koraalrood en perzik, chunky ronde letters, geïllustreerde hartjes en stickers, een echte foto in een ronde of boogvormige lijst, en een korte knipoog als tagline ("Love at first serve", "Match op de baan?").
