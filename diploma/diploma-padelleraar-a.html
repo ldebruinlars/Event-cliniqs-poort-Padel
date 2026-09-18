@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Diploma Padelleraar A – Lars de Bruin</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+  :root {
+    --navy: #2f2a7e;
+    --navy-dark: #26226a;
+    --blue: #1f5fbf;
+    --yellow: #f2e94e;
+    --cyan: #5cc8e6;
+    --green: #a8d9a0;
+    --ink: #1c1c1c;
+    --line: #2f2a7e;
+    --pattern: rgba(160, 200, 240, 0.28);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #d9dde5; }
+  body { font-family: "Barlow", "Liberation Sans", Arial, sans-serif; color: var(--navy); }
+
+  @page { size: A4; margin: 0; }
+
+  .page {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+  }
+  @media screen and (min-width: 900px) { .page { margin: 16px auto; box-shadow: 0 4px 24px rgba(0,0,0,.18); } }
+  @media print { html, body { background: #fff; } .page { margin: 0; box-shadow: none; page-break-after: always; } }
+
+  /* Diagonal wave pattern like the original */
+  .page::before {
+    content: "";
+    position: absolute;
+    inset: 40mm 0 0 0;
+    background-image: radial-gradient(circle at 50% 50%, transparent 55%, var(--pattern) 56%, var(--pattern) 68%, transparent 69%);
+    background-size: 9mm 9mm;
+    opacity: .35;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%);
+    pointer-events: none;
+  }
+
+  /* Header band */
+  .header {
+    position: relative;
+    height: 40mm;
+    background: linear-gradient(90deg, #f2ea52 0%, #cfe27a 25%, #9fd3b8 50%, #7ccbe0 72%, #eee85a 100%);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .header .stripe {
+    position: absolute; top: -10mm; left: -20mm; width: 60mm; height: 12mm;
+    transform: rotate(-38deg); transform-origin: left top;
+  }
+  .header .stripe.s1 { background: var(--yellow); top: 6mm; left: -8mm; }
+  .header .stripe.s2 { background: var(--cyan);   top: 14mm; left: -10mm; height: 8mm; }
+  .header h1 {
+    position: relative;
+    margin: 0;
+    font-family: "Barlow Condensed", "Liberation Sans Narrow", "Arial Narrow", sans-serif;
+    font-weight: 800;
+    font-size: 112pt;
+    letter-spacing: .07em;
+    color: #fff;
+    -webkit-text-stroke: 1.2mm var(--navy);
+    text-shadow: 0 0 0 var(--navy);
+    line-height: 1;
+    padding-left: .10em; /* compensate for letter-spacing so it's optically centred */
+  }
+
+  /* Decorative diagonal lines right side */
+  .deco { position: absolute; right: -8mm; top: 86mm; width: 52mm; height: 40mm; pointer-events: none; }
+  .deco span { position: absolute; left: 0; width: 100%; height: 2.6mm; transform: rotate(-34deg); transform-origin: right center; }
+  .deco span:nth-child(1) { top: 0;    background: var(--blue); }
+  .deco span:nth-child(2) { top: 7mm;  background: var(--cyan); }
+  .deco span:nth-child(3) { top: 14mm; background: var(--cyan); }
+
+  .content { position: relative; padding: 0 18mm; }
+
+  .title {
+    margin: 8mm 0 1.5mm;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; font-size: 38pt; letter-spacing: .02em; line-height: 1;
+  }
+  .subtitle { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 16.5pt; margin: 0; line-height: 1.4; }
+
+  .declare { margin: 5mm 0 0; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 17pt; line-height: 1.5; }
+  .name { margin: 1mm 0 0; font-size: 30pt; font-weight: 500; color: #d9442a; line-height: 1.2; }
+  .kv { margin: 1mm 0 0; font-size: 13.5pt; line-height: 1.45; }
+  .kv b { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 13.5pt; }
+  .kv span { color: var(--blue); font-weight: 500; }
+
+  .passed { margin: 3mm 0 0.5mm; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 17pt; line-height: 1.5; }
+
+  .section-title {
+    margin: 4mm 0 1.5mm;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 13pt;
+  }
+
+  table { border-collapse: collapse; margin: 0 auto; font-size: 11pt; color: var(--navy); }
+  th, td { border: 0.35mm solid var(--line); padding: 1.1mm 3mm; text-align: center; }
+  th { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 11.5pt; }
+  td { font-weight: 400; }
+  .pvb { width: 172mm; }
+  .pvb col.c1 { width: 28mm; } .pvb col.c2 { width: 76mm; } .pvb col.c3, .pvb col.c4 { width: 34mm; }
+  .pvb td.fill { background: var(--navy); }
+  .footnote { margin: 1.5mm 0 0; font-size: 8.6pt; }
+
+  .grades { width: 110mm; margin-top: 4mm; }
+  .grades th { text-align: center; }
+  .grades td:last-child { color: var(--blue); font-weight: 500; font-size: 12pt; width: 24mm; }
+  .grades td:first-child { text-align: center; }
+
+  .place { margin: 4mm 0 0; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 13.5pt; }
+  .place span { font-family: "Barlow", sans-serif; font-weight: 500; color: var(--blue); }
+
+  .signatures {
+    display: flex; justify-content: space-between; gap: 16mm;
+    margin: 3mm 14mm 0;
+  }
+  .sig { flex: 1; text-align: center; }
+  .sig .line { height: 11mm; border-bottom: 0.35mm solid var(--navy); margin-bottom: 2mm; }
+  .sig .label { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 12.5pt; }
+
+  .footer-text {
+    position: absolute; left: 0; right: 0; bottom: 5mm;
+    padding: 0 40mm;
+    font-size: 8pt; line-height: 1.4; color: var(--navy);
+  }
+
+  /* bottom corner graphics */
+  .corner-left {
+    position: absolute; left: 0; bottom: 0; width: 36mm; height: 26mm;
+    background: linear-gradient(135deg, #f2ea52 0%, #b6dd8a 60%, #7ccbe0 100%);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+  }
+  .corner-right {
+    position: absolute; right: 0; bottom: 0; width: 48mm; height: 30mm;
+    background: var(--navy);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+  .corner-right::after {
+    content: ""; position: absolute; right: 7mm; bottom: 5mm; width: 11mm; height: 11mm;
+    border: 2.2mm solid var(--cyan); border-radius: 50% 50% 0 50%; border-right-color: transparent;
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="stripe s1"></div>
+    <div class="stripe s2"></div>
+    <h1>DIPLOMA</h1>
+  </div>
+
+  <div class="deco"><span></span><span></span><span></span></div>
+
+  <div class="content">
+    <h2 class="title">PADELLERAAR A</h2>
+    <p class="subtitle">Volgens de richtlijnen van de Kwalificatiestructuur Sport (KSS) 2024<br>op niveau 3</p>
+
+    <p class="declare">De toetsingscommissie van de KNLTB verklaart dat:</p>
+    <p class="name">Lars de Bruin</p>
+    <p class="kv"><b>geboortedatum:</b> <span>13-10-1993</span></p>
+
+    <p class="passed">is GESLAAGD voor de PvB’s van de opleiding Padelleraar A</p>
+    <p class="kv">
+      <b>te:</b> <span>Uithoorn</span><br>
+      <b>bij:</b> <span>Bert-Jan Hendriksen</span><br>
+      <b>op:</b> <span>09-09-2026</span>
+    </p>
+
+    <p class="section-title">Overzicht PvB’s</p>
+    <table class="pvb">
+      <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup>
+      <thead>
+        <tr><th>KSS-nummer</th><th>Titel PvB / Competenties*</th><th>Portfolio-beoordeling</th><th>Praktijk-beoordeling</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>3.1</td><td>Geven van lessen (klassikaal)</td><td>Voldaan</td><td>Voldaan</td></tr>
+        <tr><td>3.1</td><td>Geven van lessen (individueel)</td><td>Voldaan</td><td>Voldaan</td></tr>
+        <tr><td>3.2</td><td>Coachen bij wedstrijden</td><td>Voldaan</td><td class="fill" rowspan="3"></td></tr>
+        <tr><td>3.3</td><td>Organiseren van activiteiten</td><td>Voldaan</td></tr>
+        <tr><td>3.4</td><td>Aansturen van assisterend sportkader</td><td>Voldaan</td></tr>
+      </tbody>
+    </table>
+    <p class="footnote">*In alle PvB’s worden de competenties Stimuleren van sportieve ontwikkeling, leer- en burgerschapscompetentie getoetst.</p>
+
+    <table class="grades">
+      <thead><tr><th colspan="2">Cijfers voorwaardelijke kennistoetsen</th></tr></thead>
+      <tbody>
+        <tr><td>Theorie toets 1</td><td>8,0</td></tr>
+        <tr><td>Theorie toets 2</td><td>7,2</td></tr>
+      </tbody>
+    </table>
+
+    <p class="place">Amstelveen, <span>18-09-2026</span></p>
+
+    <div class="signatures">
+      <div class="sig"><div class="line"></div><div class="label">KNLTB, Jacco Eltingh</div></div>
+      <div class="sig"><div class="line"></div><div class="label">Handtekening van de cursist</div></div>
+    </div>
+  </div>
+
+  <div class="corner-left"></div>
+  <div class="corner-right"></div>
+  <div class="footer-text">Dit diploma geeft aan de houder/ster de bevoegdheid om, in het bezit van een geldige licentie, als Padelleraar A werkzaam te zijn.</div>
+</div>
+</body>
+</html>

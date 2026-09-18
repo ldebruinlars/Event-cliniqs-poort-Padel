@@ -13,6 +13,7 @@ Doel: het event- en zalenaanbod van Poort Padel (Almere) in kaart brengen, daar 
 | `email/followup.md` | Opvolgmail na een week. |
 | `outreach/leads.csv` | Leadlijst met 415 leads: 77 scholen (alle schoolbesturen in Almere) en 338 bedrijven (leden Vereniging Bedrijfskring Almere), verzameld 14 september 2026. |
 | `outreach/send_campaign.py` | Mail-merge script via Gmail SMTP. Dry-run standaard, logt verzonden adressen, respecteert opt-outs. |
+| `diploma/diploma-padelleraar-a.html` | Nette, volledig gecentreerde versie van het KNLTB-diploma Padelleraar A (Lars de Bruin). Renderen naar PDF/PNG: `diploma/diploma-padelleraar-a.pdf` en `.png` staan er al bij. |
 | `outreach/README.md` | Hoe je de leadlijst bouwt (GitHub-scrapers), verstuurt en binnen de spamregels blijft. |
 
 ## Snel starten
