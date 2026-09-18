@@ -137,6 +137,20 @@ Polaroid-posters (stijl 1, 2K) op de twee meest gecontroleerde edits:
 
 Wat het meest helpt tegen de AI-look, in volgorde: (1) poses en gezichten onperfect maken (R4), (2) flitser met harde schaduw en gemengde witbalans, (3) korrel en lichte onscherpte (R3). Alleen "meer huidtextuur" vragen helpt weinig. De echte foto blijft de beste oplossing; de compositie van A2 is het draaiboek voor een shoot van 30 minuten in de evenementenruimte.
 
+### Versie 7: dezelfde polaroid-poster, maar zonder AI-mensen
+
+Lars' idee: dezelfde tekst en opmaak, maar de foto zonder mensen, of met iets gezelligs of een smash uit zijn eigen Drive. Vijf posters, allemaal stijl 1 (polaroid) met exact dezelfde tekst:
+
+| Variant | Foto in de polaroid | Higgsfield job |
+|---|---|---|
+| Stilleven eventruimte | echte evenementenruimte met discobal; statafel met twee rackets in een V, twee glazen prosecco, nootjes, waxinelichtje, twee ballen als hartje, matchkaartje; niemand in beeld | `d2480410-1c56-4d32-ad61-9bd8e1622dd6` |
+| Lege baan 's avonds | echte baan van Poort Padel, lampen aan, racket en drie ballen bij het net (twee als hartje), lichtsnoer langs het glas | `2b21026f-c21c-40a0-be97-243d33f82ca8` |
+| Illustratie smash | vlakke illustratie in koraal, perzik, crème en lime: racket in een smash, bal met een spoor van hartjes, discobal | `38174558-1977-4930-8cf1-cf7b6d2f1d9a` |
+| Echte foto: ACA-les op de baan | de echte shootfoto van poortpadel.nl, onbewerkt in de polaroid; echte mensen dus | `8ef974fd-c25c-4f78-a89e-9c11f493b7e9` |
+| Echte foto: wintercompetitie | echte Instagram-foto van Poort Padel, onbewerkt in de polaroid | `cade218c-ffa7-43ed-a5ca-eb8c99d6f2b6` |
+
+De 66 shootfoto's op Google Drive (`ACA_PoortPadel_29mei-*.jpg`) zijn vanuit deze omgeving niet in Higgsfield te krijgen: de bestanden zijn privé (alleen eigenaar), de Drive-koppeling kan geen openbare link maken, en de upload-host van Higgsfield is vanuit de bouwomgeving geblokkeerd. Werkwijze die wel werkt: Lars kiest de smash-foto in Drive en uploadt die zelf via het Higgsfield upload-widget (of Canva), waarna de polaroid-poster erop gezet wordt met dezelfde prompt.
+
 ## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
