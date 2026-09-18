@@ -46,6 +46,27 @@ Tekst op alle zes posters: PADEL DATING, Love at first serve, Speel. Praat. Matc
 
 Volgende stap na keuze: dezelfde Elements opnieuw gebruiken voor een Instagram-carrousel (drie foto's: baan, tafel, bar) en een 9:16 story, zodat de karakters herkenbaar blijven in de hele campagne.
 
+### Versie 2 van de groepsfoto (feedback: bier én flessen tegelijk klopt niet)
+
+Lars koos de groepsfoto met de twee koppels onder de discobal als beste, met als kritiek dat er bierglazen op tafel stonden terwijl er met flessen werd geproost. Vier verbeterde versies, elk met precies één drankje per persoon en zonder flessen:
+
+| Variant | Aanpak | Canva asset | Higgsfield job |
+|---|---|---|---|
+| A gecorrigeerd | dezelfde foto, alleen de drankjes vervangen: links proosten met twee glazen prosecco, rechts één prosecco en één tulpglas bier | MAHVja1YjiA | `fdc00eae-323f-466b-8b01-22b63a801508` |
+| B warmer | dezelfde foto, prosecco en roze cocktails, waxinelichtjes, warmer en donkerder licht, lime randlicht | MAHVjd3iSuI | `ac990fc8-aee6-405a-94e8-b63434e9e80d` |
+| C nieuw | opnieuw gegenereerd met de Elements, tafels dichter bij de camera, één racket per tafel | MAHVja07wkw | `f60f13ef-4ec4-45b9-b92f-13d1a5a680e4` |
+| D close-up | Sanne en Daan proosten op de voorgrond, Naomi en Emre onscherp achter | MAHVjTywgF8 | `40d80c7c-0032-4378-b65e-64c7e94f088e` |
+
+Posters op variant A (Canva Uploads, naam begint met `Padel Dating poster v2`):
+
+| Stijl | Canva asset | Higgsfield job |
+|---|---|---|
+| 3 donker cinematisch, lime accent | MAHVjUHSc5w | `ad0820f8-6cc1-42fd-837d-9db7165a569d` |
+| 1 warm groen, polaroid | MAHVjWxhltQ | `06a8127b-91f5-4bce-8127-ab76407822f0` |
+| 2 roze hartjes, donkere avondversie | MAHVjQ3NWdk | `6fa3ffec-4721-45b4-a78b-bbebb3f5221d` |
+
+Tip voor het beeld-prompten: benoem het aantal drankjes per persoon en het soort glas expliciet, anders zet het model zowel flessen als glazen neer.
+
 ## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
