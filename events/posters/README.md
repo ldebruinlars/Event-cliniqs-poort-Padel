@@ -100,6 +100,21 @@ Lars koos versie 2A (gecorrigeerde drankjes) als beste, met twee wensen: meer me
 
 Ook toegevoegd: een tweede Soul 2.0-poging (`b4b033f7-76ff-44a1-8c3d-ecaac86ef1a9`, Canva MAHVjdjqJJQ). Let op: Soul 2.0 herschrijft de prompt automatisch en maakte er "model-like features" van, precies wat we niet wilden; het model laat die prompt-verbetering niet uitzetten. Daarom is Nano Banana Pro met een "flitser en ruis"-prompt hier de betere realisme-route.
 
+### Versie 5: gekozen basis, koppels van twee op de achtergrond (definitieve richting)
+
+Lars koos variant A van versie 4, met de wens: meer koppels van twee op de achtergrond, geen groepjes van drie. Twee foto's en daarop de drie posterstijlen.
+
+| Wat | Higgsfield job | Opmerking |
+|---|---|---|
+| Foto A2: zes koppels van twee op de achtergrond, elk aan een eigen statafel | `a69d69f4-bf96-4cf5-bbd2-4d1d578c4fc1` | gekozen basis voor de posters |
+| Foto A3: vijf koppels van twee, direct op versie 2A | `50a258ed-bb63-442a-93fc-d04777c6f94d` | alternatief |
+| Foto A2 in 4K (3311×4096) voor print | `e7f4068f-824a-4665-9894-2d10ca8a0c12` | |
+| Poster stijl 3 donker cinematisch, lime accent, 2K | `527579fc-b74f-46c6-8af4-5bc75c5cfa6c` | |
+| Poster stijl 1 warm groen met polaroid, 2K | `64a75c9c-f653-4c48-86b7-010b2cb98c4e` | |
+| Poster stijl 2 roze hartjes, donkere avondversie, 2K | `2faa504e-e57a-4412-ab95-d5439893df5b` | |
+
+Deze versie staat nog niet in Canva: de Canva-koppeling verliep tijdens het uploaden en moet opnieuw geautoriseerd worden in de claude.ai connector-instellingen. Daarna kunnen de zes bestanden hierboven vanuit de Higgsfield-galerij alsnog in Canva Uploads gezet worden.
+
 ## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
