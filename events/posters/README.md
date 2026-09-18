@@ -2,7 +2,51 @@
 
 Gemaakt op 18 september 2026 met Higgsfield (beeld) en Canva (bewerkbare poster). De afbeeldingen zelf staan niet in deze repo omdat de download vanuit de bouwomgeving geblokkeerd was; alles staat in Lars' Canva-account en Higgsfield-bibliotheek.
 
-## Stijlronde 4: donker, warm en professioneel (avondstijl, aanbevolen)
+## Stijlronde 5: eigen karakters in de echte Poort Padel-ruimtes, in de 3 gekozen stijlen (nieuwste)
+
+Lars koos drie voorbeelden als favoriet: (1) warm groen en koraal met een polaroid, (2) roze met hartjes, (3) donker cinematisch met een elegante serif in de eventruimte. Op 18 september 2026 zijn daarvoor eerst vier originele karakters gemaakt en daarna dating-foto's in de echte ruimtes van Poort Padel, en pas daarna de posters.
+
+Zo is het gedaan met Higgsfield:
+
+1. Karakters via de `character-sheet`-workflow (`get_workflow_instructions`): vier originele volwassenen, fotorealistisch en onbewerkt (zichtbare huidtextuur, geen modellenlook), neutrale studio-achtergrond, sportkleding in de clubkleuren. Model Nano Banana Pro.
+2. Elk karakter opgeslagen als reusable Element (`show_reference_elements`, actie `create`), zodat dezelfde gezichten in meerdere foto's terugkomen. Elements werken met meerdere personen per beeld; Soul niet, daarom niet gebruikt.
+3. Scènes met Nano Banana Pro: de echte Poort Padel-foto als `image_references` (evenementenruimte met discobal, baan, Grand Café) plus de Elements in de prompt. De ruimte blijft zoals op de foto, alleen de mensen zijn toegevoegd.
+4. Posters met GPT Image 2 op basis van de scènefoto, in elk van de drie stijlen twee varianten.
+
+| Karakter (Element) | Element-id | Higgsfield job |
+|---|---|---|
+| Sanne, 31, donkerblond, groene padeltop | `7ec95b49-4780-4e87-88f0-8e31b1f44e35` | `4674937e-fda1-4c55-afc0-8da37d0e954e` |
+| Daan, 34, bruin haar, baard, zwarte polo | `3283939e-32d6-44cf-8d60-7f8389e76dbf` | `ce5520b2-e967-43dc-b9c4-171819cbe17e` |
+| Naomi, 28, krullen in knot, wit cropped shirt | `9a9b417f-38a3-4f3d-a345-58b92b2a6998` | `77fc6b96-11b8-457d-b2fa-47d56bec200c` |
+| Emre, 29, zwart haar, lime shirt | `9852a01f-6809-4f0d-9aae-52ecb56b2b7f` | `09c6556e-96dd-4107-8a86-e7ecca71cb0e` |
+
+Dating-foto's (Canva Uploads, naam begint met `Padel Dating foto`):
+
+| Scène | Ruimte | Canva asset | Higgsfield job |
+|---|---|---|---|
+| Sanne en Daan lachend aan een statafel, racket en drankje | evenementenruimte, discobal | MAHVjSgcvvc | `a26bdfa7-9577-4c73-98e5-f3d1bdd648d3` |
+| Naomi en Emre op barkrukken, hij houdt het matchkaartje omhoog | evenementenruimte, discobal | MAHVjSHyOWA | `7d099c71-4ccf-457a-b97b-8fa6c892156c` |
+| Sanne en Emre als mixed dubbel juichend aan het net | baan, avondlicht | MAHVjYjUBYA | `640a7e29-eb49-485e-bdb7-cbdcbd75dac8` |
+| Naomi en Daan proosten met prosecco aan de bar, bitterballen | Grand Café | MAHVjY7BYQw | `fa1d6e3e-d170-4c62-bd9d-90dee4a1b959` |
+| Twee koppels aan twee statafels, groepsbeeld | evenementenruimte, discobal | MAHVjTjLZLE | `33541431-69d5-46e2-9ce6-914a3aef44ca` |
+| Naomi en Emre rug aan rug met rackets, filmposter-pose | evenementenruimte, discobal | MAHVjTrhp5g | `9202e2a5-de50-4168-87bf-b9c56b46e73d` |
+
+Posters (Canva Uploads, naam begint met `Padel Dating poster - stijl`):
+
+| Stijl | Variant | Foto | Canva asset | Higgsfield job |
+|---|---|---|---|---|
+| 1 warm en speels | A: diepgroen, polaroid met koraal tape, doodles | statafel-koppel | MAHVjdV7rfs | `46fb1925-208b-4424-9425-9da313a29c1e` |
+| 1 warm en speels | B: crème, twee polaroids, "match!" | mixed dubbel op de baan | MAHVjQBe0rU | `c095aeb6-63e4-473a-8433-38bebd19bf5e` |
+| 2 roze hartjes | A: blush naar hot pink, glossy hartjes, fotokaart | rug-aan-rug pose | MAHVjR0AV8M | `92472f55-a3b2-4c71-9c9d-953f43255d28` |
+| 2 roze hartjes | B: donker berry voor de avond, foto bovenin | matchkaartje aan tafel | MAHVjUBFhZo | `4593f0f4-b6d4-406a-a313-dec5fda9dfde` |
+| 3 donker cinematisch | A: full-bleed foto, crème serif, lime accentlijn | twee koppels onder de discobal | MAHVjbzYLSw | `42368360-1ed4-44cf-9c08-be6983ab2e1e` |
+| 3 donker cinematisch | B: full-bleed foto, crème serif, koraal accentlijn | proosten aan de bar | MAHVjfui7Jo | `a5e138e2-d23b-47dc-82e3-753a4c98c7da` |
+
+Tekst op alle zes posters: PADEL DATING, Love at first serve, Speel. Praat. Match., Vrijdag 24 oktober · 19:30 – 22:00, 6 rondes elke ronde een nieuwe partner, 12 min spelen 12 min praten met een drankje, €49,50 p.p. incl. welkomstdrankje & hapjes, Early bird €45, Meld je aan → allcourtacademy.com/events, All Court Academy × Poort Padel · Neonweg 62, Almere. Controleer de spelling voordat je plaatst; GPT Image 2 maakt soms typefouten in Nederlandse tekst (in ronde 3 stond er "All Courrt Academy"). Bij twijfel: de foto zonder tekst in Canva zetten en de tekst zelf typen.
+
+Volgende stap na keuze: dezelfde Elements opnieuw gebruiken voor een Instagram-carrousel (drie foto's: baan, tafel, bar) en een 9:16 story, zodat de karakters herkenbaar blijven in de hele campagne.
+
+## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.
 
