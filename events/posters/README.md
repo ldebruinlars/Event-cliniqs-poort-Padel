@@ -2,6 +2,42 @@
 
 Gemaakt op 18 september 2026 met Higgsfield (beeld) en Canva (bewerkbare poster). De afbeeldingen zelf staan niet in deze repo omdat de download vanuit de bouwomgeving geblokkeerd was; alles staat in Lars' Canva-account en Higgsfield-bibliotheek.
 
+## Stijlronde 3: warm en speels (aanbevolen voor een dating-event)
+
+De eerste twee rondes gebruikten de donkergroene clubstijl. Voor een dating-avond werkt een warmere, speelsere stijl beter. Onderzoek op 18 september 2026: de best scorende speed-dating-templates op Canva ("Pink & Orange Illustrative Speed Dating Night Flyer", "Red and Pink Modern Speed Dating Event", "Pink and Navy Illustrated Speed Dating Event") en echte padel-dating-events (Padel Social Club "Padel Play Dates" Londen, Padel Match, LÕK × Bumble) gebruiken allemaal: crème of lichte achtergrond, koraalrood en perzik, chunky ronde letters, geïllustreerde hartjes en stickers, een echte foto in een ronde of boogvormige lijst, en een korte knipoog als tagline ("Love at first serve", "Match op de baan?").
+
+Toegepaste stijl: crème `#FFF6EC`, koraal `#FF5A5F`, perzik `#FFB4A2`, één lime-accent `#CCFF00` en diepgroen `#143934` voor kleine tekst, zodat het nog steeds bij All Court Academy en Poort Padel past. Hartje van twee padelballen als terugkerend icoon.
+
+Canva, poster (echte foto van de baan in een boogvormige lijst):
+
+| Kandidaat | Link |
+|---|---|
+| 1 | https://www.canva.com/d/rJfKgcTvJ0TcEPP |
+| 2 | https://www.canva.com/d/UpB9Cqy9zpMDQdS |
+| 3 | https://www.canva.com/d/cKrcM-d3eBGRLsk |
+| 4 | https://www.canva.com/d/EKESobFgUBoOuaE |
+
+Canva, Instagram-post 4:5 (Grand Café-foto in een lijst):
+
+| Kandidaat | Link |
+|---|---|
+| 1 | https://www.canva.com/d/feQKVY9lyC3m0pG |
+| 2 | https://www.canva.com/d/0jSVQxAWAlCwiXe |
+| 3 | https://www.canva.com/d/ND-TY2tOuH9qGvQ |
+| 4 | https://www.canva.com/d/qIGiE3BJFHSBMZW |
+
+Higgsfield-versies in deze stijl (kant-en-klaar, in Canva Uploads):
+
+| Bestand in Canva Uploads | Opzet |
+|---|---|
+| Padel Dating warm - creme met boogfoto baan | crème achtergrond, koraal/perzik vormen, echte baanfoto in boogvormige lijst, stickers |
+| Padel Dating warm - groen met koraal blobs, polaroid event | diepgroen met koraal blobs, echte eventfoto als polaroid, "Love at first serve" |
+| Padel Dating warm - Instagram creme, Grand Cafe | 3:4 Instagram, crème, Grand Café-foto in lijst |
+| Padel Dating warm - koraal, foto baan (stijlref Canva template) | gemaakt met de Canva-template "Red and Pink Modern Speed Dating" als stijlreferentie |
+| Padel Dating warm - roze en groen, foto event (stijlref Canva template) | gemaakt met de Canva-template "Pink and Navy Illustrated Speed Dating" als stijlreferentie |
+
+Wil je zelf verder in Canva: zoek op "speed dating" in Canva-templates en vervang de foto door een van de Poort Padel-foto's in Uploads. Aanraders: "Pink & Orange Illustrative Speed Dating Night Flyer" (canva.com/templates/EAGdpYTYSFo), "Red and Pink Modern Speed Dating Event" (EAGw3wQzL_c), "Pink and Navy Illustrated Speed Dating Event" (EAGw31ctZNE).
+
 ## Canva (bewerkbaar: datum, prijs, link aanpassen)
 
 Alles staat in het Canva-account dat op 18 september 2026 opnieuw is gekoppeld (eerdere links uit een verkeerd account zijn verwijderd). Open een kandidaat, kies "Bewerken" en pas de datum aan zodra die vaststaat.
