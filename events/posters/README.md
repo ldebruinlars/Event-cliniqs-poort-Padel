@@ -4,18 +4,33 @@ Gemaakt op 18 september 2026 met Higgsfield (beeld) en Canva (bewerkbare poster)
 
 ## Canva (bewerkbaar: datum, prijs, link aanpassen)
 
-Vier kandidaten uit één opdracht, zelfde tekst en stijl. Open, kies er één en pas de datum aan zodra die vaststaat.
+Ronde 2 (echte foto's van Poort Padel als achtergrond, aanbevolen):
 
 | Kandidaat | Link |
 |---|---|
-| 1 | https://www.canva.com/d/7AgQIxgh0uc-hgY |
-| 2 | https://www.canva.com/d/JfvcWdv_aOaRoKm |
-| 3 | https://www.canva.com/d/JmvOaZFXIDIr6l3 |
-| 4 | https://www.canva.com/d/ESImxkgetvubqKR |
+| 1 | https://www.canva.com/d/yhCmTUQoy-kzaiv |
+| 2 | https://www.canva.com/d/LkFBRYVAbvcH8sD |
+| 3 | https://www.canva.com/d/gy2V81qpWTfGIXj |
+| 4 | https://www.canva.com/d/Wm_ibpd3XYJtfHa |
 
-Canva-assets (in "Uploads"): `Padel Dating hero 1` (MAHVjL1_t9s), `Padel Dating hero 2` (MAHVjJ3fqo4), `All Court Academy logo` (MAHVjA0-Tj4), `Padel Dating poster AI v1` (MAHVjLNxs0g), `Padel Dating poster AI v2` (MAHVjJ5mh3s).
+Ronde 1 (AI-sfeerfoto als achtergrond, ter vergelijking): https://www.canva.com/d/7AgQIxgh0uc-hgY · https://www.canva.com/d/JfvcWdv_aOaRoKm · https://www.canva.com/d/JmvOaZFXIDIr6l3 · https://www.canva.com/d/ESImxkgetvubqKR
 
-## Higgsfield (kant-en-klare beelden, 2:3 en 3:4)
+Canva-assets (in "Uploads"): echte foto's `Poort Padel foto - ACA les op de baan` (MAHVjZU06lU), `Poort Padel foto - Grand Cafe met zicht op banen` (MAHVjWE95i4), `Poort Padel foto - hal` (MAHVjZ7hhps); `Padel Dating hero 1` (MAHVjL1_t9s), `Padel Dating hero 2` (MAHVjJ3fqo4), `All Court Academy logo` (MAHVjA0-Tj4), `Padel Dating poster AI v1` (MAHVjLNxs0g), `Padel Dating poster AI v2` (MAHVjJ5mh3s).
+
+## Higgsfield (kant-en-klare beelden)
+
+Versies op echte foto's (18 september 2026, tweede ronde). De foto blijft onbewerkt, alleen een donkergroene gradient en de tekst zijn toegevoegd.
+
+| Bestand in Canva Uploads | Achtergrondfoto | Bron |
+|---|---|---|
+| Padel Dating poster - echte foto baan (ACA les) | spelers op de baan, ACA-fotoshoot 29 mei | poortpadel.nl |
+| Padel Dating poster - echte foto hal | de hal tijdens een event | poortpadel.nl |
+| Padel Dating poster - echte foto Grand Cafe | Grand Café met zicht op de banen | poortpadel.nl |
+| Padel Dating Instagram 4x5 - echte foto evenementenruimte | evenementenruimte met discobal | poortpadel.nl |
+| Padel Dating poster - Instagram Almere Zaken event | release Almere Zaken in de hal | instagram.com/poortpadel |
+| Padel Dating poster - Instagram Grand Cafe | gerechten in het Grand Café | instagram.com/poortpadel |
+
+Eerste ronde (volledig AI, ter vergelijking):
 
 | Bestand | Model | Inhoud |
 |---|---|---|
@@ -32,3 +47,9 @@ Controleer bij de AI-posters de spelling van de Nederlandse tekst voordat je ze 
 - Kop in serif (Fraunces), details in Poppins of Inter Tight.
 - Call-to-action als lime pill-knop met donkere tekst.
 - Onderaan beide logo's: All Court Academy × Poort Padel.
+
+## Meer echte foto's
+
+- Google Drive van Lars: `ACA_PoortPadel_29mei-*.jpg` (66 professionele foto's van de shoot bij Poort Padel, juni 2026). Upload er een paar naar Canva en vervang de achtergrond; dit is de beste bron.
+- Instagram @poortpadel: bekijk posts, reels en stories zonder login via imginn.com/poortpadel/ (Instagram zelf blokkeert scrapers). Reels laten de sfeer van de hal, het Grand Café en events zien: imginn.com/reels/poortpadel/.
+- Zie `research/scrapers-social-media.md` voor tools die dit automatisch binnenhalen.
