@@ -151,6 +151,31 @@ Lars' idee: dezelfde tekst en opmaak, maar de foto zonder mensen, of met iets ge
 
 De 66 shootfoto's op Google Drive (`ACA_PoortPadel_29mei-*.jpg`) zijn vanuit deze omgeving niet in Higgsfield te krijgen: de bestanden zijn privé (alleen eigenaar), de Drive-koppeling kan geen openbare link maken, en de upload-host van Higgsfield is vanuit de bouwomgeving geblokkeerd. Werkwijze die wel werkt: Lars kiest de smash-foto in Drive en uploadt die zelf via het Higgsfield upload-widget (of Canva), waarna de polaroid-poster erop gezet wordt met dezelfde prompt.
 
+### Versie 8: gekozen ontwerp, definitieve tekst (zaterdag, 4 rondes, baruur, geen early bird)
+
+Lars koos de illustratie-poster (smash met hartjes, geen mensen) en gaf de definitieve opzet door: zaterdagavond, 19:30 tot 22:30, vier rondes en daarna het laatste uur samen in de bar, geen early bird, prijs €49,50 blijft. 24 oktober 2026 valt op een zaterdag, dus de datum kon blijven staan.
+
+Tekst op de poster:
+
+> PADEL DATING · Love at first serve
+> Speel. Praat. Match.
+> Zaterdag 24 oktober · 19:30 – 22:30
+> 4 rondes, elke ronde een nieuwe partner
+> 12 min spelen, 12 min praten met een drankje
+> Daarna: het laatste uur samen in de bar
+> €49,50 p.p. incl. welkomstdrankje & hapjes
+> Meld je aan → allcourtacademy.com/events
+> All Court Academy × Poort Padel · Neonweg 62, Almere
+
+| Bestand | Formaat | Higgsfield job |
+|---|---|---|
+| Poster, edit van het gekozen ontwerp (alleen tekst gewijzigd) | 2:3, 2K, high | `21ccf058-d812-4264-ace5-c67a03abc0fd` |
+| Poster, opnieuw opgebouwd in dezelfde stijl | 2:3, 2K, high | `c348ca9c-faca-491d-a229-844e7c9124a7` |
+| Instagram feed | 3:4, 2K | `9df86052-0667-44c4-a8b8-55eca64bef00` |
+| Instagram story | 9:16, 2K | `a9c4bcf4-0b0b-4747-818d-c0b7722dafa3` |
+
+Controleer de tekst letter voor letter voordat je print; de edit-versie is meestal het trouwst aan het origineel. Canva staat nog los (koppeling opnieuw autoriseren), daarna kunnen deze vier als Uploads erin en is de tekst daar bewerkbaar.
+
 ## Stijlronde 4: donker, warm en professioneel (avondstijl)
 
 Feedback van Lars op ronde 3: warm is goed, maar het moet professioneler en donkerder, want het event is 's avonds. Art direction ronde 4: premium avond-uitnodiging zoals bij een members club of boutique hotel. Echte foto van de avondsfeer bij Poort Padel als achtergrond met een cinematische warme grade (groen-zwarte schaduwen `#0F1F1C`, amber highlights), elegante serif in warm crème `#F5EBDD`, dunne cursieve serif als tagline ("Love at first serve"), kleine schone sans-serif voor details, één accentkleur (lime `#CCFF00` of koraal `#FF6F61`) alleen voor een dunne lijn en het label. Geen stickers, geen cartoonhartjes, veel rust.

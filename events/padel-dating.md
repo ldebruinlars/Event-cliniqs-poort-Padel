@@ -1,10 +1,10 @@
 # Padel Dating – eventconcept, draaiboek en prijs
 
-Event van All Court Academy bij Poort Padel Almere. Doel: singles laten kennismaken door samen te padellen en daarna te praten aan de bar. Iedereen speelt elke ronde met een nieuwe partner, 2,5 uur lang.
+Event van All Court Academy bij Poort Padel Almere. Doel: singles laten kennismaken door samen te padellen en daarna te praten aan de bar. Iedereen speelt elke ronde met een nieuwe partner; vier rondes op de baan en daarna het laatste uur samen in de bar. Totaal drie uur, op zaterdagavond. Besluit van Lars op 19 september 2026: zaterdag, na het eten, vier rondes in plaats van zes, het laatste uur in de bar, geen early bird.
 
 ## 1. Het concept in één alinea
 
-24 singles (12 dames, 12 heren, 25–40 jaar als eerste doelgroep) komen om 19:15 binnen, krijgen een welkomstdrankje en een naamsticker met een kleur. Om 19:30 start ronde 1: de helft van de groep speelt op 3 banen in gemengde koppels (dame + heer) tegen een ander koppel, de andere helft praat aan statafels in het Grand Café met het koppel waarmee ze de volgende ronde spelen. Na 12 minuten wisselt alles: spelers naar de bar, praters naar de baan, en iedereen krijgt een nieuwe partner. Zes rondes van 25 minuten, dus zes verschillende partners. Om 22:00 sluit de avond af met een matchronde: iedereen vult een kaartje in met wie je nog een keer wilt spelen; bij een wederzijdse match krijgen beiden de volgende dag een bericht van ons met een gratis baanuur bij Poort Padel.
+24 singles (12 dames, 12 heren, 25–40 jaar als eerste doelgroep) komen op zaterdagavond om 19:00 binnen, krijgen een welkomstdrankje en een naamsticker met een kleur. Om 19:30 start ronde 1: de helft van de groep speelt op 3 banen in gemengde koppels (dame + heer) tegen een ander koppel, de andere helft praat aan statafels in het Grand Café met het koppel waarmee ze de volgende ronde spelen. Na 12 minuten wisselt alles: spelers naar de bar, praters naar de baan, en iedereen krijgt een nieuwe partner. Vier rondes van ongeveer 25 minuten, dus vier verschillende partners, klaar rond 21:20. Dan vult iedereen een matchkaartje in met wie je nog een keer wilt spelen, en van 21:30 tot 22:30 is de bar open voor iedereen samen, zonder schema: dat is het uur waarin de echte gesprekken ontstaan. Bij een wederzijdse match krijgen beiden de volgende dag een bericht van ons met een gratis baanuur bij Poort Padel.
 
 Waarom dit werkt: padel is laagdrempelig (binnen tien minuten kun je meedoen), je staat met z'n tweeën aan één kant van het net dus je moet samenwerken en praten, en de wissel naar de bar geeft rust om echt een gesprek te voeren.
 
@@ -12,47 +12,49 @@ Waarom dit werkt: padel is laagdrempelig (binnen tien minuten kun je meedoen), j
 
 | Tijd | Wat | Wie |
 |---|---|---|
-| 18:30 | Opbouw: 3 banen, 6 statafels in het Grand Café, rotatiebord, naamstickers, matchkaartjes, ballen | Host 1 + host 2 |
-| 19:15 | Inloop, welkomstdrankje, naamsticker (dames roze, heren blauw, nummer 1–12), korte uitleg | Host 2 aan de bar |
+| 18:15 | Opbouw: 3 banen, 6 statafels in het Grand Café, rotatiebord, naamstickers, matchkaartjes, ballen | Host 1 + host 2 |
+| 19:00 | Inloop, welkomstdrankje, naamsticker (dames roze, heren blauw, nummer 1–12), korte uitleg | Host 2 aan de bar |
 | 19:30 | Ronde 1: groep A speelt (banen 1–3), groep B praat aan de statafels | Host 1 op de baan, host 2 bij de tafels |
 | 19:42 | Wissel: A naar de bar, B naar de baan. Nieuwe partnerindeling volgens rotatieschema | Host 1 roept de indeling om |
-| 19:55 | Ronde 2 … | |
-| 21:35 | Ronde 6, laatste wissel | |
-| 22:00 | Matchkaartjes inleveren, groepsfoto, nazit in het Grand Café (eigen rekening) | |
+| 19:57 | Ronde 2 | |
+| 20:24 | Ronde 3 | |
+| 20:51 | Ronde 4, laatste wissel om 21:03 | |
+| 21:18 | Matchkaartjes invullen en inleveren, groepsfoto | Host 2 |
+| 21:30 | Baruur: iedereen samen in het Grand Café, muziek, hapjes op tafel, hosts lopen rond en koppelen mensen die elkaar nog niet gesproken hebben | Host 1 + host 2 |
+| 22:30 | Einde. Wie wil blijft op eigen rekening | |
 | Dag erna | Matches mailen/appen, gratis baanuur-voucher voor wederzijdse matches | Lars |
+
+Waarom het baruur werkt: na vier rondes kent iedereen vier mensen van de andere kant en heeft iedereen twaalf minuten met elk van hen gesproken. In het baruur kun je teruggaan naar wie je leuk vond, zonder dat het schema je stuurt. De hosts hebben in dat uur één taak: niemand staat alleen.
 
 Regels op de baan: geen score bijhouden, alleen spelen. Rackets liggen klaar voor wie er geen heeft. Host 1 speelt korte rally-oefeningen voor als iemand nog nooit gespeeld heeft.
 
 ### Rotatieschema (12 dames D1–D12, 12 heren H1–H12)
 
-Ronde r (1–6): dame Dn speelt met heer H((n + r − 1) mod 12 + 1). Zo krijgt elke dame in 6 rondes 6 verschillende heren. Per ronde spelen 6 koppels op de baan (3 banen × 2 koppels) en praten 6 koppels aan de statafels. In de oneven rondes speelt groep A (koppels met D1–D6), in de even rondes groep B (D7–D12). Het gesprek aan de bar voer je met de partner van je volgende speelronde, dus je hebt elkaar al gesproken voordat je samen de baan op gaat.
+Ronde r (1–4): dame Dn speelt met heer H((n + r − 1) mod 12 + 1). Zo krijgt elke dame in 4 rondes 4 verschillende heren. Per ronde spelen 6 koppels op de baan (3 banen × 2 koppels) en praten 6 koppels aan de statafels. In de oneven rondes speelt groep A (koppels met D1–D6), in de even rondes groep B (D7–D12). Het gesprek aan de bar voer je met de partner van je volgende speelronde, dus je hebt elkaar al gesproken voordat je samen de baan op gaat.
 
-Dit is hetzelfde principe als een Mexicano-rotatie (vaste rondetijd, nieuwe partner per ronde), maar zonder ranglijst. Groter of kleiner: bij 16 personen (8/8) neem je 2 banen en 4 rondes van 30 minuten, bij 32 personen (16/16) 4 banen en 8 rondes van 18 minuten.
+Dit is hetzelfde principe als een Mexicano-rotatie (vaste rondetijd, nieuwe partner per ronde), maar zonder ranglijst. Groter of kleiner: bij 16 personen (8/8) neem je 2 banen en dezelfde 4 rondes, bij 32 personen (16/16) 4 banen en 4 rondes; het aantal rondes blijft vier, alleen het aantal banen schaalt mee.
 
 ## 3. Prijs
 
-Consumentenprijs, dus inclusief 21% btw. Opbouw voor 24 deelnemers op een vrijdagavond (piektarief), met dezelfde 20% marge als de rest van het aanbod.
+Consumentenprijs, dus inclusief 21% btw. Opbouw voor 24 deelnemers op zaterdagavond (weekendtarief €37,50 per baan, bevestigen bij Poort Padel), banen twee uur (19:30–21:30), hosts van opbouw tot einde.
 
 | Kostenpost | Inkoop | Per persoon |
 |---|---|---|
-| 3 banen × 2,5 uur × €44 (piek) | €330,00 | €13,75 |
-| 2 hosts × 3 uur × €45 (aanname coachtarief) | €270,00 | €11,25 |
+| 3 banen × 2 uur × €37,50 (weekend) | €225,00 | €9,38 |
+| 2 hosts × 3,5 uur × €45 (aanname coachtarief) | €315,00 | €13,13 |
 | Welkomstdrankje (cava, bier of fris) | €3,75 p.p. | €3,75 |
 | Borrelhapjes, 4 p.p. (teamschotel 25 stuks €24,50) | €0,98 per hapje | €3,92 |
 | Ballen 3 banen, naamstickers, matchkaartjes, prints | €31,00 | €1,29 |
-| **Kostprijs** | | **€33,96** |
-| Marge 20% | | €6,79 |
-| **Verkoopprijs excl. btw** (afgerond) | | **€41,00** |
-| **Verkoopprijs incl. 21% btw** | | **€49,50** |
+| **Kostprijs** | | **€31,47** |
+| Verkoopprijs €49,50 incl. btw = €40,91 excl. | | marge €9,44 (30%) |
 
 Prijsstelling op de poster:
 
-- **€49,50 p.p.** inclusief welkomstdrankje, hapjes, banen, rackets en begeleiding. Overige drankjes voor eigen rekening aan de bar.
-- **Early bird €45** voor de eerste 12 aanmeldingen (marge daalt naar ongeveer 10%, maar vult de avond).
-- **Zondagmiddag-editie** (weekendtarief €37,50 per baan): kostprijs €31,90, verkoop €38,50 excl. / €46,50 incl. btw.
-- Omzet bij 24 betalende deelnemers: €1.188 incl. btw, winst circa €163 excl. btw plus de baromzet voor Poort Padel.
+- **€49,50 p.p.** inclusief welkomstdrankje, hapjes, banen, rackets en begeleiding. Drankjes in het baruur voor eigen rekening. De prijs blijft gelijk aan het eerdere voorstel; door de kortere baanhuur en het weekendtarief stijgt de marge van 20% naar ongeveer 30%.
+- **Geen early bird** (besluit Lars). Wil je toch iets extra's geven, dan past een tweede drankje in het baruur binnen de prijs: kostprijs wordt €35,22, marge 16%.
+- Omzet bij 24 betalende deelnemers: €1.188 incl. btw, winst circa €227 excl. btw plus de baromzet voor Poort Padel in het baruur.
 
-Pas het coachtarief en de drankprijs aan in `pricing/prijscalculator.xlsx` (tabblad Inputs) als Poort Padel andere inkoopprijzen bevestigt; de opbouw hierboven volgt dezelfde inputs.
+Pas het coachtarief en het baantarief aan in `pricing/prijscalculator.xlsx` (tabblad Inputs) als Poort Padel andere inkoopprijzen bevestigt; de opbouw hierboven volgt dezelfde inputs.
 
 ## 4. Poster en huisstijl
 
@@ -72,12 +74,14 @@ Gedeelde basis voor de poster: diepgroene achtergrond, lime accenten, serif-kop 
 
 Tekst op de poster:
 
-> **PADEL DATING** · Speel. Praat. Match.
-> Vrijdag 24 oktober · 19:30–22:00 (voorstel, nog niet vastgelegd)
-> 6 rondes · elke ronde een nieuwe partner · 12 minuten spelen, 12 minuten praten met een drankje
-> €49,50 p.p. incl. welkomstdrankje en hapjes · early bird €45
-> Poort Padel Almere, Neonweg 62 · Meld je aan via allcourtacademy.com/events
-> All Court Academy × Poort Padel
+> **PADEL DATING** · Love at first serve · Speel. Praat. Match.
+> Zaterdag 24 oktober · 19:30–22:30 (24 oktober 2026 is een zaterdag; alternatieven 31 oktober en 7 november)
+> 4 rondes · elke ronde een nieuwe partner · 12 minuten spelen, 12 minuten praten met een drankje
+> Daarna: het laatste uur samen in de bar
+> €49,50 p.p. incl. welkomstdrankje en hapjes
+> Meld je aan → allcourtacademy.com/events · All Court Academy × Poort Padel · Neonweg 62, Almere
+
+Gekozen ontwerp (19 september 2026): de polaroid-poster met de illustratie van de smash (racket, bal met een spoor van hartjes, discobal), zonder foto's van mensen. Zie `events/posters/README.md`, versie 8.
 
 ## 5. Promotie
 
