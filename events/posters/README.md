@@ -441,3 +441,16 @@ Lars koos het krijtbord (Higgsfield `3d7edb5b-2e65-4ea3-b737-dcad4650fd41`, stij
 | 4 | Gameshow-krijtbord: marquee-letters met krijtlampjes, scorebord-paneel met lint, trofee, racket, pint en vraagteken, confetti in mint, koraal en geel | `cc3752f6-bbd8-4ff8-993b-2a44cdd4c64a` |
 
 Volgende stap: Lars kiest, plakt het gekozen beeld in de chat, en de tekst (datum, tijd, chips, bullets, prijs-pill, knop, footer) wordt er deterministisch op gezet zoals bij Padel Dating (`events/posters/final/build_poster.py`), in wit en geel krijt op het lege onderste deel.
+
+### Padel & Quiz: poster met logo's (20 september 2026, avond)
+
+Gebouwd op krijtbord-variant 1 (`8025e2c6-cb38-44ab-9971-6abb0eec47f9`). Omdat de Higgsfield-downloads vanuit de werkomgeving geblokkeerd zijn, is het 2k-beeld via een browser-screenshot (Firecrawl, beeld op een zwarte pagina, wachten op decode) binnengehaald; zo ook de logo's: Poort Padel-woordmerk (SVG van poortpadel.nl, wit gemaakt met een CSS-filter), het ACA-logo van allcourtacademy.com (PNG, marineblauwe achtergrond weggehaald) en het serif ACA-logo dat op de Poort Padel-site staat (SVG, wit). Bestanden in `events/posters/assets/`.
+
+Opbouw tekstblok (`build_quiz_poster.py`, onderste derde van het bord, alles met krijtkorrel op de letters): ZATERDAG 16 JANUARI (geel) / 18:00 – 22:00 · inloop 17:30 / chips met witte krijtrand "Alleen of met je team" en "Alle niveaus, rackets liggen klaar" / bullets "1,5 uur Mexicano, daarna pubquiz in teams van 4" en "€500 aan prijzen van Poort Padel" / gele pill €39,50 p.p. incl. welkomstdrankje & hapjes / witte knop Meld je aan → allcourtacademy.com/events / logo's All Court Academy × Poort Padel / Poort Padel · Neonweg 62, Almere. Beeld 2× opgeschaald (Lanczos + unsharp) vóór het tekstblok, dus 3488 × 4672 en 295 dpi op 30 × 40 cm. Feed 4:5 en story 9:16: bord passend in het formaat, donkere wand eromheen.
+
+| Bestand | Formaat |
+|---|---|
+| `padel-quiz-poster-30x40cm.pdf`, `padel-quiz-poster.jpg` | print 30 × 40 cm (ACA-logo van de website) |
+| `padel-quiz-poster-logo-serif.jpg` | zelfde poster met het serif-logo "all court academy since 2025" |
+| `padel-quiz-ig-feed-4x5.jpg` | 2160 × 2700 |
+| `padel-quiz-ig-story-9x16.jpg` | 2160 × 3840 |
