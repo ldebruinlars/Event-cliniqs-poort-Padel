@@ -503,7 +503,7 @@ pq_inputs = [
     ("Welkomstdrankje + hapjes p.p. (afspraak Poort Padel)", 8, "€", True, "Zelfde arrangement als Padel Dating"),
     ("Materialen (antwoordvellen, beeldronde-prints, pennen, ballen)", 35, "€", False, "Scherm en geluid van Poort Padel"),
     ("Poort Padel geeft de prijzen? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Afspraak Lars: Poort Padel geeft de prijzen"),
-    ("Waarde prijzenpakket als ACA het zelf betaalt", 300, "€", False, "Zie prijzenpakket in events/padel-quiz.md (winkelwaarde, inkoop ± een derde)"),
+    ("Waarde prijzenpakket als ACA het zelf betaalt", 420, "€", False, "9 baanuren tegen lijstprijs + drankjes, hapjes, ballen en grips; winkelwaarde ± €500 (events/padel-quiz.md par. 5)"),
     ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),
 ]
 r = 4

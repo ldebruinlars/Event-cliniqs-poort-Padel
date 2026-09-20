@@ -95,28 +95,46 @@ Quizregels op het scherm: teams van maximaal 4 (5 bij oneven), telefoons in het 
 
 Materiaal: antwoordvellen (6 per team plus jackpot en tiebreak), beeldronde-vellen in kleur (1 per team), jokerkaarten, pennen, tafelnummers, prijzentafel en bordjes, laptop met de quiz als presentatie (PowerPoint of Canva) op het scherm van Poort Padel, speaker en microfoon, Mexicano-app op een tablet bij de banen, ballen, leenrackets, naamstickers, wisselbokaal.
 
-## 5. Prijzenpakket van Poort Padel (voorstel, alles uit eigen huis)
+## 5. Prijzenpakket van Poort Padel (op echte Almere-prijzen)
 
-Alle prijzen zijn baanuren, drankjes en hapjes van Poort Padel. Baanvouchers gelden in de daluren (maandag t/m vrijdag 07:00 tot 17:00) en in het weekend na 14:00, geldig 3 maanden, te boeken via de bar. Kost Poort Padel inkoop plus lege baanuren, geen cash; de winnaars komen terug en nemen mensen mee.
+Eerst wat de dingen normaal kosten, zodat het pakket op winkelwaarde klopt en Poort Padel weet wat het ze echt kost.
 
-| Prijs | Voor | Wat | Winkelwaarde |
-|---|---|---|---|
-| **Quizkampioenen** | Winnend quizteam | 4 baanvouchers (1 uur, daluren of weekend na 14:00) plus bittergarnituur voor 4 plus de wisselbokaal met de teamnaam erop, foto achter de bar | ± €170 |
-| **Nummer 2 quiz** | Tweede quizteam | 4 drankjes plus een bittergarnituur | ± €35 |
-| **Nummer 3 quiz** | Derde quizteam | 4 drankjes | ± €18 |
-| **Padelkoning en padelkoningin** | Nummer 1 dame en nummer 1 heer van de Mexicano | Elk 1 baanvoucher (1 uur) plus een drankje | ± €80 |
-| **Nummer 2 en 3 padel** | Volgende twee op de Mexicano-ranglijst | Elk een drankje en een blik ballen | ± €25 |
-| **Ronde-winnaars** | Beste team van ronde 2 (beeld) en ronde 3 (muziek) | 4 drankjes per ronde | ± €36 |
-| **Snelste tafel** | Eerste tafel met het goede antwoord na de pauze | 4 drankjes | ± €18 |
-| **Wipeout-bonus** | Elk team met 8 uit 8 in de wipeout | 4 bitterballen per team | ± €10 per team |
-| **Jackpotvraag (rollover)** | Team dat de jackpotvraag goed heeft; niemand goed, dan groeit hij naar de volgende editie | Editie 1: 2 uur baan voor 4 in het weekend na 14:00. Elke editie zonder winnaar komt er een uur bij | ± €75 |
-| **Beste teamnaam** | Applausmeter bij de start | 4 koffie of thee met wat lekkers, of 4 drankjes | ± €15 |
-| **Poedelprijs** | Laatste quizteam | Een houten pollepel met "Poort Padel Poedel 2027" erop, een zak drop en 4 glazen water "om af te koelen"; plus een gratis proefles bij All Court Academy (kost Lars een half uur, brengt klanten) | ± €20 |
-| **Beste sportiviteit op de baan** | Gekozen door Lars tijdens de Mexicano | 1 drankje en een naamvermelding op het scherm | ± €5 |
+| Wat | Normale prijs | Bron |
+|---|---|---|
+| Baanuur Poort Padel, daluren (ma t/m vr tot 17:00) | €30,00 per dubbelbaan | Playtomic, geverifieerd |
+| Baanuur Poort Padel, weekend (hele dag, dus ook na 14:00) | €37,50 | Playtomic |
+| Baanuur Poort Padel, piek (ma t/m vr vanaf 17:00) | €44,00 | Playtomic |
+| Ter vergelijking: Padel Almere €24 dal / €34 piek en weekend; De Gouwen €30 per 1,5 uur dal, €36 piek | | almerepadel.nl, gouwen.nl |
+| Vaasje bier | landelijk gemiddeld €3,35, stad en terras €3,50 tot €4,50; Poort Padel bier en fris staan niet online, aanname €3,75 tot €4,00 | kosteen.nl, DUIC, Poort Padel-kaart |
+| Wijn per glas €5,00 tot €6,50, prosecco €6,00, cocktails €8,50 tot €10,50 | | Poort Padel-kaart |
+| Rondje van 4 (bier of fris) | ± €15 | 4 × €3,75 |
+| Bitterballen 8 stuks €8,50, teamschotel 25 stuks €24,50, nacho's €8,50 | | Poort Padel-borrelkaart |
+| Blik padelballen (3 stuks) | €7 tot €9 (Head Padel Pro+ €6,95, Bullpadel Premium Pro ± €8,90) | tennisdiscount.nl, bol.com |
+| Set overgrips (3 stuks) | ± €8 (losse grip €2,50 tot €3) | padelshops; Bullpadel 3-pack bij bol.com €15,62 is de dure uitschieter |
+| Losse padelles All Court Academy | €22,50 | ACA-tarief |
 
-Totaal winkelwaarde ongeveer €500, inkoop voor Poort Padel ongeveer een derde, plus baanuren op momenten die anders leeg staan. Presenteer de prijzen op een prijzentafel bij de ingang en op het scherm bij de start, dat is het eerste wat de Engelse quizgidsen aanraden: als de prijzen zichtbaar zijn, wordt er fanatieker gespeeld en meer gedronken.
+Geen racket als prijs (besluit Lars). Alle prijzen hieronder zijn baanuren, drankjes, hapjes en ballen; baanvouchers gelden in de daluren (ma t/m vr 07:00 tot 17:00) en in het weekend na 14:00, 3 maanden geldig, boeken via de bar. Een baanuur is voor 4 spelers, dus een winnend team van 4 speelt samen op één voucher.
 
-Argument voor Poort Padel: 32 tot 40 mensen zitten anderhalf uur aan tafel op een zaterdagavond (horeca-benchmark uit de Engelse cijfers: £12 per persoon in 2,5 uur), dat is €400 tot €600 baromzet bovenop €526 baanhuur en arrangement, plus terugkerende winnaars met vouchers. Alles wat ze geven is inkoop.
+| Prijs | Voor | Wat | Winkelwaarde | Kost Poort Padel echt |
+|---|---|---|---|---|
+| **Quizkampioenen** | winnend team van 4 | 2 baanuren voor het team (weekend na 14:00 of daluren), teamschotel 25 stuks, rondje van 4, wisselbokaal met teamnaam, foto achter de bar | 2 × €37,50 + €24,50 + €15 = **€114,50** | 2 lege baanuren, ± €10 inkoop |
+| **Nummer 2 quiz** | tweede team | 1 baanuur voor het team en een rondje van 4 | €37,50 + €15 = **€52,50** | 1 leeg baanuur, ± €4 |
+| **Nummer 3 quiz** | derde team | rondje van 4 en bitterballen 8 stuks | €15 + €8,50 = **€23,50** | ± €7 |
+| **Padelkoning en padelkoningin** | nummer 1 dame en heer van de Mexicano | elk 1 baanuur en een blik ballen | 2 × (€37,50 + €7) = **€89** | 2 lege baanuren, ± €10 |
+| **Nummer 2 en 3 padel** | volgende twee op de ranglijst | elk een blik ballen en een set overgrips | 2 × (€7 + €8) = **€30** | ± €20 |
+| **Ronde-winnaars** | beste team van de beeldronde en van de muziekronde | rondje van 4 per ronde | 2 × €15 = **€30** | ± €8 |
+| **Snelste tafel** | eerste goede antwoord na de pauze | rondje van 4 | **€15** | ± €4 |
+| **Wipeout-bonus** | elk team met 8 uit 8 | bitterballen 8 stuks per team | €8,50 per team, reken op 3 teams = **€25,50** | ± €8 |
+| **Jackpotvraag (rollover)** | team dat hem goed heeft, anders naar editie 2 | 2 uur baan voor 4 in het weekend na 14:00, plus een uur per editie zonder winnaar | **€75** (groeit met €37,50 per editie) | 2 lege baanuren |
+| **Beste teamnaam** | applausmeter bij de start | 4 koffie, thee of fris | **± €14** | ± €3 |
+| **Poedelprijs** | laatste team | houten pollepel "Poort Padel Poedel 2027", zak drop, 4 glazen water, gratis losse les bij All Court Academy | €5 + €3 + €22,50 = **€30,50** | ± €8, de les is van Lars |
+| **Sportiviteitsprijs** | gekozen door Lars op de baan | 1 drankje en naam op het scherm | **€3,75** | ± €1 |
+
+Totaal winkelwaarde **± €500** (€503). Wat het Poort Padel echt kost: 9 baanuren op momenten die anders leeg staan (lijstwaarde €337,50, cash €0) plus ongeveer €85 inkoop aan drankjes, hapjes, ballen en grips. Daar staat tegenover: 32 tot 40 mensen anderhalf uur aan tafel op een zaterdagavond (Engelse benchmark £12 per persoon in 2,5 uur), €400 tot €600 baromzet bovenop €526 baanhuur en arrangement, en winnaars die met hun vouchers terugkomen en mensen meenemen.
+
+Als Poort Padel het te veel vindt, schrap dan eerst de ronde-winnaars, de sportiviteitsprijs en de grips. De kern is: top 3 quiz, padelkoning en padelkoningin, de jackpot en de poedelprijs (samen ± €385 winkelwaarde, 7 baanuren en ± €45 inkoop).
+
+Presenteer de prijzen op een prijzentafel bij de ingang en op het scherm bij de start; zichtbare prijzen zijn het eerste wat de Engelse quizgidsen aanraden.
 
 ## 6. Prijs en kostenplaatje
 
