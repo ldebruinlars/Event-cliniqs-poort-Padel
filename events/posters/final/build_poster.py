@@ -105,12 +105,12 @@ def compose(W,H,scale,art_x,art_y,cut,spec,pillt,tag,button,footer,boutiq,top_fr
     sc=lambda v:int(v*scale)
     f=font('p700',sc(spec.get('date_size',50))); y+=text_center(d,cx,y,spec['date'],f,CREAM)+sc(6)
     f=font('p600',sc(spec.get('sub_size',29))); y+=text_center(d,cx,y,spec['sub'],f,CORAL)+sc(22)
-    f=font('p600',sc(spec.get('chip_size',22))); padx=sc(16); gap=sc(12); h=sc(44)
+    f=font('p600',sc(spec.get('chip_size',22))); padx=sc(18); gap=sc(14); h=sc(46)
     widths=[rich_len(d,c,f)+2*padx for c in spec['chips']]; total=sum(widths)+gap*(len(widths)-1)
     x=cx-total/2
     for c,w in zip(spec['chips'],widths):
-        d.rounded_rectangle((x,y,x+w,y+h),radius=h//2,outline=LIME,width=max(2,sc(2.5)))
-        bb=f.getbbox('Hg'); rich_draw(d,x+padx,y+(h-(bb[3]-bb[1]))/2-bb[1],c,f,CREAM); x+=w+gap
+        d.rounded_rectangle((x,y,x+w,y+h),radius=h//2,fill=CREAM)
+        bb=f.getbbox('Hg'); rich_draw(d,x+padx,y+(h-(bb[3]-bb[1]))/2-bb[1],c,f,DARKTXT); x+=w+gap
     y+=h+sc(24)
     bs=spec.get('bullet_size',30)
     f=font('p500',sc(bs)); sym=ImageFont.truetype(SYM,sc(bs*0.8))
