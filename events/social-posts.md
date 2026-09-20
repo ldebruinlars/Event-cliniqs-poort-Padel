@@ -130,17 +130,18 @@ Doel: 24 aanmeldingen (12 dames, 12 heren). Start de campagne op donderdag 15 ok
 
 **D1 (aankondiging)**
 Love at first serve 💚🎾
-Op zaterdag 7 november organiseren we Padel Dating bij @poortpadel: 24 singles, 4 rondes, elke ronde een nieuwe partner. 12 minuten samen padellen, 12 minuten praten. En daarna? Het laatste uur samen in de bar.
 
-📅 Zaterdag 7 november · 19:00 – 22:00
-👫 Singles van 25 t/m 40 jaar · 12 dames & 12 heren
-🍽️ De dame en de heer met de meeste punten winnen een date voor 2 bij @boutiqalmere
-📍 Poort Padel, Neonweg 62, Almere
+Zaterdag 7 november: Padel Dating bij @poortpadel. 24 singles van 25 t/m 40 jaar, 4 rondes, elke ronde een nieuwe partner. Daarna het laatste uur samen in de bar.
+
+📅 Zaterdag 7 november · 19:00 – 22:00 (inloop 18:30)
+🎾 Nooit gepadeld? Geen probleem, rackets liggen klaar
+🍽️ De beste dame en heer van de avond winnen een date voor 2 bij @boutiqalmere
+💛 Match? Dan krijgen jullie een gratis baanuur
 💶 €49,50 p.p. incl. welkomstdrankje & hapjes
-🎾 Nooit gepadeld? Geen probleem, rackets liggen klaar.
 
-Speel. Praat. Match. Aanmelden via de link in bio.
-#padeldating #singlesalmere #padelalmere #poortpadel #almere
+👉 Meld je aan via de link in bio. 12 plekken voor dames, 12 voor heren, vol is vol.
+
+#padeldating #padel #almere #singlesalmere #datingalmere #poortpadel #allcourtacademy #loveatfirstserve
 
 **D3 (reel, Lars legt uit)**
 Padel Dating, zo werkt het 👇
