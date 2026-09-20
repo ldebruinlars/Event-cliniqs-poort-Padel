@@ -408,3 +408,7 @@ Tekst poster: PADEL DATING · Love at first serve / Speel. Praat. Match. / Zater
 Tekst feed en story: Zaterdag 7 november · 19:00 (story: 19:00 – 22:00) / Singles 25 t/m 40 jaar · 12 dames & 12 heren / 4 rondes, elke ronde een nieuwe partner / Daarna samen in de bar · Nooit gepadeld? Geen probleem / €49,50 p.p. incl. welkomstdrankje & hapjes / Match = gratis baanuur / Meld je aan → allcourtacademy.com/events (story: link in bio) / All Court Academy × Poort Padel · Almere.
 
 De Higgsfield-versies 9 t/m 12 zijn hiermee vervallen.
+
+### Versie 14: duidelijkere hiërarchie in het tekstblok (20 september 2026)
+
+Lars vond versie 13 onoverzichtelijk (veel kleine regels). Het tekstblok is opnieuw opgebouwd in vier lagen: grote datum (ZATERDAG 7 NOVEMBER) met tijd in koraal eronder, drie chips met lime rand (Singles 25 t/m 40 jaar · 12 dames & 12 heren · Nooit gepadeld? Geen probleem), drie bullets met koraal sterretje (4 rondes, elke ronde een nieuwe partner · 12 minuten spelen, 12 minuten praten · Daarna het laatste uur samen in de bar), en dan prijs-pill, knop en footer. "Speel. Praat. Match." en "rackets liggen klaar" zijn geschrapt om lucht te maken. Feed en story: zelfde opbouw met twee bullets en de lime-tag "Match = gratis baanuur". Bestanden in `events/posters/final/` overschreven; script `build_poster.py` bijgewerkt.

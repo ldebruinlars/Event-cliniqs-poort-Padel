@@ -80,7 +80,8 @@ def ribbon(canvas,center,txt,fnt,w,h,angle=-9):
     layer=layer.rotate(angle,resample=Image.BICUBIC,expand=True)
     canvas.paste(layer,(int(center[0]-layer.width/2),int(center[1]-layer.height/2)),layer)
 
-def compose(W,H,scale,art_x,art_y,cut,lines,pillt,tag,button,footer,boutiq,top_free=0):
+SPARK='\u2726'
+def compose(W,H,scale,art_x,art_y,cut,spec,pillt,tag,button,footer,boutiq,top_free=0):
     canvas=texture(W,H,scale)
     a,cuty=artwork(scale,cut)
     # hard paste of the artwork (no feathering: the join sits on plain background under the polaroid)
@@ -100,52 +101,55 @@ def compose(W,H,scale,art_x,art_y,cut,lines,pillt,tag,button,footer,boutiq,top_f
     if boutiq:
         ribbon(canvas,(art_x+int(1060*scale),art_y+int(1478*scale)),'Win een date voor 2 bij BoutiQ Almere',font('p600',int(23*scale)),int(500*scale),int(46*scale))
     d=ImageDraw.Draw(canvas); cx=W//2
-    y=art_y+cuty+int(18*scale)
-    for txt,key,size,col,gap in lines:
-        fnt=font(key,int(size*scale)); text_center(d,cx,y,txt,fnt,col); y+=int((size+gap)*scale)
-    y+=int(8*scale)
-    y+=pill(d,cx,y,pillt,font('p600',int(33*scale)),CORAL,CREAM,int(28*scale),int(64*scale))
+    y=art_y+cuty+int(spec.get('top',22)*scale)
+    sc=lambda v:int(v*scale)
+    f=font('p700',sc(spec.get('date_size',50))); y+=text_center(d,cx,y,spec['date'],f,CREAM)+sc(6)
+    f=font('p600',sc(spec.get('sub_size',29))); y+=text_center(d,cx,y,spec['sub'],f,CORAL)+sc(22)
+    f=font('p600',sc(spec.get('chip_size',22))); padx=sc(16); gap=sc(12); h=sc(44)
+    widths=[rich_len(d,c,f)+2*padx for c in spec['chips']]; total=sum(widths)+gap*(len(widths)-1)
+    x=cx-total/2
+    for c,w in zip(spec['chips'],widths):
+        d.rounded_rectangle((x,y,x+w,y+h),radius=h//2,outline=LIME,width=max(2,sc(2.5)))
+        bb=f.getbbox('Hg'); rich_draw(d,x+padx,y+(h-(bb[3]-bb[1]))/2-bb[1],c,f,CREAM); x+=w+gap
+    y+=h+sc(24)
+    bs=spec.get('bullet_size',30)
+    f=font('p500',sc(bs)); sym=ImageFont.truetype(SYM,sc(bs*0.8))
+    ind=sc(40); maxw=max(d.textlength(b,font=f) for b in spec['bullets'])+ind; x0=cx-maxw/2
+    for b in spec['bullets']:
+        bb=f.getbbox('H'); sb=sym.getbbox(SPARK)
+        d.text((x0,y+bb[1]+((bb[3]-bb[1])-(sb[3]-sb[1]))/2-sb[1]),SPARK,font=sym,fill=CORAL); d.text((x0+ind,y),b,font=f,fill=CREAM)
+        y+=sc(bs+14)
+    y+=sc(12)
+    y+=pill(d,cx,y,pillt,font('p600',sc(33)),CORAL,CREAM,sc(28),sc(64))
     if tag:
-        y+=int(10*scale); y+=pill(d,cx,y,tag,font('p600',int(22*scale)),LIME,DARKTXT,int(18*scale),int(40*scale))
-    y+=int(14*scale)
-    y+=pill(d,cx,y,button,font('p600',int(33*scale)),LIME,DARKTXT,int(30*scale),int(64*scale))
-    y+=int(18*scale)
-    text_center(d,cx,y,footer,font('p500',int(24*scale)),CREAM)
+        y+=sc(10); y+=pill(d,cx,y,tag,font('p600',sc(22)),LIME,DARKTXT,sc(18),sc(40))
+    y+=sc(14)
+    y+=pill(d,cx,y,button,font('p600',sc(33)),LIME,DARKTXT,sc(30),sc(64))
+    y+=sc(18)
+    text_center(d,cx,y,footer,font('p500',sc(24)),CREAM)
     return canvas
 
 # ---------- Poster 2:3 (print) ----------
 S=2.0; W=int(OW*S); H=int(W*1.5)
-lines_A=[
- ('Speel. Praat. Match.','p700',44,CREAM,14),
- ('Zaterdag 7 november · 19:00 – 22:00 · inloop 18:30','p600',35,CREAM,12),
- ('Singles van 25 t/m 40 jaar · 12 dames & 12 heren','p600',31,CREAM,10),
- ('4 rondes, elke ronde een nieuwe partner','p500',30,CREAM,6),
- ('12 min spelen, 12 min praten','p500',30,CREAM,6),
- ('Daarna: het laatste uur samen in de bar','p500',30,CREAM,12),
- ('✦ Nooit gepadeld? Geen probleem, rackets liggen klaar','p500',25,LIME,14),
-]
+spec_A={'date':'ZATERDAG 7 NOVEMBER','sub':'19:00 \u2013 22:00 \u00b7 inloop 18:30',
+ 'chips':['Singles 25 t/m 40 jaar','12 dames & 12 heren','Nooit gepadeld? Geen probleem'],
+ 'bullets':['4 rondes, elke ronde een nieuwe partner','12 minuten spelen, 12 minuten praten','Daarna het laatste uur samen in de bar'],
+ 'top':34,'date_size':58,'sub_size':33,'chip_size':25,'bullet_size':34}
 for name,bq in (('poster-A-print-boutiq',True),('poster-A-print-zonder-boutiq',False)):
-    img=compose(W,H,S,0,0,1540,lines_A,'€49,50 p.p. incl. welkomstdrankje & hapjes',None,'Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Neonweg 62, Almere',bq)
+    img=compose(W,H,S,0,0,1540,spec_A,'€49,50 p.p. incl. welkomstdrankje & hapjes',None,'Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Neonweg 62, Almere',bq)
     img.save(f'{name}.png'); print(name,img.size)
 
 # ---------- Instagram feed 4:5 ----------
 W,H=2160,2700; S=1.25; aw=int(OW*S); ax=(W-aw)//2
-lines_B=[
- ('Zaterdag 7 november · 19:00','p700',38,CREAM,12),
- ('Singles 25 t/m 40 jaar · 12 dames & 12 heren','p600',30,CREAM,8),
- ('4 rondes, elke ronde een nieuwe partner','p500',29,CREAM,6),
- ('Daarna samen in de bar · Nooit gepadeld? Geen probleem','p500',26,CREAM,10),
-]
-img=compose(W,H,S,ax,0,1540,lines_B,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Almere',True)
+spec_B={'date':'ZATERDAG 7 NOVEMBER','sub':'19:00 \u2013 22:00',
+ 'chips':['Singles 25 t/m 40 jaar','12 dames & 12 heren','Nooit gepadeld? Prima'],
+ 'bullets':['4 rondes, elke ronde een nieuwe partner','Daarna het laatste uur samen in de bar'],
+ 'top':18,'date_size':48,'sub_size':29,'chip_size':23,'bullet_size':29}
+img=compose(W,H,S,ax,0,1540,spec_B,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Almere',True)
 img.save('ig-feed-4x5.png'); print('feed',img.size)
 
 # ---------- Instagram story 9:16 ----------
 W,H=2160,3840; S=1.44; aw=int(OW*S); ax=(W-aw)//2; ay=int(H*0.08)
-lines_S=[
- ('Zaterdag 7 november · 19:00 – 22:00','p700',38,CREAM,12),
- ('Singles 25 t/m 40 jaar · 12 dames & 12 heren','p600',30,CREAM,8),
- ('4 rondes, elke ronde een nieuwe partner','p500',29,CREAM,6),
- ('Daarna samen in de bar · Nooit gepadeld? Geen probleem','p500',26,CREAM,10),
-]
-img=compose(W,H,S,ax,ay,1540,lines_S,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → link in bio','All Court Academy × Poort Padel',True)
+spec_S=dict(spec_B)
+img=compose(W,H,S,ax,ay,1540,spec_S,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → link in bio','All Court Academy × Poort Padel',True)
 img.save('ig-story-9x16.png'); print('story',img.size)
