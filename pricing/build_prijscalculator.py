@@ -486,6 +486,127 @@ for col in "EFGHIJKLMN":
     wp.column_dimensions[col].width = 13
 wp.freeze_panes = "A4"
 
+# ------------------------------------------------------------ Padel & Quiz
+wq = wb.create_sheet("Padel & Quiz")
+wq["A1"] = "Padel & Quiz – kostenplaatje en marge (zaterdagavond, teams van 4)"
+wq["A1"].font = H1
+wq["A2"] = "Blauw = invoer. Geel = te bevestigen bij Poort Padel. Marge = winst als % van de omzet excl. btw (doel 30%). Prijzen worden door Poort Padel gegeven (kosten €0)."
+wq["A2"].font = Font(name=FONT, italic=True)
+pq_inputs = [
+    ("Deelnemers (teams van 4)", 32, "pers.", False, "Min 24 (6 teams), doel 32 (8 teams), max 40 (10 teams)"),
+    ("Verkoopprijs p.p. incl. btw", 34.5, "€", False, "Advies €34,50 (Sportclub Houten €27,50 incl. pizza, The Padellers €12,50 p.p.)"),
+    ("Btw", f"={REF['btw']}", "%", False, "Inputs"),
+    ("Uren per baan", 1, "uur", False, "Padel 18:00–19:00, 4 rondes van 12 min (Team Mexicano)"),
+    ("Baantarief per uur (afspraak Poort Padel)", 22.5, "€/uur", True, "Zelfde afspraak als Padel Dating; weekend lijstprijs €37,50"),
+    ("Hosturen Lars (host + quizmaster)", 4.5, "uur", False, "17:30 opbouw tot 22:00"),
+    ("Hosttarief per uur", f"={REF['coach_uur']}", "€/uur", True, "Inputs (€45 excl. btw)"),
+    ("Welkomstdrankje + hapjes p.p. (afspraak Poort Padel)", 8, "€", True, "Zelfde arrangement als Padel Dating"),
+    ("Materialen (antwoordvellen, pennen, prints, ballen)", 25, "€", False, "Beamer/scherm en geluid van Poort Padel"),
+    ("Poort Padel geeft de prijzen? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Afspraak Lars: Poort Padel geeft de prijzen"),
+    ("Waarde prijzenpakket als ACA het zelf betaalt", 150, "€", False, "Baanuur voor 4, rondje, bitterballen, poedelprijs"),
+    ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),
+]
+r = 4
+PQ = {}
+qkeys = ["n", "prijs", "btw", "uren", "tarief", "hosturen", "hosttarief", "dh", "materiaal", "pp_prijzen", "prijzen", "doel"]
+for key, (label, val, unit, assume, note) in zip(qkeys, pq_inputs):
+    wq.cell(row=r, column=1, value=label).font = BLACK
+    c = wq.cell(row=r, column=2, value=val)
+    c.font = GREEN if isinstance(val, str) and val.startswith("=") else BLUE
+    if assume:
+        c.fill = YELLOW
+    if unit == "%":
+        c.number_format = PCT
+    elif unit in ("€", "€/uur"):
+        c.number_format = EUR
+    wq.cell(row=r, column=3, value=unit).font = BLACK
+    wq.cell(row=r, column=4, value=note).font = Font(name=FONT, italic=True, color="666666")
+    PQ[key] = f"$B${r}"
+    r += 1
+r += 1
+wq.cell(row=r, column=1, value="Berekening bij de invoer hierboven").font = BOLD
+r += 1
+pq_calc = [
+    ("banen", "Banen (4 spelers per baan)", f"=CEILING({PQ['n']}/4,1)", "0"),
+    ("omzet_incl", "Omzet incl. btw", f"={PQ['n']}*{PQ['prijs']}", EUR),
+    ("omzet", "Omzet excl. btw", f"={PQ['n']}*{PQ['prijs']}/(1+{PQ['btw']})", EUR),
+    ("k_baan", "Baanhuur", f"=CEILING({PQ['n']}/4,1)*{PQ['uren']}*{PQ['tarief']}", EUR),
+    ("k_dh", "Welkomstdrankje + hapjes", f"={PQ['n']}*{PQ['dh']}", EUR),
+    ("k_host", "Host / quizmaster (Lars)", f"={PQ['hosturen']}*{PQ['hosttarief']}", EUR),
+    ("k_mat", "Materialen", f"={PQ['materiaal']}", EUR),
+    ("k_prijzen", "Prijzen (0 als Poort Padel ze geeft)", f"=IF({PQ['pp_prijzen']}=1,0,{PQ['prijzen']})", EUR),
+]
+first_q = r + 3
+for key, label, formula, fmt in pq_calc:
+    wq.cell(row=r, column=1, value=label).font = BLACK
+    c = wq.cell(row=r, column=2, value=formula)
+    c.number_format = fmt
+    PQ[key] = f"$B${r}"
+    r += 1
+last_q = r - 1
+qt = ["kosten", "kpp", "winst", "marge", "pp_totaal", "prijs_doel", "tarief_max", "be"]
+for i, k in enumerate(qt):
+    PQ[k] = f"$B${r + i}"
+q_tot = [
+    ("kosten", "Totale kosten", f"=SUM(B{first_q}:B{last_q})", EUR, True),
+    ("kpp", "Kostprijs per persoon", f"={PQ['kosten']}/{PQ['n']}", EUR, False),
+    ("winst", "Winst excl. btw", f"={PQ['omzet']}-{PQ['kosten']}", EUR, True),
+    ("marge", "Marge (% van omzet excl. btw)", f"={PQ['winst']}/{PQ['omzet']}", PCT, True),
+    ("pp_totaal", "Naar Poort Padel (banen + drankje + hapjes)", f"={PQ['k_baan']}+{PQ['k_dh']}", EUR, True),
+    ("prijs_doel", "Benodigde prijs incl. btw voor de doelmarge", f"={PQ['kosten']}/(1-{PQ['doel']})/{PQ['n']}*(1+{PQ['btw']})", EUR, True),
+    ("tarief_max", "Maximaal baantarief per uur bij deze prijs en doelmarge", f"=({PQ['omzet']}*(1-{PQ['doel']})-{PQ['k_dh']}-{PQ['k_host']}-{PQ['k_mat']}-{PQ['k_prijzen']})/(CEILING({PQ['n']}/4,1)*{PQ['uren']})", EUR, True),
+    ("be", "Break-even aantal deelnemers (banen schalen mee)", f"=CEILING(({PQ['k_host']}+{PQ['k_mat']}+{PQ['k_prijzen']})/({PQ['prijs']}/(1+{PQ['btw']})-{PQ['dh']}-{PQ['uren']}*{PQ['tarief']}/4),1)", "0", False),
+]
+for key, label, formula, fmt, bold in q_tot:
+    wq.cell(row=r, column=1, value=label).font = BOLD if bold else BLACK
+    c = wq.cell(row=r, column=2, value=formula)
+    c.number_format = fmt
+    if bold:
+        c.font = BOLD
+    r += 1
+r += 1
+wq.cell(row=r, column=1, value="Per deelnemersaantal (prijs, tarief en arrangement volgen de invoer hierboven)").font = BOLD
+r += 1
+qheads = ["Deelnemers", "Teams", "Banen", "Baanhuur", "Drankje + hapjes", "Host", "Materialen + prijzen", "Kosten", "Omzet excl.", "Winst", "Marge", "Naar Poort Padel"]
+for ci, h in enumerate(qheads, 1):
+    c = wq.cell(row=r, column=ci, value=h)
+    c.font = BOLD
+    c.fill = GREY
+    c.border = BOX
+r += 1
+for n in (16, 20, 24, 28, 32, 36, 40):
+    wq.cell(row=r, column=1, value=n).font = BLUE
+    wq.cell(row=r, column=2, value=f"=A{r}/4")
+    wq.cell(row=r, column=3, value=f"=CEILING(A{r}/4,1)")
+    wq.cell(row=r, column=4, value=f"=C{r}*{PQ['uren']}*{PQ['tarief']}").number_format = EUR
+    wq.cell(row=r, column=5, value=f"=A{r}*{PQ['dh']}").number_format = EUR
+    wq.cell(row=r, column=6, value=f"={PQ['k_host']}").number_format = EUR
+    wq.cell(row=r, column=7, value=f"={PQ['k_mat']}+{PQ['k_prijzen']}").number_format = EUR
+    wq.cell(row=r, column=8, value=f"=SUM(D{r}:G{r})").number_format = EUR
+    wq.cell(row=r, column=9, value=f"=A{r}*{PQ['prijs']}/(1+{PQ['btw']})").number_format = EUR
+    wq.cell(row=r, column=10, value=f"=I{r}-H{r}").number_format = EUR
+    wq.cell(row=r, column=11, value=f"=IF(I{r}>0,J{r}/I{r},0)").number_format = PCT
+    wq.cell(row=r, column=12, value=f"=D{r}+E{r}").number_format = EUR
+    for ci in range(1, 13):
+        wq.cell(row=r, column=ci).border = BOX
+    r += 1
+r += 1
+qnotes = [
+    "Benchmark: Sportclub Houten 'Pubquiz, Padel & Pizza' €27,50 p.p. (1,5 uur baan excl. materiaal, pizza, quiz met drankje, teams van 4). The Padellers 'Pubquiz & Padeltoernooi' €25 per koppel incl. materiaal, hoofdprijs een gratis padelsessie, shotrondes. Cafés vragen €5 tot €6,25 p.p. voor een losse pubquiz.",
+    "Poort Padel verdient aan dit event vooral aan de bar tijdens de quiz (90 minuten, 32 tot 40 mensen aan tafel; horeca-benchmark €15 tot €25 p.p.). Daarom: prijzen door Poort Padel en het baantarief van Padel Dating.",
+    "Onder de 24 deelnemers is de avond verliesgevend door de vaste hostkosten; verplaats dan of laat Lars alleen de quiz doen zonder betaald hostuur.",
+]
+for n in qnotes:
+    wq.cell(row=r, column=1, value=n).font = Font(name=FONT, italic=True)
+    r += 1
+wq.column_dimensions["A"].width = 58
+wq.column_dimensions["B"].width = 16
+wq.column_dimensions["C"].width = 14
+wq.column_dimensions["D"].width = 16
+for col in "EFGHIJKL":
+    wq.column_dimensions[col].width = 15
+wq.freeze_panes = "A4"
+
 # --------------------------------------------------------------- Legenda
 wl = wb.create_sheet("Legenda")
 legend = [
