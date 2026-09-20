@@ -4,7 +4,7 @@ Event van All Court Academy bij Poort Padel Almere. Doel: singles laten kennisma
 
 ## 1. Het concept in één alinea
 
-24 singles (12 dames, 12 heren, 25 t/m 40 jaar) komen op zaterdagavond om 18:30 binnen, krijgen een welkomstdrankje en een naamsticker met een kleur. Om 19:00 start ronde 1: iedereen tegelijk de baan op, 6 banen, 4 per baan, in gemengde koppels (dame + heer) tegen een ander koppel. Na 12 minuten spelen komt iedereen van de baan en praat je 12 minuten aan de statafels naast de banen met je volgende partner, met een drankje (1 drankje per ronde inbegrepen). Dan weer de baan op met die nieuwe partner. Format A, besluit Lars 20 september 2026: iedereen speelt elke ronde, de banen zijn 2 uur van ons. Vier rondes van ongeveer 25 minuten, dus vier verschillende partners, klaar rond 20:45. Dan vult iedereen een matchkaartje in met wie je nog een keer wilt spelen, en van 21:00 tot 22:00 is de bar open voor iedereen samen, zonder schema: dat is het uur waarin de echte gesprekken ontstaan. Bij een wederzijdse match krijgen beiden de volgende dag een bericht van ons met een gratis baanuur bij Poort Padel. Aan het eind van het baruur winnen de dame en de heer met de meeste punten over de vier rondes elk een date voor 2 bij BoutiQ Almere (voucher €50); de winnaar kiest zelf met wie.
+24 singles (12 dames, 12 heren, 25 t/m 40 jaar) komen op zaterdagavond om 18:30 binnen, krijgen een welkomstdrankje en een naamsticker met een kleur. Om 19:00 start ronde 1: iedereen tegelijk de baan op, 6 banen, 4 per baan, in gemengde koppels (dame + heer) tegen een ander koppel. Na 12 minuten spelen komt iedereen van de baan en praat je 12 minuten aan de statafels naast de banen met je volgende partner, met water of fris bij de banen (welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening). Dan weer de baan op met die nieuwe partner. Format A, besluit Lars 20 september 2026: iedereen speelt elke ronde, de banen zijn 2 uur van ons. Vier rondes van ongeveer 25 minuten, dus vier verschillende partners, klaar rond 20:45. Dan vult iedereen een matchkaartje in met wie je nog een keer wilt spelen, en van 21:00 tot 22:00 is de bar open voor iedereen samen, zonder schema: dat is het uur waarin de echte gesprekken ontstaan. Bij een wederzijdse match krijgen beiden de volgende dag een bericht van ons met een gratis baanuur bij Poort Padel. Aan het eind van het baruur winnen de dame en de heer met de meeste punten over de vier rondes elk een date voor 2 bij BoutiQ Almere (voucher €50); de winnaar kiest zelf met wie.
 
 Waarom dit werkt: padel is laagdrempelig (binnen tien minuten kun je meedoen), je staat met z'n tweeën aan één kant van het net dus je moet samenwerken en praten, en de wissel naar de bar geeft rust om echt een gesprek te voeren.
 
@@ -12,10 +12,10 @@ Waarom dit werkt: padel is laagdrempelig (binnen tien minuten kun je meedoen), j
 
 | Tijd | Wat | Wie |
 |---|---|---|
-| 17:45 | Opbouw: 6 banen, 12 statafels naast de banen, rotatiebord, naamstickers, matchkaartjes, ballen, drankjes per ronde afgesproken met de bar | Lars + host |
+| 17:45 | Opbouw: 6 banen, 12 statafels naast de banen, rotatiebord, naamstickers, matchkaartjes, ballen, waterkannen bij de banen | Lars + host |
 | 18:30 | Inloop, welkomstdrankje, naamsticker (dames roze, heren blauw, nummer 1–12), korte uitleg | Host 2 aan de bar |
 | 19:00 | Ronde 1: alle 12 koppels op de baan (banen 1–6) | Lars op de baan, host bij de statafels en de drankjes |
-| 19:12 | Iedereen van de baan, drankje van ronde 2 staat klaar op de statafels, 12 min praten met je volgende partner | Lars roept de indeling om |
+| 19:12 | Iedereen van de baan, 12 min praten aan de statafels met je volgende partner, water en hapjes op tafel | Lars roept de indeling om |
 | 19:27 | Ronde 2 | |
 | 19:54 | Ronde 3 | |
 | 20:21 | Ronde 4, laatste wissel om 20:33 | |
@@ -39,35 +39,23 @@ Dit is hetzelfde principe als een Mexicano-rotatie (vaste rondetijd, nieuwe part
 
 Consumentenprijs €49,50 incl. 21% btw. Rekenmodel met formules en scenario's: `pricing/prijscalculator.xlsx`, tabblad **Padel Dating** (blauwe cellen aanpassen). Marge = winst als percentage van de omzet excl. btw; doel van Lars: 30%.
 
-Format A (6 banen, iedereen tegelijk, 1 drankje per ronde, Lars host zelf plus 1 betaalde host, BoutiQ sponsort de vouchers, Poort Padel geeft de match-uren). Bij 24 deelnemers, omzet €981,82 excl. btw:
+Format A (6 banen, iedereen tegelijk), welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening. Lars host zelf plus 1 betaalde host, BoutiQ sponsort de vouchers, Poort Padel geeft de match-uren. Besluit Lars 20 september 2026: 30% van de omzet moet overblijven.
 
-| Kostenpost | Lijstprijs Poort Padel | Afspraak (doel) |
-|---|---|---|
-| 6 banen × 2 uur | €37,50 per uur = €450 | €20 per uur = €240 |
-| Drankjes 24 × 4 | €3,75 = €360 | €2,50 = €240 |
-| Hapjes 24 × 4 × €0,98 | €94 | €94 |
-| **Naar Poort Padel** | **€904 (€37,67 p.p.)** | **€574 (€23,92 p.p.)** |
-| Host 3,5 uur × €45 | €157,50 | €157,50 |
-| Materialen | €31 | €31 |
-| **Totale kosten** | €1.092,58 | **€762,58** |
-| Winst | −€111 | €219 (22%) |
+Rekensom bij 24 deelnemers en €49,50: omzet €981,82 excl. btw, 30% marge = €294,55 winst, dus maximaal €687,27 kosten. Daarvan gaan €157,50 (host) en €31 (materialen) af: **maximaal €498,77 naar Poort Padel, €20,78 per persoon** voor banen, welkomstdrankje en hapjes.
 
-Bij €49,50 en 30% marge mag Poort Padel maximaal €20,78 per persoon krijgen (€499 totaal voor banen, drankjes en hapjes). Dat is haalbaar met baan €20 en drankje €2 (€240 + €192 + €94 = €526, marge 27%) of baan €15 en drankje €2,50 (€180 + €240 + €94 = €514, marge 28%). Realistischer: de ticketprijs mee laten bewegen.
+| Afspraak met Poort Padel | Banen (6 × 2 uur) | Drankje + hapjes p.p. | Naar Poort Padel | Kosten totaal | Winst | Marge |
+|---|---|---|---|---|---|---|
+| Baan €22,50, drankje + hapjes €8 p.p. (advies) | €270 | €192 | €462 | €650,50 | €331 | **34%** |
+| Baan €25, drankje + hapjes €8 p.p. | €300 | €192 | €492 | €680,50 | €301 | 31% |
+| Baan €22,50, drankje €4 + hapjes van de kaart (€3,92) | €270 | €190 | €460 | €648,58 | €333 | 34% |
+| Baan €22,50, drankje + hapjes €9,50 p.p. (grens) | €270 | €228 | €498 | €686,50 | €295 | 30% |
+| Lijstprijs: baan €37,50, drankje €3,75, hapjes €3,92 | €450 | €184 | €634 | €822,58 | €159 | 16% |
 
-| # | Scenario | Naar Poort Padel | Kosten | Winst | Marge |
-|---|---|---|---|---|---|
-| 3 | Baan €25, drankje €2,50, ticket €49,50 | €634 | €823 | €159 | 16% |
-| 4 | Baan €20, drankje €2,50, ticket €49,50 | €574 | €763 | €219 | 22% |
-| 5 | Baan €20, drankje €2,50, **ticket €55** | €574 | €763 | €328 | **30%** |
-| 6 | Baan €25, drankje €2,50, **ticket €59,50** | €634 | €823 | €358 | **30%** |
-| 7 | Baan €25, 2 drankjes i.p.v. 4, ticket €49,50 | €514 | €703 | €279 | 28% |
-| 8 | Baan €20, drankje €2,50, Lars host alleen, ticket €49,50 | €574 | €605 | €377 | 38% |
-
-Advies: spreek met Poort Padel een arrangement af van **€24 per persoon** (6 banen 19:00 tot 21:00 voor €20 per baan per uur, 4 drankjes à €2,50, hapjes volgens kaart, plus 3 gratis baanuren voor de matches) en zet het ticket op **€55**. Dan zit je op 30% met een betaalde host. Tegenprestatie voor Poort Padel: €574 omzet op een zaterdagavondblok, het baruur erna (24 mensen, eigen rekening) en klanten die terugkomen voor hun match-uur. Break-even bij 16 deelnemers.
+Bij minder deelnemers met het advies (baan €22,50, €8 p.p.): 20 deelnemers en 5 banen €245 winst (30%), 16 deelnemers en 4 banen €158 (24%), 12 deelnemers en 3 banen €62 (13%). Break-even bij 12.
 
 Prijsstelling op de poster:
 
-- **€49,50 p.p.** (advies: €55 bij 4 drankjes inbegrepen) inclusief 1 drankje per ronde, hapjes, banen, rackets en begeleiding. Drankjes in het baruur voor eigen rekening.
+- **€49,50 p.p.** inclusief welkomstdrankje, hapjes, banen, rackets en begeleiding. Drankjes in het baruur voor eigen rekening (zoals bij elk dating-event, zie benchmark).
 - **Geen early bird** (besluit Lars).
 - Altijd 4 spelers per baan: 24 deelnemers 6 banen, 16 deelnemers 4 banen, 12 deelnemers 3 banen. Zelfde 4 rondes.
 
