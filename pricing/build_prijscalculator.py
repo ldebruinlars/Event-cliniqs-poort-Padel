@@ -445,6 +445,9 @@ scen = [
     ("6. Poort Padel partner: banen gratis, baromzet voor hen", 0, 1, 1, 2, 49.5),
     ("7. Als 2, prijs €55", 37.5, 1, 1, 2, 55),
     ("8. Als 3, match-uren zelf betalen", 30, 1, 0, 2, 49.5),
+    ("9. Lars-scenario: baan €25, BoutiQ sponsort, Lars host zelf (0 betaald), match-uren gratis", 25, 1, 1, 0, 49.5),
+    ("10. Als 9, match-uren zelf betalen (3 × €25)", 25, 1, 0, 0, 49.5),
+    ("11. Als 9, plus 1 betaalde hulp-host", 25, 1, 1, 1, 49.5),
 ]
 for name, tarief, spons, mg, hosts, prijs in scen:
     wp.cell(row=r, column=1, value=name).font = BLACK
