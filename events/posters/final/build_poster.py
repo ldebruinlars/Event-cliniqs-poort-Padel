@@ -20,10 +20,11 @@ def foreground_mask(img):
 def erase_mask(img, scale):
     """mask of the old text block, pills and footer in the lower part of the artwork (side doodles are kept)"""
     fg=foreground_mask(img); H,W=fg.shape
-    y0=int(1515*scale); m=np.zeros_like(fg); m[y0:]=fg[y0:]
+    y0=int(1500*scale); m=np.zeros_like(fg); m[y0:]=fg[y0:]
     lab,n=ndimage.label(m); keep=np.zeros_like(fg)
     for i,sl in enumerate(ndimage.find_objects(lab),1):
         ys,xs=sl; cx=(xs.start+xs.stop)/2; w=xs.stop-xs.start
+        if ys.start<=y0: continue                      # touches the polaroid above the region: never erase
         if 300*scale<cx<1330*scale or w>250*scale: keep[lab==i]=True
     keep=ndimage.binary_dilation(keep,iterations=int(7*scale))
     return keep
