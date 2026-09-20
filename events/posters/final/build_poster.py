@@ -132,9 +132,9 @@ def compose(W,H,scale,art_x,art_y,cut,spec,pillt,tag,button,footer,boutiq,top_fr
 # ---------- Poster 2:3 (print) ----------
 S=2.0; W=int(OW*S); H=int(W*1.5)
 spec_A={'date':'ZATERDAG 7 NOVEMBER','sub':'19:00 \u2013 22:00 \u00b7 inloop 18:30',
- 'chips':['Singles 25 t/m 40 jaar','12 dames & 12 heren','Nooit gepadeld? Geen probleem'],
- 'bullets':['4 rondes, elke ronde een nieuwe partner','12 minuten spelen, 12 minuten praten','Daarna het laatste uur samen in de bar'],
- 'top':34,'date_size':58,'sub_size':33,'chip_size':25,'bullet_size':34}
+ 'chips':['Singles 25 t/m 40 jaar','Nooit gepadeld? Geen probleem'],
+ 'bullets':['4 rondes, elke ronde een nieuwe partner','Daarna het laatste uur samen in de bar'],
+ 'top':40,'date_size':60,'sub_size':34,'chip_size':26,'bullet_size':35}
 for name,bq in (('poster-A-print-boutiq',True),('poster-A-print-zonder-boutiq',False)):
     img=compose(W,H,S,0,0,1540,spec_A,'€49,50 p.p. incl. welkomstdrankje & hapjes',None,'Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Neonweg 62, Almere',bq)
     img.save(f'{name}.png'); print(name,img.size)
@@ -142,7 +142,7 @@ for name,bq in (('poster-A-print-boutiq',True),('poster-A-print-zonder-boutiq',F
 # ---------- Instagram feed 4:5 ----------
 W,H=2160,2700; S=1.25; aw=int(OW*S); ax=(W-aw)//2
 spec_B={'date':'ZATERDAG 7 NOVEMBER','sub':'19:00 \u2013 22:00',
- 'chips':['Singles 25 t/m 40 jaar','12 dames & 12 heren','Nooit gepadeld? Prima'],
+ 'chips':['Singles 25 t/m 40 jaar','Nooit gepadeld? Geen probleem'],
  'bullets':['4 rondes, elke ronde een nieuwe partner','Daarna het laatste uur samen in de bar'],
  'top':18,'date_size':48,'sub_size':29,'chip_size':23,'bullet_size':29}
 img=compose(W,H,S,ax,0,1540,spec_B,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Almere',True)
