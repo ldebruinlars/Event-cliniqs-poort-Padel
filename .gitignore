@@ -2,3 +2,5 @@ outreach/sent_log.csv
 __pycache__/
 *.pyc
 .~lock.*
+events/flyers/innopress/*.png
+events/flyers/*.zip

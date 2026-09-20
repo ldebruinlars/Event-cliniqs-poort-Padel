@@ -1,0 +1,28 @@
+Padel Kids Kamp flyer - bestanden voor Innopress
+=================================================
+
+Product: flyer A5 (148 x 210 mm), dubbelzijdig, full colour (4/4).
+Advies papier: 250 of 300 grams mat (mc) of 170 grams voor uitdelen op scholen.
+
+Bestanden
+- kidskamp-flyer-A5-dubbelzijdig-3mm-afloop.pdf
+  2 pagina's (voor + achter), netto 148 x 210 mm plus 3 mm afloop rondom = 154 x 216 mm. Zonder snijtekens.
+  Dit is het standaard aanleverbestand voor online drukkers.
+- kidskamp-flyer-A5-dubbelzijdig-3mm-afloop-snijtekens.pdf
+  Zelfde inhoud met snijtekens, voor als de drukker daar expliciet om vraagt.
+- kidskamp-flyer-voorkant-A5-3mm-afloop.pdf / kidskamp-flyer-achterkant-A5-3mm-afloop.pdf
+  Losse pagina's, voor als de drukker voor- en achterkant apart wil.
+- kidskamp-flyer-voorkant-A5-3mm-afloop.png / kidskamp-flyer-achterkant-A5-3mm-afloop.png
+  Zelfde beelden als PNG (ca. 480 dpi op eindformaat), voor als een upload alleen afbeeldingen accepteert.
+
+Specificaties
+- Afloop: 3 mm rondom (achtergrond doorgetrokken tot buiten het snijvlak).
+- Veiligheidsmarge: alle tekst en de QR-code staan minimaal 6 mm binnen de snijlijn.
+- Resolutie: ruim boven 300 dpi op eindformaat.
+- Kleur: RGB. Innopress zet dit zelf om naar CMYK; het navy en oranje kunnen iets minder fel worden dan op het scherm.
+  Wil je zekerheid over de kleur, bestel dan een proefdruk (1 exemplaar) voordat je de oplage bestelt.
+- QR-code: gecontroleerd, scant naar allcourtacademy.com/pages/kids-camp.html met flyer-tracking.
+
+Bestelvoorbeeld bij Innopress
+- Flyers A5, dubbelzijdig, 4/4 full colour, 250 grams mat, 300 stuks.
+- Upload: kidskamp-flyer-A5-dubbelzijdig-3mm-afloop.pdf (pagina 1 = voorkant, pagina 2 = achterkant).
