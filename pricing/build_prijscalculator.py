@@ -340,6 +340,146 @@ wo.column_dimensions["A"].width = 48
 wo.column_dimensions["B"].width = 52
 wo.column_dimensions["C"].width = 10
 
+
+# ----------------------------------------------------------- Padel Dating
+wp = wb.create_sheet("Padel Dating")
+wp["A1"] = "Padel Dating – kostenplaatje en marge (zaterdag 7 november 2026, 19:00–22:00)"
+wp["A1"].font = H1
+wp["A2"] = "Blauw = invoer. Geel = nog te onderhandelen of te bevestigen. Marge = winst als % van de omzet excl. btw (doel 30%)."
+wp["A2"].font = Font(name=FONT, italic=True)
+pd_inputs = [
+    ("Deelnemers (12 dames + 12 heren)", 24, "pers.", False, "Max 24, min 12"),
+    ("Verkoopprijs p.p. incl. btw", 49.5, "€", False, "Poster: €49,50"),
+    ("Btw", f"={REF['btw']}", "%", False, "Inputs"),
+    ("Banen", 3, "banen", False, "2 bij 12–20 deelnemers"),
+    ("Uren per baan", 2, "uur", False, "19:00–21:00"),
+    ("Baantarief per uur", f"={REF['baan_wknd']}", "€/uur", True, "Weekend €37,50 op Playtomic; onderhandelen met Poort Padel"),
+    ("Hosts", 2, "pers.", False, "1 als Lars zelf host"),
+    ("Uren per host", 3.5, "uur", False, "Opbouw 17:45 tot einde 22:00 (incl. opruimen)"),
+    ("Hosttarief per uur", f"={REF['coach_uur']}", "€/uur", True, "Inputs (aanname coachtarief)"),
+    ("Welkomstdrankje p.p.", f"={REF['drankje']}", "€", True, "Inputs"),
+    ("Hapjes p.p. (aantal)", 4, "stuks", False, ""),
+    ("Prijs per hapje", f"={REF['hapje']}", "€", False, "Inputs, teamschotel"),
+    ("Materialen (ballen, stickers, matchkaartjes, prints)", 31, "€", False, ""),
+    ("Aantal winnaars (1 dame + 1 heer)", 2, "pers.", False, "Elke winnaar wint een date voor 2"),
+    ("Waarde datevoucher BoutiQ per winnaar", 50, "€", False, "Keuze Lars: €50"),
+    ("BoutiQ sponsort de vouchers? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Lars vraagt het na bij BoutiQ, Grote Markt 3"),
+    ("Verwachte wederzijdse matches (gratis baanuur per match)", 3, "matches", False, "Aanname bij 24 deelnemers"),
+    ("Poort Padel geeft de match-baanuren gratis? (1 = ja)", 1, "ja/nee", True, "Onderhandelen: matches komen terug als nieuwe boekingen"),
+    ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),
+]
+r = 4
+PD = {}
+keys = ["n", "prijs", "btw", "banen", "uren", "tarief", "hosts", "hosturen", "hosttarief", "drank", "hapjes_n", "hapje", "materiaal", "winnaars", "voucher", "sponsor", "matches", "matchgratis", "doel"]
+for key, (label, val, unit, assume, note) in zip(keys, pd_inputs):
+    wp.cell(row=r, column=1, value=label).font = BLACK
+    c = wp.cell(row=r, column=2, value=val)
+    c.font = GREEN if isinstance(val, str) and val.startswith("=") else BLUE
+    if assume:
+        c.fill = YELLOW
+    if unit == "%":
+        c.number_format = PCT
+    elif unit == "€" or unit == "€/uur":
+        c.number_format = EUR
+    wp.cell(row=r, column=3, value=unit).font = BLACK
+    wp.cell(row=r, column=4, value=note).font = Font(name=FONT, italic=True, color="666666")
+    PD[key] = f"$B${r}"
+    r += 1
+r += 1
+wp.cell(row=r, column=1, value="Berekening bij de invoer hierboven").font = BOLD
+r += 1
+pd_calc = [
+    ("omzet_incl", "Omzet incl. btw", f"={PD['n']}*{PD['prijs']}", EUR),
+    ("omzet", "Omzet excl. btw", f"={PD['n']}*{PD['prijs']}/(1+{PD['btw']})", EUR),
+    ("k_baan", "Baanhuur", f"={PD['banen']}*{PD['uren']}*{PD['tarief']}", EUR),
+    ("k_host", "Hosts", f"={PD['hosts']}*{PD['hosturen']}*{PD['hosttarief']}", EUR),
+    ("k_drank", "Welkomstdrankjes", f"={PD['n']}*{PD['drank']}", EUR),
+    ("k_hapjes", "Hapjes", f"={PD['n']}*{PD['hapjes_n']}*{PD['hapje']}", EUR),
+    ("k_mat", "Materialen", f"={PD['materiaal']}", EUR),
+    ("k_voucher", "Datevouchers BoutiQ (0 als BoutiQ sponsort)", f"=IF({PD['sponsor']}=1,0,{PD['winnaars']}*{PD['voucher']})", EUR),
+    ("k_match", "Gratis baanuren voor matches (0 als Poort Padel ze geeft)", f"=IF({PD['matchgratis']}=1,0,{PD['matches']}*{PD['tarief']})", EUR),
+]
+first_cost = r + 2
+for key, label, formula, fmt in pd_calc:
+    wp.cell(row=r, column=1, value=label).font = BLACK
+    c = wp.cell(row=r, column=2, value=formula)
+    c.number_format = fmt
+    PD[key] = f"$B${r}"
+    r += 1
+last_cost = r - 1
+tot_keys = ["kosten", "kpp", "winst", "marge", "be", "prijs_doel", "tarief_max"]
+for i, k in enumerate(tot_keys):
+    PD[k] = f"$B${r + i}"
+totals = [
+    ("kosten", "Totale kosten", f"=SUM(B{first_cost}:B{last_cost})", EUR, True),
+    ("kpp", "Kostprijs per persoon", f"={PD['kosten']}/{PD['n']}", EUR, False),
+    ("winst", "Winst excl. btw", f"={PD['omzet']}-{PD['kosten']}", EUR, True),
+    ("marge", "Marge (% van omzet excl. btw)", f"={PD['winst']}/{PD['omzet']}", PCT, True),
+    ("be", "Break-even aantal deelnemers", f"=CEILING(({PD['k_baan']}+{PD['k_host']}+{PD['k_mat']}+{PD['k_voucher']}+{PD['k_match']})/({PD['prijs']}/(1+{PD['btw']})-{PD['drank']}-{PD['hapjes_n']}*{PD['hapje']}),1)", "0", False),
+    ("prijs_doel", "Benodigde prijs incl. btw voor de doelmarge", f"={PD['kosten']}/(1-{PD['doel']})/{PD['n']}*(1+{PD['btw']})", EUR, True),
+    ("tarief_max", "Maximaal baantarief per uur bij deze prijs en doelmarge", f"=({PD['omzet']}*(1-{PD['doel']})-({PD['k_host']}+{PD['k_drank']}+{PD['k_hapjes']}+{PD['k_mat']}+{PD['k_voucher']}))/({PD['banen']}*{PD['uren']}+IF({PD['matchgratis']}=1,0,{PD['matches']}))", EUR, True),
+]
+for key, label, formula, fmt, bold in totals:
+    wp.cell(row=r, column=1, value=label).font = BOLD if bold else BLACK
+    c = wp.cell(row=r, column=2, value=formula)
+    c.number_format = fmt
+    if bold:
+        c.font = BOLD
+    r += 1
+r += 1
+wp.cell(row=r, column=1, value="Scenario's (blauwe cellen per rij aanpassen; de rest volgt de invoer hierboven)").font = BOLD
+r += 1
+heads = ["Scenario", "Baantarief €/uur", "BoutiQ sponsort (1/0)", "Match-uren gratis (1/0)", "Hosts betaald", "Prijs incl. btw", "Omzet excl.", "Kosten", "Winst", "Marge"]
+for ci, h in enumerate(heads, 1):
+    c = wp.cell(row=r, column=ci, value=h)
+    c.font = BOLD
+    c.fill = GREY
+    c.border = BOX
+r += 1
+scen = [
+    ("1. Nu: alles zelf betalen, weekendtarief", 37.5, 0, 0, 2, 49.5),
+    ("2. BoutiQ sponsort, Poort Padel geeft match-uren", 37.5, 1, 1, 2, 49.5),
+    ("3. Als 2, baantarief €30 (daluren)", 30, 1, 1, 2, 49.5),
+    ("4. Als 2, baantarief €25", 25, 1, 1, 2, 49.5),
+    ("5. Als 3, Lars host zelf (1 betaalde host)", 30, 1, 1, 1, 49.5),
+    ("6. Poort Padel partner: banen gratis, baromzet voor hen", 0, 1, 1, 2, 49.5),
+    ("7. Als 2, prijs €55", 37.5, 1, 1, 2, 55),
+    ("8. Als 3, match-uren zelf betalen", 30, 1, 0, 2, 49.5),
+]
+for name, tarief, spons, mg, hosts, prijs in scen:
+    wp.cell(row=r, column=1, value=name).font = BLACK
+    for ci, v in zip((2, 3, 4, 5, 6), (tarief, spons, mg, hosts, prijs)):
+        c = wp.cell(row=r, column=ci, value=v)
+        c.font = BLUE
+        if ci in (2, 6):
+            c.number_format = EUR
+    wp.cell(row=r, column=7, value=f"={PD['n']}*F{r}/(1+{PD['btw']})").number_format = EUR
+    wp.cell(row=r, column=8, value=(
+        f"={PD['banen']}*{PD['uren']}*B{r}+E{r}*{PD['hosturen']}*{PD['hosttarief']}+{PD['n']}*{PD['drank']}"
+        f"+{PD['n']}*{PD['hapjes_n']}*{PD['hapje']}+{PD['materiaal']}+IF(C{r}=1,0,{PD['winnaars']}*{PD['voucher']})"
+        f"+IF(D{r}=1,0,{PD['matches']}*B{r})")).number_format = EUR
+    wp.cell(row=r, column=9, value=f"=G{r}-H{r}").number_format = EUR
+    wp.cell(row=r, column=10, value=f"=IF(G{r}>0,I{r}/G{r},0)").number_format = PCT
+    for ci in range(1, 11):
+        wp.cell(row=r, column=ci).border = BOX
+    r += 1
+r += 1
+notes = [
+    "Marge = winst / omzet excl. btw. De eerdere '30%' in padel-dating.md was een opslag op de kostprijs (winst / kosten); dat is bij €49,50 en €37,50 per baan een marge van 23% van de omzet.",
+    "Onderhandelpunten Poort Padel: daluren- of partnertarief voor de 3 banen (zaterdagavond 19:00–21:00) en 3 tot 4 gratis baanuren voor de matches. Tegenprestatie: baromzet in het baruur (24 personen), nieuwe klanten, gezamenlijke promotie.",
+    "BoutiQ: 2 datevouchers van €50 (1 dame, 1 heer wint een date voor 2). Tegenprestatie: logo en naam op poster, feed, story en in de mail naar alle deelnemers; foto van de winnaars bij BoutiQ.",
+]
+for n in notes:
+    wp.cell(row=r, column=1, value=n).font = Font(name=FONT, italic=True)
+    r += 1
+wp.column_dimensions["A"].width = 58
+wp.column_dimensions["B"].width = 16
+wp.column_dimensions["C"].width = 14
+wp.column_dimensions["D"].width = 16
+for col in "EFGHIJ":
+    wp.column_dimensions[col].width = 14
+wp.freeze_panes = "A4"
+
 # --------------------------------------------------------------- Legenda
 wl = wb.create_sheet("Legenda")
 legend = [

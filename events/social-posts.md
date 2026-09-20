@@ -111,8 +111,8 @@ Doel: 24 aanmeldingen (12 dames, 12 heren). Start de campagne op donderdag 15 ok
 
 | # | Dag | Tijd | Vorm | Beeld | Caption |
 |---|---|---|---|---|---|
-| D1 | do 15 okt | 10:00 | Feed 4:5 | de gekozen illustratie-poster als post (job `f2b74b1b…`, versie 7 november met leeftijd) | zie D1 |
-| D2 | do 15 okt | 18:00 | Story 9:16 | story-versie van de poster (job `f1f50087…`, versie 7 november) met link-sticker | |
+| D1 | do 15 okt | 10:00 | Feed 4:5 | de gekozen illustratie-poster als post (job `15615c27…`, versie met leeftijd en BoutiQ-ribbon) | zie D1 |
+| D2 | do 15 okt | 18:00 | Story 9:16 | story-versie van de poster (job `431fc497…`, versie met leeftijd en BoutiQ-ribbon) met link-sticker | |
 | D3 | vr 16 okt | 10:00 | Reel 15 s | Lars in de eventruimte met de discobal aan: "Zaterdag 7 november, 24 singles, 4 rondes, daarna de bar. Ik leg het uit." | zie D3 |
 | D4 | ma 19 okt | 10:00 | Carrousel 1:1 | kaart 1 poster, kaart 2 "Zo werkt het", kaart 3 "Match? Dan een gratis baanuur", kaart 4 CTA | zie D4 |
 | D5 | wo 21 okt | 10:00 | Story | "Nooit gepadeld? Geen probleem." | |
@@ -133,6 +133,8 @@ Love at first serve 💚🎾
 Op zaterdag 7 november organiseren we Padel Dating bij @poortpadel: 24 singles, 4 rondes, elke ronde een nieuwe partner. 12 minuten samen padellen, 12 minuten praten met een drankje. En daarna? Het laatste uur samen in de bar.
 
 📅 Zaterdag 7 november · 19:00 – 22:00
+👫 Singles van 25 t/m 40 jaar · 12 dames & 12 heren
+🍽️ De dame en de heer met de meeste punten winnen een date voor 2 bij @boutiqalmere
 📍 Poort Padel, Neonweg 62, Almere
 💶 €49,50 p.p. incl. welkomstdrankje & hapjes
 🎾 Nooit gepadeld? Geen probleem, rackets liggen klaar.

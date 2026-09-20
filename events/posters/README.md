@@ -342,3 +342,16 @@ Lars bevestigde 7 november en de leeftijdsgroep 25 t/m 40 en vroeg de poster te 
 | B, strak | Speel. Praat. Match. / Zaterdag 7 november · 19:00 – 22:00 / Singles van 25 t/m 40 jaar · 12 dames & 12 heren / 4 rondes, elke ronde een nieuwe partner / 12 min spelen, 12 min praten met een drankje / Daarna: het laatste uur samen in de bar / Nooit gepadeld? Geen probleem / lime tag bij de prijs: Match = gratis baanuur | `fa6b54ac-bc2d-413b-9b7c-2acd2d774c35` |
 
 Prijs-pill, knop en footer ongewijzigd: €49,50 p.p. incl. welkomstdrankje & hapjes · Meld je aan → allcourtacademy.com/events · All Court Academy × Poort Padel · Neonweg 62, Almere. Na keuze van Lars: IG feed en story in dezelfde tekst opnieuw maken.
+
+### Versie 11: BoutiQ-ribbon en definitieve set (20 september 2026)
+
+Lars koos: A voor print, B voor online, en voegde de prijs toe: 1 dame en 1 heer winnen een date voor 2 bij BoutiQ Almere (voucher €50, Lars vraagt BoutiQ om sponsoring). Op elk beeld staat nu een kleine koraalkleurige ribbon op de polaroid: "Win een date voor 2 bij BoutiQ Almere". Niet publiceren voordat BoutiQ akkoord is met de naamsvermelding.
+
+| Bestand | Basis | Higgsfield job |
+|---|---|---|
+| Poster A (print, vol) | v10 A `f2d8c2c9…` | `657390c5-afac-4fed-8b1b-ee01641cd0f9` |
+| Poster B (online, strak) | v10 B `fa6b54ac…` | `d0a8408f-a4bd-46f5-8148-45ca5fac1aff` |
+| Instagram feed 3:4 (tekst van B) | | `15615c27-c853-478c-8a97-8026513f0e10` |
+| Instagram story 9:16 (tekst van B, link in bio) | | `431fc497-4381-434e-9fca-b1cba49fd5c2` |
+
+Controleer op elk beeld: "7 november", "25 t/m 40", "12 dames & 12 heren", "BoutiQ", "€49,50".
