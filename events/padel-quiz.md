@@ -136,6 +136,8 @@ Als Poort Padel het te veel vindt, schrap dan eerst de ronde-winnaars, de sporti
 
 Presenteer de prijzen op een prijzentafel bij de ingang en op het scherm bij de start; zichtbare prijzen zijn het eerste wat de Engelse quizgidsen aanraden.
 
+Hoe elke winnaar precies wordt bepaald, de Mexicano- en quizregels, het jury-draaiboek, vouchers en de regelslide staan in `events/padel-quiz-regels.md`; scorebord met formules in `events/padel-quiz-scorebord.xlsx`; printset (antwoordvellen, teamkaart, scorekaart, vouchers, regelslide) in `events/padel-quiz-printset.pdf`.
+
 ## 6. Prijs en kostenplaatje
 
 Rekenmodel: `pricing/prijscalculator.xlsx`, tabblad **Padel & Quiz** (blauwe cellen aanpassen). Aannames: baan €22,50 per uur (besluit Lars: huren, niet gratis), welkomstdrankje plus hapjes €8 p.p., Lars host en quizmaster 5 uur × €45 excl. btw, materialen €35, prijzen door Poort Padel (€0), geen zaalhuur (Grand Café; de evenementenruimte kost 's avonds €550, alleen als Poort Padel die geeft).
