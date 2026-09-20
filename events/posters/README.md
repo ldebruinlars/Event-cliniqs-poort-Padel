@@ -331,3 +331,14 @@ Tekst op de poster (variant met leeftijd):
 | Instagram story (9:16, met leeftijd, link in bio) | 9:16, 2K | `f1f50087-2f38-4a33-b30f-31f2d4ab3059` |
 
 Controleer de spelling van de datum en de leeftijdsregel voordat je plaatst. Versie 8 (24 oktober) niet meer gebruiken.
+
+### Versie 10: rijkere tekst op basis van het leeftijds- en benchmarkonderzoek (20 september 2026)
+
+Lars bevestigde 7 november en de leeftijdsgroep 25 t/m 40 en vroeg de poster te verbeteren met alle informatie, met behoud van de bestaande opzet. Bewerkt vanuit versie 9 (`6b9674b3…`), alleen het tekstblok is gewijzigd. Toegevoegd op basis van het onderzoek: 12 dames & 12 heren (verhouding bewaken zoals alle benchmark-events), inloop 18:30, "Nooit gepadeld? Geen probleem" (drempel voor vrouwen verlagen) en de match-beloning (gratis baanuur).
+
+| Variant | Tekstblok | Higgsfield job |
+|---|---|---|
+| A, vol | Speel. Praat. Match. / Zaterdag 7 november · 19:00 – 22:00 · inloop 18:30 / Singles van 25 t/m 40 jaar · 12 dames & 12 heren / 4 rondes, elke ronde een nieuwe partner / 12 min spelen, 12 min praten met een drankje / Daarna: het laatste uur samen in de bar / (lime) Nooit gepadeld? Geen probleem, rackets liggen klaar / (lime) Match? Dan krijgen jullie een gratis baanuur | `f2d8c2c9-68a0-4fa5-b75d-237d7170b9d5` |
+| B, strak | Speel. Praat. Match. / Zaterdag 7 november · 19:00 – 22:00 / Singles van 25 t/m 40 jaar · 12 dames & 12 heren / 4 rondes, elke ronde een nieuwe partner / 12 min spelen, 12 min praten met een drankje / Daarna: het laatste uur samen in de bar / Nooit gepadeld? Geen probleem / lime tag bij de prijs: Match = gratis baanuur | `fa6b54ac-bc2d-413b-9b7c-2acd2d774c35` |
+
+Prijs-pill, knop en footer ongewijzigd: €49,50 p.p. incl. welkomstdrankje & hapjes · Meld je aan → allcourtacademy.com/events · All Court Academy × Poort Padel · Neonweg 62, Almere. Na keuze van Lars: IG feed en story in dezelfde tekst opnieuw maken.
