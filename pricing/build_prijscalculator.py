@@ -505,10 +505,13 @@ pq_inputs = [
     ("Poort Padel geeft de prijzen? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Afspraak Lars: Poort Padel geeft de prijzen"),
     ("Waarde prijzenpakket als ACA het zelf betaalt", 420, "€", False, "9 baanuren tegen lijstprijs + drankjes, hapjes, ballen en grips; winkelwaarde ± €500 (events/padel-quiz.md par. 5)"),
     ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),
+    ("Weekendtarief lijstprijs per baanuur", 37.5, "€/uur", False, "Playtomic za/zo, geverifieerd"),
+    ("Baromzet p.p. tijdens quiz en nazit (schatting)", 15, "€", True, "3 drankjes à €4 + hapje; Engelse benchmark £12 p.p. in 2,5 uur"),
+    ("Inkoop prijzenpakket voor Poort Padel", 85, "€", False, "Drankjes, hapjes, ballen, grips; baanuren kosten geen cash"),
 ]
 r = 4
 PQ = {}
-qkeys = ["n", "prijs", "btw", "uren", "tarief", "hosturen", "hosttarief", "dh", "materiaal", "pp_prijzen", "prijzen", "doel"]
+qkeys = ["n", "prijs", "btw", "uren", "tarief", "hosturen", "hosttarief", "dh", "materiaal", "pp_prijzen", "prijzen", "doel", "lijst", "bar", "pp_inkoop"]
 for key, (label, val, unit, assume, note) in zip(qkeys, pq_inputs):
     wq.cell(row=r, column=1, value=label).font = BLACK
     c = wq.cell(row=r, column=2, value=val)
@@ -544,7 +547,7 @@ for key, label, formula, fmt in pq_calc:
     PQ[key] = f"$B${r}"
     r += 1
 last_q = r - 1
-qt = ["kosten", "kpp", "winst", "marge", "pp_totaal", "prijs_doel", "tarief_max", "be"]
+qt = ["kosten", "kpp", "winst", "marge", "pp_totaal", "prijs_doel", "tarief_max", "be", "lars", "pp_bar", "pp_tot", "pp_net", "korting"]
 for i, k in enumerate(qt):
     PQ[k] = f"$B${r + i}"
 q_tot = [
@@ -556,6 +559,11 @@ q_tot = [
     ("prijs_doel", "Benodigde prijs incl. btw voor de doelmarge", f"={PQ['kosten']}/(1-{PQ['doel']})/{PQ['n']}*(1+{PQ['btw']})", EUR, True),
     ("tarief_max", "Maximaal baantarief per uur bij deze prijs en doelmarge", f"=({PQ['omzet']}*(1-{PQ['doel']})-{PQ['k_dh']}-{PQ['k_host']}-{PQ['k_mat']}-{PQ['k_prijzen']})/(CEILING({PQ['n']}/4,1)*{PQ['uren']})", EUR, True),
     ("be", "Break-even aantal deelnemers (banen schalen mee)", f"=CEILING(({PQ['k_host']}+{PQ['k_mat']}+{PQ['k_prijzen']})/({PQ['prijs']}/(1+{PQ['btw']})-{PQ['dh']}-{PQ['uren']}*{PQ['tarief']}/4),1)", "0", False),
+    ("lars", "Lars totaal (winst + hostloon)", f"={PQ['winst']}+{PQ['k_host']}", EUR, True),
+    ("pp_bar", "Poort Padel: baromzet tijdens quiz en nazit (schatting)", f"={PQ['n']}*{PQ['bar']}", EUR, False),
+    ("pp_tot", "Poort Padel: totaal (baanhuur + arrangement + bar)", f"={PQ['pp_totaal']}+{PQ['n']}*{PQ['bar']}", EUR, True),
+    ("pp_net", "Poort Padel: totaal na inkoop prijzen", f"={PQ['pp_totaal']}+{PQ['n']}*{PQ['bar']}-IF({PQ['pp_prijzen']}=1,{PQ['pp_inkoop']},0)", EUR, True),
+    ("korting", "Wat de korting Poort Padel kost t.o.v. het weekendtarief", f"=CEILING({PQ['n']}/4,1)*{PQ['uren']}*({PQ['lijst']}-{PQ['tarief']})", EUR, False),
 ]
 for key, label, formula, fmt, bold in q_tot:
     wq.cell(row=r, column=1, value=label).font = BOLD if bold else BLACK
@@ -567,7 +575,7 @@ for key, label, formula, fmt, bold in q_tot:
 r += 1
 wq.cell(row=r, column=1, value="Per deelnemersaantal (prijs, tarief en arrangement volgen de invoer hierboven)").font = BOLD
 r += 1
-qheads = ["Deelnemers", "Teams", "Banen", "Baanhuur", "Drankje + hapjes", "Host", "Materialen + prijzen", "Kosten", "Omzet excl.", "Winst", "Marge", "Naar Poort Padel"]
+qheads = ["Deelnemers", "Teams", "Banen", "Baanhuur", "Drankje + hapjes", "Host", "Materialen + prijzen", "Kosten", "Omzet excl.", "Winst", "Marge", "Naar Poort Padel", "Lars totaal (winst + host)", "Poort Padel totaal incl. bar"]
 for ci, h in enumerate(qheads, 1):
     c = wq.cell(row=r, column=ci, value=h)
     c.font = BOLD
@@ -587,7 +595,9 @@ for n in (16, 20, 24, 28, 32, 36, 40):
     wq.cell(row=r, column=10, value=f"=I{r}-H{r}").number_format = EUR
     wq.cell(row=r, column=11, value=f"=IF(I{r}>0,J{r}/I{r},0)").number_format = PCT
     wq.cell(row=r, column=12, value=f"=D{r}+E{r}").number_format = EUR
-    for ci in range(1, 13):
+    wq.cell(row=r, column=13, value=f"=J{r}+F{r}").number_format = EUR
+    wq.cell(row=r, column=14, value=f"=L{r}+A{r}*{PQ['bar']}").number_format = EUR
+    for ci in range(1, 15):
         wq.cell(row=r, column=ci).border = BOX
     r += 1
 r += 1
@@ -603,7 +613,7 @@ wq.column_dimensions["A"].width = 58
 wq.column_dimensions["B"].width = 16
 wq.column_dimensions["C"].width = 14
 wq.column_dimensions["D"].width = 16
-for col in "EFGHIJKL":
+for col in "EFGHIJKLMN":
     wq.column_dimensions[col].width = 15
 wq.freeze_panes = "A4"
 
