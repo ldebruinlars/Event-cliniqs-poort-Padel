@@ -493,17 +493,17 @@ wq["A1"].font = H1
 wq["A2"] = "Blauw = invoer. Geel = te bevestigen bij Poort Padel. Marge = winst als % van de omzet excl. btw (doel 30%). Prijzen worden door Poort Padel gegeven (kosten €0)."
 wq["A2"].font = Font(name=FONT, italic=True)
 pq_inputs = [
-    ("Deelnemers (teams van 4)", 32, "pers.", False, "Min 24 (6 teams), doel 32 (8 teams), max 40 (10 teams)"),
-    ("Verkoopprijs p.p. incl. btw", 34.5, "€", False, "Advies €34,50 (Sportclub Houten €27,50 incl. pizza, The Padellers €12,50 p.p.)"),
+    ("Deelnemers (quizteams van 4)", 32, "pers.", False, "Min 24, doel 32, max 40; alleen, met 2 of met 4 inschrijven"),
+    ("Verkoopprijs p.p. incl. btw", 39.5, "€", False, "Advies €39,50 (Houten €27,50 zonder host en hapjes; Padel Dating €49,50)"),
     ("Btw", f"={REF['btw']}", "%", False, "Inputs"),
-    ("Uren per baan", 1, "uur", False, "Padel 18:00–19:00, 4 rondes van 12 min (Team Mexicano)"),
-    ("Baantarief per uur (afspraak Poort Padel)", 22.5, "€/uur", True, "Zelfde afspraak als Padel Dating; weekend lijstprijs €37,50"),
-    ("Hosturen Lars (host + quizmaster)", 4.5, "uur", False, "17:30 opbouw tot 22:00"),
+    ("Uren per baan", 1.5, "uur", False, "Besluit Lars: 1,5 uur Mexicano, 18:00 tot 19:30"),
+    ("Baantarief per uur (afspraak Poort Padel)", 22.5, "€/uur", True, "Besluit Lars: banen worden gehuurd, €22,50 of lager; niet gratis"),
+    ("Hosturen Lars (host + quizmaster)", 5, "uur", False, "17:00 opbouw tot 22:00"),
     ("Hosttarief per uur", f"={REF['coach_uur']}", "€/uur", True, "Inputs (€45 excl. btw)"),
     ("Welkomstdrankje + hapjes p.p. (afspraak Poort Padel)", 8, "€", True, "Zelfde arrangement als Padel Dating"),
-    ("Materialen (antwoordvellen, pennen, prints, ballen)", 25, "€", False, "Beamer/scherm en geluid van Poort Padel"),
+    ("Materialen (antwoordvellen, beeldronde-prints, pennen, ballen)", 35, "€", False, "Scherm en geluid van Poort Padel"),
     ("Poort Padel geeft de prijzen? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Afspraak Lars: Poort Padel geeft de prijzen"),
-    ("Waarde prijzenpakket als ACA het zelf betaalt", 150, "€", False, "Baanuur voor 4, rondje, bitterballen, poedelprijs"),
+    ("Waarde prijzenpakket als ACA het zelf betaalt", 300, "€", False, "Zie prijzenpakket in events/padel-quiz.md (winkelwaarde, inkoop ± een derde)"),
     ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),
 ]
 r = 4
