@@ -305,3 +305,29 @@ Controleer bij de AI-posters de spelling van de Nederlandse tekst voordat je ze 
 - Google Drive van Lars: `ACA_PoortPadel_29mei-*.jpg` (66 professionele foto's van de shoot bij Poort Padel, juni 2026). Upload er een paar naar Canva en vervang de achtergrond; dit is de beste bron.
 - Instagram @poortpadel: bekijk posts, reels en stories zonder login via imginn.com/poortpadel/ (Instagram zelf blokkeert scrapers). Reels laten de sfeer van de hal, het Grand Café en events zien: imginn.com/reels/poortpadel/.
 - Zie `research/scrapers-social-media.md` voor tools die dit automatisch binnenhalen.
+
+### Versie 9: definitieve datum 7 november, start 19:00, leeftijdsgroep
+
+Lars koos op 20 september 2026 zaterdag 7 november 2026 (onderbouwing in `events/padel-dating-datum.md`) en vroeg om een leeftijdsadvies (`events/padel-dating-leeftijd.md`, advies: singles van 25 t/m 40 jaar). De poster is opnieuw bewerkt vanuit versie 8 (`21ccf058…`), alleen de tekstregels zijn gewijzigd.
+
+Tekst op de poster (variant met leeftijd):
+
+> PADEL DATING · Love at first serve
+> Speel. Praat. Match.
+> Zaterdag 7 november · 19:00 – 22:00
+> Singles van 25 t/m 40 jaar
+> 4 rondes, elke ronde een nieuwe partner
+> 12 min spelen, 12 min praten met een drankje
+> Daarna: het laatste uur samen in de bar
+> €49,50 p.p. incl. welkomstdrankje & hapjes
+> Meld je aan → allcourtacademy.com/events
+> All Court Academy × Poort Padel · Neonweg 62, Almere
+
+| Bestand | Formaat | Higgsfield job |
+|---|---|---|
+| Poster met leeftijdsregel "Singles van 25 t/m 40 jaar" | 2:3, 2K, high | `6b9674b3-6ede-4db4-9756-d243c7ffe07c` |
+| Poster zonder leeftijdsregel (alleen datum gewijzigd) | 2:3, 2K, high | `a6883a8e-7bb5-4918-a499-e6650f14e1bf` |
+| Instagram feed (3:4, met leeftijd) | 3:4, 2K | `f2b74b1b-7599-4179-b755-f177f8591377` |
+| Instagram story (9:16, met leeftijd, link in bio) | 9:16, 2K | `f1f50087-2f38-4a33-b30f-31f2d4ab3059` |
+
+Controleer de spelling van de datum en de leeftijdsregel voordat je plaatst. Versie 8 (24 oktober) niet meer gebruiken.

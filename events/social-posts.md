@@ -105,34 +105,34 @@ Kerstvakantie: de data volgen snel. Zet je alvast op de lijst via de link in bio
 
 ---
 
-## B. Padel Dating (zaterdag 24 oktober, 19:30 tot 22:30)
+## B. Padel Dating (zaterdag 7 november, 19:00 tot 22:00)
 
-Doel: 24 aanmeldingen (12 dames, 12 heren). Start de campagne op donderdag 1 oktober, 3,5 week vooraf; posts tot 22 oktober. Omdat het publiek breder is dan de eigen volgers (86 op Instagram), hoort hier een kleine Meta-advertentie bij (plan staat in `events/padel-dating.md`, budget €75) en een Facebook-post in Almere-groepen.
+Doel: 24 aanmeldingen (12 dames, 12 heren). Start de campagne op donderdag 15 oktober, 3,5 week vooraf; posts tot 5 november. Datum vastgesteld op 20 september 2026 (zie `events/padel-dating-datum.md`). Omdat het publiek breder is dan de eigen volgers (86 op Instagram), hoort hier een kleine Meta-advertentie bij (plan staat in `events/padel-dating.md`, budget €75) en een Facebook-post in Almere-groepen.
 
 | # | Dag | Tijd | Vorm | Beeld | Caption |
 |---|---|---|---|---|---|
-| D1 | do 1 okt | 10:00 | Feed 4:5 | de gekozen illustratie-poster als post (job `9df86052…`) | zie D1 |
-| D2 | do 1 okt | 18:00 | Story 9:16 | story-versie van de poster (job `a9c4bcf4…`) met link-sticker | |
-| D3 | vr 2 okt | 10:00 | Reel 15 s | Lars in de eventruimte met de discobal aan: "Zaterdag 24 oktober, 24 singles, 4 rondes, daarna de bar. Ik leg het uit." | zie D3 |
-| D4 | ma 5 okt | 10:00 | Carrousel 1:1 | kaart 1 poster, kaart 2 "Zo werkt het", kaart 3 "Match? Dan een gratis baanuur", kaart 4 CTA | zie D4 |
-| D5 | wo 7 okt | 10:00 | Story | "Nooit gepadeld? Geen probleem." | |
-| D6 | do 8 okt | 18:00 | Story poll | "Eerste date op de padelbaan? Ja of nee?" met poll-sticker | |
-| D7 | vr 9 okt | 10:00 | Feed 4:5 | "Match? Dan krijg je een gratis baanuur." kaart | zie D7 |
-| D8 | di 13 okt | 10:00 | Reel 20 s | "Hoe ziet een ronde eruit" (12 min spelen, wissel, 12 min praten) met 4 personen uit de lesgroep als figuranten, geen AI | zie D8 |
-| D9 | do 15 okt | 18:00 | Story | teller: "Dames: nog X plekken · Heren: nog X plekken" (echte cijfers) | |
-| D10 | za 17 okt | 11:00 | Feed 4:5 | "Stuur dit naar die ene single vriend(in)" met de poster | zie D10 |
-| D11 | ma 19 okt | 10:00 | Story countdown | "5 dagen" met countdown-sticker | |
-| D12 | do 22 okt | 18:00 | Story | "Laatste plekken, aanmelden kan tot vrijdag 12:00" | |
-| D13 | za 24 okt | 19:00 | Story | live: discobal aan, statafels klaar, "we gaan beginnen" | |
-| D14 | zo 25 okt | 12:00 | Feed | terugblik met echte foto's (met toestemming van de deelnemers), aantal matches, volgende editie | zie D14 |
+| D1 | do 15 okt | 10:00 | Feed 4:5 | de gekozen illustratie-poster als post (job `f2b74b1b…`, versie 7 november met leeftijd) | zie D1 |
+| D2 | do 15 okt | 18:00 | Story 9:16 | story-versie van de poster (job `f1f50087…`, versie 7 november) met link-sticker | |
+| D3 | vr 16 okt | 10:00 | Reel 15 s | Lars in de eventruimte met de discobal aan: "Zaterdag 7 november, 24 singles, 4 rondes, daarna de bar. Ik leg het uit." | zie D3 |
+| D4 | ma 19 okt | 10:00 | Carrousel 1:1 | kaart 1 poster, kaart 2 "Zo werkt het", kaart 3 "Match? Dan een gratis baanuur", kaart 4 CTA | zie D4 |
+| D5 | wo 21 okt | 10:00 | Story | "Nooit gepadeld? Geen probleem." | |
+| D6 | do 22 okt | 18:00 | Story poll | "Eerste date op de padelbaan? Ja of nee?" met poll-sticker | |
+| D7 | vr 23 okt | 10:00 | Feed 4:5 | "Match? Dan krijg je een gratis baanuur." kaart | zie D7 |
+| D8 | di 27 okt | 10:00 | Reel 20 s | "Hoe ziet een ronde eruit" (12 min spelen, wissel, 12 min praten) met 4 personen uit de lesgroep als figuranten, geen AI | zie D8 |
+| D9 | do 29 okt | 18:00 | Story | teller: "Dames: nog X plekken · Heren: nog X plekken" (echte cijfers) | |
+| D10 | za 31 okt | 11:00 | Feed 4:5 | "Stuur dit naar die ene single vriend(in)" met de poster | zie D10 |
+| D11 | ma 2 nov | 10:00 | Story countdown | "5 dagen" met countdown-sticker | |
+| D12 | do 5 nov | 18:00 | Story | "Laatste plekken, aanmelden kan tot vrijdag 6 november 12:00" | |
+| D13 | za 7 nov | 19:00 | Story | live: discobal aan, statafels klaar, "we gaan beginnen" | |
+| D14 | zo 8 nov | 12:00 | Feed | terugblik met echte foto's (met toestemming van de deelnemers), aantal matches, volgende editie | zie D14 |
 
 ### Captions Padel Dating
 
 **D1 (aankondiging)**
 Love at first serve 💚🎾
-Op zaterdag 24 oktober organiseren we Padel Dating bij @poortpadel: 24 singles, 4 rondes, elke ronde een nieuwe partner. 12 minuten samen padellen, 12 minuten praten met een drankje. En daarna? Het laatste uur samen in de bar.
+Op zaterdag 7 november organiseren we Padel Dating bij @poortpadel: 24 singles, 4 rondes, elke ronde een nieuwe partner. 12 minuten samen padellen, 12 minuten praten met een drankje. En daarna? Het laatste uur samen in de bar.
 
-📅 Zaterdag 24 oktober · 19:30 – 22:30
+📅 Zaterdag 7 november · 19:00 – 22:00
 📍 Poort Padel, Neonweg 62, Almere
 💶 €49,50 p.p. incl. welkomstdrankje & hapjes
 🎾 Nooit gepadeld? Geen probleem, rackets liggen klaar.
@@ -143,31 +143,31 @@ Speel. Praat. Match. Aanmelden via de link in bio.
 **D3 (reel, Lars legt uit)**
 Padel Dating, zo werkt het 👇
 Je komt binnen, krijgt een drankje en een naamsticker. Dan 4 rondes: 12 minuten spelen met een nieuwe partner, 12 minuten praten aan de statafel. Na de vierde ronde vul je een matchkaartje in en gaan we met z'n allen de bar in.
-Zaterdag 24 oktober bij @poortpadel. 24 plekken. Link in bio.
+Zaterdag 7 november bij @poortpadel. 24 plekken. Link in bio.
 #padeldating #padelalmere #singlesalmere
 
 **D4 (carrousel)**
 Vier rondes, vier nieuwe mensen, één avond. Swipe voor hoe het werkt 👉
 En als jullie elkaar allebei leuk vonden? Dan krijgen jullie de volgende dag een gratis baanuur van ons. 🎾
-Zaterdag 24 oktober · @poortpadel · €49,50 p.p. · link in bio.
+Zaterdag 7 november · @poortpadel · €49,50 p.p. · link in bio.
 #padeldating #padelalmere #almere
 
 **D7 (match = gratis baanuur)**
 Match? 💚
 Aan het einde van de avond vul je een kaartje in met wie je nog een keer wilt spelen. Bij een wederzijdse match krijgen jullie allebei een bericht van ons, met een gratis baanuur bij @poortpadel. Tweede date geregeld.
-Padel Dating · zaterdag 24 oktober · link in bio.
+Padel Dating · zaterdag 7 november · link in bio.
 #padeldating #padelalmere
 
 **D8 (reel, een ronde in 20 seconden)**
 Eén ronde Padel Dating in 20 seconden ⏱️
 12 minuten spelen. Wisselen. 12 minuten praten. En dan de volgende partner.
-Vier keer, en daarna samen in de bar. Zaterdag 24 oktober bij @poortpadel. Link in bio.
+Vier keer, en daarna samen in de bar. Zaterdag 7 november bij @poortpadel. Link in bio.
 #padeldating #padelalmere #singlesalmere
 
 **D10 (deel-post)**
 Ken je iemand die dit moet zien? 👀
 Stuur deze post naar die ene single vriend of vriendin die "geen tijd heeft om te daten" maar wel elke week op de padelbaan staat.
-Zaterdag 24 oktober · Padel Dating bij @poortpadel · link in bio.
+Zaterdag 7 november · Padel Dating bij @poortpadel · link in bio.
 #padeldating #padelalmere
 
 **D14 (terugblik)**
