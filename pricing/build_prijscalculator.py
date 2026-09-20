@@ -365,7 +365,7 @@ pd_inputs = [
     ("Aantal winnaars (1 dame + 1 heer)", 2, "pers.", False, "Elke winnaar wint een date voor 2"),
     ("Waarde datevoucher BoutiQ per winnaar", 50, "€", False, "Keuze Lars: €50"),
     ("BoutiQ sponsort de vouchers? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Lars vraagt het na bij BoutiQ, Grote Markt 3"),
-    ("Verwachte wederzijdse matches (gratis baanuur per match)", 3, "matches", False, "Aanname bij 24 deelnemers"),
+    ("Gratis baanuren voor matches (0 = geen, besluit Lars)", 0, "matches", False, "Vervallen op 20 september 2026"),
     ("Poort Padel geeft de match-baanuren gratis? (1 = ja)", 1, "ja/nee", True, "Onderhandelen: matches komen terug als nieuwe boekingen"),
     ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),
 ]

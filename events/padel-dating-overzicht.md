@@ -13,7 +13,7 @@
 | Inbegrepen | Welkomstdrankje, hapjes, banen, rackets, begeleiding. Drankjes in het baruur voor eigen rekening (zo doet elk dating-event het) |
 | Prijs | €49,50 p.p. incl. btw. Geen early bird |
 | Winnaars | De dame en de heer met de meeste punten over 4 rondes (host telt licht mee, geen tussenstanden) winnen elk een date voor 2 bij BoutiQ Almere (voucher €50). De winnaar kiest zelf met wie |
-| Match | Bij een wederzijdse match op het matchkaartje krijgen beiden een gratis baanuur bij Poort Padel (3 tot 4 uur reserveren bij Poort Padel) |
+| Matchkaartje | Aan het eind vult iedereen in met wie hij of zij nog eens wil spelen; bij een wederzijdse match sturen we de volgende dag elkaars naam door. Geen gratis baanuur (besluit Lars) |
 | Host | Lars zelf, 3,5 uur à €45 excl. btw |
 | Waarom 7 november | Geen groot voetbal (alleen kleine Eredivisie-duels), Almere-agenda leeg, geen Oranje, 7 weken aanlooptijd. 31 oktober (Diwali, kermis, Halloween, Ajax–AZ) en 21 november (Sinterklaas-slot Almere 50 jaar) vermeden |
 | Waarom 25 t/m 40 | Grootste padelgroep in Nederland (25 tot 34 is de grootste categorie bij de KNLTB), grootste leeftijdsgroep in Almere (29% is 25 tot 45), best verkopende speeddate-categorie bij FlitsDate. Niemand doet padel-dating voor deze groep in de regio (DTNG Blaricum doet 35 t/m 50). Editie 2: 40 t/m 55 in januari |
@@ -30,7 +30,6 @@
 | Host (Lars) 3,5 uur × €45 | €157,50 |
 | Materialen (ballen, stickers, matchkaartjes, prints) | €31,00 |
 | Datevouchers BoutiQ 2 × €50 | €0 (BoutiQ sponsort), anders €100 |
-| Match-baanuren 3 × €22,50 | €0 (Poort Padel geeft ze), anders €67,50 |
 | **Totale kosten** | **€718,00** |
 | **Winst** | **€263,82 (27% van de omzet)** |
 | Plus jouw hostloon | €157,50, samen €421 voor de avond |
@@ -50,7 +49,7 @@ Om op 30% te komen (één van deze): baantarief maximaal €20,45 per uur, of dr
 
 ## Afspraken die nog bevestigd moeten worden
 
-1. **Poort Padel**: 6 banen zaterdag 7 november 19:00 tot 21:30 voor €22,50 per baan per uur; welkomstdrankje plus hapjes voor €8 p.p.; 3 tot 4 gratis baanuren voor de matches; water bij de banen; hapjes op de statafels door de bar. Tegenprestatie: €529,50 omzet op een zaterdagavondblok, het baruur erna (24 mensen op eigen rekening), klanten die terugkomen voor hun match-uur, naam op alle uitingen.
+1. **Poort Padel**: 6 banen zaterdag 7 november 19:00 tot 21:30 voor €22,50 per baan per uur; welkomstdrankje plus hapjes voor €8 p.p.; water bij de banen; hapjes op de statafels door de bar. Tegenprestatie: €529,50 omzet op een zaterdagavondblok, het baruur erna (24 mensen op eigen rekening), naam op alle uitingen.
 2. **BoutiQ, Grote Markt 3**: 2 vouchers van €50 (1 dame en 1 heer winnen een date voor 2). Tegenprestatie: naam op poster, feed, story en in de mail naar alle deelnemers, foto van de winnaars bij BoutiQ voor hun socials, 24 singles van 25 tot 40 die BoutiQ als datelocatie leren kennen. Niet publiceren met de BoutiQ-ribbon voordat zij akkoord zijn; er is een versie zonder.
 
 ## Aanmelding en promotie
@@ -81,7 +80,6 @@ Beeld: `padel-dating-ig-feed-4x5.jpg`. Caption:
 > 📅 Zaterdag 7 november · 19:00 – 22:00 (inloop 18:30)
 > 🎾 Nooit gepadeld? Geen probleem, rackets liggen klaar
 > 🍽️ De beste dame en heer van de avond winnen een date voor 2 bij @boutiqalmere
-> 💛 Match? Dan krijgen jullie een gratis baanuur
 > 💶 €49,50 p.p. incl. welkomstdrankje & hapjes
 >
 > 👉 Meld je aan via de link in bio. 12 plekken voor dames, 12 voor heren, vol is vol.

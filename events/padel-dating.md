@@ -4,7 +4,7 @@ Event van All Court Academy bij Poort Padel Almere. Doel: singles laten kennisma
 
 ## 1. Het concept in één alinea
 
-24 singles (12 dames, 12 heren, 25 t/m 40 jaar) komen op zaterdagavond om 18:30 binnen, krijgen een welkomstdrankje en een naamsticker met een kleur. Om 19:00 start ronde 1: iedereen tegelijk de baan op, 6 banen, 4 per baan, in gemengde koppels (dame + heer) tegen een ander koppel. Na 12 minuten spelen komt iedereen van de baan en praat je 12 minuten aan de statafels naast de banen met je volgende partner, met water of fris bij de banen (welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening). Dan weer de baan op met die nieuwe partner. Format A, besluit Lars 20 september 2026: iedereen speelt elke ronde, de banen zijn 2 uur van ons. Vier rondes van ongeveer 25 minuten, dus vier verschillende partners, klaar rond 20:45. Dan vult iedereen een matchkaartje in met wie je nog een keer wilt spelen, en van 21:00 tot 22:00 is de bar open voor iedereen samen, zonder schema: dat is het uur waarin de echte gesprekken ontstaan. Bij een wederzijdse match krijgen beiden de volgende dag een bericht van ons met een gratis baanuur bij Poort Padel. Aan het eind van het baruur winnen de dame en de heer met de meeste punten over de vier rondes elk een date voor 2 bij BoutiQ Almere (voucher €50); de winnaar kiest zelf met wie.
+24 singles (12 dames, 12 heren, 25 t/m 40 jaar) komen op zaterdagavond om 18:30 binnen, krijgen een welkomstdrankje en een naamsticker met een kleur. Om 19:00 start ronde 1: iedereen tegelijk de baan op, 6 banen, 4 per baan, in gemengde koppels (dame + heer) tegen een ander koppel. Na 12 minuten spelen komt iedereen van de baan en praat je 12 minuten aan de statafels naast de banen met je volgende partner, met water of fris bij de banen (welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening). Dan weer de baan op met die nieuwe partner. Format A, besluit Lars 20 september 2026: iedereen speelt elke ronde, de banen zijn 2 uur van ons. Vier rondes van ongeveer 25 minuten, dus vier verschillende partners, klaar rond 20:45. Dan vult iedereen een matchkaartje in met wie je nog een keer wilt spelen, en van 21:00 tot 22:00 is de bar open voor iedereen samen, zonder schema: dat is het uur waarin de echte gesprekken ontstaan. Bij een wederzijdse match op het matchkaartje krijgen beiden de volgende dag elkaars naam door. Aan het eind van het baruur winnen de dame en de heer met de meeste punten over de vier rondes elk een date voor 2 bij BoutiQ Almere (voucher €50); de winnaar kiest zelf met wie.
 
 Waarom dit werkt: padel is laagdrempelig (binnen tien minuten kun je meedoen), je staat met z'n tweeën aan één kant van het net dus je moet samenwerken en praten, en de wissel naar de bar geeft rust om echt een gesprek te voeren.
 
@@ -23,7 +23,7 @@ Waarom dit werkt: padel is laagdrempelig (binnen tien minuten kun je meedoen), j
 | 21:00 | Baruur: iedereen samen in het Grand Café, muziek, hapjes op tafel, hosts lopen rond en koppelen mensen die elkaar nog niet gesproken hebben | Host 1 + host 2 |
 | 21:30 | Winnaars: de dame en de heer met de meeste punten over 4 rondes (host 1 telt bij) winnen elk een date voor 2 bij BoutiQ Almere (voucher €50). De winnaar kiest zelf met wie. Foto met de vouchers | Host 1 |
 | 22:00 | Einde. Wie wil blijft op eigen rekening | |
-| Dag erna | Matches mailen/appen, gratis baanuur-voucher voor wederzijdse matches | Lars |
+| Dag erna | Wederzijdse matches mailen of appen | Lars |
 
 Waarom het baruur werkt: na vier rondes kent iedereen vier mensen van de andere kant en heeft iedereen twaalf minuten met elk van hen gesproken. In het baruur kun je teruggaan naar wie je leuk vond, zonder dat het schema je stuurt. De hosts hebben in dat uur één taak: niemand staat alleen.
 
@@ -39,7 +39,7 @@ Dit is hetzelfde principe als een Mexicano-rotatie (vaste rondetijd, nieuwe part
 
 Consumentenprijs €49,50 incl. 21% btw. Rekenmodel met formules en scenario's: `pricing/prijscalculator.xlsx`, tabblad **Padel Dating** (blauwe cellen aanpassen). Marge = winst als percentage van de omzet excl. btw; doel van Lars: 30%.
 
-Format A (6 banen, iedereen tegelijk), welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening. Lars host zelf plus 1 betaalde host, BoutiQ sponsort de vouchers, Poort Padel geeft de match-uren. Besluit Lars 20 september 2026: 30% van de omzet moet overblijven.
+Format A (6 banen, iedereen tegelijk), welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening. Lars is zelf de betaalde host, BoutiQ sponsort de vouchers. Geen gratis baanuur bij een match (besluit Lars 20 september 2026). Besluit Lars 20 september 2026: 30% van de omzet moet overblijven.
 
 Rekensom bij 24 deelnemers en €49,50: omzet €981,82 excl. btw, 30% marge = €294,55 winst, dus maximaal €687,27 kosten. Daarvan gaan €157,50 (host) en €31 (materialen) af: **maximaal €498,77 naar Poort Padel, €20,78 per persoon** voor banen, welkomstdrankje en hapjes.
 

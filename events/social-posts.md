@@ -114,10 +114,10 @@ Doel: 24 aanmeldingen (12 dames, 12 heren). Start de campagne op donderdag 15 ok
 | D1 | do 15 okt | 10:00 | Feed 4:5 | de gekozen illustratie-poster als post (`events/posters/final/padel-dating-ig-feed-4x5.jpg`) | zie D1 |
 | D2 | do 15 okt | 18:00 | Story 9:16 | story-versie van de poster (`events/posters/final/padel-dating-ig-story-9x16.jpg`) met link-sticker | |
 | D3 | vr 16 okt | 10:00 | Reel 15 s | Lars in de eventruimte met de discobal aan: "Zaterdag 7 november, 24 singles, 4 rondes, daarna de bar. Ik leg het uit." | zie D3 |
-| D4 | ma 19 okt | 10:00 | Carrousel 1:1 | kaart 1 poster, kaart 2 "Zo werkt het", kaart 3 "Match? Dan een gratis baanuur", kaart 4 CTA | zie D4 |
+| D4 | ma 19 okt | 10:00 | Carrousel 1:1 | kaart 1 poster, kaart 2 "Zo werkt het", kaart 3 "Win een date voor 2 bij BoutiQ", kaart 4 CTA | zie D4 |
 | D5 | wo 21 okt | 10:00 | Story | "Nooit gepadeld? Geen probleem." | |
 | D6 | do 22 okt | 18:00 | Story poll | "Eerste date op de padelbaan? Ja of nee?" met poll-sticker | |
-| D7 | vr 23 okt | 10:00 | Feed 4:5 | "Match? Dan krijg je een gratis baanuur." kaart | zie D7 |
+| D7 | vr 23 okt | 10:00 | Feed 4:5 | "Win een date voor 2 bij BoutiQ Almere" kaart (de beste dame en heer van de avond) | zie D7 |
 | D8 | di 27 okt | 10:00 | Reel 20 s | "Hoe ziet een ronde eruit" (12 min spelen, wissel, 12 min praten) met 4 personen uit de lesgroep als figuranten, geen AI | zie D8 |
 | D9 | do 29 okt | 18:00 | Story | teller: "Dames: nog X plekken · Heren: nog X plekken" (echte cijfers) | |
 | D10 | za 31 okt | 11:00 | Feed 4:5 | "Stuur dit naar die ene single vriend(in)" met de poster | zie D10 |
@@ -136,7 +136,6 @@ Zaterdag 7 november: Padel Dating bij @poortpadel. 24 singles van 25 t/m 40 jaar
 📅 Zaterdag 7 november · 19:00 – 22:00 (inloop 18:30)
 🎾 Nooit gepadeld? Geen probleem, rackets liggen klaar
 🍽️ De beste dame en heer van de avond winnen een date voor 2 bij @boutiqalmere
-💛 Match? Dan krijgen jullie een gratis baanuur
 💶 €49,50 p.p. incl. welkomstdrankje & hapjes
 
 👉 Meld je aan via de link in bio. 12 plekken voor dames, 12 voor heren, vol is vol.
@@ -151,15 +150,14 @@ Zaterdag 7 november bij @poortpadel. 24 plekken. Link in bio.
 
 **D4 (carrousel)**
 Vier rondes, vier nieuwe mensen, één avond. Swipe voor hoe het werkt 👉
-En als jullie elkaar allebei leuk vonden? Dan krijgen jullie de volgende dag een gratis baanuur van ons. 🎾
+En als jullie elkaar allebei leuk vonden? Dan hoor je dat de volgende dag van ons. 🎾
 Zaterdag 7 november · @poortpadel · €49,50 p.p. · link in bio.
 #padeldating #padelalmere #almere
 
-**D7 (match = gratis baanuur)**
-Match? 💚
-Aan het einde van de avond vul je een kaartje in met wie je nog een keer wilt spelen. Bij een wederzijdse match krijgen jullie allebei een bericht van ons, met een gratis baanuur bij @poortpadel. Tweede date geregeld.
-Padel Dating · zaterdag 7 november · link in bio.
-#padeldating #padelalmere
+**D7 (win een date bij BoutiQ)**
+De beste dame en de beste heer van de avond winnen allebei een date voor 2 bij @boutiqalmere. 🍽️
+Je kiest zelf met wie je gaat. Punten tel je op over 4 rondes, dus ook als je nog nooit gepadeld hebt maak je kans: je speelt elke ronde met een andere partner.
+Zaterdag 7 november · Padel Dating bij @poortpadel · link in bio.
 
 **D8 (reel, een ronde in 20 seconden)**
 Eén ronde Padel Dating in 20 seconden ⏱️
@@ -205,7 +203,7 @@ Volgende editie: [datum]. Aanmelden kan al via de link in bio.
 | D1 feed poster | 3:4 | `9df86052-0667-44c4-a8b8-55eca64bef00` |
 | D2 story poster | 9:16 | `a9c4bcf4-0b0b-4747-818d-c0b7722dafa3` |
 | D4 kaart "Zo werkt het" | 1:1 | `28ec2d60-5489-434b-a417-19f9fae086df` |
-| D7 kaart "Match? Gratis baanuur" | 1:1 | `f98dab51-ba1c-4a13-9bca-b35ab5857b50` |
+| D7 kaart (oud: "Match? Gratis baanuur", vervallen; nieuwe kaart "Win een date bij BoutiQ" nog te maken) | 1:1 | `f98dab51-ba1c-4a13-9bca-b35ab5857b50` |
 | D5 story "Nooit gepadeld?" | 9:16 | `ec79123d-2019-4265-b9cd-efbc3c8cc53b` |
 | D6 story poll-template | 9:16 | `e47b31d4-2c24-48f7-98d9-a0e26a45c0ac` |
 
