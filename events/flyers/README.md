@@ -1,20 +1,22 @@
 # Flyer Padel Kids Kamp (voor scholen)
 
-## Gekozen versie: illustratie (crème, herfstbladeren)
+## Gekozen versie: Higgsfield-illustratie, voor- en achterkant (definitief 20 september 2026)
 
-Lars koos op 20 september 2026 de Higgsfield-illustratieversie als definitieve voorkant. Daar is de echte QR-code in gemonteerd en er is een achterkant in dezelfde stijl bij gebouwd (Fredoka voor koppen, Caveat voor het handschrift, Nunito voor de lopende tekst, crème papier, navy en oranje, bladeren en sterren als doodles).
+Lars koos de Higgsfield-voorkant (job `c255ca17-4b23-430c-8bc9-24bcacf34c4f`) en de Higgsfield-achterkant (job `135677f6-a10c-411f-96e2-9d61ad94db17`). Beide zijn daarna lokaal afgewerkt op basis van de afbeeldingen die Lars in de chat plakte (1328 × 2000 px):
+
+- **Kortingstekst herschreven.** "10% korting vanaf het 2e kind" was dubbelzinnig. Voorkant nu: "€195 all-in · 2 of meer kinderen: 10% korting" (zelfde navy pill, Fredoka Bold in dezelfde geelgroene kleur). Achterkant nu: "Broertje of zusje mee? Dan krijg je 10% korting" (Barlow Semi Condensed, zelfde kleur en grootte als de andere regels).
+- **Achterkant korter.** De drie "Dag 1/2/3"-kaartjes zijn verwijderd (het dagprogramma staat al in het navy blok); het blok "Goed om te weten" met de QR is omhoog geschoven en het vrijgekomen vlak is gevuld met de originele papiertextuur.
+- **Echte QR-code** in het witte vlak op beide zijden, machinaal gecontroleerd (decodeert op voor- en achterkant).
+- Opgeschaald naar 2× en met de papierkleur aangevuld tot A5-verhouding.
 
 | Bestand | Wat |
 |---|---|
-| `kidskamp-flyer-illustratie-a5.pdf` | drukbestand, 2 pagina's A5, voorkant illustratie met QR, achterkant informatie |
-| `kidskamp-flyer-voorkant-illustratie.png` | voorkant met QR, 2819 × 4000 px (ook bruikbaar als Instagram-post of in de ouderapp) |
-| `kidskamp-flyer-achterkant-illustratie.png` | achterkant, 1680 × 2381 px |
-| `kidskamp-flyer-illustratie-a5.html` | bron van de achterkant en de PDF; tekst aanpassen en opnieuw naar PDF printen met Chrome (A5, marges geen, achtergrondkleuren aan); fonts zitten ingebed |
-| `kidskamp-qr.png` | de QR-code los, 1220 × 1220 px |
+| `kidskamp-flyer-illustratie-a5.pdf` | drukbestand, 2 pagina's A5 |
+| `kidskamp-flyer-voorkant-illustratie.png`, `kidskamp-flyer-achterkant-illustratie.png` | beide zijden, 2819 × 4000 px, ook bruikbaar als post of in de ouderapp |
+| `kidskamp-flyer-illustratie-a5.html` | bron van de PDF (beide zijden als ingebedde afbeelding) |
+| `kidskamp-qr.png` | de QR-code los |
 
-Let op bij de voorkant: die is opgebouwd uit de afbeelding die Lars in de chat plakte (1328 × 2000 px, opgeschaald naar 2× en met de papierkleur aangevuld tot A5-verhouding). Voor A5-druk is dat rond 250 dpi, ruim voldoende voor een flyer. Wil je scherper, download dan het originele Higgsfield-bestand (job `c255ca17-4b23-430c-8bc9-24bcacf34c4f`, 1360 × 2048) of laat het in Higgsfield naar 4K opschalen en plak de QR opnieuw in het witte vlak (positie: rechtsonder, het witte vierkant).
-
-Alternatieve AI-achterkant in dezelfde stijl, met leeg QR-vlak: Higgsfield job `135677f6-a10c-411f-96e2-9d61ad94db17`. De HTML-achterkant is tekstueel exact; bij de AI-versie de spelling controleren.
+Let op: Lars noemde een eigen QR-code, maar er kwam geen afbeelding mee. De gebruikte code wijst naar `allcourtacademy.com/pages/kids-camp.html` met UTM-parameters (`utm_source=flyer`, `utm_medium=print`, `utm_campaign=kidskamp-herfst2026`). Een andere QR: vervang `kidskamp-qr.png` en draai de afwerking opnieuw, of plak de code in Canva over het witte vlak.
 
 ## Eerste versie (HTML, navy) blijft beschikbaar
 
