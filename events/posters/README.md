@@ -424,3 +424,7 @@ Bestanden: `padel-dating-poster-A-print-boutiq-30x40cm.pdf` (+ `.jpg`), `padel-d
 ### Versie 16: "Match = gratis baanuur" overal weg (20 september 2026)
 
 Lars schrapte de match-beloning (geen gratis baanuur bij een match). De lime-tag "Match = gratis baanuur" is uit de feed 4:5 en de story 9:16 gehaald; de poster had die regel al niet meer. Tekst feed en story nu: Zaterdag 7 november · 19:00 – 22:00 / chips Singles 25 t/m 40 jaar · Nooit gepadeld? Geen probleem / 4 rondes, elke ronde een nieuwe partner / Daarna het laatste uur samen in de bar / €49,50 p.p. incl. welkomstdrankje & hapjes / Meld je aan → allcourtacademy.com/events (story: link in bio) / All Court Academy × Poort Padel · Almere. Ook draaiboek, overzicht, captions en prijscalculator zijn hierop aangepast. De oudere versiebeschrijvingen hierboven zijn historie.
+
+### Versie 17: inloop op feed en story (20 september 2026)
+
+Op verzoek van Lars staat "inloop 18:30" nu ook op de Instagram-feed 4:5 en de story 9:16 (tijdregel onder de datum: 19:00 – 22:00 · inloop 18:30, zoals op de print-poster). De captions D3, D4, D7 en D10 noemen de tijd en de inloop nu ook. Banen zijn 2 uur (19:00 tot 21:00); dat staat niet op de poster, wel in het draaiboek, het overzicht en de prijscalculator.

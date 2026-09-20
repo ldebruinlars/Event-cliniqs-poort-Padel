@@ -145,30 +145,30 @@ Zaterdag 7 november: Padel Dating bij @poortpadel. 24 singles van 25 t/m 40 jaar
 **D3 (reel, Lars legt uit)**
 Padel Dating, zo werkt het 👇
 Je komt binnen, krijgt een drankje en een naamsticker. Dan 4 rondes: 12 minuten spelen met een nieuwe partner, 12 minuten praten aan de statafel. Na de vierde ronde vul je een matchkaartje in en gaan we met z'n allen de bar in.
-Zaterdag 7 november bij @poortpadel. 24 plekken. Link in bio.
+Zaterdag 7 november bij @poortpadel, 19:00 – 22:00 (inloop 18:30). 24 plekken. Link in bio.
 #padeldating #padelalmere #singlesalmere
 
 **D4 (carrousel)**
 Vier rondes, vier nieuwe mensen, één avond. Swipe voor hoe het werkt 👉
 En als jullie elkaar allebei leuk vonden? Dan hoor je dat de volgende dag van ons. 🎾
-Zaterdag 7 november · @poortpadel · €49,50 p.p. · link in bio.
+Zaterdag 7 november · 19:00 – 22:00, inloop 18:30 · @poortpadel · €49,50 p.p. · link in bio.
 #padeldating #padelalmere #almere
 
 **D7 (win een date bij BoutiQ)**
 De beste dame en de beste heer van de avond winnen allebei een date voor 2 bij @boutiqalmere. 🍽️
 Je kiest zelf met wie je gaat. Punten tel je op over 4 rondes, dus ook als je nog nooit gepadeld hebt maak je kans: je speelt elke ronde met een andere partner.
-Zaterdag 7 november · Padel Dating bij @poortpadel · link in bio.
+Zaterdag 7 november · 19:00 – 22:00, inloop 18:30 · Padel Dating bij @poortpadel · link in bio.
 
 **D8 (reel, een ronde in 20 seconden)**
 Eén ronde Padel Dating in 20 seconden ⏱️
 12 minuten spelen. Wisselen. 12 minuten praten. En dan de volgende partner.
-Vier keer, en daarna samen in de bar. Zaterdag 7 november bij @poortpadel. Link in bio.
+Vier keer, en daarna samen in de bar. Zaterdag 7 november bij @poortpadel, 19:00 – 22:00 (inloop 18:30). Link in bio.
 #padeldating #padelalmere #singlesalmere
 
 **D10 (deel-post)**
 Ken je iemand die dit moet zien? 👀
 Stuur deze post naar die ene single vriend of vriendin die "geen tijd heeft om te daten" maar wel elke week op de padelbaan staat.
-Zaterdag 7 november · Padel Dating bij @poortpadel · link in bio.
+Zaterdag 7 november · 19:00 – 22:00, inloop 18:30 · Padel Dating bij @poortpadel · link in bio.
 #padeldating #padelalmere
 
 **D14 (terugblik)**

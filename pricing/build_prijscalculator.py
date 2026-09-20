@@ -352,13 +352,13 @@ pd_inputs = [
     ("Verkoopprijs p.p. incl. btw", 49.5, "€", False, "Poster: €49,50"),
     ("Btw", f"={REF['btw']}", "%", False, "Inputs"),
     ("Banen (4 spelers per baan, iedereen tegelijk)", 6, "banen", False, "24 deelnemers = 6 banen; 16 = 4; 12 = 3"),
-    ("Uren per baan", 2.5, "uur", False, "Besluit Lars: 2,5 uur banen (inloop en uitloop)"),
+    ("Uren per baan", 2, "uur", False, "Besluit Lars 20 september 2026: 2 uur banen, 19:00 tot 21:00"),
     ("Baantarief per uur (afspraak Poort Padel)", 22.5, "€/uur", True, "Weekend €37,50 op Playtomic; voorstel Lars €22,50"),
     ("Betaalde hosts (Lars zelf niet meegerekend)", 1, "pers.", False, "Lars host zelf plus 1 betaalde host"),
     ("Uren per host", 3.5, "uur", False, "Opbouw 17:45 tot einde 22:00 (incl. opruimen)"),
     ("Hosttarief per uur", f"={REF['coach_uur']}", "€/uur", True, "Inputs (aanname coachtarief)"),
     ("Drankjes p.p. (alleen welkomstdrankje)", 1, "stuks", False, "Besluit Lars: welkomstdrankje + hapjes inbegrepen, rest eigen rekening"),
-    ("Inkoopprijs per drankje (afspraak Poort Padel)", 4, "€", True, "Afspraak: welkomstdrankje + hapjes samen €8 p.p."),
+    ("Inkoopprijs per drankje (afspraak Poort Padel)", 4.08, "€", True, "Afspraak: welkomstdrankje + 4 hapjes samen €8,00 p.p."),
     ("Hapjes p.p. (aantal)", 4, "stuks", False, ""),
     ("Prijs per hapje", f"={REF['hapje']}", "€", False, "Inputs, teamschotel"),
     ("Materialen (ballen, stickers, matchkaartjes, prints)", 31, "€", False, ""),
@@ -394,7 +394,7 @@ pd_calc = [
     ("omzet", "Omzet excl. btw", f"={PD['n']}*{PD['prijs']}/(1+{PD['btw']})", EUR),
     ("k_baan", "Baanhuur", f"={PD['banen']}*{PD['uren']}*{PD['tarief']}", EUR),
     ("k_host", "Hosts", f"={PD['hosts']}*{PD['hosturen']}*{PD['hosttarief']}", EUR),
-    ("k_drank", "Drankjes (1 per ronde)", f"={PD['n']}*{PD['drank_n']}*{PD['drank']}", EUR),
+    ("k_drank", "Welkomstdrankje", f"={PD['n']}*{PD['drank_n']}*{PD['drank']}", EUR),
     ("k_hapjes", "Hapjes", f"={PD['n']}*{PD['hapjes_n']}*{PD['hapje']}", EUR),
     ("k_mat", "Materialen", f"={PD['materiaal']}", EUR),
     ("k_voucher", "Datevouchers BoutiQ (0 als BoutiQ sponsort)", f"=IF({PD['sponsor']}=1,0,{PD['winnaars']}*{PD['voucher']})", EUR),
@@ -450,6 +450,7 @@ scen = [
     ("8. Als 4, Lars host alleen (0 betaald)", 6, 20, 4, 2.5, 0, 1, 1, 49.5),
     ("9. Als 4, match-uren zelf betalen", 6, 20, 4, 2.5, 1, 1, 0, 49.5),
     ("10. Als 4, BoutiQ sponsort niet", 6, 20, 4, 2.5, 1, 0, 1, 49.5),
+    ("11. Definitief (20 sept): 6 banen €22,50 × 2 uur, welkomstdrankje + hapjes €8, Lars host", 6, 22.5, 1, 4.08, 1, 1, 1, 49.5),
 ]
 for name, banen, tarief, dn, dp, hosts, spons, mg, prijs in scen:
     wp.cell(row=r, column=1, value=name).font = BLACK

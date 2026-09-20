@@ -130,7 +130,7 @@ spec_A={'date':'ZATERDAG 7 NOVEMBER','sub':'19:00 – 22:00 · inloop 18:30',
  'chips':['Singles 25 t/m 40 jaar','Nooit gepadeld? Geen probleem'],
  'bullets':['4 rondes, elke ronde een nieuwe partner','Daarna het laatste uur samen in de bar'],
  'date_size':54,'sub_size':30,'chip_size':24,'chip_h':44,'bullet_size':32,'pill_txt':32,'pill_h':60,'gap1':16,'gap2':18,'gap3':8}
-spec_B=dict(spec_A); spec_B.update({'sub':'19:00 – 22:00','date_size':50,'sub_size':28,'chip_size':22,'bullet_size':29,'pill_txt':30,'pill_h':56})
+spec_B=dict(spec_A); spec_B.update({'sub':'19:00 – 22:00 · inloop 18:30','date_size':50,'sub_size':28,'chip_size':22,'bullet_size':29,'pill_txt':30,'pill_h':56})
 
 spec_F=dict(spec_B); spec_F.update({'date_size':44,'sub_size':25,'chip_size':20,'chip_h':38,'bullet_size':26,'pill_txt':27,'pill_h':50,'gap1':10,'gap2':12,'gap3':4})
 

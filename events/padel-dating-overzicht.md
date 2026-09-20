@@ -24,32 +24,32 @@
 |---|---|
 | Omzet 24 × €49,50 incl. btw | €1.188,00 |
 | Omzet excl. 21% btw | €981,82 |
-| Banen 6 × 2,5 uur × €22,50 (afspraak Poort Padel, lijstprijs €37,50) | €337,50 |
+| Banen 6 × 2 uur × €22,50, 19:00 tot 21:00 (afspraak Poort Padel, lijstprijs €37,50) | €270,00 |
 | Welkomstdrankje + hapjes €8 p.p. (afspraak Poort Padel) | €192,00 |
-| Naar Poort Padel totaal | €529,50 |
+| Naar Poort Padel totaal | €462,00 |
 | Host (Lars) 3,5 uur × €45 | €157,50 |
 | Materialen (ballen, stickers, matchkaartjes, prints) | €31,00 |
 | Datevouchers BoutiQ 2 × €50 | €0 (BoutiQ sponsort), anders €100 |
-| **Totale kosten** | **€718,00** |
-| **Winst** | **€263,82 (27% van de omzet)** |
-| Plus jouw hostloon | €157,50, samen €421 voor de avond |
+| **Totale kosten** | **€650,50** |
+| **Winst** | **€331,32 (34% van de omzet)** |
+| Plus jouw hostloon | €157,50, samen €488,82 voor de avond |
 
 Bij minder deelnemers (altijd 4 per baan):
 
 | Deelnemers | Banen | Kosten | Winst | Marge |
 |---|---|---|---|---|
-| 24 | 6 | €718,00 | €263,82 | 27% |
-| 20 | 5 | €629,75 | €188,43 | 23% |
-| 16 | 4 | €541,50 | €113,05 | 17% |
-| 12 | 3 | €453,25 | €37,66 | 8% |
+| 24 | 6 | €650,50 | €331,32 | 34% |
+| 20 | 5 | €573,50 | €244,68 | 30% |
+| 16 | 4 | €496,50 | €158,05 | 24% |
+| 12 | 3 | €419,50 | €71,41 | 15% |
 
-Per deelnemer bij 24: baanhuur €14,06, drankje + hapjes €8,00, host €6,56, materialen €1,29, kosten €29,92, winst €10,99.
+Per deelnemer bij 24: baanhuur €11,25, drankje + hapjes €8,00, host €6,56, materialen €1,29, kosten €27,10, winst €13,80.
 
-Om op 30% te komen (één van deze): baantarief maximaal €20,45 per uur, of drankje + hapjes maximaal €6,72 p.p., of banen 2 uur in plaats van 2,5 (dan 34%). Break-even bij 16 deelnemers. Rekenmodel met alle scenario's: `pricing/prijscalculator.xlsx`, tabblad Padel Dating.
+De 30% wordt gehaald bij 24 (34%) en bij 20 (30%). Ruimte in de onderhandeling bij 24: baantarief tot €25,56 per uur, of drankje + hapjes tot €9,53 p.p. Break-even rond 10 deelnemers als de banen meeschalen (bij 12 al winst); met 6 banen vast ligt hij op 14. Rekenmodel met alle scenario's: `pricing/prijscalculator.xlsx`, tabblad Padel Dating.
 
 ## Afspraken die nog bevestigd moeten worden
 
-1. **Poort Padel**: 6 banen zaterdag 7 november 19:00 tot 21:30 voor €22,50 per baan per uur; welkomstdrankje plus hapjes voor €8 p.p.; water bij de banen; hapjes op de statafels door de bar. Tegenprestatie: €529,50 omzet op een zaterdagavondblok, het baruur erna (24 mensen op eigen rekening), naam op alle uitingen.
+1. **Poort Padel**: 6 banen zaterdag 7 november 19:00 tot 21:00 (2 uur) voor €22,50 per baan per uur; welkomstdrankje plus hapjes voor €8 p.p.; water bij de banen; hapjes op de statafels door de bar. Tegenprestatie: €462 omzet op een zaterdagavondblok, het baruur erna (24 mensen op eigen rekening), naam op alle uitingen.
 2. **BoutiQ, Grote Markt 3**: 2 vouchers van €50 (1 dame en 1 heer winnen een date voor 2). Tegenprestatie: naam op poster, feed, story en in de mail naar alle deelnemers, foto van de winnaars bij BoutiQ voor hun socials, 24 singles van 25 tot 40 die BoutiQ als datelocatie leren kennen. Niet publiceren met de BoutiQ-ribbon voordat zij akkoord zijn; er is een versie zonder.
 
 ## Aanmelding en promotie
