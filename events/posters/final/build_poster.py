@@ -59,6 +59,7 @@ def feather_paste(canvas, img, pos, feather=40):
 def artwork(scale, cut=1540):
     """upscaled original down to y=cut (below the polaroid), with the side doodles kept to y=1600"""
     a=orig.resize((int(OW*scale),int(OH*scale)),Image.LANCZOS)
+    a=a.filter(ImageFilter.UnsharpMask(radius=1.5,percent=60,threshold=2))
     return a, int(cut*scale)
 
 def text_center(d,cx,y,txt,fnt,fill):
@@ -82,11 +83,20 @@ def ribbon(canvas,center,txt,fnt,w,h,angle=-9):
 def compose(W,H,scale,art_x,art_y,cut,lines,pillt,tag,button,footer,boutiq,top_free=0):
     canvas=texture(W,H,scale)
     a,cuty=artwork(scale,cut)
-    top=a.crop((0,0,a.width,cuty)); feather_paste(canvas,top,(art_x,art_y),feather=int(30*scale))
+    # hard paste of the artwork (no feathering: the join sits on plain background under the polaroid)
+    canvas.paste(a.crop((0,0,a.width,cuty)),(art_x,art_y))
     # keep the side doodles a little lower than the cut (left sparkle sits at y 1540-1600 in the original)
     s=int(300*scale); extra=int(60*scale)
-    left=a.crop((0,cuty,s,cuty+extra)); right=a.crop((a.width-s,cuty,a.width,cuty+extra))
-    feather_paste(canvas,left,(art_x,art_y+cuty),feather=int(20*scale)); feather_paste(canvas,right,(art_x+a.width-s,art_y+cuty),feather=int(20*scale))
+    canvas.paste(a.crop((0,cuty,s,cuty+extra)),(art_x,art_y+cuty))
+    canvas.paste(a.crop((a.width-s,cuty,a.width,cuty+extra)),(art_x+a.width-s,art_y+cuty))
+    # soften only the texture side of the seams (dark on dark), never the artwork
+    seam=Image.new('L',(W,H),0); sd=ImageDraw.Draw(seam)
+    f=int(6*scale)
+    sd.rectangle((art_x+s-f,art_y+cuty,art_x+a.width-s+f,art_y+cuty+extra+f),fill=255)
+    sd.rectangle((art_x-f,art_y+cuty+extra,art_x+a.width+f,art_y+cuty+extra+2*f),fill=255)
+    seam=seam.filter(ImageFilter.GaussianBlur(f))
+    blurred=canvas.filter(ImageFilter.GaussianBlur(int(2*scale)))
+    canvas.paste(blurred,(0,0),seam)
     if boutiq:
         ribbon(canvas,(art_x+int(1060*scale),art_y+int(1478*scale)),'Win een date voor 2 bij BoutiQ Almere',font('p600',int(23*scale)),int(500*scale),int(46*scale))
     d=ImageDraw.Draw(canvas); cx=W//2
