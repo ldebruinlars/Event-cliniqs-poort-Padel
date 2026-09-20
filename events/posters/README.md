@@ -428,3 +428,16 @@ Lars schrapte de match-beloning (geen gratis baanuur bij een match). De lime-tag
 ### Versie 17: inloop op feed en story (20 september 2026)
 
 Op verzoek van Lars staat "inloop 18:30" nu ook op de Instagram-feed 4:5 en de story 9:16 (tijdregel onder de datum: 19:00 – 22:00 · inloop 18:30, zoals op de print-poster). De captions D3, D4, D7 en D10 noemen de tijd en de inloop nu ook. Banen zijn 2 uur (19:00 tot 21:00); dat staat niet op de poster, wel in het draaiboek, het overzicht en de prijscalculator.
+
+## Padel & Quiz: posterstijl (20 september 2026)
+
+Lars koos het krijtbord (Higgsfield `3d7edb5b-2e65-4ea3-b737-dcad4650fd41`, stijl C uit `events/padel-quiz.md`) en vroeg om betere varianten. Vier verbeterde krijtbord-versies gegenereerd met gpt_image_2, quality high, 2k, 3:4, alleen de kop in beeld en de onderste derde leeg voor tekst:
+
+| # | Idee | Job |
+|---|---|---|
+| 1 | Premium pub-sign: 3D-krijtletters (PADEL wit, QUIZ geel), racket gekruist met een pint, lampje, trofee op lint, groot vraagteken, mint- en koraalaccenten (referentie: het gekozen beeld) | `8025e2c6-cb38-44ab-9971-6abb0eec47f9` |
+| 2 | Meer sfeer en diepte: warm barlicht, krijtbaan in perspectief met racket en bal op het net, stuiterende vraagtekens, pint en trofee met lauwerblad (referentie: het gekozen beeld) | `d1d23f59-22df-4ffe-b6db-e96a9af46b06` |
+| 3 | Modern en rustig: enorme blokletters, ampersand als padelbal, één grote illustratie van racket en pint die proosten | `10bde23d-2255-4e07-b54a-1ffe13e61527` |
+| 4 | Gameshow-krijtbord: marquee-letters met krijtlampjes, scorebord-paneel met lint, trofee, racket, pint en vraagteken, confetti in mint, koraal en geel | `cc3752f6-bbd8-4ff8-993b-2a44cdd4c64a` |
+
+Volgende stap: Lars kiest, plakt het gekozen beeld in de chat, en de tekst (datum, tijd, chips, bullets, prijs-pill, knop, footer) wordt er deterministisch op gezet zoals bij Padel Dating (`events/posters/final/build_poster.py`), in wit en geel krijt op het lege onderste deel.
