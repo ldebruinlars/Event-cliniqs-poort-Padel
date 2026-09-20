@@ -51,7 +51,19 @@ Rekensom bij 24 deelnemers en €49,50: omzet €981,82 excl. btw, 30% marge = �
 | Baan €22,50, drankje + hapjes €9,50 p.p. (grens) | €270 | €228 | €498 | €686,50 | €295 | 30% |
 | Lijstprijs: baan €37,50, drankje €3,75, hapjes €3,92 | €450 | €184 | €634 | €822,58 | €159 | 16% |
 
-Bij minder deelnemers met het advies (baan €22,50, €8 p.p.): 20 deelnemers en 5 banen €245 winst (30%), 16 deelnemers en 4 banen €158 (24%), 12 deelnemers en 3 banen €62 (13%). Break-even bij 12.
+Update 20 september 2026, banen 2,5 uur in plaats van 2 (inloop en uitloop), Lars is zelf de betaalde host (3,5 uur × €45 excl. btw):
+
+| Deelnemers | Banen | Baanhuur 2,5 u × €22,50 | Drankje + hapjes €8 p.p. | Host (Lars) | Materialen | Kosten | Omzet excl. btw | Winst | Marge |
+|---|---|---|---|---|---|---|---|---|---|
+| 24 | 6 | €337,50 | €192,00 | €157,50 | €31,00 | €718,00 | €981,82 | €263,82 | 27% |
+| 20 | 5 | €281,25 | €160,00 | €157,50 | €31,00 | €629,75 | €818,18 | €188,43 | 23% |
+| 16 | 4 | €225,00 | €128,00 | €157,50 | €31,00 | €541,50 | €654,55 | €113,05 | 17% |
+| 12 | 3 | €168,75 | €96,00 | €157,50 | €31,00 | €453,25 | €490,91 | €37,66 | 8% |
+
+Per deelnemer (4 per baan): baanhuur €14,06, drankje + hapjes €8, host €157,50 gedeeld door het aantal, materialen €31 gedeeld door het aantal. Omzet €40,91 per deelnemer. Bij 24: kosten €29,92 en winst €10,99 per deelnemer; bij 16: kosten €33,84 en winst €7,07.
+
+Met 2,5 uur banen kom je bij 24 op 27%, niet op 30%. Voor 30% bij 24: baantarief maximaal €20,45 per uur (bij €8 p.p.), of drankje + hapjes maximaal €6,72 p.p. (bij €22,50), of banen 2 uur.
+
 
 Prijsstelling op de poster:
 

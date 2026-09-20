@@ -352,7 +352,7 @@ pd_inputs = [
     ("Verkoopprijs p.p. incl. btw", 49.5, "€", False, "Poster: €49,50"),
     ("Btw", f"={REF['btw']}", "%", False, "Inputs"),
     ("Banen (4 spelers per baan, iedereen tegelijk)", 6, "banen", False, "24 deelnemers = 6 banen; 16 = 4; 12 = 3"),
-    ("Uren per baan", 2, "uur", False, "19:00–21:00"),
+    ("Uren per baan", 2.5, "uur", False, "Besluit Lars: 2,5 uur banen (inloop en uitloop)"),
     ("Baantarief per uur (afspraak Poort Padel)", 22.5, "€/uur", True, "Weekend €37,50 op Playtomic; voorstel Lars €22,50"),
     ("Betaalde hosts (Lars zelf niet meegerekend)", 1, "pers.", False, "Lars host zelf plus 1 betaalde host"),
     ("Uren per host", 3.5, "uur", False, "Opbouw 17:45 tot einde 22:00 (incl. opruimen)"),
