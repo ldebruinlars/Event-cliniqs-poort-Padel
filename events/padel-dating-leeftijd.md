@@ -71,3 +71,54 @@ Conclusie: de padel-dating-markt zit vooral op 35+ en 50+. Voor 25 t/m 40 is er 
 - date-match.nl/kennismaking-padel, elkaarontmoeten.nl (50+ padel event), datesportief.nl
 - allecijfers.nl/gemeente/almere (leeftijdsopbouw en huishoudens 2025)
 - pre-dating.com en truedating.co.uk (waarom speeddate-organisaties bandbreedtes van 10 tot 15 jaar gebruiken)
+
+## Benchmark: welke doelgroep kiezen andere padel-datingevents? (onderzoek 20 september 2026)
+
+Vraag van Lars: haal op wat andere padellocaties in Nederland en in het buitenland als doelgroep kiezen. Alle gevonden events met een padelformat, gesorteerd op leeftijdsgrens.
+
+| Organisator, locatie | Land | Doelgroep | Formaat, prijs, opvallend |
+|---|---|---|---|
+| Haystack Dating × Manchester Padel Club | VK | 20ers t/m 40ers ("20s-40s") | avond, Americano-toernooi met wisselende partners, algoritme deelt groepen in; 94% komt alleen |
+| Padel Match, Padel Box Bermondsey (Londen) | VK | 24 t/m 38 jaar | zaterdagmiddag 14:45 tot 17:00, 10 events in 2 jaar, 322 deelnemers totaal (gemiddeld ruim 30 per event) |
+| Padel Social Club, Earl's Court (Londen) | VK | geen leeftijdsgrens, wel vaste dames/heren-verhouding via tickettypes | donderdagavond 18:30 tot 21:00, £30, 60 singles, welkomstdrankje, 3 partijen met wisselende partners, coach op de baan, lounge en bar tussendoor; ook een LGBTQ+-editie |
+| The Dating Club, Padel Project Darlington | VK | 25 t/m 50 jaar | zondagmiddag, £20, welkomstdrankje, wisselende partners, rackets inbegrepen, "no forced icebreakers" |
+| Bumble × LÕK "Game. Set. Match." (Madrid, Sevilla, Barcelona) | Spanje | jong, gericht op Gen Z en millennials (Bumble-onderzoek: 41% van Gen Z noemt padel een van de beste sporten om mensen te leren kennen) | tour van 3 steden in mei tot juli 2025, gratis, merkactivatie |
+| Padel speed dating, Vertou bij Nantes | Frankrijk | geen grens genoemd | enkele sets met wisselende partners, kennismaken tussen de rally's door |
+| Tinder padelbaan, Stockholm | Zweden | Tinder-leden (18+) | gratis baan op een dak, je nodigt je match uit voor een potje |
+| MinglMe × ProPadel Academy, Stockholm | Zweden | singles-app, geen vaste grens per event | padel met coach, wisselende partijen, daarna mingelen |
+| DTNG (matchmakingbureau), The Bubble Club Blaricum | NL | 35 t/m 50 jaar, hoger opgeleid | zondag 20 september 2026, 14:00 tot 17:00, €48,38, "nog 1 ticket voor man beschikbaar" (dus vrouwen waren eerder vol); ook editie "Smash & Match" op 17 mei; 6 events, 156 deelnemers |
+| Date & Match (datingbureau) | NL | 28 tot 68, per event één groep in overleg | koppels spelen, rouleren, borrel of diner, trainer aanwezig |
+| Elkaar Ontmoeten, De Krekel Vught | NL | 50+ | zondag, starters en gevorderden |
+| DateSportief, Sportpartner | NL | geen leeftijd, platform | sportieve singles, padelmaatje zoeken |
+
+Wat opvalt:
+
+1. **Bijna niemand doet 20 tot 30.** De jongste grens die iemand aandurft is 24 (Padel Match, Londen) en die combineren dat meteen met 38 als bovengrens. Bumble richt zich op jong, maar dat is een gratis merkevent met de app als trekker.
+2. **De sweet spot in de UK is 24 t/m 38 of "20s-40s"**, de sweet spot in Nederland is nu 35 t/m 50. Het gat daartussen (25 t/m 40) is precies wat Padel Dating bij Poort Padel pakt.
+3. **Iedereen bewaakt de dames/heren-verhouding met aparte tickets.** Padel Social Club, The Dating Club en DTNG doen het allemaal zo; bij DTNG was 20 september de mannenkant als laatste open. Dus: twee tellers, aparte wachtlijsten.
+4. **Format lijkt overal op het onze**: welkomstdrankje, 3 tot 4 rondes met wisselende partners, coach of host op de baan, bar of lounge tussendoor. Prijs €20 tot €50; DTNG in Blaricum zit op €48,38, dus €49,50 met hapjes is marktconform.
+5. **Blaricum is 25 minuten van Almere.** DTNG trekt daar 35 tot 50-jarigen op zondagmiddag. Voor editie 2 (40 t/m 55) is dat de concurrent om in de gaten te houden; voor editie 1 (25 t/m 40, zaterdagavond) is er in de regio niemand.
+
+## Wie speelt er padel in Nederland? (KNLTB en EY, Padel in cijfers 2025)
+
+- 876.000 Nederlanders stonden in 2025 minimaal één keer op de padelbaan; ongeveer 424.000 spelen maandelijks.
+- Bij de KNLTB geregistreerd: 343.121 spelers (+10%). Verhouding stabiel rond 35% vrouwen en 65% mannen.
+- **De categorie 25 tot 34 jaar is in absolute aantallen de grootste groep** (in het rapport 2024: 82.496 spelers, +19%). Daarnaast groeit de jeugd t/m 17 en de 45+-groep het hardst.
+- 50 tot 60% van de spelers speelt minder dan vijf keer per jaar (flexibele pay-and-play-spelers). Precies de groep die je met een event een reden geeft om te komen.
+- Wereldwijd (Playtomic Global Padel Report en samenvattingen): de gemiddelde speler zit tussen 25 en 45, ongeveer 40% van de spelers is vrouw.
+
+Wat dit betekent voor Lars: de grootste padelgroep in Nederland (25 tot 34) zit midden in de voorgestelde doelgroep 25 t/m 40, en de groep 35 tot 44 is de tweede. Twintigers onder de 25 zijn er ook veel op de baan, maar die groep is bij dating-events overal de moeilijkste om te vullen. Het advies blijft: **25 t/m 40 voor 7 november, 40 t/m 55 voor editie 2.**
+
+## Bronnen benchmark
+
+- eventbrite.nl: DTNG Padel Event voor Singles (35 t/m 50 jaar), The Bubble Club Blaricum, 20 september 2026, en organisatorpagina DTNG
+- eventbrite.co.uk: Padel Match, "Padel Tennis Social For Singles, ages 24-38", Padel Box Bermondsey
+- padelsocial.club: Padel Play Dates (Earl's Court, 60 singles, £30) en de LGBTQ+-serie
+- visitmanchester.com: Haystack Dating "Play padel and date for singles 20s-40s", Manchester Padel Club
+- eventslist.co.uk: The Dating Club Singles Padel Social, Padel Project Darlington (25 t/m 50)
+- eventoplus.com en clusterpadel.com: Bumble × LÕK "Game. Set. Match." (Madrid, Sevilla, Barcelona)
+- padel-magazine.co.uk: "Padel: voted the sport of flirting" (Vertou padel speed dating, Tinder-baan Stockholm), padelalto.com (Tinder Stockholm)
+- minglme.com: padel voor singles in Stockholm
+- date-match.nl/kennismaking-padel, elkaarontmoeten.nl, datesportief.nl, sportpartner.com/nl/padel-dating
+- knltb.nl: Padel in cijfers, onderzoeksrapport 2025 (pdf) en het rapport 2024; ey.com persbericht 31 maart 2026
+- playtomic.com/global-padel-report (2026), padelformat.com en padeltelegraph.com (samenvattingen leeftijd en geslacht)
