@@ -122,3 +122,17 @@ Wat dit betekent voor Lars: de grootste padelgroep in Nederland (25 tot 34) zit 
 - date-match.nl/kennismaking-padel, elkaarontmoeten.nl, datesportief.nl, sportpartner.com/nl/padel-dating
 - knltb.nl: Padel in cijfers, onderzoeksrapport 2025 (pdf) en het rapport 2024; ey.com persbericht 31 maart 2026
 - playtomic.com/global-padel-report (2026), padelformat.com en padeltelegraph.com (samenvattingen leeftijd en geslacht)
+
+## Benchmark drankjes: wat zit er bij andere dating-events in de prijs? (20 september 2026)
+
+| Organisator | Prijs | Inbegrepen | Rest |
+|---|---|---|---|
+| FlitsDate, speeddaten Almere (Leonardo Hotel) | €29,98 | gratis welkomstdrankje + diverse hapjes | eigen rekening |
+| About Love, speeddaten | €15 tot €25 | welkomstdrankje + datekaart | eigen rekening |
+| DatingNight, speeddaten | circa €25 tot €35 | welkomstdrankje bij aankomst + hapjes | "de rest van de drankjes zijn voor eigen rekening" |
+| Padel Social Club, Londen (Padel Play Dates, onder 35, vrijdagavond) | £30 | één welkomstdrankje (cocktail, bier of fris), padel met wisselende partners, lounge met bar en dj | eigen rekening |
+| The Dating Club, Padel Project Darlington (25 t/m 50) | £20 | één welkomstdrankje (flesje bier of fris), padel, rackets | eigen rekening |
+| DTNG, padel voor singles Blaricum (35 t/m 50) | €48,38 | padel, 3 uur; geen drankjes genoemd | eigen rekening |
+| Haystack Dating, Manchester Padel Club | ticket | Americano-toernooi, matching, icebreakers; geen drankjes genoemd | eigen rekening |
+
+Conclusie: de norm is precies één welkomstdrankje plus hapjes, de rest betaalt iedereen zelf aan de bar. Niemand geeft een drankje per ronde. Voor Padel Dating bij Poort Padel: welkomstdrankje + hapjes + één drankmunt voor het baruur (2 drankjes) zit al boven de markt; 4 drankjes per persoon is niet nodig en kost marge. Bronnen: flitsdate.nl/speeddaten-almere, welkeonlinedatingsite.nl (reviews About Love en FlitsDate, gids speeddating), speeddate.nl (DatingNight), eventbrite.co.uk (Padel Play Dates), eventslist.co.uk (The Dating Club), eventbrite.nl (DTNG), visitmanchester.com (Haystack).
