@@ -501,7 +501,7 @@ pq_inputs = [
     ("Hosturen Lars (host + quizmaster)", 5, "uur", False, "17:00 opbouw tot 22:00"),
     ("Hosttarief per uur", f"={REF['coach_uur']}", "€/uur", True, "Inputs (€45 excl. btw)"),
     ("Welkomstdrankje + hapjes p.p. (afspraak Poort Padel)", 8, "€", True, "Zelfde arrangement als Padel Dating"),
-    ("Materialen (antwoordvellen, beeldronde-prints, pennen, ballen)", 35, "€", False, "Scherm en geluid van Poort Padel"),
+    ("Materialen", 0, "€", False, "Besluit Lars: geen materiaalkosten; printen en ballen uit eigen voorraad, scherm en geluid van Poort Padel"),
     ("Poort Padel geeft de prijzen? (1 = ja, 0 = ACA betaalt)", 1, "ja/nee", True, "Afspraak Lars: Poort Padel geeft de prijzen"),
     ("Waarde prijzenpakket als ACA het zelf betaalt", 420, "€", False, "9 baanuren tegen lijstprijs + drankjes, hapjes, ballen en grips; winkelwaarde ± €500 (events/padel-quiz.md par. 5)"),
     ("Doelmarge (% van omzet excl. btw)", 0.3, "%", False, "Keuze Lars: 30%"),

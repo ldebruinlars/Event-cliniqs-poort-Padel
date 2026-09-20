@@ -140,48 +140,50 @@ Hoe elke winnaar precies wordt bepaald, de Mexicano- en quizregels, het jury-dra
 
 ## 6. Prijs en kostenplaatje
 
-Rekenmodel: `pricing/prijscalculator.xlsx`, tabblad **Padel & Quiz** (blauwe cellen aanpassen). Aannames: baan €22,50 per uur (besluit Lars: huren, niet gratis), welkomstdrankje plus hapjes €8 p.p., Lars host en quizmaster 5 uur × €45 excl. btw, materialen €35, prijzen door Poort Padel (€0), geen zaalhuur (Grand Café; de evenementenruimte kost 's avonds €550, alleen als Poort Padel die geeft).
+Rekenmodel: `pricing/prijscalculator.xlsx`, tabblad **Padel & Quiz** (blauwe cellen aanpassen). Aannames: baan €22,50 per uur (besluit Lars: huren, niet gratis), welkomstdrankje plus hapjes €8 p.p., Lars host en quizmaster 5 uur × €45 excl. btw (dat is zijn eigen geld, geen kosten), geen materiaalkosten, prijzen door Poort Padel (€0), geen zaalhuur (Grand Café; de evenementenruimte kost 's avonds €550, alleen als Poort Padel die geeft).
 
-| Deelnemers | Banen | Baanhuur 1,5 u | Drankje + hapjes | Host (Lars) | Materialen | Kosten | Omzet excl. btw | Winst | Marge |
-|---|---|---|---|---|---|---|---|---|---|
-| 24 | 6 | €202,50 | €192,00 | €225,00 | €35,00 | €654,50 | €783,47 | €128,97 | 16% |
-| 28 | 7 | €236,25 | €224,00 | €225,00 | €35,00 | €720,25 | €914,05 | €193,80 | 21% |
-| 32 | 8 | €270,00 | €256,00 | €225,00 | €35,00 | €786,00 | €1.044,63 | €258,63 | 25% |
-| 36 | 9 | €303,75 | €288,00 | €225,00 | €35,00 | €851,75 | €1.175,21 | €323,46 | 28% |
-| 40 | 10 | €337,50 | €320,00 | €225,00 | €35,00 | €917,50 | €1.305,79 | €388,29 | 30% |
+Simpel gezegd: jij betaalt alleen de banen en €8 p.p. aan Poort Padel, de rest is voor jou.
 
-Per deelnemer bij 32: baanhuur €8,44, drankje + hapjes €8, host €7,03, materialen €1,09, kosten €24,56, omzet €32,64, winst €8,08. Naar Poort Padel bij 32: €526 plus de baromzet.
+| Deelnemers | Banen | Inkomsten excl. btw | Baanhuur 1,5 u × €22,50 | Drankje + hapjes €8 p.p. | Naar Poort Padel | **Jij houdt over** | Waarvan 5 uur host à €45 | Marge boven je uurloon |
+|---|---|---|---|---|---|---|---|---|
+| 24 | 6 | €783,47 | €202,50 | €192,00 | €394,50 | **€388,97** | €225 | 21% |
+| 28 | 7 | €914,05 | €236,25 | €224,00 | €460,25 | **€453,80** | €225 | 25% |
+| 32 | 8 | €1.044,63 | €270,00 | €256,00 | €526,00 | **€518,63** | €225 | 28% |
+| 36 | 9 | €1.175,21 | €303,75 | €288,00 | €591,75 | **€583,46** | €225 | 30% |
+| 40 | 10 | €1.305,79 | €337,50 | €320,00 | €657,50 | **€648,29** | €225 | 32% |
+
+Per deelnemer: €39,50 incl. btw is €32,64 excl. btw; €8,44 gaat naar de baan en €8 naar drankje en hapjes, dus €16,44 naar Poort Padel en €16,20 voor jou. Naar Poort Padel bij 32: €526 plus de baromzet.
 
 - **€39,50 is de prijs.** Anderhalf uur padel, welkomstdrankje, hapjes, anderhalf uur quiz met een host en €500 aan prijzen. Houten vraagt €27,50 maar zonder host, zonder hapjes tijdens de quiz en met een eigen zaal. Padel Dating is €49,50 voor 2 uur padel plus baruur, dus €39,50 past in de reeks.
-- **De 30% haal je bij 40 deelnemers**, bij 32 zit je op 25%. Het baantarief is de knop: bij €20 per uur is 32 deelnemers 28%, bij €17,50 is het 31%. Vraag Poort Padel dus €17,50 tot €20 per baanuur voor dit blok (zaterdag 18:00 tot 19:30, 8 tot 10 banen tegelijk, gegarandeerd), in ruil voor de bar-avond en de prijzen als hun zichtbare bijdrage.
-- **Onder de 24 deelnemers** verplaatsen (zelfde voorwaarde als Padel Dating). Break-even ligt bij 17.
+- **Marge boven je eigen uurloon** (5 uur × €45): 28% bij 32 deelnemers, 30% vanaf 36. Het baantarief is de knop: bij €20 per uur is 32 deelnemers 31%. Vraag Poort Padel dus €17,50 tot €20 per baanuur voor dit blok (zaterdag 18:00 tot 19:30, 8 tot 10 banen tegelijk, gegarandeerd), in ruil voor de bar-avond en de prijzen als hun zichtbare bijdrage.
+- **Onder de 24 deelnemers** verplaatsen (zelfde voorwaarde als Padel Dating); bij 20 houd je €289 over, bij 16 €224.
 
 ## 6b. Wie verdient wat: Poort Padel en Lars naast elkaar
 
-Prijs €39,50 p.p. Baanhuur 1,5 uur per baan (18:00 tot 19:30), 4 spelers per baan. Weekendtarief op Playtomic €37,50 per baanuur; afspraak €22,50. Arrangement €8 p.p. (welkomstdrankje plus hapjes), betaald door All Court Academy aan Poort Padel. Baromzet tijdens de quiz en de nazit (19:30 tot 22:00, 2,5 uur): schatting €15 p.p. (3 drankjes à €4 plus een hapje; Engelse benchmark £12 p.p. in 2,5 uur). Prijzen kosten Poort Padel ± €85 inkoop plus 9 lege baanuren. Lars: host en quizmaster 5 uur × €45 excl. btw, materialen €35.
+Prijs €39,50 p.p. Baanhuur 1,5 uur per baan (18:00 tot 19:30), 4 spelers per baan. Weekendtarief op Playtomic €37,50 per baanuur; afspraak €22,50. Arrangement €8 p.p. (welkomstdrankje plus hapjes), betaald door All Court Academy aan Poort Padel. Baromzet tijdens de quiz en de nazit (19:30 tot 22:00, 2,5 uur): schatting €15 p.p. (3 drankjes à €4 plus een hapje; Engelse benchmark £12 p.p. in 2,5 uur). Prijzen kosten Poort Padel ± €85 inkoop plus 9 lege baanuren. Lars: geen materiaalkosten; zijn 5 uur als host zitten in wat hij overhoudt.
 
 **Met de afspraak van €22,50 per baanuur**
 
-| Deelnemers | Banen | Baanhuur naar Poort Padel | Arrangement naar Poort Padel | Baromzet (schatting €15 p.p.) | **Poort Padel totaal** | Poort Padel na prijzen (−€85) | Wat de korting ze kost t.o.v. €37,50 | Kosten ACA | Winst ACA | Marge | **Lars totaal (winst + hostloon €225)** |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 24 | 6 | €202,50 | €192 | €360 | **€754,50** | €669,50 | €135 | €654,50 | €128,97 | 16% | **€353,97** |
-| 32 | 8 | €270,00 | €256 | €480 | **€1.006,00** | €921,00 | €180 | €786,00 | €258,63 | 25% | **€483,63** |
-| 40 | 10 | €337,50 | €320 | €600 | **€1.257,50** | €1.172,50 | €225 | €917,50 | €388,29 | 30% | **€613,29** |
+| Deelnemers | Banen | Baanhuur naar Poort Padel | Arrangement naar Poort Padel | Baromzet (schatting €15 p.p.) | **Poort Padel totaal** | Poort Padel na prijzen (−€85) | Wat de korting ze kost t.o.v. €37,50 | **Jij houdt over** |
+|---|---|---|---|---|---|---|---|---|
+| 24 | 6 | €202,50 | €192 | €360 | **€754,50** | €669,50 | €135 | **€388,97** |
+| 32 | 8 | €270,00 | €256 | €480 | **€1.006,00** | €921,00 | €180 | **€518,63** |
+| 40 | 10 | €337,50 | €320 | €600 | **€1.257,50** | €1.172,50 | €225 | **€648,29** |
 
 **Als Poort Padel het volle weekendtarief van €37,50 wil**
 
-| Deelnemers | Baanhuur | Poort Padel totaal | Kosten ACA | Winst ACA | Marge | Lars totaal |
-|---|---|---|---|---|---|---|
-| 24 | €337,50 | €889,50 | €789,50 | −€6,03 | −1% | €218,97 |
-| 32 | €450,00 | €1.186,00 | €966,00 | €78,63 | 8% | €303,63 |
-| 40 | €562,50 | €1.482,50 | €1.142,50 | €163,29 | 13% | €388,29 |
+| Deelnemers | Baanhuur | Poort Padel totaal | Jij houdt over |
+|---|---|---|---|
+| 24 | €337,50 | €889,50 | €253,97 |
+| 32 | €450,00 | €1.186,00 | €338,63 |
+| 40 | €562,50 | €1.482,50 | €423,29 |
 
 Wat dit zegt:
 
 - **Poort Padel verdient ruim €1.000 aan een avond van 32 mensen**, waarvan €526 gegarandeerd (baanhuur plus arrangement, door ACA betaald ongeacht wat mensen drinken) en €480 geschat aan de bar. Bij een rustige bar (€10 p.p.) is het €846, bij een goede (€20 p.p.) €1.166.
 - **De korting op het baantarief kost ze €180 bij 32 deelnemers**, en dat alleen als die 8 banen op zaterdag 18:00 tot 19:30 anders allemaal tegen €37,50 verhuurd zouden zijn. Daar krijgen ze €256 arrangement en €480 bar voor terug die er zonder het event niet zouden zijn. Dat is het argument voor het gesprek: de korting is geen gift, het is de toegangsprijs voor €736 extra omzet.
-- **Zonder korting kantelt het voor jou**: bij 24 deelnemers verlies, bij 32 nog 8% marge. Bij €22,50 zit je bij 32 op 25% en bij 40 op de 30%, plus €225 hostloon.
-- **Jouw totaal** (winst plus hostloon): €354 bij 24, €484 bij 32, €613 bij 40 deelnemers voor een avond van vijf uur.
+- **Zonder korting gaat er €180 extra naar Poort Padel** bij 32 deelnemers, en houd jij €339 over in plaats van €519.
+- **Wat jij overhoudt** met de afspraak: €389 bij 24, €519 bij 32, €648 bij 40 deelnemers voor een avond van vijf uur. Daar zit je eigen werk in, verder geen kosten.
 - De prijzen (± €500 winkelwaarde) kosten Poort Padel ± €85 cash plus lege baanuren; die baanuren brengen de winnaars terug, met drie mensen erbij die ook drinken.
 
 ## 7. De vragen (6 rondes van 8 plus jackpot en tiebreak)
