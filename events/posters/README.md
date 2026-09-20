@@ -386,3 +386,25 @@ Definitieve tekst:
 | Instagram story 9:16 | `431fc497-4381-434e-9fca-b1cba49fd5c2` (ongewijzigd) |
 
 Niet publiceren voordat BoutiQ akkoord is met de naamsvermelding en Poort Padel de baanprijs heeft bevestigd.
+
+### Versie 13: definitieve set, tekst deterministisch gezet op het gekozen beeld (20 september 2026)
+
+Lars koos het beeld van de Instagram-feed uit versie 8 (job `9df86052…`, de illustratie met discobal, racket en hartenspoor) als de achtergrond die goed is; de achtergronden van de latere GPT-Image-bewerkingen vond hij te rommelig. Conform de Higgsfield-workflow brand-asset-creation (posters: tekst en logo nooit in het gegenereerde beeld bakken) is de tekst nu buiten het model om gezet:
+
+- Het beeld (1493 × 2000) is 2× opgeschaald (Lanczos); het gebied onder de polaroid is opnieuw gevuld met de eigen korrelstructuur van het beeld (schone stukken achtergrond, gespiegeld en getegeld, met zachte randen).
+- Tekst in Poppins 500/600/700 (Google Fonts; pijl en sterretje uit DejaVu Sans Bold), kleuren gesampled uit het beeld: cream (233,212,175), koraal (224,64,40), lime (194,193,0), groen (5,39,25).
+- De BoutiQ-ribbon is een aparte laag op de hoek van de polaroid; er is ook een versie zonder.
+- Geen early bird. Geen drankje per ronde. Bron: `events/posters/final/build_poster.py` (draait met `python3` vanuit de scratchpad met het beeld `images/11.webp`; elke tekstwijziging is 1 minuut werk zonder nieuwe generatie).
+
+| Bestand in `events/posters/final/` | Formaat | Gebruik |
+|---|---|---|
+| `padel-dating-poster-A-print-boutiq-30x45cm.pdf` + `.jpg` | 2:3, 2986 × 4479 px, 253 dpi op 30 × 45 cm | print (balie, schermen in de hal); A3 met rand kan ook |
+| `padel-dating-poster-A-print-zonder-boutiq-30x45cm.pdf` + `.jpg` | idem | gebruiken als BoutiQ niet meedoet |
+| `padel-dating-ig-feed-4x5.jpg` | 2160 × 2700 | Instagram en Facebook feed |
+| `padel-dating-ig-story-9x16.jpg` | 2160 × 3840, tekst binnen de veilige zone | Instagram story met link-sticker |
+
+Tekst poster: PADEL DATING · Love at first serve / Speel. Praat. Match. / Zaterdag 7 november · 19:00 – 22:00 · inloop 18:30 / Singles van 25 t/m 40 jaar · 12 dames & 12 heren / 4 rondes, elke ronde een nieuwe partner / 12 min spelen, 12 min praten / Daarna: het laatste uur samen in de bar / ✦ Nooit gepadeld? Geen probleem, rackets liggen klaar / ✦ Match? Dan krijgen jullie een gratis baanuur / ribbon Win een date voor 2 bij BoutiQ Almere / €49,50 p.p. incl. welkomstdrankje & hapjes / Meld je aan → allcourtacademy.com/events / All Court Academy × Poort Padel · Neonweg 62, Almere.
+
+Tekst feed en story: Zaterdag 7 november · 19:00 (story: 19:00 – 22:00) / Singles 25 t/m 40 jaar · 12 dames & 12 heren / 4 rondes, elke ronde een nieuwe partner / Daarna samen in de bar · Nooit gepadeld? Geen probleem / €49,50 p.p. incl. welkomstdrankje & hapjes / Match = gratis baanuur / Meld je aan → allcourtacademy.com/events (story: link in bio) / All Court Academy × Poort Padel · Almere.
+
+De Higgsfield-versies 9 t/m 12 zijn hiermee vervallen.
