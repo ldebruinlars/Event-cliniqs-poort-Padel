@@ -142,9 +142,9 @@ if __name__=='__main__':
         img.save(f'{name}.png'); print(name,img.size,'text ends at',yend,'of',H)
     # Feed 4:5: scale by height, side margins filled with grain
     W,H=2160,2700; S=H/OH; aw=int(OW*S); ax=(W-aw)//2
-    img,yend=compose(W,H,S,ax,0,spec_F,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Almere',True)
+    img,yend=compose(W,H,S,ax,0,spec_F,'€49,50 p.p. incl. welkomstdrankje & hapjes',None,'Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Almere',True)
     img.save('ig-feed-4x5.png'); print('feed',img.size,yend)
     # Story 9:16: scale by width, top/bottom filled with grain, text inside the safe zone
     W,H=2160,3840; S=W/OW; ah=int(OH*S); ay=(H-ah)//2
-    img,yend=compose(W,H,S,0,ay,spec_B,'€49,50 p.p. incl. welkomstdrankje & hapjes','Match = gratis baanuur','Meld je aan → link in bio','All Court Academy × Poort Padel',True)
+    img,yend=compose(W,H,S,0,ay,spec_B,'€49,50 p.p. incl. welkomstdrankje & hapjes',None,'Meld je aan → link in bio','All Court Academy × Poort Padel',True)
     img.save('ig-story-9x16.png'); print('story',img.size,yend,'safe until',int(H*0.88))
