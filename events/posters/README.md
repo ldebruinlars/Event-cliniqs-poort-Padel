@@ -355,3 +355,34 @@ Lars koos: A voor print, B voor online, en voegde de prijs toe: 1 dame en 1 heer
 | Instagram story 9:16 (tekst van B, link in bio) | | `431fc497-4381-434e-9fca-b1cba49fd5c2` |
 
 Controleer op elk beeld: "7 november", "25 t/m 40", "12 dames & 12 heren", "BoutiQ", "€49,50".
+
+### Versie 12: definitieve tekst na de prijs- en drankjesbesluiten (20 september 2026)
+
+Besluiten van Lars: welkomstdrankje en hapjes inbegrepen, drankjes in het baruur voor eigen rekening (benchmark: geen enkel dating-event geeft meer dan één welkomstdrankje); 6 banen, iedereen tegelijk op de baan; BoutiQ-vouchers voor 1 dame en 1 heer. Op de poster verandert daardoor één regel: "12 min spelen, 12 min praten met een drankje" wordt "12 min spelen, 12 min praten". De prijs-pill "€49,50 p.p. incl. welkomstdrankje & hapjes" klopte al. Bewerkt vanuit versie 11, verder niets gewijzigd. Feed (`15615c27…`) en story (`431fc497…`) bevatten die regel niet en blijven geldig.
+
+Checklist uit de Higgsfield-workflow brand-asset-creation (posters en QA) toegepast: exacte tekst, spelling, contrast cream op donkergroen, veilige marges, geen uitgevonden claims. Visuele controle van de pixels moet Lars zelf doen (de beelden zijn vanuit de bouwomgeving niet te openen): let op "7 november", "25 t/m 40", "12 dames & 12 heren", "BoutiQ", "€49,50", "allcourtacademy.com/events".
+
+Definitieve tekst:
+
+> PADEL DATING · Love at first serve
+> Speel. Praat. Match.
+> Zaterdag 7 november · 19:00 – 22:00 · inloop 18:30 (alleen op A)
+> Singles van 25 t/m 40 jaar · 12 dames & 12 heren
+> 4 rondes, elke ronde een nieuwe partner
+> 12 min spelen, 12 min praten
+> Daarna: het laatste uur samen in de bar
+> Nooit gepadeld? Geen probleem(, rackets liggen klaar op A)
+> Match? Dan krijgen jullie een gratis baanuur (A) / tag Match = gratis baanuur (B)
+> Ribbon: Win een date voor 2 bij BoutiQ Almere
+> €49,50 p.p. incl. welkomstdrankje & hapjes
+> Meld je aan → allcourtacademy.com/events
+> All Court Academy × Poort Padel · Neonweg 62, Almere
+
+| Bestand | Higgsfield job |
+|---|---|
+| Poster A, print (vol) | `5409fe82-88a2-4b51-830f-5e53f020c1db` |
+| Poster B, online (strak) | `3baaf144-7328-48f1-808e-9a30ccc92ddd` |
+| Instagram feed 3:4 | `15615c27-c853-478c-8a97-8026513f0e10` (ongewijzigd) |
+| Instagram story 9:16 | `431fc497-4381-434e-9fca-b1cba49fd5c2` (ongewijzigd) |
+
+Niet publiceren voordat BoutiQ akkoord is met de naamsvermelding en Poort Padel de baanprijs heeft bevestigd.

@@ -130,7 +130,7 @@ Doel: 24 aanmeldingen (12 dames, 12 heren). Start de campagne op donderdag 15 ok
 
 **D1 (aankondiging)**
 Love at first serve 💚🎾
-Op zaterdag 7 november organiseren we Padel Dating bij @poortpadel: 24 singles, 4 rondes, elke ronde een nieuwe partner. 12 minuten samen padellen, 12 minuten praten met een drankje. En daarna? Het laatste uur samen in de bar.
+Op zaterdag 7 november organiseren we Padel Dating bij @poortpadel: 24 singles, 4 rondes, elke ronde een nieuwe partner. 12 minuten samen padellen, 12 minuten praten. En daarna? Het laatste uur samen in de bar.
 
 📅 Zaterdag 7 november · 19:00 – 22:00
 👫 Singles van 25 t/m 40 jaar · 12 dames & 12 heren
