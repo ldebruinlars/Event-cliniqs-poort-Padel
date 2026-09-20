@@ -1,5 +1,23 @@
 # Flyer Padel Kids Kamp (voor scholen)
 
+## Gekozen versie: illustratie (crème, herfstbladeren)
+
+Lars koos op 20 september 2026 de Higgsfield-illustratieversie als definitieve voorkant. Daar is de echte QR-code in gemonteerd en er is een achterkant in dezelfde stijl bij gebouwd (Fredoka voor koppen, Caveat voor het handschrift, Nunito voor de lopende tekst, crème papier, navy en oranje, bladeren en sterren als doodles).
+
+| Bestand | Wat |
+|---|---|
+| `kidskamp-flyer-illustratie-a5.pdf` | drukbestand, 2 pagina's A5, voorkant illustratie met QR, achterkant informatie |
+| `kidskamp-flyer-voorkant-illustratie.png` | voorkant met QR, 2819 × 4000 px (ook bruikbaar als Instagram-post of in de ouderapp) |
+| `kidskamp-flyer-achterkant-illustratie.png` | achterkant, 1680 × 2381 px |
+| `kidskamp-flyer-illustratie-a5.html` | bron van de achterkant en de PDF; tekst aanpassen en opnieuw naar PDF printen met Chrome (A5, marges geen, achtergrondkleuren aan); fonts zitten ingebed |
+| `kidskamp-qr.png` | de QR-code los, 1220 × 1220 px |
+
+Let op bij de voorkant: die is opgebouwd uit de afbeelding die Lars in de chat plakte (1328 × 2000 px, opgeschaald naar 2× en met de papierkleur aangevuld tot A5-verhouding). Voor A5-druk is dat rond 250 dpi, ruim voldoende voor een flyer. Wil je scherper, download dan het originele Higgsfield-bestand (job `c255ca17-4b23-430c-8bc9-24bcacf34c4f`, 1360 × 2048) of laat het in Higgsfield naar 4K opschalen en plak de QR opnieuw in het witte vlak (positie: rechtsonder, het witte vierkant).
+
+Alternatieve AI-achterkant in dezelfde stijl, met leeg QR-vlak: Higgsfield job `135677f6-a10c-411f-96e2-9d61ad94db17`. De HTML-achterkant is tekstueel exact; bij de AI-versie de spelling controleren.
+
+## Eerste versie (HTML, navy) blijft beschikbaar
+
 Gemaakt op 20 september 2026. A5, dubbelzijdig, drukklaar.
 
 | Bestand | Wat |
