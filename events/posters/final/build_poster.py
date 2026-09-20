@@ -112,8 +112,7 @@ lines_A=[
  ('4 rondes, elke ronde een nieuwe partner','p500',30,CREAM,6),
  ('12 min spelen, 12 min praten','p500',30,CREAM,6),
  ('Daarna: het laatste uur samen in de bar','p500',30,CREAM,12),
- ('✦ Nooit gepadeld? Geen probleem, rackets liggen klaar','p500',25,LIME,4),
- ('✦ Match? Dan krijgen jullie een gratis baanuur','p500',25,LIME,14),
+ ('✦ Nooit gepadeld? Geen probleem, rackets liggen klaar','p500',25,LIME,14),
 ]
 for name,bq in (('poster-A-print-boutiq',True),('poster-A-print-zonder-boutiq',False)):
     img=compose(W,H,S,0,0,1540,lines_A,'€49,50 p.p. incl. welkomstdrankje & hapjes',None,'Meld je aan → allcourtacademy.com/events','All Court Academy × Poort Padel · Neonweg 62, Almere',bq)
