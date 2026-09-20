@@ -26,27 +26,25 @@ def rich_draw(d,x,y,txt,fnt,fill):
         d.text((x,y+dy),t,font=f,fill=fill); x+=d.textlength(t,font=f)
 
 # --- texture from clean patches of the original background
-def clean_patch(p):
-    a=np.asarray(p).astype(int); bg=np.array([5,39,25]); bad=np.abs(a-bg).sum(2)>45
-    med=np.median(a[~bad],axis=0)
-    noise=np.random.default_rng(3).normal(0,5,a.shape)
-    a[bad]=np.clip(med+noise[bad],0,255)
-    return Image.fromarray(a.astype('uint8'))
-patches=[clean_patch(orig.crop(r)) for r in [(1310,1500,1493,1800),(0,1620,300,1800),(1240,1480,1493,1800)]]
+# --- texture: random grain crops sampled only where the original is pure background (no doodles, text or pills)
+_L=np.asarray(orig.convert('L')).astype(int); _bad=(np.abs(_L-28)>48).astype('uint8')
+_bad=np.asarray(Image.fromarray(_bad*255).filter(ImageFilter.MaxFilter(15)))>0   # dilate 7px around anything that is not background
+_T=64
+_cands=[(x,y) for y in range(0,OH-_T,8) for x in range(0,OW-_T,8) if not _bad[y:y+_T,x:x+_T].any()]
+print('grain tiles available:',len(_cands))
 def texture(w,h,scale):
     canvas=Image.new('RGB',(w,h),DARK)
-    tiles=[p.resize((int(p.width*scale),int(p.height*scale)),Image.LANCZOS) for p in patches]
-    y=0
-    while y<h:
-        x=0; rowh=None
-        while x<w:
+    ts=int(_T*scale)
+    tiles=[]
+    for (x,y) in random.sample(_cands,min(120,len(_cands))):
+        t=orig.crop((x,y,x+_T,y+_T)).resize((ts,ts),Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=1.5,percent=60,threshold=2))
+        tiles.append(t)
+    for y in range(0,h,ts):
+        for x in range(0,w,ts):
             t=random.choice(tiles)
+            k=random.randint(0,3); t=t.rotate(90*k)
             if random.random()<0.5: t=t.transpose(Image.FLIP_LEFT_RIGHT)
-            if random.random()<0.5: t=t.transpose(Image.FLIP_TOP_BOTTOM)
-            cw=min(t.width,random.randint(120,260)); ch=min(t.height,random.randint(120,260))
-            ox=random.randint(0,t.width-cw); oy=random.randint(0,t.height-ch)
-            c=t.crop((ox,oy,ox+cw,oy+ch)); canvas.paste(c,(x,y)); x+=cw; rowh=ch if rowh is None else min(rowh,ch)
-        y+=rowh
+            canvas.paste(t,(x,y))
     return canvas
 
 def feather_paste(canvas, img, pos, feather=40):
