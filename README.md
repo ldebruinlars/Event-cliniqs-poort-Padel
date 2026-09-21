@@ -28,3 +28,7 @@ python3 outreach/send_campaign.py             # dry-run van de mailing
 - Baanhuur is geverifieerd op Playtomic: daluren €30, piek €44, weekend €37,50 per uur (dubbelbaan).
 - Zaalhuur is uitgelezen uit de reserveringswizard van Poort Padel (kantoor €225, skybox €250, congreszaal €550, evenementenruimte €450 per dagdeel, excl. btw). Event- en cateringarrangementen zijn bij Poort Padel alleen op offerte; het coachtarief en de horeca-arrangementen staan daarom als gele aannames in de calculator.
 - Alle prijzen excl. btw. Minimum 16 personen per zakelijk event (eis Poort Padel).
+
+## Agent Reach skill
+
+`.claude/skills/agent-reach/` en `tools/agent-reach/` zijn overgenomen uit `ldebruinlars/animation-padel` (21 september 2026). De skill werkt op je eigen computer met Claude Code in VS Code, na `bash tools/agent-reach/install-mac.sh` of het Windows-script. In de cloudsessie van Claude Code (deze omgeving) staat het netwerk de backends niet toe (Exa, Jina, YouTube, Reddit, Instagram zijn geblokkeerd), dus daar doet de skill niets; onderzoek loopt daar via de ingebouwde zoek- en browsertools.
