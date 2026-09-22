@@ -183,4 +183,4 @@ Op `collado-profile.jpg` loopt een lichte streep (lensflare) over borst en boven
 
 Boven de kop staan nu twee labels naast elkaar: "Trainen voor Premier Padel Rotterdam" (donker vak) en "Training + wedstrijd · publiek welkom" (open vak met witte rand). De rest van de indeling is ongewijzigd. Tekst van beide labels: `kicker` en `kicker2` in `build_variants.py`.
 
-Aanscherping: in variant A staat het nu in de kop zelf, in drie regels: "Twee Spaanse padelprofs" (lime), "trainen bij Poort Padel" (wit), "voor Premier Padel Rotterdam" (wit + lime). Daarboven één label "Training + onderlinge wedstrijd · publiek welkom". De varianten B, C en D houden de twee labels van hierboven.
+Een versie met de kop in drie regels ("... voor Premier Padel Rotterdam") is geprobeerd en op verzoek van Lars weer teruggedraaid; de twee labels boven de kop zijn definitief.

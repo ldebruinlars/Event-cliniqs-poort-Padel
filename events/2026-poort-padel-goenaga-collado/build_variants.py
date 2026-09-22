@@ -4,10 +4,9 @@ Daarna: ./render.sh poster-a.html poster-a  (enz.)"""
 
 T = {
     'kicker': 'Trainen voor Premier Padel Rotterdam',
-    'kicker2': 'Training + onderlinge wedstrijd · publiek welkom',
+    'kicker2': 'Training + wedstrijd · publiek welkom',
     'h1': 'Twee Spaanse padelprofs',
     'h2': 'trainen bij Poort Padel',
-    'h3a': 'voor ', 'h3b': 'Premier Padel Rotterdam',   # derde kopregel, alleen in variant A
     'lead': 'Kom kijken naar hun training en hun onderlinge wedstrijd in Almere Poort.',
     'date': 'Zondag 27 september 2026',
     'time': '18<span class="c">:</span>30 – 20<span class="c">:</span>00',  # dubbele punt rechtop en met ruimte (class c)
@@ -127,8 +126,8 @@ def page(title, css, body):
 
 # ---------- A: tweeluik, rustige kop ----------
 CSS_A = """
-.kick{position:absolute;top:138px;left:var(--pad)}
-.headline{position:absolute;top:188px;left:var(--pad);right:var(--pad);font-size:50px;line-height:1.04}
+.kick{position:absolute;top:146px;left:var(--pad)}
+.headline{position:absolute;top:200px;left:var(--pad);right:var(--pad);font-size:60px}
 .photos{position:absolute;top:352px;left:0;right:0;height:640px;background:var(--green-dark)}
 .panel{top:0;bottom:0}
 .panel.left{left:0;width:615px;clip-path:polygon(0 0,100% 0,calc(100% - 150px) 100%,0 100%)}
@@ -143,8 +142,8 @@ CSS_A = """
 .when .cta{margin:16px 0 0 8px}
 """
 BODY_A = f"""{band()}
-<div class="kick"><div class="kicker"><span>{T['kicker2']}</span></div></div>
-<div class="headline upper"><span class="lime">{T['h1']}</span><br>{T['h2']}<br>{T['h3a']}<span class="lime">{T['h3b']}</span></div>
+<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div><div class="kicker two"><span>{T['kicker2']}</span></div></div>
+<div class="headline upper"><span class="lime">{T['h1']}</span><br>{T['h2']}</div>
 <div class="photos">
   <div class="panel left"><img src="{P1['img']}" alt="{P1['first']} {P1['last']}"></div>
   <div class="panel right"><img src="{P2['img']}" alt="{P2['first']} {P2['last']}"></div>
