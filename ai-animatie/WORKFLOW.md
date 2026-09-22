@@ -181,3 +181,40 @@ gladder dan het origineel.
 Totaal voor een geslaagde animatie: **14 credits om te testen**, en pas daarna
 de 56 voor de mooie versie. Tudor draait meteen op 2.5; testen op Mini scheelt
 een hoop als de compositie nog niet klopt.
+
+## Versie 2: de fouten eruit
+
+Drie problemen uit versie 1 aangepakt met één langere prompt
+(`prompt-v2-animatie.txt`, 377 woorden tegenover 68).
+
+**Wat er veranderde:**
+
+| Probleem | Oplossing |
+|---|---|
+| Raakmoment niet zichtbaar | Eigen blok `SECONDS 4-5. THE CONTACT` met racketmidden, indrukkende bal, verfexplosie, en de regel "must be clearly visible and unmistakable" |
+| Geen tegenstander | Vijfde beeld `05-tegenstander.png` als vierde referentie |
+| Gezicht verjongt | Eigen `IDENTITY`-blok, expliciet "do not smooth, youthen or slim", en het einde verplaatst van extreme close-up naar medium shot |
+| Tekst brokkelt af | "keep the POORT PADEL wordmark sharp, stable and readable in every frame" |
+
+**Resultaat** (`assets/06-animatie-v2-mini.mp4`): alle vier opgelost.
+
+De grote les is de **structuur**, niet de lengte. Een prompt als tijdlijn met
+genummerde secondeblokken wordt aanzienlijk beter gevolgd dan dezelfde
+informatie in een lopende zin.
+
+### Let op bij het controleren
+
+Het raakmoment duurt ongeveer 0,2 seconde. Bij frames trekken op 2 per seconde
+mis je het en concludeer je ten onrechte dat het ontbreekt. Trek rond het
+verwachte moment frames op **12 per seconde**:
+
+```bash
+ffmpeg -ss 2.0 -t 2.5 -i video.mp4 -vf "fps=12,scale=250:-1" frames/i_%02d.jpg
+```
+
+### Preset-waarschuwing
+
+Higgsfield stelde bij deze prompt de preset "IN THE DARK" voor, een
+survival-horror laadscherm. Dat gebeurt op losse woorden zoals "dark" en negeert
+je referenties volledig. Afwijzen met `declined_preset_id` en letterlijk
+genereren.
