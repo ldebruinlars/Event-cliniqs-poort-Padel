@@ -173,3 +173,8 @@ Definitief bestand voor Instagram: `poster-a-1080x1350.png`; voor scherm of prin
 ## Lensflare bij Collado weggewerkt (22 september 2026)
 
 Op `collado-profile.jpg` loopt een lichte streep (lensflare) over borst en bovenarm; in duotone werd dat een lime streep "door zijn arm". `build_clean_collado.py` werkt die weg met OpenCV-inpainting (masker: lichte of verbleekte pixels binnen een smalle strook langs de flare, het blauwe shirt blijft staan) en schrijft `build/collado-profile-clean.jpg`. `build_duotone.py` gebruikt sindsdien die schone versie. Volgorde bij een nieuwe foto: `build_clean_collado.py` (alleen als er iets weg moet), `build_duotone.py`, `build_variants.py`, `render.sh`.
+
+## Rustiger achtergrond bij Collado en dubbele punten in de tijd (22 september 2026)
+
+- De bokeh-stippen achter Collado werden in duotone lime en trokken de aandacht. `build_clean_collado.py` maakt de persoon nu vrijstaand (GrabCut) en zet de achtergrond erachter donker en zacht; het masker staat in `build/collado-mask.png`. Hoeveel de achtergrond gedempt wordt regel je met de factor `0.38` en de blur `9` in dat script.
+- De dubbele punten in "18:30 – 20:00" stonden schuin tegen de 8 en de 0 aan. Ze staan nu rechtop met wat ruimte (class `c` in `build_variants.py`).

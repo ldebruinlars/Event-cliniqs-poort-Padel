@@ -8,7 +8,7 @@ T = {
     'h2': 'trainen bij Poort Padel',
     'lead': 'Kom kijken naar hun training en hun onderlinge wedstrijd in Almere Poort.',
     'date': 'Zondag 27 september 2026',
-    'time': '18:30 – 20:00',
+    'time': '18<span class="c">:</span>30 – 20<span class="c">:</span>00',  # dubbele punt rechtop en met ruimte (class c)
     'cta': 'Gratis toegang',
     'cta2': 'kom kijken',
     'where': 'Neonweg 62 · Almere Poort',
@@ -67,6 +67,7 @@ body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative
 .kicker span{display:inline-block;transform:skewX(12deg)}
 .headline{font-weight:900;font-style:italic;line-height:1.02;letter-spacing:-1px}
 .lime{color:var(--lime)}
+.c{font-style:normal;letter-spacing:0;margin:0 .05em 0 .03em;position:relative;top:-.03em}
 .panel{position:absolute;overflow:hidden}
 .panel img{position:absolute;width:100%;height:100%;object-fit:cover}
 .panel::after{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(to top,rgba(10,26,22,.96) 0%,rgba(10,26,22,.75) 45%,rgba(10,26,22,0) 100%)}
