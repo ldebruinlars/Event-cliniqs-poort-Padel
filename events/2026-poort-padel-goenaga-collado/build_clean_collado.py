@@ -16,7 +16,7 @@ out = cv2.inpaint(im, mask, 12, cv2.INPAINT_TELEA)
 cv2.imwrite('build/collado-profile-clean.jpg', out, [cv2.IMWRITE_JPEG_QUALITY, 95])
 print('klaar, maskerpixels:', int(mask.sum() / 255))
 
-# --- achtergrond rustig maken: persoon vrijstaand (GrabCut), bokeh erachter donker en zacht ---
+# --- masker van de persoon (GrabCut), zodat de duotone op gezicht en haar geen lime gebruikt ---
 mask2 = np.zeros((h, w), np.uint8)
 bgd, fgd = np.zeros((1, 65), np.float64), np.zeros((1, 65), np.float64)
 cv2.grabCut(out, mask2, (230, 90, 850, 990), bgd, fgd, 8, cv2.GC_INIT_WITH_RECT)
@@ -25,9 +25,5 @@ fg = cv2.morphologyEx(fg, cv2.MORPH_OPEN, np.ones((7, 7), np.uint8))
 fg = cv2.morphologyEx(fg, cv2.MORPH_CLOSE, np.ones((15, 15), np.uint8))
 n, lab, stats, _ = cv2.connectedComponentsWithStats(fg)          # alleen het grootste stuk (de persoon) houden
 fg = np.where(lab == 1 + np.argmax(stats[1:, cv2.CC_STAT_AREA]), 255, 0).astype(np.uint8)
-alpha = cv2.GaussianBlur(fg, (0, 0), 4).astype(np.float32)[:, :, None] / 255.0
-bg = cv2.GaussianBlur(out, (0, 0), 9).astype(np.float32) * 0.38  # donkerder en zachter, stippen verdwijnen
-comp = out.astype(np.float32) * alpha + bg * (1 - alpha)
-cv2.imwrite('build/collado-profile-clean.jpg', comp.astype(np.uint8), [cv2.IMWRITE_JPEG_QUALITY, 95])
-cv2.imwrite('build/collado-mask.png', fg)
-print('achtergrond gedempt')
+cv2.imwrite('build/collado-mask.png', fg)   # gebruikt door build_duotone.py: persoon zonder lime, achtergrond met lime
+print('masker persoon geschreven')

@@ -176,5 +176,5 @@ Op `collado-profile.jpg` loopt een lichte streep (lensflare) over borst en boven
 
 ## Rustiger achtergrond bij Collado en dubbele punten in de tijd (22 september 2026)
 
-- De bokeh-stippen achter Collado werden in duotone lime en trokken de aandacht. `build_clean_collado.py` maakt de persoon nu vrijstaand (GrabCut) en zet de achtergrond erachter donker en zacht; het masker staat in `build/collado-mask.png`. Hoeveel de achtergrond gedempt wordt regel je met de factor `0.38` en de blur `9` in dat script.
+- Eerst is de achtergrond achter Collado gedempt, maar Lars wilde de achtergrond terug: het ging om de lime vlekken op zijn gezicht en haar. Nu maakt `build_clean_collado.py` alleen een masker van de persoon (GrabCut, `build/collado-mask.png`) en gebruikt `build_duotone.py` binnen dat masker een tweede kleurverloop (`STOPS_SKIN`): zelfde donkere schaduwen, maar de hoge lichten lopen naar een warm neutraal licht in plaats van lime. De achtergrond houdt de lime duotone. Wil je hetzelfde bij Goenaga, dan is daar ook een masker voor nodig.
 - De dubbele punten in "18:30 – 20:00" stonden schuin tegen de 8 en de 0 aan. Ze staan nu rechtop met wat ruimte (class `c` in `build_variants.py`).
