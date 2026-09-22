@@ -218,3 +218,59 @@ Higgsfield stelde bij deze prompt de preset "IN THE DARK" voor, een
 survival-horror laadscherm. Dat gebeurt op losse woorden zoals "dark" en negeert
 je referenties volledig. Afwijzen met `declined_preset_id` en letterlijk
 genereren.
+
+## Versie 3: de eindversie
+
+`assets/08-EINDVERSIE-seedance25.mp4` — Seedance 2.5, omni-reference, 8s 720p,
+**56 credits**. Prompt in `prompt-v3-matchpoint.txt` (504 woorden).
+
+Twee dingen toegevoegd ten opzichte van v2.
+
+### Baangeometrie expliciet vastleggen
+
+In v2 keken beide spelers dezelfde kant op, omdat de tegenstander met zijn rug
+naar de camera was gegenereerd terwijl de camera achter de hoofdpersoon stond.
+Opgelost met `07-tegenstander-front.png` (naar de camera gedraaid) en een eigen
+promptblok:
+
+> COURT GEOMETRY. Hold this layout for all eight seconds. The camera sits low on
+> the near side... He is on the NEAR side, seen from behind... The net crosses
+> the middle of the frame. The opposing player... is on the FAR side beyond the
+> net, FACING THE CAMERA... Never let both players look the same direction.
+
+Die laatste zin is de belangrijkste. Zonder expliciete blikrichting kiest het
+model zelf, en dan kijkt iedereen dezelfde kant op.
+
+### Een verhaal met inzet
+
+Een klap zonder context is een plaatje. Met een matchpoint eromheen krijgt het
+een boog: druk (achterin, uit balans), herstel (bal van het glas, sprong),
+winnaar (de klap), ontlading (brullen met gebalde vuist).
+
+### Resultaat
+
+Alles gehaald: de verfexplosie op het raakmoment is groot en onmisbaar, de
+geometrie klopt, het gezicht houdt stand tot het laatste frame, en het
+POORT PADEL-logo blijft leesbaar.
+
+## Kostenoverzicht, werkelijk betaald
+
+| Onderdeel | Model | Credits |
+|---|---|---|
+| Beeld 1 t/m 5 | GPT Image 2, 2k **high** | 6,5 per stuk = 32,5 |
+| Testanimatie v1 | Seedance 2.0 Mini | 8 |
+| Testanimatie v2 | Seedance 2.0 Mini | 8 |
+| Eindversie v3 | Seedance 2.5 omni-reference | 56 |
+| **Totaal** | | **104,5** |
+
+### Waarschuwing bij het voorrekenen
+
+`get_cost` geeft de prijs voor exact de parameters die je meestuurt. Reken voor
+met **dezelfde** `quality` en `resolution` als je daadwerkelijk gaat gebruiken.
+Een preflight op `quality: medium` gaf 2 credits, terwijl de generatie op
+`quality: high` er 6,5 kostte. Dat is een factor drie.
+
+### Seedance 2.5 vereist een modus
+
+Referentiebeelden meesturen werkt alleen met `mode: "omni_reference"`. De
+standaard `t2v` weigert ze met een 422-fout. Die fout kost geen credits.
