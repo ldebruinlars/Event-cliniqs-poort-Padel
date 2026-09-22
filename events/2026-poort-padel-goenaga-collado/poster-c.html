@@ -1,0 +1,104 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>Goenaga & Collado bij Poort Padel, variant C</title><style>
+@font-face{font-family:"Poppins";font-weight:900;font-style:italic;src:url(fonts/Poppins-BlackItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:900;font-style:normal;src:url(fonts/Poppins-Black.ttf)}
+@font-face{font-family:"Poppins";font-weight:800;font-style:italic;src:url(fonts/Poppins-ExtraBoldItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:700;font-style:italic;src:url(fonts/Poppins-BoldItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:600;font-style:normal;src:url(fonts/Poppins-SemiBold.ttf)}
+@font-face{font-family:"Poppins";font-weight:500;font-style:normal;src:url(fonts/Poppins-Medium.ttf)}
+
+:root{--lime:#CDFD50;--green:#355B52;--green-dark:#1F3B35;--ink:#14302A;--white:#FFFFFF;--pad:56px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden;background:var(--green)}
+body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative;-webkit-font-smoothing:antialiased}
+.upper{text-transform:uppercase}
+.pattern{position:absolute;inset:0;overflow:hidden;opacity:.07;pointer-events:none}
+.pattern span{position:absolute;font-weight:900;font-style:italic;font-size:150px;line-height:1;color:var(--lime);transform:rotate(-14deg)}
+/* logobalk bovenaan: All Court Academy x Poort Padel, duidelijk los van de kop */
+.band{position:absolute;top:0;left:0;right:0;height:112px;background:var(--green-dark);display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);border-bottom:3px solid var(--lime)}
+.band .logos{display:flex;align-items:center;gap:22px}
+.band .logos img.aca{height:52px}
+.band .logos img.pp{height:46px}
+.band .logos .x{color:var(--lime);font-weight:900;font-size:30px;line-height:1}
+.tag{background:var(--lime);color:var(--ink);font-weight:700;font-style:italic;font-size:17px;letter-spacing:3px;padding:8px 20px;transform:skewX(-12deg)}
+.tag span{display:inline-block;transform:skewX(12deg)}
+.kicker{display:inline-block;background:var(--lime);color:var(--ink);font-weight:800;font-style:italic;font-size:20px;letter-spacing:1.5px;padding:8px 20px;transform:skewX(-12deg)}
+.kicker span{display:inline-block;transform:skewX(12deg)}
+.headline{font-weight:900;font-style:italic;line-height:1.02;letter-spacing:-1px}
+.lime{color:var(--lime)}
+.panel{position:absolute;overflow:hidden}
+.panel img{position:absolute;width:100%;height:100%;object-fit:cover}
+.panel::after{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(to top,rgba(10,26,22,.96) 0%,rgba(10,26,22,.75) 45%,rgba(10,26,22,0) 100%)}
+.caption{position:absolute;z-index:2}
+.caption.l{text-align:left}.caption.r{text-align:right}
+.caption .flag{font-size:18px;font-weight:600;letter-spacing:2px;opacity:.9;margin-bottom:4px}
+.caption .first{font-weight:700;font-style:italic;font-size:30px;letter-spacing:1px;line-height:1}
+.caption .last{font-weight:900;font-style:italic;font-size:64px;line-height:.98;letter-spacing:-1px;margin:2px 0 10px}
+.caption .rank{display:inline-block;background:var(--lime);color:var(--ink);font-weight:800;font-style:italic;font-size:20px;letter-spacing:1.5px;padding:6px 14px;transform:skewX(-12deg);margin-bottom:10px}
+.caption .rank span{display:inline-block;transform:skewX(12deg)}
+.caption .fact{font-size:19px;font-weight:500;line-height:1.35;opacity:.95;text-transform:none}
+.caption .handle{font-size:18px;font-weight:600;color:var(--lime);margin-top:6px;text-transform:none}
+.cta{display:inline-block;background:var(--lime);color:var(--ink);font-weight:900;font-style:italic;font-size:30px;line-height:1;padding:16px 34px;transform:skewX(-12deg)}
+.cta span{display:inline-block;transform:skewX(12deg)}
+.cta small{font-size:24px;font-weight:700;letter-spacing:1px;margin-left:10px}
+.footer{position:absolute;left:var(--pad);right:var(--pad);bottom:36px;display:flex;align-items:baseline;justify-content:space-between;border-top:2px solid rgba(205,253,80,.5);padding-top:16px}
+.footer .where{font-size:23px;font-weight:600}
+.footer .where b{color:var(--lime);font-weight:800;font-style:italic;font-size:25px}
+.footer .site{font-size:22px;font-weight:600;letter-spacing:3px;color:var(--lime)}
+
+.kick{position:absolute;top:140px;left:var(--pad)}
+.headline{position:absolute;top:192px;left:var(--pad);right:var(--pad);font-size:56px}
+.photos{position:absolute;top:320px;left:0;right:0;height:760px;background:var(--green-dark)}
+.panel{left:0;width:100%}
+.panel.top{top:0;height:420px;clip-path:polygon(0 0,100% 0,100% 82%,0 100%)}
+.panel.bottom{top:344px;height:416px;clip-path:polygon(0 18%,100% 0,100% 100%,0 100%)}
+.panel.top img{object-position:50% 8%}
+.panel.bottom img{object-position:50% 12%}
+.panel::after{height:80%;background:linear-gradient(to right,rgba(10,26,22,.95) 0%,rgba(10,26,22,.7) 40%,rgba(10,26,22,0) 70%)}
+.panel.bottom::after{background:linear-gradient(to left,rgba(10,26,22,.95) 0%,rgba(10,26,22,.7) 40%,rgba(10,26,22,0) 70%)}
+.stripe{position:absolute;left:0;width:100%;top:0;height:100%;background:var(--lime);clip-path:polygon(0 54%,100% 44%,100% 46.4%,0 56.4%)}
+.caption.l{left:var(--pad);top:60px}.caption.r{right:var(--pad);bottom:40px}
+.caption .last{font-size:60px}
+.when{position:absolute;top:1104px;left:var(--pad);right:var(--pad);display:flex;align-items:center;justify-content:space-between}
+.when .date{font-weight:900;font-style:italic;font-size:40px;line-height:1;color:var(--lime);letter-spacing:-1px}
+.when .time{font-weight:900;font-style:italic;font-size:74px;line-height:1;letter-spacing:-2px;margin-top:4px}
+.when .cta{font-size:26px;padding:14px 26px}
+.when .cta small{display:block;margin:6px 0 0;font-size:19px}
+.footer{bottom:30px;padding-top:12px}
+</style></head>
+<body><div class="pattern" id="pattern"></div>
+<div class="band">
+  <div class="logos"><img class="aca" src="build/logo-all-court-academy-wit.png" alt="All Court Academy"><span class="x">×</span><img class="pp" src="build/logo-poort-padel-wit.png" alt="Poort Padel"></div>
+  <div class="tag"><span>MEET • SMASH • RELAX</span></div>
+</div>
+<div class="kick"><div class="kicker"><span>Training + onderlinge wedstrijd · publiek welkom</span></div></div>
+<div class="headline upper">Twee Spaanse padelprofs <span class="lime">trainen bij Poort Padel</span></div>
+<div class="photos">
+  <div class="panel top"><img src="build/collado-profile-duotone.jpg" alt="Guille Collado" style="object-position:70% 8%"></div>
+  <div class="panel bottom"><img src="build/goenaga-duotone.jpg" alt="Enrique Goenaga" style="object-position:30% 12%"></div>
+  <div class="stripe"></div>
+  <div class="caption l upper">
+    <div class="flag">Spanje</div>
+    <div class="first">Guille</div>
+    <div class="last">Collado</div>
+    <div class="rank"><span>Top 40 van de wereld</span></div>
+    <div class="fact">Wereldkampioen U-18 2023<br>Meervoudig Spaans kampioen · Dropshot</div>
+    <div class="handle">@guilleecollado__</div>
+  </div>
+  <div class="caption r upper">
+    <div class="flag">Spanje</div>
+    <div class="first">Enrique</div>
+    <div class="last">Goenaga</div>
+    <div class="rank"><span>Top 60 van de wereld</span></div>
+    <div class="fact">Tweevoudig Spaans kampioen<br>HEAD Padel</div>
+    <div class="handle">@enri_goenaga</div>
+  </div>
+</div>
+<div class="when upper">
+  <div><div class="date">Zondag 27 september 2026</div><div class="time">18:30 – 20:00</div></div>
+  <div class="cta"><span>Gratis toegang<small>kom kijken</small></span></div>
+</div>
+<div class="footer"><div class="where"><b>POORT PADEL</b> · Neonweg 62 · Almere Poort</div><div class="site upper">poortpadel.nl</div></div>
+<script>
+const p=document.getElementById('pattern');
+for(let r=0;r<10;r++)for(let c=0;c<8;c++){const s=document.createElement('span');s.textContent='P';s.style.left=(c*160-40+(r%2)*80)+'px';s.style.top=(r*150-60)+'px';p.appendChild(s);}
+</script></body></html>

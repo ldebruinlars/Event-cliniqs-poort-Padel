@@ -147,3 +147,16 @@ Aanpassen zonder opnieuw ontwerpen:
 4. Daarna `./render.sh` draaien; die rendert eerst 1080 × 1450 en snijdt bij naar 1350, omdat Chromium headless anders de onderste 90 px niet schildert.
 
 Nog te doen voor publicatie: toestemming van de spelers of hun management voor de foto's (zie "Rechten" hierboven) en de eventtekst laten checken door Poort Padel.
+
+## Vier varianten met beide logo's (22 september 2026)
+
+Na de eerste versie: All Court Academy en Poort Padel staan nu samen in een donkere logobalk bovenaan, los van de kop. Daaronder een lime label "Training + onderlinge wedstrijd · publiek welkom" zodat de kop niet meer aan het logo plakt. `build_variants.py` schrijft de vier HTML-bestanden vanuit één tekstblok; renderen met `./render.sh poster-a.html poster-a` (enz.).
+
+| Variant | Bestand | Indeling |
+|---|---|---|
+| A | `poster-a.html`, `poster-a-1080x1350.png` | tweeluik zoals versie 1, kop lime/wit, datum en tijd onderaan groot |
+| B | `poster-b.html`, `poster-b-1080x1350.png` | datum, tijd en "gratis toegang" in een lime blok direct onder de logo's, daarna kop en foto's |
+| C | `poster-c.html`, `poster-c-1080x1350.png` | foto's gestapeld over de volle breedte met schuine scheiding, Collado boven, Goenaga onder |
+| D | `poster-d.html`, `poster-d-1080x1350.png` | lime achtergrond met donkergroene tekst, kop deels in een donker blok |
+
+Van elke variant staat ook een 2×-versie (`poster-X-2160x2700.png`). De tekst voor alle vier staat in `build_variants.py` bovenaan (`T`, `P1`, `P2`); daar één keer aanpassen en opnieuw draaien. Als een variant gekozen is, kan die HTML direct verder bewerkt worden zoals bij versie 1 beschreven.
