@@ -178,3 +178,7 @@ Op `collado-profile.jpg` loopt een lichte streep (lensflare) over borst en boven
 
 - Eerst is de achtergrond achter Collado gedempt, maar Lars wilde de achtergrond terug: het ging om de lime vlekken op zijn gezicht en haar. Nu maakt `build_clean_collado.py` alleen een masker van de persoon (GrabCut, `build/collado-mask.png`) en gebruikt `build_duotone.py` binnen dat masker een tweede kleurverloop (`STOPS_SKIN`): zelfde donkere schaduwen, maar de hoge lichten lopen naar een warm neutraal licht in plaats van lime. De achtergrond houdt de lime duotone. Wil je hetzelfde bij Goenaga, dan is daar ook een masker voor nodig.
 - De dubbele punten in "18:30 – 20:00" stonden schuin tegen de 8 en de 0 aan. Ze staan nu rechtop met wat ruimte (class `c` in `build_variants.py`).
+
+## Premier Padel Rotterdam toegevoegd (22 september 2026)
+
+Boven de kop staan nu twee labels naast elkaar: "Trainen voor Premier Padel Rotterdam" (donker vak) en "Training + wedstrijd · publiek welkom" (open vak met witte rand). De rest van de indeling is ongewijzigd. Tekst van beide labels: `kicker` en `kicker2` in `build_variants.py`.

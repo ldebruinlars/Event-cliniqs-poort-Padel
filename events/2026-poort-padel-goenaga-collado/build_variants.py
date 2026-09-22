@@ -3,7 +3,8 @@ Tekst en spelers staan hieronder één keer; de lay-out verschilt per variant.
 Daarna: ./render.sh poster-a.html poster-a  (enz.)"""
 
 T = {
-    'kicker': 'Training + onderlinge wedstrijd · publiek welkom',
+    'kicker': 'Trainen voor Premier Padel Rotterdam',
+    'kicker2': 'Training + wedstrijd · publiek welkom',
     'h1': 'Twee Spaanse padelprofs',
     'h2': 'trainen bij Poort Padel',
     'lead': 'Kom kijken naar hun training en hun onderlinge wedstrijd in Almere Poort.',
@@ -63,8 +64,10 @@ body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative
 .band .logos .x{color:var(--lime);font-weight:900;font-size:30px;line-height:1}
 .tag{background:var(--lime);color:var(--ink);font-weight:700;font-style:italic;font-size:17px;letter-spacing:3px;padding:8px 20px;transform:skewX(-12deg)}
 .tag span{display:inline-block;transform:skewX(12deg)}
-.kicker{display:inline-block;background:var(--green-dark);color:var(--white);border:2px solid rgba(255,255,255,.35);font-weight:800;font-style:italic;font-size:20px;letter-spacing:1.5px;padding:8px 20px;transform:skewX(-12deg)}
+.kicker{display:inline-block;background:var(--green-dark);color:var(--white);border:2px solid rgba(255,255,255,.35);font-weight:800;font-style:italic;font-size:19px;letter-spacing:1.2px;padding:8px 18px;transform:skewX(-12deg)}
 .kicker span{display:inline-block;transform:skewX(12deg)}
+.kick{display:flex;gap:14px;white-space:nowrap}
+.kicker.two{background:transparent;color:var(--white);border-color:rgba(255,255,255,.45)}
 .headline{font-weight:900;font-style:italic;line-height:1.02;letter-spacing:-1px}
 .lime{color:var(--lime)}
 .c{font-style:normal;letter-spacing:0;margin:0 .05em 0 .03em;position:relative;top:-.03em}
@@ -139,7 +142,7 @@ CSS_A = """
 .when .cta{margin:16px 0 0 8px}
 """
 BODY_A = f"""{band()}
-<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div></div>
+<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div><div class="kicker two"><span>{T['kicker2']}</span></div></div>
 <div class="headline upper"><span class="lime">{T['h1']}</span><br>{T['h2']}</div>
 <div class="photos">
   <div class="panel left"><img src="{P1['img']}" alt="{P1['first']} {P1['last']}"></div>
@@ -214,7 +217,7 @@ CSS_C = """
 .footer{bottom:30px;padding-top:12px}
 """
 BODY_C = f"""{band()}
-<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div></div>
+<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div><div class="kicker two"><span>{T['kicker2']}</span></div></div>
 <div class="headline upper">{T['h1']} <span class="lime">{T['h2']}</span></div>
 <div class="photos">
   <div class="panel top"><img src="{P1['img']}" alt="{P1['first']} {P1['last']}" style="object-position:70% 8%"></div>
@@ -255,7 +258,7 @@ body{color:var(--ink)}
 .footer .where b,.footer .site{color:var(--ink)}
 """
 BODY_D = f"""{band()}
-<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div></div>
+<div class="kick"><div class="kicker"><span>{T['kicker']}</span></div><div class="kicker two"><span>{T['kicker2']}</span></div></div>
 <div class="headline upper">{T['h1']}<br><span class="inv"><span>{T['h2']}</span></span></div>
 <div class="photos">
   <div class="panel left"><img src="{P1['img']}" alt="{P1['first']} {P1['last']}"></div>
