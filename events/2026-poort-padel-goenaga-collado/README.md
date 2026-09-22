@@ -119,3 +119,31 @@ Beeldmateriaal komt van de Instagram-accounts van de spelers zelf en van
 Premier Padel / FIP. Voor een aankondiging van hun eigen bezoek is dat in de
 praktijk zelden een probleem, maar stem het even af met de spelers of hun
 management voordat het publiek gaat.
+
+## Poster, versie 1 (22 september 2026)
+
+Gebouwd als HTML/CSS op exact 1080 × 1350, zonder AI-beeldgeneratie. Bestanden:
+
+| Bestand | Wat |
+|---|---|
+| `poster-1080x1350.png` | Instagram-post 4:5, direct bruikbaar |
+| `poster-2160x2700.png` | dezelfde poster op 2×, voor scherm bij Poort Padel of print |
+| `poster.html` | de bron: tekst, kleuren en maten |
+| `render.sh` | maakt beide PNG's opnieuw uit `poster.html` (Chromium headless) |
+| `build/` | de foto's in duotone (donkergroen naar lime) en het witte Poort Padel-logo |
+| `fonts/` | Poppins (OFL-licentie), het lettertype van de Poort Padel-huisstijl |
+
+Keuzes in deze versie:
+
+- **Foto's**: Collado links met `collado-profile.jpg`, Goenaga rechts met `goenaga-profile.jpg`. De blauwe shirts botsten met het groen, daarom staan beide foto's in dezelfde duotone (donkergroen, lime in de hoge lichten). `collado-post-06.jpg` (racket boven het hoofd) is ook geprobeerd en staat klaar als `build/collado-duotone.jpg`, maar daar viel zijn gezicht onder de naam.
+- **Ranking** als "Top 40 van de wereld" en "Top 60 van de wereld", geen exacte nummers.
+- **Tekst**: kop in twee regels (wit, lime), namen groot, datum en tijd als grootste blok, lime CTA-balk "Gratis toegang · kom kijken", adres en site in de voet.
+
+Aanpassen zonder opnieuw ontwerpen:
+
+1. Tekst: open `poster.html`, zoek de blokken met `<!-- TEKST: ... -->` en pas de woorden aan.
+2. Maten en kleuren: bovenin `poster.html` staan variabelen (`--headline`, `--name`, `--date`, `--time`, `--photo-top`, `--photo-height`, `--lime`, `--green`).
+3. Andere foto: zet een nieuwe duotone in `build/` (het duotone-recept staat in `build_duotone.py`) en wijzig de `src` van de `<img>` in het fotoblok. De uitsnede stuur je met `object-position`.
+4. Daarna `./render.sh` draaien; die rendert eerst 1080 × 1450 en snijdt bij naar 1350, omdat Chromium headless anders de onderste 90 px niet schildert.
+
+Nog te doen voor publicatie: toestemming van de spelers of hun management voor de foto's (zie "Rechten" hierboven) en de eventtekst laten checken door Poort Padel.
