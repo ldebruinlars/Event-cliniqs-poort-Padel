@@ -169,3 +169,7 @@ Lars koos variant A. Daarna aangepast in alle varianten:
 - De achtergrond-P is nu de echte Poort Padel-P (uit het ballogo geknipt naar `build/p-poort-padel.png`), in een verspringend raster net als op de banners van Poort Padel. `build_variants.py` maakt daar de tegels `build/p-pattern-groen.png` en `build/p-pattern-lime.png` van; dichtheid en zichtbaarheid regel je met `pw`, `gx`, `gy` en `alpha` in `make_pattern`.
 
 Definitief bestand voor Instagram: `poster-a-1080x1350.png`; voor scherm of print `poster-a-2160x2700.png`.
+
+## Lensflare bij Collado weggewerkt (22 september 2026)
+
+Op `collado-profile.jpg` loopt een lichte streep (lensflare) over borst en bovenarm; in duotone werd dat een lime streep "door zijn arm". `build_clean_collado.py` werkt die weg met OpenCV-inpainting (masker: lichte of verbleekte pixels binnen een smalle strook langs de flare, het blauwe shirt blijft staan) en schrijft `build/collado-profile-clean.jpg`. `build_duotone.py` gebruikt sindsdien die schone versie. Volgorde bij een nieuwe foto: `build_clean_collado.py` (alleen als er iets weg moet), `build_duotone.py`, `build_variants.py`, `render.sh`.

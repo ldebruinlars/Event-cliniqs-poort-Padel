@@ -19,6 +19,6 @@ def duotone(im, dst, stops=STOPS):
 
 
 if __name__ == '__main__':
-    duotone(Image.open('assets/collado-profile.jpg'), 'build/collado-profile-duotone.jpg')
+    duotone(Image.open('build/collado-profile-clean.jpg'), 'build/collado-profile-duotone.jpg')  # lensflare over de arm weggewerkt, zie build_clean_collado.py
     duotone(Image.open('assets/goenaga-profile.jpg'), 'build/goenaga-duotone.jpg')
     duotone(Image.open('assets/collado-post-06.jpg').crop((0, 0, 1170, 1150)), 'build/collado-duotone.jpg')
