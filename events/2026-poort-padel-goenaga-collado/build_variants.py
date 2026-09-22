@@ -22,6 +22,24 @@ P2 = {'first': 'Enrique', 'last': 'Goenaga', 'rank': 'Top 60 van de wereld',
       'facts': 'Tweevoudig Spaans kampioen<br>HEAD Padel', 'handle': '@enri_goenaga',
       'img': 'build/goenaga-duotone.jpg'}
 
+from PIL import Image
+
+
+def make_pattern(color, alpha, out, pw=86, gx=30, gy=26):
+    """Tegel met twee verspringende P's uit het Poort Padel-logo; kleur/alpha bepalen hoe subtiel het patroon is."""
+    g = Image.open('build/p-poort-padel.png').convert('RGBA')
+    g = g.resize((pw, int(g.height * pw / g.width)), Image.LANCZOS)
+    a = g.split()[3].point(lambda v: int(v * alpha))
+    glyph = Image.new('RGBA', g.size, color + (0,)); glyph.putalpha(a)
+    tw, th = 2 * (pw + gx), 2 * (g.height + gy)
+    tile = Image.new('RGBA', (tw, th), (0, 0, 0, 0))
+    tile.alpha_composite(glyph, (0, 0)); tile.alpha_composite(glyph, (pw + gx, g.height + gy))
+    tile.save(out)
+
+
+make_pattern((255, 255, 255), 0.085, 'build/p-pattern-groen.png')
+make_pattern((20, 48, 42), 0.07, 'build/p-pattern-lime.png')
+
 FONTS = """
 @font-face{font-family:"Poppins";font-weight:900;font-style:italic;src:url(fonts/Poppins-BlackItalic.ttf)}
 @font-face{font-family:"Poppins";font-weight:900;font-style:normal;src:url(fonts/Poppins-Black.ttf)}
@@ -34,11 +52,9 @@ FONTS = """
 BASE = """
 :root{--lime:#CDFD50;--green:#355B52;--green-dark:#1F3B35;--ink:#14302A;--white:#FFFFFF;--pad:56px}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{width:1080px;height:1350px;overflow:hidden;background:var(--green)}
+html,body{width:1080px;height:1350px;overflow:hidden;background:var(--green) url(build/p-pattern-groen.png) 0 0 repeat}
 body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative;-webkit-font-smoothing:antialiased}
 .upper{text-transform:uppercase}
-.pattern{position:absolute;inset:0;overflow:hidden;opacity:.07;pointer-events:none}
-.pattern span{position:absolute;font-weight:900;font-style:italic;font-size:150px;line-height:1;color:var(--lime);transform:rotate(-14deg)}
 /* logobalk bovenaan: All Court Academy x Poort Padel, duidelijk los van de kop */
 .band{position:absolute;top:0;left:0;right:0;height:112px;background:var(--green-dark);display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);border-bottom:3px solid var(--lime)}
 .band .logos{display:flex;align-items:center;gap:22px}
@@ -47,7 +63,7 @@ body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative
 .band .logos .x{color:var(--lime);font-weight:900;font-size:30px;line-height:1}
 .tag{background:var(--lime);color:var(--ink);font-weight:700;font-style:italic;font-size:17px;letter-spacing:3px;padding:8px 20px;transform:skewX(-12deg)}
 .tag span{display:inline-block;transform:skewX(12deg)}
-.kicker{display:inline-block;background:var(--lime);color:var(--ink);font-weight:800;font-style:italic;font-size:20px;letter-spacing:1.5px;padding:8px 20px;transform:skewX(-12deg)}
+.kicker{display:inline-block;background:var(--green-dark);color:var(--white);border:2px solid rgba(255,255,255,.35);font-weight:800;font-style:italic;font-size:20px;letter-spacing:1.5px;padding:8px 20px;transform:skewX(-12deg)}
 .kicker span{display:inline-block;transform:skewX(12deg)}
 .headline{font-weight:900;font-style:italic;line-height:1.02;letter-spacing:-1px}
 .lime{color:var(--lime)}
@@ -72,10 +88,7 @@ body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative
 .footer .site{font-size:22px;font-weight:600;letter-spacing:3px;color:var(--lime)}
 """
 
-PATTERN_JS = """<script>
-const p=document.getElementById('pattern');
-for(let r=0;r<10;r++)for(let c=0;c<8;c++){const s=document.createElement('span');s.textContent='P';s.style.left=(c*160-40+(r%2)*80)+'px';s.style.top=(r*150-60)+'px';p.appendChild(s);}
-</script>"""
+PATTERN_JS = ""
 
 
 def band():
@@ -102,7 +115,7 @@ def footer():
 
 def page(title, css, body):
     return f"""<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>{title}</title><style>{FONTS}{BASE}{css}</style></head>
-<body><div class="pattern" id="pattern"></div>
+<body>
 {body}
 {PATTERN_JS}</body></html>"""
 
@@ -217,13 +230,11 @@ BODY_C = f"""{band()}
 
 # ---------- D: lime achtergrond, donkergroene tekst ----------
 CSS_D = """
-html,body{background:var(--lime)}
+html,body{background:var(--lime) url(build/p-pattern-lime.png) 0 0 repeat}
 body{color:var(--ink)}
-.pattern span{color:var(--ink)}
-.pattern{opacity:.05}
 .band{background:var(--green-dark);border-bottom:none}
 .kick{position:absolute;top:146px;left:var(--pad)}
-.kicker{background:var(--green-dark);color:var(--lime)}
+.kicker{background:var(--green-dark);color:var(--lime);border-color:var(--green-dark)}
 .headline{position:absolute;top:200px;left:var(--pad);right:var(--pad);font-size:60px;color:var(--ink)}
 .headline .inv{display:inline-block;background:var(--green-dark);color:var(--lime);padding:2px 18px 6px;transform:skewX(-8deg);margin-top:6px}
 .headline .inv span{display:inline-block;transform:skewX(8deg)}

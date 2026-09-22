@@ -160,3 +160,12 @@ Na de eerste versie: All Court Academy en Poort Padel staan nu samen in een donk
 | D | `poster-d.html`, `poster-d-1080x1350.png` | lime achtergrond met donkergroene tekst, kop deels in een donker blok |
 
 Van elke variant staat ook een 2×-versie (`poster-X-2160x2700.png`). De tekst voor alle vier staat in `build_variants.py` bovenaan (`T`, `P1`, `P2`); daar één keer aanpassen en opnieuw draaien. Als een variant gekozen is, kan die HTML direct verder bewerkt worden zoals bij versie 1 beschreven.
+
+## Keuze: variant A, met twee aanpassingen (22 september 2026)
+
+Lars koos variant A. Daarna aangepast in alle varianten:
+
+- Het label "Training + onderlinge wedstrijd · publiek welkom" is nu donkergroen met witte tekst, zodat het niet met de lime kop vecht.
+- De achtergrond-P is nu de echte Poort Padel-P (uit het ballogo geknipt naar `build/p-poort-padel.png`), in een verspringend raster net als op de banners van Poort Padel. `build_variants.py` maakt daar de tegels `build/p-pattern-groen.png` en `build/p-pattern-lime.png` van; dichtheid en zichtbaarheid regel je met `pw`, `gx`, `gy` en `alpha` in `make_pattern`.
+
+Definitief bestand voor Instagram: `poster-a-1080x1350.png`; voor scherm of print `poster-a-2160x2700.png`.
