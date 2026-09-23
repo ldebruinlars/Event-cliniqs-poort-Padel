@@ -5,47 +5,59 @@
 <title>Padel & Quiz, krijtbord</title>
 <style>
 /* Maat = het krijtbord (1744 x 2336, 3:4). Tekst staat in de blokken met TEKST; maten en kleuren hieronder.
-   Kleuren: wit krijt en het geel van de illustratie. Geen lime, geen Poort Padel-balken. */
+   Krijtletters zoals in Canva/Pinterest-krijtbordsjablonen: Cabin Sketch (gearceerde kop), Amatic SC (smalle
+   handkapitalen voor tijden), Kalam (handschrift voor de regels). Een SVG-filter maakt de lijnen en letters
+   licht krom, render.sh legt daarna krijtkorrel over de tekst. */
 :root{
-  --yellow:#F2CC5C; --ink:#14120f; --chalk:#F0EEE6; --pad:120px;
-  --date:104px; --sub:46px; --row:34px; --chip:28px; --pill:38px; --link:32px;
-  --text-top:1408px;   /* waar het tekstblok begint (onder de illustratie) */
+  --yellow:#F2CC5C; --ink:#14120f; --chalk:#F1EFE7; --pad:110px;
+  --date:112px; --sub:60px; --time:52px; --row:36px; --chip:30px; --pill:40px; --link:44px;
+  --text-top:1396px;   /* waar het tekstblok begint (onder de illustratie) */
 }
-@font-face{font-family:"Poppins";font-weight:700;font-style:normal;src:url(fonts/Poppins-Black.ttf)}
-@font-face{font-family:"Poppins";font-weight:600;font-style:normal;src:url(fonts/Poppins-SemiBold.ttf)}
-@font-face{font-family:"Poppins";font-weight:500;font-style:normal;src:url(fonts/Poppins-Medium.ttf)}
+@font-face{font-family:"Sketch";src:url(fonts/CabinSketch-Bold.ttf)}
+@font-face{font-family:"Amatic";font-weight:700;src:url(fonts/AmaticSC-Bold.ttf)}
+@font-face{font-family:"Kalam";font-weight:400;src:url(fonts/Kalam-Regular.ttf)}
+@font-face{font-family:"Kalam";font-weight:700;src:url(fonts/Kalam-Bold.ttf)}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1744px;height:2336px;overflow:hidden;background:#0e0c0a}
-body{font-family:"Poppins",Arial,sans-serif;color:var(--chalk);position:relative;background:url(build/board.jpg) 0 0 no-repeat;-webkit-font-smoothing:antialiased}
+body{font-family:"Kalam",sans-serif;color:var(--chalk);position:relative;background:url(build/board.jpg) 0 0 no-repeat;-webkit-font-smoothing:antialiased}
 .upper{text-transform:uppercase}
-.text{position:absolute;inset:0}  /* krijteffect komt na het renderen uit render.sh; de logostrook blijft strak */
+.text{position:absolute;inset:0;filter:url(#chalk)}   /* krom als handwerk */
 .block{position:absolute;left:var(--pad);right:var(--pad);top:var(--text-top);text-align:center}
-.date{font-weight:700;font-size:var(--date);line-height:1;color:var(--yellow);letter-spacing:2px}
-.date .s{color:var(--chalk);font-size:.55em;vertical-align:.35em;margin:0 14px}
-.sub{font-weight:600;font-size:var(--sub);line-height:1.1;margin-top:12px}
-.prog{margin:26px auto 0;display:inline-block;text-align:left}
-.prog .r{display:flex;align-items:center;gap:22px;margin-bottom:9px}
-.prog .t{flex:0 0 166px;border:4px solid var(--chalk);border-radius:12px 9px 13px 8px;color:var(--yellow);font-weight:700;font-size:31px;line-height:1;padding:8px 0;text-align:center}
-.prog .w{font-weight:500;font-size:var(--row);line-height:1.15}
+.date{font-family:"Sketch";font-size:var(--date);line-height:1;color:var(--yellow);letter-spacing:3px}
+.date .s{color:var(--chalk);font-family:"Kalam";font-size:.5em;vertical-align:.4em;margin:0 18px}
+.uline{width:760px;height:22px;margin:4px auto 0;display:block}
+.sub{font-family:"Amatic";font-weight:700;font-size:var(--sub);line-height:1;letter-spacing:4px;margin-top:4px}
+.prog{margin:20px auto 0;display:inline-block;text-align:left}
+.prog .r{display:flex;align-items:center;gap:24px;margin-bottom:5px}
+.prog .t{flex:0 0 150px;border:4px solid var(--chalk);border-radius:14px 8px 16px 7px / 9px 15px 8px 14px;color:var(--yellow);font-family:"Amatic";font-weight:700;font-size:var(--time);line-height:1;padding:4px 0 1px;text-align:center;letter-spacing:2px}
+.prog .w{font-size:var(--row);line-height:1.15}
 .prog .w b{font-weight:700;color:var(--yellow)}
-.chips{margin-top:20px;display:flex;justify-content:center;gap:16px}
-.chips div{border:4px solid var(--chalk);border-radius:999px;padding:8px 28px;font-weight:600;font-size:var(--chip);line-height:1.1}
-.pill{display:inline-block;margin-top:22px;background:var(--yellow);color:var(--ink);font-weight:700;font-size:var(--pill);line-height:1;padding:17px 40px;border-radius:999px}
-.link{margin-top:18px;font-weight:600;font-size:var(--link);line-height:1;color:var(--yellow);letter-spacing:.5px}
-.link .s{color:var(--chalk);font-size:.8em;margin:0 16px;vertical-align:.1em}
-/* logo's onderaan, niet gekrijt */
-.logos{position:absolute;left:var(--pad);right:var(--pad);bottom:118px;display:flex;align-items:center;justify-content:center;gap:34px}
+.chips{margin-top:14px;display:flex;justify-content:center;gap:18px}
+.chips div{border:4px solid var(--chalk);border-radius:40px 28px 44px 26px / 30px 42px 26px 40px;padding:6px 30px 4px;font-size:var(--chip);line-height:1.2}
+.pill{display:inline-block;margin-top:16px;background:var(--yellow);color:var(--ink);font-weight:700;font-size:var(--pill);line-height:1;padding:14px 40px 10px;border-radius:52px 36px 58px 34px / 38px 56px 34px 52px}
+.link{margin-top:12px;font-family:"Amatic";font-weight:700;font-size:var(--link);line-height:1;color:var(--yellow);letter-spacing:4px}
+.link .s{color:var(--chalk);font-family:"Kalam";font-size:.6em;margin:0 18px;vertical-align:.15em}
+.addr{position:absolute;left:0;right:0;bottom:66px;text-align:center;font-size:27px;letter-spacing:1px;opacity:.92}
+/* logo's onderaan, buiten het filter en zonder krijtkorrel */
+.logos{position:absolute;left:var(--pad);right:var(--pad);bottom:104px;display:flex;align-items:center;justify-content:center;gap:34px}
 .logos img.aca{height:70px}.logos img.pp{height:58px}
-.logos .x{color:var(--chalk);font-weight:700;font-size:38px;line-height:1}
-.addr{position:absolute;left:0;right:0;bottom:80px;text-align:center;font-weight:500;font-size:24px;letter-spacing:1px;opacity:.9}
+.logos .x{color:var(--chalk);font-family:"Kalam";font-weight:700;font-size:40px;line-height:1}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="chalk" x="-2%" y="-2%" width="104%" height="104%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
 <div class="text">
   <div class="block">
     <!-- TEKST: datum en tijd -->
     <div class="date upper"><span class="s">✦</span>Zaterdag 16 januari<span class="s">✦</span></div>
-    <div class="sub">18:00 – 22:00 · inloop 17:30</div>
+    <svg class="uline" viewBox="0 0 760 22"><path d="M6 12 C 120 4, 260 18, 380 10 S 640 4, 754 12" fill="none" stroke="#F1EFE7" stroke-width="5" stroke-linecap="round"/><path d="M40 18 C 200 12, 500 20, 720 16" fill="none" stroke="#F1EFE7" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+    <div class="sub">18:00 – 22:00 · INLOOP 17:30</div>
 
     <!-- TEKST: programma -->
     <div class="prog">
@@ -60,7 +72,7 @@ body{font-family:"Poppins",Arial,sans-serif;color:var(--chalk);position:relative
 
     <!-- TEKST: prijs en website -->
     <div class="pill">€39,50 p.p. incl. welkomstdrankje &amp; hapjes</div>
-    <div class="link"><span class="s">✦</span>allcourtacademy.com/events<span class="s">✦</span></div>
+    <div class="link"><span class="s">✦</span>ALLCOURTACADEMY.COM/EVENTS<span class="s">✦</span></div>
   </div>
   <div class="addr">Poort Padel · Neonweg 62, Almere</div>
 </div>

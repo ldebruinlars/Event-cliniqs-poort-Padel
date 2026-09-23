@@ -23,8 +23,9 @@ board.paste(tile, (FR, FR))
 
 # 2. illustratie (bovenste 1700 px binnen de lijst) verkleind en met zachte rand op het bord
 ill = art.crop((FR, FR, W - FR, 1700)).resize((int((W - 2 * FR) * SCALE), int((1700 - FR) * SCALE)), Image.LANCZOS)
-m = Image.new('L', ill.size, 0); d = ImageDraw.Draw(m); f = 70
+m = Image.new('L', ill.size, 0); d = ImageDraw.Draw(m); f = 36
 d.rectangle((f, f, ill.width - f, ill.height - f), fill=255); m = m.filter(ImageFilter.GaussianBlur(f / 2))
+from PIL import ImageEnhance; ill = ImageEnhance.Contrast(ill).enhance(1.08)
 board.paste(ill, ((W - ill.width) // 2, FR + 10), m)
 board.save('build/board.jpg', quality=95)
 print('board', board.size, 'illustratie tot y =', FR + 10 + ill.height)
