@@ -23,10 +23,22 @@ board.paste(tile, (FR, FR))
 
 # 2. illustratie (bovenste 1700 px binnen de lijst) verkleind en met zachte rand op het bord
 ill = art.crop((FR, FR, W - FR, 1700)).resize((int((W - 2 * FR) * SCALE), int((1700 - FR) * SCALE)), Image.LANCZOS)
-m = Image.new('L', ill.size, 0); d = ImageDraw.Draw(m); f = 36
-d.rectangle((f, f, ill.width - f, ill.height - f), fill=255); m = m.filter(ImageFilter.GaussianBlur(f / 2))
+# bordtint van de illustratie gelijktrekken met het lege bord eromheen (anders is er een naad zichtbaar)
+x0, y0 = (W - ill.width) // 2, FR + 10
+edge = 24
+ia = np.asarray(ill).astype(np.float32); ba = np.asarray(board).astype(np.float32)[y0:y0 + ill.height, x0:x0 + ill.width]
+ring = np.zeros(ia.shape[:2], bool); ring[:edge, :] = True; ring[:, :edge] = True; ring[:, -edge:] = True
+diff = ba[ring].mean(axis=0) - ia[ring].mean(axis=0)
+ill = Image.fromarray(np.clip(ia + diff, 0, 255).astype(np.uint8))
+# masker: links, rechts en boven bijna volledig zichtbaar (smalle overgang, zodat racket en bierglas niet vervagen), onderaan zacht
+m = Image.new('L', ill.size, 255); d = ImageDraw.Draw(m); f = 90; e = 16
+for i in range(f):
+    d.line((0, ill.height - f + i, ill.width, ill.height - f + i), fill=int(255 * (1 - i / f)))
+for i in range(e):
+    v = int(255 * i / e)
+    d.line((i, 0, i, ill.height), fill=v); d.line((ill.width - 1 - i, 0, ill.width - 1 - i, ill.height), fill=v); d.line((0, i, ill.width, i), fill=v)
 from PIL import ImageEnhance; ill = ImageEnhance.Contrast(ill).enhance(1.08)
-board.paste(ill, ((W - ill.width) // 2, FR + 10), m)
+board.paste(ill, (x0, y0), m)
 board.save('build/board.jpg', quality=95)
 print('board', board.size, 'illustratie tot y =', FR + 10 + ill.height)
 

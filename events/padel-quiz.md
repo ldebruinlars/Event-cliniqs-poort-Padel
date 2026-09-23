@@ -260,3 +260,4 @@ Zodra Lars kiest, bouw ik de poster (A3/30 × 40, feed 4:5, story 9:16) met deze
 1. Datum (advies 16 januari 2027) en prijs €39,50.
 2. Stijlrichting A, B of C voor de poster.
 3. Gesprek met Poort Padel: baantarief €17,50 tot €20 voor dit blok (of €22,50 als dat niet lukt), arrangement €8 p.p., scherm en geluid, en het prijzenpakket uit paragraaf 5 inclusief de vouchervoorwaarden (daluren en weekend na 14:00, 3 maanden geldig).
+4. Prijzenbedrag op de poster: **€250 tot €500 aan prijzen benoemen, of weglaten?** (23 september 2026: "€500 aan prijzen" is van de poster gehaald, er staat nu "Prijsuitreiking met prijzen van Poort Padel". Zodra Poort Padel het pakket bevestigt kan het bedrag terug, in `events/posters/padel-quiz-v2/poster.html`.)

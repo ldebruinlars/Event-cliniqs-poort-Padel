@@ -11,7 +11,7 @@ Gemaakt op 23 september 2026. Eerst een versie in Poort Padel-stijl (lime balken
 
 ## Tekst op de poster
 
-Zaterdag 16 januari (datumvoorstel, alternatieven 12 december 2026 en 23 januari 2027) · 18:00 – 22:00 · inloop 17:30. Programma: 17:30 inloop, welkomstdrankje en teamindeling; 18:00 Mexicano padel, 6 rondes, elke ronde een andere partner; 19:45 pubquiz in teams van 4, 6 rondes met jackpotvraag; 21:15 prijsuitreiking, €500 aan prijzen van Poort Padel. Chips: alleen of met je team; alle niveaus, rackets liggen klaar. €39,50 p.p. incl. welkomstdrankje & hapjes. allcourtacademy.com/events. Logo's All Court Academy × Poort Padel, adres Neonweg 62, Almere.
+Zaterdag 16 januari (datumvoorstel, alternatieven 12 december 2026 en 23 januari 2027) · 18:00 – 22:00 · inloop 17:30. Programma: 17:30 inloop, welkomstdrankje en teamindeling; 18:00 Mexicano padel, 6 rondes, elke ronde een andere partner; 19:45 pubquiz in teams van 4, 6 rondes met jackpotvraag; 21:15 prijsuitreiking met prijzen van Poort Padel (bedrag bewust weggelaten, zie open vraag hieronder). Chips: alleen of met je team; alle niveaus, rackets liggen klaar. €39,50 p.p. incl. welkomstdrankje & hapjes. allcourtacademy.com/events. Logo's All Court Academy × Poort Padel, adres Neonweg 62, Almere.
 
 ## Hoe het gebouwd is
 
@@ -22,3 +22,7 @@ Zaterdag 16 januari (datumvoorstel, alternatieven 12 december 2026 en 23 januari
 Aanpassen: tekst of datum in `poster.html` wijzigen en `./render.sh` draaien. Andere krijtbord-variant: het pad bovenin `build_board.py` aanpassen en beide scripts draaien.
 
 De eerdere versie (`../final/padel-quiz-poster.jpg` en varianten, gele krijttekst zonder Poort Padel-elementen) blijft staan.
+
+## Open vraag (23 september 2026)
+
+Lars haalde "€500 aan prijzen" van de poster. Nog te beslissen met Poort Padel: **€250 tot €500 aan prijzen benoemen op de poster, of het bedrag weglaten?** Zolang dat open staat blijft de regel "Prijsuitreiking met prijzen van Poort Padel". De illustratie bovenin is niet meer vervaagd aan de zijkanten: de bordtint van de illustratie wordt gelijkgetrokken met het lege bord en alleen de onderrand loopt zacht over.
