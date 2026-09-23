@@ -184,3 +184,7 @@ Op `collado-profile.jpg` loopt een lichte streep (lensflare) over borst en boven
 Boven de kop staan nu twee labels naast elkaar: "Trainen voor Premier Padel Rotterdam" (donker vak) en "Training + wedstrijd · publiek welkom" (open vak met witte rand). De rest van de indeling is ongewijzigd. Tekst van beide labels: `kicker` en `kicker2` in `build_variants.py`.
 
 Een versie met de kop in drie regels ("... voor Premier Padel Rotterdam") is geprobeerd en op verzoek van Lars weer teruggedraaid; de twee labels boven de kop zijn definitief.
+
+## Overdrachtspakket (23 september 2026)
+
+`goenaga-collado-overdracht.zip` is bedoeld om door te sturen naar iemand die er een eigen Instagram-versie van maakt. Inhoud: de poster (1080 × 1350 en 2160 × 2700), de twee originele foto's, de bewerkte versies (Collado zonder flare, beide duotones), de logo's (All Court Academy wit, Poort Padel woordmerk wit, bal, losse P en patroontegel), de Poort Padel-stijlreferenties, Poppins met licentie en `BRIEFING.txt` met eventtekst, spelersinfo, huisstijl en de rechtenwaarschuwing.
