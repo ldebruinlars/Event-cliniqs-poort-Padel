@@ -454,3 +454,14 @@ Opbouw tekstblok (`build_quiz_poster.py`, onderste derde van het bord, alles met
 | `padel-quiz-poster-logo-serif.jpg` | zelfde poster met het serif-logo "all court academy since 2025" |
 | `padel-quiz-ig-feed-4x5.jpg` | 2160 × 2700 |
 | `padel-quiz-ig-story-9x16.jpg` | 2160 × 3840 |
+
+## Overdracht aan een externe ontwerper (23 september 2026)
+
+Lars wilde de posters en alle gebruikte beelden van Padel Dating en Padel & Quiz doorsturen naar iemand die er een eigen Instagram-versie van maakt. Daarvoor is `overdracht-padel-dating-en-quiz.zip` gemaakt (42 MB, niet in de repo; opnieuw samen te stellen uit de mappen hieronder). Per event: `01-poster` (feed, story, print jpg en pdf), `02-artwork` (illustraties zonder tekst), `03-logos` en een `BRIEFING.txt` met eventgegevens, stijl en voorbehouden.
+
+Wat nu wel in de repo staat en eerder ontbrak:
+
+- `assets/artwork/illustratie-zonder-tekstblok.jpg`: de Padel Dating-illustratie (kop, polaroid met discobal, racket en hartjes) zonder het tekstblok, 2986 × 2860.
+- `assets/artwork/illustratie-origineel-met-oude-tekst.jpg`: het oorspronkelijke AI-beeld met de achterhaalde tekst (24 oktober).
+- `assets/artwork/krijtbord-variant-1..4-zonder-tekst.jpg`: de vier krijtbord-varianten voor Padel & Quiz zonder tekst, 1744 × 2336. Variant 1 is de poster.
+- `briefing-padel-dating.txt` en `briefing-padel-quiz.txt`: de begeleidende tekst uit het pakket.
