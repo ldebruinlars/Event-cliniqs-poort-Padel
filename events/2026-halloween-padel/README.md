@@ -78,7 +78,7 @@ Testen altijd op Mini; pas de goedgekeurde versie op 2.5.
 
 Op basis van de goedgekeurde pompoenspeler (versie 1) tien nieuwe achtergronden, gemaakt met **Nano Banana Pro** met de pompoenspeler (job `3e480fd0-…`) als referentie, zodat het personage hetzelfde blijft. Kosten: 2 credits per beeld, 20 in totaal.
 
-Alles staat in `varianten/`: `build.py` maakt de tien HTML-bestanden (de tekst staat bovenin onder TEKST en is voor alle versies gelijk), `render.sh` rendert naar `varianten/final/halloween-<naam>-ig-feed-4x5.jpg` (2160 × 2700) en maakt `varianten/final/overzicht-10-versies.jpg`. De achtergronden zonder tekst staan in `artwork/varianten/`.
+Alles staat in `varianten/`: `build.py` maakt de tien HTML-bestanden (de tekst staat bovenin onder TEKST en is voor alle versies gelijk), `render.sh` rendert naar `varianten/final/halloween-<naam>-ig-feed-4x5.jpg` (2160 × 2700) en maakt `varianten/final/overzicht-alle-versies.jpg`. De achtergronden zonder tekst staan in `artwork/varianten/`.
 
 | # | Richting | Opmaak | Higgsfield job |
 |---|---|---|---|
@@ -94,3 +94,14 @@ Alles staat in `varianten/`: `build.py` maakt de tien HTML-bestanden (de tekst s
 | 10 | Eng | gotische houtsnede, fraktur-kop, oranje stempel | `e7d24c5c-ecf4-48ba-bb80-c275742fc429` |
 
 Extra lettertypen (allemaal OFL, uit google/fonts): Anton, Bungee, Graduate, Oswald, Cinzel, Eater, Nosifer, Monoton, UnifrakturMaguntia, IM Fell English. De gekozen versie kan daarna ook als story (9:16) en printposter worden gemaakt.
+
+### Versies 11-14: eng, met kapot glas
+
+Lars vond versie 7 (horrorfilm) het vetst, maar wilde de energie van 3 of 1 erin terug, met de enge sfeer erbij. Vier nieuwe achtergronden (Nano Banana Pro, 8 credits), gemaakt met versie 7 en 3/1/8 als referentie: mist, kapotte glazen wanden, een flikkerende lamp en lime licht. De opmaak is die van 3 (schuin, lime lint) of 1 (gecentreerd, lime balk), op een donkerdere blauwzwarte basis.
+
+| # | Beeld | Opmaak | Higgsfield job |
+|---|---|---|---|
+| 11 | door de glaswand, donker en mistig | als 3 | `1f8d52d1-80e7-4f7c-9259-9346c976d0f2` |
+| 12 | smash onder lime schijnwerpers, glazen wanden met gaten | als 1 | `37426461-c9c1-4292-a556-ba041c030f75` |
+| 13 | kerkhofbaan, door de glaswand met reuzenbal | als 3 | `b4892e0a-804c-469c-b2c0-87aa5b9060c4` |
+| 14 | filmisch zoals 7, duik terwijl het glas achter hem ontploft | als 1 | `d19b8616-69a4-4451-8a1d-ff549dc71e92` |
