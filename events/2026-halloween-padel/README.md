@@ -2,6 +2,29 @@
 
 Actie: wie verkleed komt, speelt op zaterdag 31 oktober met 50% korting op de baan bij Poort Padel.
 
+## DEFINITIEF: versie 12 (map `definitief/`)
+
+Lars koos versie 12: de enge smash met kapotte glazen wanden, opmaak zoals versie 1. Twee aanpassingen ten opzichte van de varianten:
+
+- **Echt verkleed**: de korting geldt alleen voor wie *écht* verkleed of geschminkt is ("dus doe je best!"), als aparte lime regel onder de uitleg.
+- **Boeken via de website van All Court Academy** in plaats van Playtomic. Voorlopig staat er `allcourtacademy.com`; zodra de boekingspagina live staat de link aanpassen op de twee plekken in `definitief/poster.html` (blokken met TEKST) en `./render.sh` draaien.
+
+| Bestand | Wat |
+|---|---|
+| `definitief/halloween-padel-ig-feed-4x5.jpg` | Instagram-post 2160 × 2700 |
+| `definitief/halloween-padel-ig-story-9x16.jpg` | Instagram-story 2160 × 3840, voet boven de onderste 200 px |
+| `definitief/halloween-padel-poster.jpg` / `-30x40cm.pdf` | printposter 3:4 |
+
+Caption-voorstel (feed):
+Halloween op de baan 🎃 Kom zaterdag 31 oktober verkleed naar Poort Padel en speel voor de halve prijs. Let op: alleen voor wie er echt werk van maakt, dus een goed kostuum of serieuze schmink 👻 Boek je baan via allcourtacademy.com.
+📍 Neonweg 62, Almere Poort
+
+Story: Za 31 oktober: écht verkleed = 50% korting op je baan 🎃 Boek via allcourtacademy.com.
+
+---
+
+## Eerdere versies (archief)
+
 ## Bestanden
 
 | Bestand | Wat |
