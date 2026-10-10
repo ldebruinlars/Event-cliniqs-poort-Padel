@@ -34,3 +34,42 @@ Halloween op de baan 🎃 Kom zaterdag 31 oktober verkleed naar Poort Padel en s
 📍 Neonweg 62, Almere Poort
 
 **Story:** Za 31 oktober: verkleed = 50% korting op je baan 🎃 Boek nu via Playtomic.
+
+## Cartoonvideo (15 seconden, 9:16)
+
+Werkwijze zoals in `ai-animatie/WORKFLOW.md`: eerst losse referenties maken, dan het script als tijdlijn, dan de video. De tekst komt er pas na de generatie overheen (eindkaart), zodat die foutloos is.
+
+**Referenties (Nano Banana Pro, poster-achtergrond als stijlreferentie):**
+
+| Wat | Higgsfield job |
+|---|---|
+| Pompoenspeler, character sheet vier aanzichten | `4489f928-0d30-4023-8d22-0ae01ded3917` |
+| Spook-tegenstander, character sheet vier aanzichten | `72f92796-2758-4e26-a99e-369567c8c94c` |
+| Spookbaan, rustig (versie 1) | `71665bae-96d3-4729-87cf-625bc016d7fa` |
+| Spookbaan, levendig: bliksem, skeletpubliek, wervelende mist en bladeren (versie 2) | `8b9f7295-0231-444d-8a61-6c06c824dcf7` |
+| Spookbal, ook ingedrukt bij de klap | `392a88f2-bc5b-4e8e-b058-c65b36ff45c7` |
+
+**Versie 1** (`video/script-v1-seedance.txt`, één doorlopende shot): Seedance 2.5 omni-reference, eerst draft 480p (job `2e84088e-773f-440e-9ac1-f0a8e58b00fb`, 45 credits), daarna afgerond op 1080p (job `daf0d11f-149f-4766-a1b3-6bf60e028fc1`, 60 credits). Met eindkaart vanaf 12,4 s: https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/d227d709-1a08-4d55-b983-b6a8ed2753fb.mp4
+
+Feedback Lars: te duur voor een test, omgeving mag dynamischer, script beter.
+
+**Versie 2** (`video/script-v2.txt`): zes shots met harde cuts op de beat, overal bewegende camera, haakje in de eerste seconde (bliksem, ogen gaan aan), langere rally, bullet-time smash, levendige omgeving. Getest op **Seedance 2.0 Mini 480p (7,5 credits)** in plaats van een Seedance 2.5-draft (45).
+
+**Eindkaart**: `video/eindkaart.html` en `video/eindkaart-1080x1920.png` (transparant), in de laatste 2,6 seconden ingefade met ffmpeg in de Higgsfield-sandbox.
+
+### Kosten om te onthouden (15 seconden, 9:16)
+
+| Model | Credits |
+|---|---|
+| Seedance 2.0 Mini, 480p | 7,5 |
+| Seedance 2.0 fast, 480p | 15 |
+| Seedance 2.5 draft 480p | 45 (+60 om af te ronden op 1080p) |
+| Seedance 2.5, 720p | 105 |
+| Seedance 2.5, 1080p | 180 |
+
+Testen altijd op Mini; pas de goedgekeurde versie op 2.5.
+
+### Praktisch
+
+- Higgsfield-bestanden (cloudfront) zijn vanuit deze cloudomgeving niet te downloaden. De Higgsfield-sandbox (`sandbox_exec`) kan dat wel en heeft ffmpeg: frames trekken om te controleren, eindkaart erover, en het resultaat met `media_upload` terug in Higgsfield zetten.
+- De preset-suggestie "IN THE DARK" afwijzen (`declined_preset_id`), anders worden de referenties genegeerd.
