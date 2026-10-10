@@ -73,3 +73,24 @@ Testen altijd op Mini; pas de goedgekeurde versie op 2.5.
 
 - Higgsfield-bestanden (cloudfront) zijn vanuit deze cloudomgeving niet te downloaden. De Higgsfield-sandbox (`sandbox_exec`) kan dat wel en heeft ffmpeg: frames trekken om te controleren, eindkaart erover, en het resultaat met `media_upload` terug in Higgsfield zetten.
 - De preset-suggestie "IN THE DARK" afwijzen (`declined_preset_id`), anders worden de referenties genegeerd.
+
+## Tien extra posterversies (feed 4:5)
+
+Op basis van de goedgekeurde pompoenspeler (versie 1) tien nieuwe achtergronden, gemaakt met **Nano Banana Pro** met de pompoenspeler (job `3e480fd0-…`) als referentie, zodat het personage hetzelfde blijft. Kosten: 2 credits per beeld, 20 in totaal.
+
+Alles staat in `varianten/`: `build.py` maakt de tien HTML-bestanden (de tekst staat bovenin onder TEKST en is voor alle versies gelijk), `render.sh` rendert naar `varianten/final/halloween-<naam>-ig-feed-4x5.jpg` (2160 × 2700) en maakt `varianten/final/overzicht-10-versies.jpg`. De achtergronden zonder tekst staan in `artwork/varianten/`.
+
+| # | Richting | Opmaak | Higgsfield job |
+|---|---|---|---|
+| 01 | Poort Padel | groene smash, lime Creepster-kop, schuine lime aanbiedingsbalk | `ecd0f39d-2b9b-4dfc-8141-9f88a2ef757d` |
+| 02 | Poort Padel | heldenpose, strakke Anton-letters links, P-patroon, ronde lime sticker | `cc092eff-36f8-4a30-aaf0-9528b9871cf4` |
+| 03 | Poort Padel | door de glaswand, schuine kop, lime lint over de hele breedte | `20aee626-a5ea-4e8d-a07b-c1544abb9a7e` |
+| 04 | All Court Academy | kidsclinic met verklede kinderen, Bungee, navy + oranje blokken | `8e6266df-c908-412b-91fa-45865f4490b8` |
+| 05 | All Court Academy | varsity/college-poster, Graduate, oranje vaantje | `0053c9d3-5b8f-45fe-bbfd-1900efe1515a` |
+| 06 | All Court Academy | trainingssessie met kegels en ballenmachine, scorebord met drie vakken | `cc255d43-e3a2-4a38-99e2-ffa7404779cb` |
+| 07 | Eng | horrorfilmposter, Cinzel, tagline "Wie verkleed komt, speelt voor de helft." | `133f3813-bf8d-4dee-bca3-407f939ca5d9` |
+| 08 | Eng | verlaten baan bij het kerkhof, aanbieding op een grafsteen | `0d96c3bd-ee36-41fe-b2e1-dd0030c920f2` |
+| 09 | Eng | jaren-80 VHS-horror, rode neon (Monoton), scanlines | `8ac7f4c1-5c13-441f-a552-858713cf2cc0` |
+| 10 | Eng | gotische houtsnede, fraktur-kop, oranje stempel | `e7d24c5c-ecf4-48ba-bb80-c275742fc429` |
+
+Extra lettertypen (allemaal OFL, uit google/fonts): Anton, Bungee, Graduate, Oswald, Cinzel, Eater, Nosifer, Monoton, UnifrakturMaguntia, IM Fell English. De gekozen versie kan daarna ook als story (9:16) en printposter worden gemaakt.
