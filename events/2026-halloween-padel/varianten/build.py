@@ -322,6 +322,22 @@ body{background:#0a0908}
 {footer()}<div class="frame"></div>""")
 
 
+# 11-14: de enge filmsfeer van 07 met de actie en opmaak van 03 (schuin, lime lint) of 01 (gecentreerd, lime balk)
+def spooky(src, art, base, rgb, top=None, shade_h=None):
+    _, css, body = V[src]
+    css = css.replace('#0b1c18', base).replace('rgba(11,28,24', 'rgba(' + rgb).replace('#0d1f1b', base).replace('rgba(13,31,27', 'rgba(' + rgb)
+    if top is not None:
+        css += '.art{top:%dpx}' % top
+    if shade_h is not None:
+        css += '.shade{height:%dpx}' % shade_h
+    return (art, css, body)
+
+V['11-eng-glaswand-film'] = spooky('03-pp-glaswand', '11-eng-glaswand-film.jpg', '#06100f', '6,16,15', top=-70)
+V['12-eng-smash-kapotglas'] = spooky('01-pp-groen-smash', '12-eng-smash-kapotglas.jpg', '#070d10', '7,13,16', top=-30)
+V['13-eng-kerkhof-glaswand'] = spooky('03-pp-glaswand', '13-eng-kerkhof-glaswand.jpg', '#0b0f12', '11,15,18', top=-60)
+V['14-eng-duik-scherven'] = spooky('01-pp-groen-smash', '14-eng-duik-scherven.jpg', '#080d12', '8,13,18', top=0)
+
+
 for name, (art, css, body) in V.items():
     html = f"""<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>Halloween Padel {name}</title>
 <style>{FONTS}{BASE}{css}</style></head><body>
