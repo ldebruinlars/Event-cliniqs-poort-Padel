@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Halloween Padel bij Poort Padel</title>
+<style>
+/* Formaat en achtergrond kies je via de URL: poster.html#feed, #story of #print, met ?bg=1 of ?bg=0.
+   TEKST staat hieronder in de blokken met TEKST. Maten en kleuren in :root. */
+:root{
+  --orange:#FF7A1A; --lime:#CDFD50; --ink:#14120f; --white:#FFFFFF; --base:#140c1f;
+  --pad:64px;
+}
+@font-face{font-family:"Creep";src:url(fonts/Creepster-Regular.ttf)}
+@font-face{font-family:"Poppins";font-weight:900;font-style:italic;src:url(fonts/Poppins-BlackItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:900;font-style:normal;src:url(fonts/Poppins-Black.ttf)}
+@font-face{font-family:"Poppins";font-weight:800;font-style:italic;src:url(fonts/Poppins-ExtraBoldItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:700;font-style:italic;src:url(fonts/Poppins-BoldItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:600;font-style:normal;src:url(fonts/Poppins-SemiBold.ttf)}
+@font-face{font-family:"Poppins";font-weight:500;font-style:normal;src:url(fonts/Poppins-Medium.ttf)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;overflow:hidden;background:var(--base)}
+body{font-family:"Poppins",Arial,sans-serif;color:var(--white);position:relative;-webkit-font-smoothing:antialiased}
+body.feed{height:1350px} body.story{height:1920px} body.print{height:1446px}
+.art{position:absolute;left:0;top:0;width:1080px;height:1446px;background-size:1080px 1446px;background-repeat:no-repeat}
+/* zachte overgang van het beeld naar het tekstvlak */
+.shade{position:absolute;left:0;right:0;top:620px;height:826px;background:linear-gradient(to bottom,rgba(20,12,31,0) 0%,rgba(20,12,31,.75) 30%,rgba(20,12,31,.92) 60%,var(--base) 100%)}
+body.story .art{top:150px} body.story .shade{top:770px} body.story .topfill{position:absolute;left:0;right:0;top:0;height:170px;background:linear-gradient(to bottom,var(--base) 60%,rgba(20,12,31,0))}
+
+.block{position:absolute;left:var(--pad);right:var(--pad);text-align:center}
+body.feed .block{top:585px} body.print .block{top:660px} body.story .block{top:930px}
+/* compacter in feed en print */
+body.feed .h1,body.print .h1{font-size:128px}
+body.feed .h2,body.print .h2{font-size:64px}
+body.feed .date,body.print .date{font-size:38px;margin-top:14px;padding:8px 20px}
+body.feed .offer,body.print .offer{margin-top:20px;padding:12px 40px 14px}
+body.feed .offer .b,body.print .offer .b{font-size:82px}
+body.feed .offer .a,body.feed .offer .c,body.print .offer .a,body.print .offer .c{font-size:26px}
+body.feed .sub,body.print .sub{margin-top:18px;font-size:24px}
+body.feed .shade{top:480px} body.print .shade{top:540px}
+
+.kicker{display:inline-block;font-weight:800;font-style:italic;font-size:24px;letter-spacing:4px;color:var(--lime);text-transform:uppercase;margin-bottom:2px}
+.h1{font-family:"Creep";font-size:150px;line-height:.9;color:var(--orange);letter-spacing:3px;text-shadow:0 0 28px rgba(255,122,26,.45),0 6px 0 #4a1d00}
+.h2{font-weight:900;font-style:italic;font-size:78px;line-height:1;color:var(--white);letter-spacing:6px;margin-top:-4px}
+.h2 span{color:var(--lime)}
+.date{display:inline-block;margin-top:18px;font-weight:900;font-style:italic;font-size:44px;line-height:1;letter-spacing:1px;border-top:4px solid var(--orange);border-bottom:4px solid var(--orange);padding:10px 22px}
+
+.offer{display:inline-block;margin-top:26px;background:var(--lime);color:var(--ink);transform:skewX(-10deg) rotate(-2deg);padding:14px 46px 16px;box-shadow:0 0 40px rgba(205,253,80,.35)}
+.offer > div{transform:skewX(10deg)}
+.offer .a{font-weight:800;font-style:italic;font-size:30px;line-height:1;letter-spacing:2px}
+.offer .b{font-weight:900;font-style:italic;font-size:96px;line-height:.95;letter-spacing:-2px}
+.offer .c{font-weight:800;font-style:italic;font-size:30px;line-height:1;letter-spacing:2px}
+.sub{margin-top:24px;font-weight:600;font-size:26px;line-height:1.35}
+.sub b{color:var(--lime);font-weight:600}
+.fine{margin-top:8px;font-weight:500;font-size:18px;opacity:.75}
+
+.footer{position:absolute;left:var(--pad);right:var(--pad);display:flex;align-items:center;justify-content:space-between;border-top:2px solid rgba(255,122,26,.6);padding-top:18px}
+body.feed .footer{bottom:30px} body.print .footer{bottom:36px} body.story .footer{bottom:210px}
+.footer img{height:62px}
+.footer .where{text-align:right;font-weight:600;font-size:22px;line-height:1.3}
+.footer .where b{color:var(--lime);font-weight:700}
+</style>
+</head>
+<body>
+<div class="art" id="art"></div>
+<div class="shade"></div>
+<div class="topfill"></div>
+
+<div class="block">
+  <!-- TEKST: kop en datum -->
+  <div class="kicker">Poort Padel presenteert</div>
+  <div class="h1">HALLOWEEN</div>
+  <div class="h2">PADEL <span>SPECIAL</span></div>
+  <div class="date">ZATERDAG 31 OKTOBER</div>
+
+  <!-- TEKST: aanbieding -->
+  <div class="offer"><div>
+    <div class="a">KOM VERKLEED =</div>
+    <div class="b">50% KORTING</div>
+    <div class="c">OP JE BAAN</div>
+  </div></div>
+
+  <!-- TEKST: uitleg -->
+  <div class="sub">Boek je baan via <b>Playtomic</b> en stap in kostuum de baan op.</div>
+  <div class="fine">Korting per verklede speler, alleen op zaterdag 31 oktober. Masker of schmink telt ook.</div>
+</div>
+
+<!-- TEKST: voet -->
+<div class="footer">
+  <img src="build/logo-poort-padel-wit.png" alt="Poort Padel">
+  <div class="where"><b>Neonweg 62 · Almere Poort</b><br>poortpadel.nl</div>
+</div>
+
+<script>
+const fmt=(location.hash||'#feed').slice(1);
+document.body.className=fmt;
+const bg=(new URLSearchParams(location.search)).get('bg')||'1';
+const files={'1':'artwork/halloween-pompoenspeler.png','0':'artwork/halloween-baan-pompoenbal.png'};
+document.getElementById('art').style.backgroundImage='url('+files[bg]+')';
+</script>
+</body>
+</html>
