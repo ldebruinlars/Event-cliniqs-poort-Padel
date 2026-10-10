@@ -1,7 +1,7 @@
 # padelpadel-fiesta: Halloween Padel Special (za 31 oktober 2026)
 
-Netlify-project: https://app.netlify.com/projects/padelpadel-fiesta (site-id `d1b410c7-af4c-4e1e-8111-5469aabc82ee`).
-Live adres: https://padelpadel-fiesta.netlify.app. Statische site, geen build nodig (`netlify.toml`: publish = ".").
+Netlify-project: https://app.netlify.com/projects/halloween-poort-padel (voorheen padelpadel-fiesta, site-id `d1b410c7-af4c-4e1e-8111-5469aabc82ee`).
+Live adres: https://halloween-poort-padel.netlify.app. Statische site, geen build nodig (`netlify.toml`: publish = ".").
 
 De vorige site (Papapadel's Verjaardags-Mexicano, 10 oktober) staat bewaard in `sites/archief/papapadel-verjaardags-mexicano/`.
 
@@ -32,7 +32,7 @@ Let op: de site weet niet welke banen bij Poort Padel nog vrij zijn (dat staat i
 
 ## Publiceren
 
-Vanuit de Claude-cloudomgeving kon niet direct naar Netlify worden gepubliceerd: `api.netlify.com`, `netlify-mcp.netlify.app` en `*.netlify.app` worden door het netwerkbeleid van de omgeving geblokkeerd. Twee manieren:
+Vanuit de Claude-cloudomgeving lukte publiceren niet: na het toestaan van `api.netlify.com` en `netlify-mcp.netlify.app` werd de upload naar `netlify-mcp.netlify.app` steeds na ongeveer 11 seconden afgebroken (fetch failed). Twee manieren:
 
 1. **Zelf slepen (1 minuut):** Netlify → padelpadel-fiesta → Deploys → sleep de map `sites/padelpadel-fiesta` (of de uitgepakte zip) in het vak onderaan.
 2. **Laten doen:** voeg in de instellingen van de cloudomgeving (Network access) `api.netlify.com` en `netlify-mcp.netlify.app` toe aan de toegestane domeinen; dan kan Claude publiceren met de Netlify-koppeling.
