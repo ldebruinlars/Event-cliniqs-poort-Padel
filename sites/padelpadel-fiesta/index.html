@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Halloween Padel Special · Poort Padel</title>
-<meta name="description" content="Zaterdag 31 oktober bij Poort Padel in Almere: kom echt verkleed of geschminkt en speel met 50% korting op jouw deel van de baan.">
-<meta property="og:title" content="Halloween Padel Special · za 31 oktober">
+<meta name="description" content="Zondag 1 november van 16:00 tot 23:00 bij Poort Padel in Almere: kom echt verkleed of geschminkt en speel met 50% korting op jouw deel van de baan.">
+<meta property="og:title" content="Halloween Padel Special · zo 1 november">
 <meta property="og:description" content="Kom echt verkleed = 50% korting op je baan bij Poort Padel, Almere.">
 <meta property="og:image" content="https://halloween-poort-padel.netlify.app/assets/og.jpg">
 <meta name="theme-color" content="#070d10">
@@ -172,6 +172,7 @@ section{scroll-margin-top:20px}
 .send-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .send-row p{color:var(--fog);font-size:13px;flex:1 1 220px}
 .form-err{display:none;color:var(--blood);font-weight:600}
+.late{color:var(--fog);font-size:13.5px;border-left:3px solid var(--pumpkin);padding-left:12px}
 .done{display:none;flex-direction:column;gap:12px}
 .done h3{font-family:var(--display);font-weight:400;font-size:44px;color:var(--lime);line-height:1}
 .done .sum{background:var(--glass);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14.5px}
@@ -244,7 +245,7 @@ footer p b{color:var(--bone)}
       <span class="eyebrow">Poort Padel × All Court Academy</span>
       <h1>Halloween<small>PADEL SPECIAL</small></h1>
       <div class="when">
-        <span class="chip"><b>Za 31 oktober</b> 08:00 tot 23:00</span>
+        <span class="chip"><b>Zo 1 november</b> 16:00 tot 23:00</span>
         <span class="chip">Poort Padel · Neonweg 62, Almere Poort</span>
       </div>
       <div class="deal"><div><div class="s">Kom echt verkleed =</div><div class="b">50% korting</div><div class="s">op jouw deel van de baan</div></div></div>
@@ -260,9 +261,9 @@ footer p b{color:var(--bone)}
 <main>
   <div class="wrap">
     <div class="steps" aria-label="Zo werkt het">
-      <div class="step"><span class="n">1</span><div><h3>Kies je tijd</h3><p>1, 1,5 of 2 uur op zaterdag 31 oktober. De meeste spelers kiezen 1,5 uur.</p></div></div>
+      <div class="step"><span class="n">1</span><div><h3>Kies je tijd</h3><p>1, 1,5 of 2 uur op zondag 1 november tussen 16:00 en 23:00. De meeste spelers kiezen 1,5 uur.</p></div></div>
       <div class="step"><span class="n">2</span><div><h3>Tik aan wie verkleed komt</h3><p>Per verklede speler gaat de helft van zijn of haar deel eraf. Je ziet het bedrag direct.</p></div></div>
-      <div class="step"><span class="n">3</span><div><h3>Vraag aan en kom griezelen</h3><p>Wij zetten de baan vast en sturen je de bevestiging met betaallink.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>Betaal en kom griezelen</h3><p>Je betaalt direct met iDEAL. Zodra de baan voor jullie geboekt is, krijg je een tweede bevestiging.</p></div></div>
     </div>
   </div>
 
@@ -307,7 +308,11 @@ footer p b{color:var(--bone)}
             <form name="halloween-boeking" method="POST" data-netlify="true" netlify-honeypot="bot-veld" id="form" novalidate>
               <input type="hidden" name="form-name" value="halloween-boeking">
               <p class="hp"><label>Niet invullen: <input name="bot-veld" tabindex="-1" autocomplete="off"></label></p>
-              <input type="hidden" name="datum" value="zaterdag 31 oktober 2026">
+              <input type="hidden" name="datum" value="zondag 1 november 2026">
+              <input type="hidden" name="uren" id="f-uren">
+              <input type="hidden" name="verkleed" id="f-n">
+              <input type="hidden" name="bedrag" id="f-bedrag">
+              <input type="hidden" name="omschrijving" id="f-oms">
               <input type="hidden" name="duur" id="f-duur">
               <input type="hidden" name="starttijd" id="f-start">
               <input type="hidden" name="eindtijd" id="f-eind">
@@ -325,23 +330,24 @@ footer p b{color:var(--bone)}
                 <label class="check full" id="fw-ok"><input type="checkbox" id="ok" name="akkoord_verkleed" value="ja">
                   <span>Ik snap dat de korting alleen geldt voor wie <b>echt verkleed of geschminkt</b> is. Wie dat aan de balie niet is, betaalt het verschil voor zijn of haar deel bij.</span></label>
                 <div class="send-row full">
-                  <button class="cta" type="submit" id="send">Vraag de baan aan</button>
-                  <p>Je krijgt van ons een bevestiging met betaallink zodra de baan voor jullie vaststaat.</p>
+                  <button class="cta" type="submit" id="send">Betaal €28,13</button>
+                  <p>Je betaalt direct met iDEAL. Daarna boeken wij de baan bij Poort Padel en krijg je een tweede bevestiging zodra hij voor jullie vastligt.</p>
                 </div>
+                <p class="late full">Boek je op het laatste moment? Dan kan je tijd net vol zitten. We nemen dan contact met je op voor een andere tijd, en past die niet, dan krijg je je geld terug.</p>
                 <p class="form-err full" id="ferr">Kies eerst een begintijd hierboven.</p>
               </div>
             </form>
             <div class="done" id="done" aria-live="polite">
               <h3>Boooek!</h3>
-              <p>Je aanvraag is binnen. We zetten de baan bij Poort Padel voor jullie vast en sturen een bevestiging met betaallink naar <b id="d-mail"></b>.</p>
+              <p>Je boeking is binnen. We sturen een betaallink naar <b id="d-mail"></b>. Zodra je hebt betaald en de baan geboekt is, krijg je een tweede bevestiging.</p>
               <div class="sum" id="d-sum"></div>
-              <p style="color:var(--fog);font-size:14px">Nog een baan nodig voor de rest van je vrienden? <a href="#boeken" id="again">Doe nog een aanvraag</a>.</p>
+              <p style="color:var(--fog);font-size:14px">Nog een baan nodig voor de rest van je vrienden? <a href="#boeken" id="again">Boek nog een baan</a>.</p>
             </div>
           </div>
         </div>
 
         <aside class="receipt" aria-label="Prijsoverzicht">
-          <div class="top"><b>BAANBON</b><span>za 31 okt · Poort Padel</span></div>
+          <div class="top"><b>BAANBON</b><span>zo 1 nov · Poort Padel</span></div>
           <div class="rl"><span id="r-court">Dubbelbaan · 1,5 uur</span><span class="money" id="r-base">€56,25</span></div>
           <div class="rl sub"><span>Gedeeld door 4 spelers</span><span class="money" id="r-share">€14,06 p.p.</span></div>
           <div class="rl disc"><span id="r-dlab">4× echt verkleed (−50%)</span><span class="money" id="r-disc">−€28,13</span></div>
@@ -349,7 +355,7 @@ footer p b{color:var(--bone)}
           <div class="slotline missing" id="r-slot">Nog geen begintijd gekozen</div>
           <div class="save"><span>Jullie besparen</span><span class="money" id="r-save">€28,13</span></div>
           <p class="pp" id="r-pp">Per speler: verkleed €7,03, niet verkleed €14,06.</p>
-          <a class="cta go" href="#aanvragen">Naar aanvragen</a>
+          <a class="cta go" href="#aanvragen">Naar betalen</a>
         </aside>
       </div>
     </div>
@@ -384,12 +390,13 @@ footer p b{color:var(--bone)}
     <div class="wrap">
       <div class="sec-head"><span class="eyebrow">Vragen</span><h2>Goed om te weten</h2></div>
       <div class="faq">
-        <details><summary>Wat kost een baan op 31 oktober?</summary><p>Een dubbelbaan kost in het weekend €37,50 per uur. Voor 1,5 uur is dat €56,25, oftewel €14,06 per persoon als je met z'n vieren speelt. Wie echt verkleed komt, betaalt de helft: €7,03. Komen jullie alle vier verkleed, dan betalen jullie samen €28,12 in plaats van €56,25.</p></details>
+        <details><summary>Wat kost een baan op 1 november?</summary><p>Een dubbelbaan kost in het weekend €37,50 per uur. Voor 1,5 uur is dat €56,25, oftewel €14,06 per persoon als je met z'n vieren speelt. Wie echt verkleed komt, betaalt de helft: €7,03. Komen jullie alle vier verkleed, dan betalen jullie samen €28,13 in plaats van €56,25.</p></details>
         <details><summary>Moet iedereen verkleed zijn?</summary><p>Nee. De korting telt per speler. Komen er twee van de vier verkleed, dan krijgen die twee de helft van hun deel korting en betalen de andere twee het gewone deel.</p></details>
         <details><summary>Wat als iemand toch niet verkleed komt?</summary><p>Dan betaalt die speler aan de balie het verschil bij voor zijn of haar deel. Voor 1,5 uur is dat €7,03.</p></details>
-        <details><summary>Hoe en wanneer betaal ik?</summary><p>Na je aanvraag zetten we de baan voor jullie vast bij Poort Padel. Je krijgt daarna een bevestiging met een betaallink voor het totaalbedrag.</p></details>
-        <details><summary>We zijn met meer dan vier spelers.</summary><p>Doe per baan een aanvraag, of zet in het opmerkingenveld hoeveel banen je wilt en naast wie je wilt spelen. Dan regelen we het samen.</p></details>
-        <details><summary>Waar is het?</summary><p>Bij Poort Padel, Neonweg 62 in Almere Poort. Het hele weekend open van 08:00 tot 23:00.</p></details>
+        <details><summary>Hoe en wanneer betaal ik?</summary><p>Vooraf, direct bij het boeken, met iDEAL. Je betaalt het totaal voor de hele baan in één keer. Na je betaling boeken wij de baan bij Poort Padel en krijg je een tweede mail zodra hij voor jullie vastligt.</p></details>
+        <details><summary>Wat als mijn tijd al vol is?</summary><p>Boek je op het laatste moment, dan kan het zijn dat je tijd net vol zit. We nemen dan contact met je op voor een andere tijd. Past die niet, dan krijg je je geld terug.</p></details>
+        <details><summary>We zijn met meer dan vier spelers.</summary><p>Boek per baan apart, of zet in het opmerkingenveld hoeveel banen je wilt en naast wie je wilt spelen. Dan regelen we het samen.</p></details>
+        <details><summary>Waar is het?</summary><p>Bij Poort Padel, Neonweg 62 in Almere Poort. De Halloween Padel Special is op zondag 1 november van 16:00 tot 23:00.</p></details>
       </div>
     </div>
   </section>
@@ -398,23 +405,24 @@ footer p b{color:var(--bone)}
 <footer>
   <div class="wrap">
     <div class="logos"><img src="assets/logo-poort-padel.png" alt="Poort Padel" width="600" height="167"><img src="assets/logo-all-court-academy.png" alt="All Court Academy" width="600" height="215"></div>
-    <p><b>Halloween Padel Special</b> · zaterdag 31 oktober 2026 · Poort Padel, Neonweg 62, Almere Poort</p>
+    <p><b>Halloween Padel Special</b> · zondag 1 november 2026, 16:00 tot 23:00 · Poort Padel, Neonweg 62, Almere Poort</p>
   </div>
 </footer>
 
 <div class="mbar" aria-hidden="false">
   <div class="t money"><small id="m-lab">Totaal voor de baan</small><span id="m-tot">€28,12</span></div>
-  <a class="cta" href="#aanvragen">Aanvragen</a>
+  <a class="cta" href="#aanvragen">Betalen</a>
 </div>
 
 <script>
-// Optioneel: Make-webhook die een Mollie-betaallink teruggeeft (zoals bij de Mexicano). Leeg = alleen aanvraag via Netlify Forms.
+// Make-webhook die een Mollie-betaling aanmaakt en de iDEAL-link teruggeeft (scenario 'halloween betaling', zie README).
+// Leeg = alleen opslaan in Netlify Forms en de klant krijgt een melding dat de betaallink volgt.
 const BETAAL_WEBHOOK = '';
 const VOORBEELD = false; // true in de voorbeeldversie: er wordt niets verstuurd
 
 const PRIJS_PER_UUR = 3750;   // centen, dubbelbaan in het weekend
 const SPELERS = 4;
-const OPEN = 8 * 60, DICHT = 23 * 60, STAP = 30; // minuten
+const OPEN = 16 * 60, DICHT = 23 * 60, STAP = 30; // minuten, zondag 1 november 16:00 tot 23:00
 
 const state = { h: 1.5, start: null, dressed: [true, true, true, true] };
 const names = ['Jij', 'Speler 2', 'Speler 3', 'Speler 4'];
@@ -428,8 +436,9 @@ function calc() {
   const base = PRIJS_PER_UUR * state.h;            // baanprijs
   const share = base / SPELERS;                     // deel per speler (exact)
   const n = state.dressed.filter(Boolean).length;
-  const disc = Math.round(n * share / 2);           // korting in hele centen
-  return { base, share, n, disc, total: base - disc, ppFull: Math.round(share), ppHalf: Math.round(share / 2) };
+  const total = Math.round(base - n * share / 2);  // zelfde afronding als in Make: round(37,5 × uren × (8 − verkleed) / 8)
+  const disc = base - total;
+  return { base, share, n, disc, total, ppFull: Math.round(share), ppHalf: Math.round(share / 2) };
 }
 
 // spelers op de baan
@@ -459,7 +468,7 @@ document.querySelectorAll('#dur button').forEach(b => b.addEventListener('click'
 // begintijden
 function buildTimes() {
   const box = $('times'); box.innerHTML = '';
-  const parts = [['Ochtend', OPEN, 12 * 60], ['Middag', 12 * 60, 18 * 60], ['Avond', 18 * 60, DICHT]];
+  const parts = [['Middag', OPEN, 18 * 60], ['Avond', 18 * 60, DICHT]];
   const last = DICHT - state.h * 60;
   parts.forEach(([lab, from, to]) => {
     const wrap = document.createElement('div'); wrap.className = 'daypart';
@@ -500,7 +509,7 @@ function render() {
   $('r-pp').textContent = 'Per speler: verkleed ' + eur(c.ppHalf) + ', niet verkleed ' + eur(c.ppFull) + '.';
   const slot = $('r-slot');
   if (state.start === null) { slot.textContent = 'Nog geen begintijd gekozen'; slot.classList.add('missing'); }
-  else { slot.textContent = 'Za 31 okt · ' + hhmm(state.start) + ' tot ' + hhmm(state.start + state.h * 60); slot.classList.remove('missing'); }
+  else { slot.textContent = 'Zo 1 nov · ' + hhmm(state.start) + ' tot ' + hhmm(state.start + state.h * 60); slot.classList.remove('missing'); }
   $('m-tot').textContent = eur(c.total);
   $('m-lab').textContent = state.start === null ? 'Totaal · ' + durTxt(state.h) : hhmm(state.start) + ' · ' + durTxt(state.h);
   // verborgen velden voor de aanvraag
@@ -513,9 +522,14 @@ function render() {
   $('f-korting').value = eur(c.disc);
   $('f-totaal').value = eur(c.total);
   $('f-pp').value = 'verkleed ' + eur(c.ppHalf) + ', niet verkleed ' + eur(c.ppFull);
+  $('f-uren').value = String(state.h);
+  $('f-n').value = String(c.n);
+  $('f-bedrag').value = (c.total / 100).toFixed(2);
+  $('f-oms').value = 'Halloween Padel zo 1 nov ' + (state.start === null ? '' : hhmm(state.start) + ' ') + '(' + durTxt(state.h) + ', ' + c.n + 'x verkleed)';
+  const send = $('send'); if (!send.disabled) send.textContent = 'Betaal ' + eur(c.total);
 }
 
-// aanvraag versturen
+// boeken en betalen
 const clean = t => t.replace(/["'\\{}\[\]\r\n\t<>]/g, '').trim();
 $('form').addEventListener('submit', async e => {
   e.preventDefault();
@@ -542,17 +556,25 @@ $('form').addEventListener('submit', async e => {
   const body = new URLSearchParams(new FormData($('form'))).toString();
   try {
     if (!VOORBEELD) {
+      // 1. altijd opslaan in Netlify Forms (overzicht van alle boekingen, ook als iemand niet afrekent)
       const r = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
       if (!r.ok) throw new Error('netlify ' + r.status);
+      // 2. Make maakt de Mollie-betaling aan en geeft de iDEAL-link terug
       if (BETAAL_WEBHOOK) {
         const w = await fetch(BETAAL_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
         const t = (await w.text()).trim();
         if (t.startsWith('http')) { location.href = t; return; }
+        if (t.toUpperCase().includes('VOL')) {
+          btn.disabled = false; render();
+          ferr.textContent = 'Deze tijd is helaas vol. Kies een andere begintijd.'; ferr.style.display = 'block';
+          $('times').scrollIntoView({ behavior: 'smooth', block: 'center' }); return;
+        }
+        throw new Error('onverwacht antwoord');
       }
     }
     showDone();
   } catch (err) {
-    btn.disabled = false; btn.textContent = 'Vraag de baan aan';
+    btn.disabled = false; render();
     ferr.textContent = 'Versturen lukte niet. Controleer je internet en probeer het nog een keer.'; ferr.style.display = 'block';
   }
 });
@@ -560,14 +582,14 @@ $('form').addEventListener('submit', async e => {
 function showDone() {
   const c = calc();
   $('d-mail').textContent = $('email').value;
-  const rows = [['Wanneer', 'za 31 okt · ' + hhmm(state.start) + ' tot ' + hhmm(state.start + state.h * 60)], ['Baan', 'dubbelbaan · ' + durTxt(state.h)], ['Verkleed', c.n + ' van 4 spelers'], ['Te betalen', eur(c.total)]];
+  const rows = [['Wanneer', 'zo 1 nov · ' + hhmm(state.start) + ' tot ' + hhmm(state.start + state.h * 60)], ['Baan', 'dubbelbaan · ' + durTxt(state.h)], ['Verkleed', c.n + ' van 4 spelers'], ['Te betalen', eur(c.total)]];
   $('d-sum').innerHTML = rows.map(([a, b]) => '<div><span>' + a + '</span><b class="money">' + b + '</b></div>').join('') + (VOORBEELD ? '<div><span>Let op</span><span>voorbeeld, er is niets verstuurd</span></div>' : '');
   $('form').style.display = 'none'; $('done').style.display = 'flex';
   $('done').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 $('again').addEventListener('click', () => {
   $('form').reset(); state.start = null; buildTimes(); render();
-  const btn = $('send'); btn.disabled = false; btn.textContent = 'Vraag de baan aan';
+  $('send').disabled = false; render();
   $('done').style.display = 'none'; $('form').style.display = 'block';
 });
 

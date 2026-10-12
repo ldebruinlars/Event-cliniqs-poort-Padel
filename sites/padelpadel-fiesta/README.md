@@ -1,4 +1,4 @@
-# padelpadel-fiesta: Halloween Padel Special (za 31 oktober 2026)
+# halloween-poort-padel: Halloween Padel Special (zo 1 november 2026, 16:00 tot 23:00)
 
 Netlify-project: https://app.netlify.com/projects/halloween-poort-padel (voorheen padelpadel-fiesta, site-id `d1b410c7-af4c-4e1e-8111-5469aabc82ee`).
 Live adres: https://halloween-poort-padel.netlify.app. Statische site, geen build nodig (`netlify.toml`: publish = ".").
@@ -13,22 +13,56 @@ Boekingsmodule voor de Halloween-actie: wie echt verkleed of geschminkt komt, kr
 |---|---|
 | Baanprijs weekend, dubbelbaan | `PRIJS_PER_UUR = 3750` (centen) |
 | Spelers per baan | `SPELERS = 4` |
-| Openingstijden za | `OPEN = 08:00`, `DICHT = 23:00`, begintijden per 30 minuten |
+| Tijden zo 1 november | `OPEN = 16:00`, `DICHT = 23:00`, begintijden per 30 minuten |
 | Duur | 1, 1,5 (standaard) of 2 uur |
 
-Rekenvoorbeeld 1,5 uur: baan €56,25, gedeeld door 4 = €14,06 p.p. Verkleed betaal je €7,03. Alle vier verkleed: €28,12 voor de baan in plaats van €56,25.
+Rekenvoorbeeld 1,5 uur: baan €56,25, gedeeld door 4 = €14,06 p.p. Verkleed betaal je €7,03. Alle vier verkleed: €28,13 voor de baan in plaats van €56,25.
+
+Totaal = baanprijs × (8 − aantal verkleed) / 8, afgerond op centen. Alle bedragen:
+
+| Verkleed | 1 uur | 1,5 uur | 2 uur |
+|---|---|---|---|
+| 0 | €37,50 | €56,25 | €75,00 |
+| 1 | €32,81 | €49,22 | €65,63 |
+| 2 | €28,13 | €42,19 | €56,25 |
+| 3 | €23,44 | €35,16 | €46,88 |
+| 4 | €18,75 | €28,13 | €37,50 |
 
 De bezoeker kiest de duur, tikt op de baan aan welke spelers verkleed komen, kiest een begintijd en vult naam, e-mail en telefoon in. Verplicht vinkje: korting alleen bij echt verkleed of geschminkt; wie dat aan de balie niet is, betaalt het verschil bij.
 
-## Waar de aanvragen binnenkomen
+## Betalen: direct via Mollie (Make-scenario "halloween betaling")
 
-**Netlify Forms**, formulier `halloween-boeking` (staat aan voor dit project). In Netlify: Forms → halloween-boeking. Per aanvraag: naam, e-mail, telefoon, opmerking, datum, duur, starttijd, eindtijd, aantal verkleed, per speler verkleed of niet, baanprijs, korting, totaal te betalen, bedrag per speler. Stel in Netlify een e-mailmelding in (Forms → Form notifications) zodat je elke aanvraag direct in je mail krijgt.
+Klanten betalen vooraf, direct bij het boeken, met iDEAL. Een vaste betaallink werkt niet, omdat het bedrag per boeking verschilt (15 mogelijke bedragen). Daarom maakt Make per boeking een Mollie-betaling met precies het juiste bedrag, net als bij de Mexicano (scenario "papapadel 2").
 
-Werkwijze nu: aanvraag binnen → baan bij Poort Padel vastzetten → bevestiging met betaallink sturen (Tikkie of Mollie).
+Flow: site → Netlify Forms (overzicht) → Make-webhook → Mollie createPayment → Make stuurt de iDEAL-link terug → klant betaalt → Mollie stuurt terug naar `/bedankt.html` → Lars boekt de baan bij Poort Padel → tweede mail "baan geboekt".
 
-**Later automatisch betalen:** zet in `index.html` het adres van een Make-webhook in `BETAAL_WEBHOOK`. De site stuurt dan alle velden (incl. `totaal_te_betalen`) naar Make; als Make een betaallink (https://…) teruggeeft, gaat de bezoeker direct door naar betalen, net als bij de Mexicano. Laat Mollie terugsturen naar `/bedankt.html`.
+### Zo zet je het op in Make (10 minuten)
 
-Let op: de site weet niet welke banen bij Poort Padel nog vrij zijn (dat staat in Playtomic). Het is daarom een aanvraag, geen directe reservering.
+1. Make → Scenarios → "papapadel 2" → ⋯ → **Clone**. Noem de kopie `halloween betaling`.
+2. **Webhook (module 1):** klik erop → **Add** → nieuwe webhook `Halloween boeking`. Kopieer het adres (Copy address).
+3. **Google Sheets "getCell" (module 4) en de router:** haal deze weg, of laat de vol-check staan als je een cel bijhoudt met vrije banen. Zonder vol-check: verbind de webhook direct met Mollie.
+4. **Mollie "Create a Payment" (module 2):**
+   - Amount: `{{formatNumber(round(37.5 * 1.uren * (8 - 1.verkleed) / 8 * 100) / 100; 2; "."; "")}}`. Make rekent het bedrag zelf uit op basis van uren en verkleed, dus niemand kan een lager bedrag doorsturen.
+   - Description: `{{1.omschrijving}} - {{1.naam}}`
+   - Redirect URL: `https://halloween-poort-padel.netlify.app/bedankt.html`
+   - Metadata: `{"naam":"{{1.naam}}","email":"{{1.email}}","telefoon":"{{1.telefoon}}","start":"{{1.starttijd}}","uren":"{{1.uren}}","verkleed":"{{1.verkleed}}"}`
+   - Webhook URL: leeg laten, of een kopie van "betaling gelukt" voor Halloween (zie stap 7).
+5. **Filter** op de lijn naar Mollie (moersleutel → Set up a filter), naam "geldige boeking": `1.verkleed` ≥ 0 én ≤ 4, en `1.uren` ≥ 1 én ≤ 2.
+6. **Webhook response (module 3):** body `{{2.checkoutLink}}`, status 200, header `Access-Control-Allow-Origin: *` (staat er al).
+7. Zet het scenario **aan** en plak het webhook-adres in `index.html` bij `const BETAAL_WEBHOOK = '...'`. Daarna opnieuw publiceren.
+8. (Aanrader) Clone "betaling gelukt" naar `halloween betaling gelukt` en laat die bij een betaalde Mollie-betaling een rij toevoegen in een Halloween-sheet. Zet het webhook-adres daarvan in stap 4 bij Webhook URL. Dan heb je per betaling een rij om de baan te boeken.
+
+Test: boek zelf 1 uur met 4 verkleed (€18,75), betaal, en storneer via Mollie → Betalingen → Terugbetalen.
+
+### Na een betaling
+
+1. Boek de baan in Playtomic/bij Poort Padel.
+2. Stuur de tweede mail: "Je baan staat vast: zondag 1 november, [tijd], baan [nr]."
+3. Tijd vol? Bel of mail voor een andere tijd. Past niets: terugbetalen via Mollie.
+
+Netlify Forms (formulier `halloween-boeking`) bewaart ook elke boeking, ook als iemand de betaling afbreekt. Vergelijk met Mollie: alleen wat in Mollie op "betaald" staat, boek je.
+
+Zolang `BETAAL_WEBHOOK` leeg is, slaat de site de boeking alleen op en ziet de klant "we sturen een betaallink".
 
 ## Publiceren
 
@@ -42,7 +76,7 @@ Vanuit de Claude-cloudomgeving lukte publiceren niet: na het toestaan van `api.n
 | Bestand | Wat |
 |---|---|
 | `index.html` | de site, alle tekst en de rekenregels staan hierin |
-| `bedankt.html` | pagina na betalen (voor later, als Mollie via Make terugstuurt) |
+| `bedankt.html` | pagina na betalen: betaling binnen, tweede bevestiging volgt als de baan geboekt is |
 | `assets/hero.jpg` | achtergrond, versie 12 van de Halloween-poster |
 | `assets/og.jpg` | deelplaatje voor WhatsApp en social |
 | `assets/fonts/` | Creepster en Poppins (OFL), zelf gehost |

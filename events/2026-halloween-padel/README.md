@@ -1,6 +1,6 @@
-# Halloween Padel Special bij Poort Padel (zaterdag 31 oktober 2026)
+# Halloween Padel Special bij Poort Padel (zondag 1 november 2026, 16:00 tot 23:00)
 
-Actie: wie verkleed komt, speelt op zaterdag 31 oktober met 50% korting op de baan bij Poort Padel.
+Actie: wie echt verkleed of geschminkt komt, speelt op zondag 1 november (16:00 tot 23:00) met 50% korting op zijn of haar deel van de baan bij Poort Padel. Datum gewijzigd van za 31 oktober naar zo 1 november op verzoek van Lars; de definitieve poster is aangepast, de varianten en de video-eindkaart tonen nog 31 oktober.
 
 ## DEFINITIEF: versie 12 (map `definitief/`)
 
