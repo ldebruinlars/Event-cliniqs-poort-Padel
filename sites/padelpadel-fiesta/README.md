@@ -45,19 +45,30 @@ Flow: site → Netlify Forms (overzicht) → Make-webhook → Mollie createPayme
    - Amount: `{{formatNumber(round(37.5 * 1.uren * (8 - 1.verkleed) / 8 * 100) / 100; 2; "."; "")}}`. Make rekent het bedrag zelf uit op basis van uren en verkleed, dus niemand kan een lager bedrag doorsturen.
    - Description: `{{1.omschrijving}} - {{1.naam}}`
    - Redirect URL: `https://halloween-poort-padel.netlify.app/bedankt.html`
-   - Metadata: `{"naam":"{{1.naam}}","email":"{{1.email}}","telefoon":"{{1.telefoon}}","start":"{{1.starttijd}}","uren":"{{1.uren}}","verkleed":"{{1.verkleed}}"}`
+   - Metadata (alles wat de check-in nodig heeft): `{"naam":"{{1.naam}}","s2":"{{1.speler_2}}","s3":"{{1.speler_3}}","s4":"{{1.speler_4}}","vps":"{{1.verkleed_per_speler}}","telefoon":"{{1.telefoon}}","email":"{{1.email}}","start":"{{1.starttijd}}","eind":"{{1.eindtijd}}","uren":"{{1.uren}}"}`
    - Webhook URL: leeg laten, of een kopie van "betaling gelukt" voor Halloween (zie stap 7).
 5. **Filter** op de lijn naar Mollie (moersleutel → Set up a filter), naam "geldige boeking": `1.verkleed` ≥ 0 én ≤ 4, en `1.uren` ≥ 1 én ≤ 2.
 6. **Webhook response (module 3):** body `{{2.checkoutLink}}`, status 200, header `Access-Control-Allow-Origin: *` (staat er al).
 7. Zet het scenario **aan** en plak het webhook-adres in `index.html` bij `const BETAAL_WEBHOOK = '...'`. Daarna opnieuw publiceren.
-8. (Aanrader) Clone "betaling gelukt" naar `halloween betaling gelukt` en laat die bij een betaalde Mollie-betaling een rij toevoegen in een Halloween-sheet. Zet het webhook-adres daarvan in stap 4 bij Webhook URL. Dan heb je per betaling een rij om de baan te boeken.
+8. **Check-inlijst automatisch vullen.** Zet `events/2026-halloween-padel/checkin/halloween-checkin-lijst.xlsx` in Google Drive en open hem als Google Sheet. Clone "betaling gelukt" naar `halloween betaling gelukt`: Mollie "Get a payment" → filter status = paid → JSON "Parse JSON" op de metadata → **4× Google Sheets "Add a row"** in tabblad Check-in, één per speler:
+   - Starttijd `start`, Eindtijd `eind`, Boeker `naam`, Telefoon boeker `telefoon`, Duur `uren`, Mollie-betaling `{{id}}`
+   - Speler: rij 1 `naam`, rij 2 `s2`, rij 3 `s3`, rij 4 `s4`
+   - Korting betaald: `{{get(split(vps; ","); 1)}}` voor rij 1, `2` voor rij 2, enzovoort
+   - Baan, Aanwezig, Echt verkleed? en Bijbetaald via laat je leeg (die vul jij en de check-in in).
+   Zet het webhook-adres van dit scenario in stap 4 bij Webhook URL.
 
 Test: boek zelf 1 uur met 4 verkleed (€18,75), betaal, en storneer via Mollie → Betalingen → Terugbetalen.
 
+### Check-in op de dag
+
+Wie controleert: één persoon bij een Halloween check-in tafel bij de balie van Poort Padel, van 15:50 tot ongeveer 21:45 (laatste begintijd 21:30). Lars zelf, een trainer van de Academy, of iemand van Poort Padel. Twee diensten van drie uur is prettig.
+
+Die persoon heeft de check-inlijst open op telefoon of tablet (Google Sheet) en een Tikkie-QR of pinautomaat voor bijbetalen. Per speler: Aanwezig = ja, Echt verkleed? = ja/nee. Wordt de cel oranje, dan betaalt die speler het verschil bij (1 uur €4,69, 1,5 uur €7,03, 2 uur €9,38). Uitleg staat in het tabblad "Uitleg check-in".
+
 ### Na een betaling
 
-1. Boek de baan in Playtomic/bij Poort Padel.
-2. Stuur de tweede mail: "Je baan staat vast: zondag 1 november, [tijd], baan [nr]."
+1. Boek de baan in Playtomic/bij Poort Padel en zet het baannummer in kolom Baan van de check-inlijst.
+2. Stuur de tweede mail: "Je baan staat vast: zondag 1 november, [tijd], baan [nr]. Kom 10 minuten eerder naar de Halloween check-in."
 3. Tijd vol? Bel of mail voor een andere tijd. Past niets: terugbetalen via Mollie.
 
 Netlify Forms (formulier `halloween-boeking`) bewaart ook elke boeking, ook als iemand de betaling afbreekt. Vergelijk met Mollie: alleen wat in Mollie op "betaald" staat, boek je.

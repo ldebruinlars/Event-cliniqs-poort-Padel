@@ -128,3 +128,7 @@ Lars vond versie 7 (horrorfilm) het vetst, maar wilde de energie van 3 of 1 erin
 | 12 | smash onder lime schijnwerpers, glazen wanden met gaten | als 1 | `37426461-c9c1-4292-a556-ba041c030f75` |
 | 13 | kerkhofbaan, door de glaswand met reuzenbal | als 3 | `b4892e0a-804c-469c-b2c0-87aa5b9060c4` |
 | 14 | filmisch zoals 7, duik terwijl het glas achter hem ontploft | als 1 | `d19b8616-69a4-4451-8a1d-ff549dc71e92` |
+
+## Check-in op de dag (`checkin/`)
+
+`checkin/halloween-checkin-lijst.xlsx` (gemaakt met `checkin/build_checkin.py`): één rij per speler met starttijd, baan, boeker, naam, of de speler korting heeft betaald, en kolommen voor de check-in (aanwezig, echt verkleed, bijbetaald via). Kolom K rekent het bij te betalen bedrag uit (€37,50 × duur / 8) als iemand korting betaalde maar niet echt verkleed is. Tabblad "Uitleg check-in" is de instructie voor degene die controleert. De lijst wordt via Make automatisch gevuld bij elke betaalde boeking, zie `sites/padelpadel-fiesta/README.md`.

@@ -179,6 +179,18 @@ section{scroll-margin-top:20px}
 .done .sum div{display:flex;justify-content:space-between;gap:12px}
 .done .sum span:first-child{color:var(--fog)}
 .hp{position:absolute;left:-9999px}
+.players{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.players .field label{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.vk{border:1px solid var(--line);background:var(--glass);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700;color:var(--fog);cursor:pointer;white-space:nowrap}
+.vk[aria-pressed="true"]{border-color:var(--pumpkin);color:var(--pumpkin);background:rgba(255,122,26,.10)}
+.sub-h{font-size:14px;font-weight:700;margin-bottom:-4px}
+.sub-h span{font-weight:500;color:var(--fog)}
+.checkin{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+.checkin div{background:var(--deep);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.checkin b{display:block;color:var(--lime);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.checkin p{font-size:14.5px;color:var(--bone)}
+@media (max-width:900px){.checkin{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.players,.checkin{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- echt verkleed ---------- */
 .rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
@@ -263,7 +275,7 @@ footer p b{color:var(--bone)}
     <div class="steps" aria-label="Zo werkt het">
       <div class="step"><span class="n">1</span><div><h3>Kies je tijd</h3><p>1, 1,5 of 2 uur op zondag 1 november tussen 16:00 en 23:00. De meeste spelers kiezen 1,5 uur.</p></div></div>
       <div class="step"><span class="n">2</span><div><h3>Tik aan wie verkleed komt</h3><p>Per verklede speler gaat de helft van zijn of haar deel eraf. Je ziet het bedrag direct.</p></div></div>
-      <div class="step"><span class="n">3</span><div><h3>Betaal en kom griezelen</h3><p>Je betaalt direct met iDEAL. Zodra de baan voor jullie geboekt is, krijg je een tweede bevestiging.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>Betaal en kom griezelen</h3><p>Je betaalt direct met iDEAL, de korting zit er al in. Zodra de baan geboekt is, krijg je een tweede bevestiging. Op de dag check je 10 minuten van tevoren in.</p></div></div>
     </div>
   </div>
 
@@ -304,7 +316,7 @@ footer p b{color:var(--bone)}
           </div>
 
           <div class="panel" id="aanvragen">
-            <div class="label"><h3>Jouw gegevens</h3><span>de boeker</span></div>
+            <div class="label"><h3>Spelers en gegevens</h3><span>voor de check-in</span></div>
             <form name="halloween-boeking" method="POST" data-netlify="true" netlify-honeypot="bot-veld" id="form" novalidate>
               <input type="hidden" name="form-name" value="halloween-boeking">
               <p class="hp"><label>Niet invullen: <input name="bot-veld" tabindex="-1" autocomplete="off"></label></p>
@@ -318,17 +330,25 @@ footer p b{color:var(--bone)}
               <input type="hidden" name="eindtijd" id="f-eind">
               <input type="hidden" name="aantal_verkleed" id="f-verkleed">
               <input type="hidden" name="spelers" id="f-spelers">
+              <input type="hidden" name="verkleed_per_speler" id="f-vps">
               <input type="hidden" name="baanprijs" id="f-baanprijs">
               <input type="hidden" name="korting" id="f-korting">
               <input type="hidden" name="totaal_te_betalen" id="f-totaal">
               <input type="hidden" name="per_speler" id="f-pp">
               <div class="form">
-                <div class="field full" id="fw-naam"><label for="naam">Naam</label><input id="naam" name="naam" autocomplete="name" placeholder="Voor- en achternaam"><span class="err">Vul je naam in.</span></div>
+                <p class="sub-h full">Wie spelen er? <span>Met deze namen checken we jullie in en kijken we wie echt verkleed is.</span></p>
+                <div class="players full">
+                  <div class="field" id="fw-naam"><label for="naam">Jij (boeker) <button type="button" class="vk" data-i="0" aria-pressed="true">verkleed</button></label><input id="naam" name="naam" autocomplete="name" placeholder="Voor- en achternaam"><span class="err">Vul je naam in.</span></div>
+                  <div class="field" id="fw-s2"><label for="s2">Speler 2 <button type="button" class="vk" data-i="1" aria-pressed="true">verkleed</button></label><input id="s2" name="speler_2" placeholder="Naam"><span class="err">Vul een naam in, voornaam is genoeg.</span></div>
+                  <div class="field" id="fw-s3"><label for="s3">Speler 3 <button type="button" class="vk" data-i="2" aria-pressed="true">verkleed</button></label><input id="s3" name="speler_3" placeholder="Naam"><span class="err">Vul een naam in, voornaam is genoeg.</span></div>
+                  <div class="field" id="fw-s4"><label for="s4">Speler 4 <button type="button" class="vk" data-i="3" aria-pressed="true">verkleed</button></label><input id="s4" name="speler_4" placeholder="Naam"><span class="err">Vul een naam in, voornaam is genoeg.</span></div>
+                </div>
+                <p class="sub-h full" style="margin-top:6px">Contact <span>voor de bevestigingen</span></p>
                 <div class="field" id="fw-email"><label for="email">E-mailadres</label><input id="email" name="email" type="email" autocomplete="email" placeholder="jij@voorbeeld.nl"><span class="err">Vul een e-mailadres in met een @ en een punt.</span></div>
                 <div class="field" id="fw-tel"><label for="tel">Telefoonnummer</label><input id="tel" name="telefoon" type="tel" autocomplete="tel" placeholder="06 12345678"><span class="err">Vul een telefoonnummer in van minimaal 9 cijfers.</span></div>
                 <div class="field full"><label for="opm">Opmerking (mag leeg)</label><textarea id="opm" name="opmerking" placeholder="Bijvoorbeeld: we willen graag naast onze vrienden spelen, of we zijn met z'n achten en willen twee banen."></textarea></div>
                 <label class="check full" id="fw-ok"><input type="checkbox" id="ok" name="akkoord_verkleed" value="ja">
-                  <span>Ik snap dat de korting alleen geldt voor wie <b>echt verkleed of geschminkt</b> is. Wie dat aan de balie niet is, betaalt het verschil voor zijn of haar deel bij.</span></label>
+                  <span>Ik snap dat de korting alleen geldt voor wie <b>echt verkleed of geschminkt</b> is. Wie dat bij de check-in niet is, betaalt het verschil voor zijn of haar deel bij.</span></label>
                 <div class="send-row full">
                   <button class="cta" type="submit" id="send">Betaal €28,13</button>
                   <p>Je betaalt direct met iDEAL. Daarna boeken wij de baan bij Poort Padel en krijg je een tweede bevestiging zodra hij voor jullie vastligt.</p>
@@ -366,7 +386,7 @@ footer p b{color:var(--bone)}
       <div class="sec-head">
         <span class="eyebrow">Spelregels</span>
         <h2>Echt verkleed, dus doe je best</h2>
-        <p>De korting is voor spelers die er werk van maken. Aan de balie kijken we even naar je outfit.</p>
+        <p>De korting zit al in je betaling, maar is voor spelers die er werk van maken. Bij de check-in kijken we wie echt verkleed is.</p>
       </div>
       <div class="rules">
         <div class="rule yes"><h3>Dit telt</h3><ul>
@@ -382,6 +402,13 @@ footer p b{color:var(--bone)}
           <li>Je kostuum in je tas laten zitten</li>
         </ul></div>
       </div>
+      <h3 style="margin-top:34px;font-size:22px;font-weight:900;font-style:italic">Zo werkt de check-in</h3>
+      <div class="checkin">
+        <div><b>10 min van tevoren</b><p>Kom naar de Halloween check-in bij Poort Padel, 10 minuten voor jullie begintijd.</p></div>
+        <div><b>Naam van de boeker</b><p>Wij hebben per baan de namen van alle vier de spelers.</p></div>
+        <div><b>Kostuumcheck</b><p>We kijken wie echt verkleed of geschminkt is en vertellen jullie baannummer.</p></div>
+        <div><b>Toch niet verkleed?</b><p>Dan betaal je ter plekke het verschil voor jouw deel bij. Bij 1,5 uur is dat €7,03.</p></div>
+      </div>
       <div class="note"><span class="eyebrow" style="flex:none">Tip</span><p><b>Kies een kostuum waarin je veilig kunt spelen.</b> Je moet de bal goed kunnen zien, en losse onderdelen horen niet op de baan te vallen. Een cape is prima, een masker dat je zicht wegneemt niet. De mooiste outfits van de dag zetten we op onze Instagram.</p></div>
     </div>
   </section>
@@ -392,7 +419,7 @@ footer p b{color:var(--bone)}
       <div class="faq">
         <details><summary>Wat kost een baan op 1 november?</summary><p>Een dubbelbaan kost in het weekend €37,50 per uur. Voor 1,5 uur is dat €56,25, oftewel €14,06 per persoon als je met z'n vieren speelt. Wie echt verkleed komt, betaalt de helft: €7,03. Komen jullie alle vier verkleed, dan betalen jullie samen €28,13 in plaats van €56,25.</p></details>
         <details><summary>Moet iedereen verkleed zijn?</summary><p>Nee. De korting telt per speler. Komen er twee van de vier verkleed, dan krijgen die twee de helft van hun deel korting en betalen de andere twee het gewone deel.</p></details>
-        <details><summary>Wat als iemand toch niet verkleed komt?</summary><p>Dan betaalt die speler aan de balie het verschil bij voor zijn of haar deel. Voor 1,5 uur is dat €7,03.</p></details>
+        <details><summary>Wat als iemand toch niet verkleed komt?</summary><p>Dan betaalt die speler bij de check-in het verschil bij voor zijn of haar deel. Voor 1,5 uur is dat €7,03.</p></details>
         <details><summary>Hoe en wanneer betaal ik?</summary><p>Vooraf, direct bij het boeken, met iDEAL. Je betaalt het totaal voor de hele baan in één keer. Na je betaling boeken wij de baan bij Poort Padel en krijg je een tweede mail zodra hij voor jullie vastligt.</p></details>
         <details><summary>Wat als mijn tijd al vol is?</summary><p>Boek je op het laatste moment, dan kan het zijn dat je tijd net vol zit. We nemen dan contact met je op voor een andere tijd. Past die niet, dan krijg je je geld terug.</p></details>
         <details><summary>We zijn met meer dan vier spelers.</summary><p>Boek per baan apart, of zet in het opmerkingenveld hoeveel banen je wilt en naast wie je wilt spelen. Dan regelen we het samen.</p></details>
@@ -453,6 +480,10 @@ names.forEach((nm, i) => {
   b.addEventListener('click', () => { state.dressed[i] = !state.dressed[i]; render(); });
   court.appendChild(b);
 });
+document.querySelectorAll('.vk').forEach(b => b.addEventListener('click', () => { const i = +b.dataset.i; state.dressed[i] = !state.dressed[i]; render(); }));
+const nameIds = ['naam', 's2', 's3', 's4'];
+const playerName = i => clean($(nameIds[i]).value || '');
+nameIds.forEach(id => $(id).addEventListener('input', render));
 $('allbtn').addEventListener('click', () => {
   const all = state.dressed.every(Boolean);
   state.dressed = state.dressed.map(() => !all); render();
@@ -493,7 +524,10 @@ function render() {
     b.setAttribute('aria-pressed', String(on));
     b.setAttribute('aria-label', names[+b.dataset.i] + (on ? ': verkleed, tik om uit te zetten' : ': niet verkleed, tik om aan te zetten'));
     b.querySelector('.tg').textContent = on ? 'verkleed −50%' : 'niet verkleed';
+    const first = playerName(+b.dataset.i).split(' ')[0];
+    b.querySelector('.nm').textContent = first ? first.slice(0, 12) : names[+b.dataset.i];
   });
+  document.querySelectorAll('.vk').forEach(b => { const on = state.dressed[+b.dataset.i]; b.setAttribute('aria-pressed', String(on)); b.textContent = on ? 'verkleed' : 'niet verkleed'; });
   $('allbtn').textContent = state.dressed.every(Boolean) ? 'Niemand verkleed' : 'Iedereen verkleed';
   $('courtnote').textContent = c.n === 4 ? 'Iedereen verkleed: jullie halen de maximale korting.'
     : c.n === 0 ? 'Nog niemand verkleed. Tik op een speler om korting te geven.'
@@ -517,7 +551,8 @@ function render() {
   $('f-start').value = state.start === null ? '' : hhmm(state.start);
   $('f-eind').value = state.start === null ? '' : hhmm(state.start + state.h * 60);
   $('f-verkleed').value = c.n + ' van 4';
-  $('f-spelers').value = names.map((n, i) => n + ': ' + (state.dressed[i] ? 'verkleed' : 'niet verkleed')).join(', ');
+  $('f-spelers').value = names.map((n, i) => (playerName(i) || n) + ' (' + (state.dressed[i] ? 'verkleed' : 'niet verkleed') + ')').join(', ');
+  $('f-vps').value = state.dressed.map(d => d ? 'ja' : 'nee').join(',');
   $('f-baanprijs').value = eur(c.base);
   $('f-korting').value = eur(c.disc);
   $('f-totaal').value = eur(c.total);
@@ -533,22 +568,25 @@ function render() {
 const clean = t => t.replace(/["'\\{}\[\]\r\n\t<>]/g, '').trim();
 $('form').addEventListener('submit', async e => {
   e.preventDefault();
-  ['naam', 'email', 'tel'].forEach(id => { const el = $(id); el.value = clean(el.value); });
+  ['naam', 's2', 's3', 's4', 'email', 'tel'].forEach(id => { const el = $(id); el.value = clean(el.value); });
   const tel = $('tel'); tel.value = tel.value.replace(/[^0-9+ ]/g, '');
   const digits = tel.value.replace(/\D/g, '');
   const ok = {
     naam: $('naam').value.length >= 2,
+    s2: $('s2').value.length >= 2, s3: $('s3').value.length >= 2, s4: $('s4').value.length >= 2,
     email: /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test($('email').value),
     tel: digits.length >= 9 && digits.length <= 13,
     ok: $('ok').checked
   };
   $('fw-naam').classList.toggle('bad', !ok.naam);
+  ['s2', 's3', 's4'].forEach(k => $('fw-' + k).classList.toggle('bad', !ok[k]));
   $('fw-email').classList.toggle('bad', !ok.email);
   $('fw-tel').classList.toggle('bad', !ok.tel);
   $('fw-ok').classList.toggle('bad', !ok.ok);
   const ferr = $('ferr');
   if (state.start === null) { ferr.textContent = 'Kies eerst een begintijd hierboven.'; ferr.style.display = 'block'; $('times').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
-  if (!ok.naam || !ok.email || !ok.tel) { ferr.style.display = 'none'; (!ok.naam ? $('naam') : !ok.email ? $('email') : tel).focus(); return; }
+  const firstBad = ['naam', 's2', 's3', 's4', 'email', 'tel'].find(k => !ok[k === 'naam' ? 'naam' : k]);
+  if (firstBad) { ferr.style.display = 'none'; $(firstBad).focus(); return; }
   if (!ok.ok) { ferr.textContent = 'Vink aan dat je de regel over echt verkleed snapt.'; ferr.style.display = 'block'; return; }
   ferr.style.display = 'none';
   render();
