@@ -1,4 +1,4 @@
-"""Maakt halloween-checkin-lijst.xlsx: één rij per speler, voor de check-in op zondag 1 november."""
+"""Maakt halloween-checkin-lijst.xlsx: één rij per speler, voor de check-in op zaterdag 31 oktober."""
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.worksheet.datavalidation import DataValidation
@@ -18,7 +18,7 @@ ex = PatternFill('solid', fgColor='EFEFEF')
 thin = Side(style='thin', color='BFBFBF')
 box = Border(left=thin, right=thin, top=thin, bottom=thin)
 
-ws['A1'] = 'Halloween Padel Special · check-in · zondag 1 november 2026, 16:00 tot 23:00'
+ws['A1'] = 'Halloween Padel Special · check-in · zaterdag 31 oktober 2026, 16:00 tot 23:00'
 ws['A1'].font = Font(name=F, bold=True, size=14)
 ws['A2'] = 'Geel = vult Lars in na de boeking (baannummer, de spelers horen dit pas bij de check-in). Blauw = vult de check-in in op de dag. Wit = komt uit de betaling. Grijs = voorbeeld, mag weg.'
 ws['A2'].font = Font(name=F, size=10, italic=True)
@@ -89,7 +89,7 @@ ws.conditional_formatting.add(f'O{FIRST}:O{LAST}', FormulaRule(formula=[f'$O{FIR
 u = wb.create_sheet('Uitleg check-in')
 lines = [
     ('Halloween check-in: zo werkt het', True),
-    ('Zondag 1 november 2026, 16:00 tot 23:00, bij Poort Padel. Spelers komen 10 minuten voor hun begintijd.', False),
+    ('Zaterdag 31 oktober 2026, 16:00 tot 23:00, bij Poort Padel. Spelers komen 10 minuten voor hun begintijd.', False),
     ('', False),
     ('1. Sorteer of filter op Starttijd. Elke boeking heeft 4 regels, één per speler.', False),
     ('2. Vraag de naam van de boeker en zoek de regels op.', False),

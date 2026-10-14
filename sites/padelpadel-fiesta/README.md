@@ -1,4 +1,4 @@
-# halloween-poort-padel: Halloween Padel Special (zo 1 november 2026, 16:00 tot 23:00)
+# halloween-poort-padel: Halloween Padel Special (za 31 oktober 2026, 16:00 tot 23:00)
 
 Netlify-project: https://app.netlify.com/projects/halloween-poort-padel (voorheen padelpadel-fiesta, site-id `d1b410c7-af4c-4e1e-8111-5469aabc82ee`).
 Live adres: https://halloween-poort-padel.netlify.app. Statische site, geen build nodig (`netlify.toml`: publish = ".").
@@ -13,7 +13,7 @@ Boekingsmodule voor de Halloween-actie: wie echt verkleed of geschminkt komt, kr
 |---|---|
 | Baanprijs weekend, dubbelbaan | `PRIJS_PER_UUR = 3750` (centen) |
 | Spelers per baan | `SPELERS = 4` |
-| Tijden zo 1 november | `OPEN = 16:00`, `DICHT = 23:00`, begintijden per 30 minuten |
+| Tijden za 31 oktober | `OPEN = 16:00`, `DICHT = 23:00`, begintijden per 30 minuten |
 | Duur | 1, 1,5 (standaard) of 2 uur |
 
 Rekenvoorbeeld 1,5 uur: baan €56,25, gedeeld door 4 = €14,06 p.p. Verkleed betaal je €7,03. Alle vier verkleed: €28,13 voor de baan in plaats van €56,25.
