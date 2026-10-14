@@ -20,7 +20,7 @@ box = Border(left=thin, right=thin, top=thin, bottom=thin)
 
 ws['A1'] = 'Halloween Padel Special · check-in · zondag 1 november 2026, 16:00 tot 23:00'
 ws['A1'].font = Font(name=F, bold=True, size=14)
-ws['A2'] = 'Geel = vult Lars in na de boeking (baannummer). Blauw = vult de check-in in op de dag. Wit = komt uit de betaling. Grijs = voorbeeld, mag weg.'
+ws['A2'] = 'Geel = vult Lars in na de boeking (baannummer, de spelers horen dit pas bij de check-in). Blauw = vult de check-in in op de dag. Wit = komt uit de betaling. Grijs = voorbeeld, mag weg.'
 ws['A2'].font = Font(name=F, size=10, italic=True)
 ws['M1'] = 'Totaal bij te betalen'
 ws['M1'].font = Font(name=F, bold=True)
@@ -33,7 +33,7 @@ ws['N2'] = '=COUNTIF(I5:I404,"ja")'
 ws['N2'].font = Font(name=F, bold=True)
 
 head = ['Starttijd', 'Eindtijd', 'Baan', 'Boeker', 'Telefoon boeker', 'Speler', 'Duur (uur)',
-        'Korting betaald (verkleed)', 'Aanwezig', 'Echt verkleed?', 'Bij te betalen (€)', 'Bijbetaald via', 'Opmerking', 'Mollie-betaling']
+        'Korting betaald (verkleed)', 'Aanwezig', 'Echt verkleed?', 'Bij te betalen (€)', 'Bijbetaald via', 'Opmerking', 'Mollie-betaling', 'Groep compleet']
 for c, h in enumerate(head, 1):
     cell = ws.cell(row=4, column=c, value=h)
     cell.font = Font(name=F, bold=True, color='FFFFFF')
@@ -52,10 +52,10 @@ example = [
 ]
 FIRST, LAST = 5, 404
 for r in range(FIRST, LAST + 1):
-    vals = example[r - FIRST] if r - FIRST < len(example) else [None] * 14
-    for c in range(1, 15):
+    vals = example[r - FIRST] if r - FIRST < len(example) else [None] * 15
+    for c in range(1, 16):
         cell = ws.cell(row=r, column=c)
-        if c != 11 and vals[c - 1] is not None:
+        if c not in (11, 15) and c <= len(vals) and vals[c - 1] is not None:
             cell.value = vals[c - 1]
         cell.font = Font(name=F, size=10)
         cell.border = box
@@ -67,6 +67,7 @@ for r in range(FIRST, LAST + 1):
             cell.fill = ex
     ws.cell(row=r, column=11, value=f'=IF(AND(H{r}="ja",J{r}="nee"),ROUND(37.5*G{r}/8,2),0)').number_format = '€ #,##0.00;-€ #,##0.00;-'
     ws.cell(row=r, column=7).number_format = '0.0'
+    ws.cell(row=r, column=15, value=f'=IF(D{r}="","",IF(COUNTIFS($A${FIRST}:$A${LAST},A{r},$D${FIRST}:$D${LAST},D{r},$I${FIRST}:$I${LAST},"ja")=4,"compleet",COUNTIFS($A${FIRST}:$A${LAST},A{r},$D${FIRST}:$D${LAST},D{r},$I${FIRST}:$I${LAST},"ja")&" van 4"))')
 
 for col, opts in (('H', '"ja,nee"'), ('I', '"ja,nee"'), ('J', '"ja,nee"'), ('L', '"Tikkie,Pin,Contant"')):
     dv = DataValidation(type='list', formula1=opts, allow_blank=True)
@@ -78,11 +79,12 @@ ws.conditional_formatting.add(f'J{FIRST}:K{LAST}', FormulaRule(formula=[f'AND($H
 greenf = PatternFill('solid', fgColor='C6EFCE')
 ws.conditional_formatting.add(f'I{FIRST}:I{LAST}', FormulaRule(formula=[f'$I{FIRST}="ja"'], fill=greenf))
 
-widths = [9, 9, 7, 24, 15, 20, 8, 12, 10, 11, 12, 13, 26, 16]
+widths = [9, 9, 7, 24, 15, 20, 8, 12, 10, 11, 12, 13, 26, 16, 13]
 for i, w in enumerate(widths):
     ws.column_dimensions[chr(65 + i)].width = w
 ws.freeze_panes = 'A5'
-ws.auto_filter.ref = f'A4:N{LAST}'
+ws.auto_filter.ref = f'A4:O{LAST}'
+ws.conditional_formatting.add(f'O{FIRST}:O{LAST}', FormulaRule(formula=[f'$O{FIRST}="compleet"'], fill=greenf))
 
 u = wb.create_sheet('Uitleg check-in')
 lines = [
@@ -91,13 +93,14 @@ lines = [
     ('', False),
     ('1. Sorteer of filter op Starttijd. Elke boeking heeft 4 regels, één per speler.', False),
     ('2. Vraag de naam van de boeker en zoek de regels op.', False),
-    ('3. Zet per speler Aanwezig op "ja".', False),
+    ('3. Zet per speler Aanwezig op "ja". Kolom Groep compleet laat zien of alle vier er zijn ("compleet" of bijvoorbeeld "3 van 4").', False),
+    ('   Nog niet compleet? Laat ze wachten tot de vierde er is, uiterlijk tot de begintijd. Pas als de groep compleet is, gaan ze naar de baan.', False),
     ('4. Kijk per speler: echt verkleed of geschminkt? Zet Echt verkleed? op "ja" of "nee".', False),
     ('   Telt WEL: volledig kostuum, schmink of facepaint over het hele gezicht, masker met kostuum.', False),
     ('   Telt NIET: alleen een hoedje of oortjes, een gewoon shirt met print, twee streepjes schmink.', False),
     ('5. Wordt de cel oranje? Dan heeft die speler korting betaald maar is hij of zij niet echt verkleed.', False),
     ('   Bij te betalen staat in kolom K (1 uur: €4,69 · 1,5 uur: €7,03 · 2 uur: €9,38). Laat dat ter plekke bijbetalen en vul Bijbetaald via in.', False),
-    ('6. Noem het baannummer (kolom Baan) en wens ze een griezelige wedstrijd.', False),
+    ('6. Pas nu noem je het baannummer (kolom Baan). De spelers weten dat van tevoren niet. Wens ze een griezelige wedstrijd.', False),
     ('', False),
     ('Twijfel over een kostuum? Kies voor de speler, het is een feestje. Mooie outfits: maak een foto voor Instagram (vraag eerst even of het mag).', False),
     ('Staat iemand niet op de lijst? Kijk in Mollie (Betalingen, zoek op naam) of in Netlify Forms (halloween-boeking). Niet betaald = gewoon tarief via Poort Padel.', False),

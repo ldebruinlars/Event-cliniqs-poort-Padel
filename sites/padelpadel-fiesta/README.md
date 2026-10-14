@@ -63,12 +63,12 @@ Test: boek zelf 1 uur met 4 verkleed (€18,75), betaal, en storneer via Mollie 
 
 Wie controleert: één persoon bij een Halloween check-in tafel bij de balie van Poort Padel, van 15:50 tot ongeveer 21:45 (laatste begintijd 21:30). Lars zelf, een trainer van de Academy, of iemand van Poort Padel. Twee diensten van drie uur is prettig.
 
-Die persoon heeft de check-inlijst open op telefoon of tablet (Google Sheet) en een Tikkie-QR of pinautomaat voor bijbetalen. Per speler: Aanwezig = ja, Echt verkleed? = ja/nee. Wordt de cel oranje, dan betaalt die speler het verschil bij (1 uur €4,69, 1,5 uur €7,03, 2 uur €9,38). Uitleg staat in het tabblad "Uitleg check-in".
+Die persoon heeft de check-inlijst open op telefoon of tablet (Google Sheet) en een Tikkie-QR of pinautomaat voor bijbetalen. Per speler: Aanwezig = ja, Echt verkleed? = ja/nee. Kolom Groep compleet toont "compleet" als alle vier er zijn; pas dan krijgt de groep het baannummer. Wordt de cel oranje, dan betaalt die speler het verschil bij (1 uur €4,69, 1,5 uur €7,03, 2 uur €9,38). Uitleg staat in het tabblad "Uitleg check-in".
 
 ### Na een betaling
 
 1. Boek de baan in Playtomic/bij Poort Padel en zet het baannummer in kolom Baan van de check-inlijst.
-2. Stuur de tweede mail: "Je baan staat vast: zondag 1 november, [tijd], baan [nr]. Kom 10 minuten eerder naar de Halloween check-in."
+2. Stuur de tweede bevestiging (mail of WhatsApp), zonder baannummer: de spelers horen hun baan pas bij de check-in. Tekst: zie `events/2026-halloween-padel/checkin/bevestiging-whatsapp.txt`.
 3. Tijd vol? Bel of mail voor een andere tijd. Past niets: terugbetalen via Mollie.
 
 Netlify Forms (formulier `halloween-boeking`) bewaart ook elke boeking, ook als iemand de betaling afbreekt. Vergelijk met Mollie: alleen wat in Mollie op "betaald" staat, boek je.
