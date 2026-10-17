@@ -36,7 +36,13 @@ Klanten betalen vooraf, direct bij het boeken, met iDEAL. Een vaste betaallink w
 
 Flow: site → Netlify Forms (overzicht) → Make-webhook → Mollie createPayment → Make stuurt de iDEAL-link terug → klant betaalt → Mollie stuurt terug naar `/bedankt.html` → Lars boekt de baan bij Poort Padel → tweede mail "baan geboekt".
 
-### Zo zet je het op in Make (10 minuten)
+### Status (17 oktober 2026)
+
+Gebouwd en aangezet: Make-scenario **"halloween betaling"** (id 8011622) met webhook "Halloween boeking" (`https://hook.eu1.make.com/uo8p28ou79eewpoqfpjk3vgy5mmfhi3t`, staat in `index.html` bij `BETAAL_WEBHOOK`). Webhook → filter "geldige boeking" (verkleed 0 t/m 4, uren 1 t/m 2) → Mollie Create a Payment (connectie All Court Academy B.V., bedrag door Make berekend, metadata met alle spelers) → antwoord met de iDEAL-link. Getest met 1,5 uur en 3 verkleed: iDEAL-pagina toont €35,16 aan All Court Academy B.V. Die testbetaling (omschrijving begint met TEST) is niet betaald en vervalt vanzelf.
+
+Nog te doen: Mollie-webhook voor betaalde boekingen → check-inlijst (stap 8 hieronder).
+
+### Zo zet je het op in Make (handmatige beschrijving van hetzelfde scenario)
 
 1. Make → Scenarios → "papapadel 2" → ⋯ → **Clone**. Noem de kopie `halloween betaling`.
 2. **Webhook (module 1):** klik erop → **Add** → nieuwe webhook `Halloween boeking`. Kopieer het adres (Copy address).
