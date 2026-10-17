@@ -33,3 +33,10 @@ Complete sheet: https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC
 
 - De Higgsfield-opdracht `/use-blender` werkt alleen op Lars' eigen computer (Claude Code lokaal), niet in deze cloudomgeving.
 - Wel mogelijk: Higgsfield 3D Jutsu (gehoste Blender, `scene_builder_3d_*`), en Blender als Python-module (`pip install bpy==5.0.1` in een Python 3.11-venv) in de container of in de Higgsfield-sandbox. 3D Jutsu kan alleen catalogusmodellen importeren, geen eigen GLB.
+
+## Pinterest-referenties
+
+Keuzebord met 30 referenties (A stijl, B opbouw sheet, C sfeer, D animatie-look), gekozen uit 161 pins van openbare Pinterest-pagina's (ideeën: 3D ghost, cute ghost 3D model, 3D Halloween animation, pumpkin head drawing cute; borden met model sheets en 3D-animatieshorts). Media `07b8bff6-640b-4079-9c4d-1180eb5d2d1b`:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/07b8bff6-640b-4079-9c4d-1180eb5d2d1b.jpg
+
+Alleen als inspiratie voor stijl en opbouw; niets letterlijk overnemen.
