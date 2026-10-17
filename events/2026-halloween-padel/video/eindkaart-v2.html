@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Eindkaart Halloween Padel v2</title>
+<style>
+/* Transparante eindkaart 1080x1920 voor de kleianimatie (oktober 2026).
+   De video laat in de laatste seconden het bovenste derde leeg (nachtlucht), daarom staat de tekst bovenin
+   en onderin alleen een smalle balk met de boekoproep en de logo's. */
+@font-face{font-family:"Creep";src:url(../fonts/Creepster-Regular.ttf)}
+@font-face{font-family:"Poppins";font-weight:900;font-style:italic;src:url(../fonts/Poppins-BlackItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:800;font-style:italic;src:url(../fonts/Poppins-ExtraBoldItalic.ttf)}
+@font-face{font-family:"Poppins";font-weight:600;font-style:normal;src:url(../fonts/Poppins-SemiBold.ttf)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:transparent;overflow:hidden}
+body{font-family:"Poppins",sans-serif;color:#fff;position:relative;-webkit-font-smoothing:antialiased}
+.top{position:absolute;top:0;left:0;right:0;height:860px;padding-top:120px;text-align:center;background:linear-gradient(to bottom,rgba(7,13,16,.9) 0%,rgba(7,13,16,.78) 62%,rgba(7,13,16,0) 100%)}
+.h1{font-family:"Creep";font-size:150px;line-height:.88;color:#FF7A1A;letter-spacing:4px;text-shadow:0 0 30px rgba(255,122,26,.55),0 7px 0 #4a1d00}
+.h2{font-weight:900;font-style:italic;font-size:64px;line-height:1;letter-spacing:7px;margin-top:4px}
+.h2 span{color:#CDFD50}
+.date{display:inline-block;margin-top:30px;font-weight:900;font-style:italic;font-size:48px;line-height:1;border-top:5px solid #FF7A1A;border-bottom:5px solid #FF7A1A;padding:12px 26px}
+.offer{display:inline-block;margin-top:34px;background:#CDFD50;color:#070d10;transform:skewX(-10deg) rotate(-2deg);padding:14px 50px 16px;box-shadow:0 0 50px rgba(205,253,80,.45)}
+.offer>div{transform:skewX(10deg)}
+.a{font-weight:800;font-style:italic;font-size:34px;line-height:1;letter-spacing:2px}
+.b{font-weight:900;font-style:italic;font-size:96px;line-height:.95;letter-spacing:-2px}
+.bottom{position:absolute;left:0;right:0;bottom:0;height:420px;padding:0 60px 230px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;background:linear-gradient(to top,rgba(7,13,16,.92) 0%,rgba(7,13,16,.75) 55%,rgba(7,13,16,0) 100%)}
+.cta{font-weight:900;font-style:italic;font-size:46px;letter-spacing:1px}
+.cta b{color:#CDFD50}
+.logos{display:flex;align-items:center;gap:40px;margin-top:22px}
+.logos img{height:58px}
+.addr{font-weight:600;font-size:24px;opacity:.9;margin-top:10px}
+</style></head><body>
+<div class="top">
+  <div class="h1">HALLOWEEN</div><div class="h2">PADEL <span>SPECIAL</span></div>
+  <div class="date">ZATERDAG 31 OKTOBER</div><br>
+  <div class="offer"><div><div class="a">KOM VERKLEED =</div><div class="b">50% KORTING</div></div></div>
+</div>
+<div class="bottom">
+  <div class="cta">Boek via de <b>link in bio</b></div>
+  <div class="logos"><img src="../build/logo-poort-padel-wit.png" alt="Poort Padel"><img src="../build/logo-all-court-academy-wit.png" alt="All Court Academy"></div>
+  <div class="addr">Neonweg 62 · Almere Poort</div>
+</div>
+</body></html>
