@@ -43,4 +43,4 @@ Prompts: Engels, stijlblok "Japanese sumi-e ink wash animation on crumpled cream
 
 Eindkaart v2 vanaf 17,9 s met fade, audio fade-out vanaf 19,2 s. Media `9f39d367-8e2c-480e-ad5c-035c8a276aa5`, bestand `spookbaan-v2-20s.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/9f39d367-8e2c-480e-ad5c-035c8a276aa5.mp4
 
-Kosten: 11 clips Seedance 2.5 720p (plus 3 mislukte die niet afgeschreven horen te worden) en 14 key frames.
+Kosten: 11 clips Seedance 2.5 720p en 14 key frames; saldo na afloop 2438 credits (begin van de dag 2823, inclusief keuzeset, startbeelden en test v1).
