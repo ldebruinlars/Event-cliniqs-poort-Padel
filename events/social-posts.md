@@ -227,7 +227,7 @@ Boekingssite: https://halloween-poort-padel.netlify.app (zet deze in de Instagra
 
 | # | Wanneer | Waar | Wat |
 |---|---|---|---|
-| H1 | ma 19 okt 10:00 | Instagram feed + Facebook | poster feed 4:5, caption hieronder; Instagram met @poortpadel als collaborator |
+| H1 | za 17 okt 17:00 (ingepland in Metricool) | Instagram feed + Facebook | poster feed 4:5 zonder QR, caption hieronder; Instagram met @poortpadel als collaborator en getagd, Facebook met de link |
 | H2 | ma 19 okt 18:00 | Instagram story | story 9:16; linksticker zelf toevoegen in de app |
 
 **H1 Instagram**
