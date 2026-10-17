@@ -172,7 +172,6 @@ section{scroll-margin-top:20px}
 .send-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .send-row p{color:var(--fog);font-size:13px;flex:1 1 220px}
 .form-err{display:none;color:var(--blood);font-weight:600}
-.late{color:var(--fog);font-size:13.5px;border-left:3px solid var(--pumpkin);padding-left:12px}
 .done{display:none;flex-direction:column;gap:12px}
 .done h3{font-family:var(--display);font-weight:400;font-size:44px;color:var(--lime);line-height:1}
 .done .sum{background:var(--glass);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14.5px}
@@ -275,7 +274,7 @@ footer p b{color:var(--bone)}
     <div class="steps" aria-label="Zo werkt het">
       <div class="step"><span class="n">1</span><div><h3>Kies je tijd</h3><p>1, 1,5 of 2 uur op zaterdag 31 oktober tussen 16:00 en 23:00. De meeste spelers kiezen 1,5 uur.</p></div></div>
       <div class="step"><span class="n">2</span><div><h3>Tik aan wie verkleed komt</h3><p>Per verklede speler gaat de helft van zijn of haar deel eraf. Je ziet het bedrag direct.</p></div></div>
-      <div class="step"><span class="n">3</span><div><h3>Betaal en kom griezelen</h3><p>Je betaalt direct met iDEAL, de korting zit er al in. Zodra de baan geboekt is, krijg je een tweede bevestiging. Op de dag check je met z'n vieren 10 minuten van tevoren in en hoor je je baan.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>Betaal en kom griezelen</h3><p>Je betaalt direct met iDEAL, de korting zit er al in. Betaald is bevestigd: je krijgt meteen een bevestigingsmail. Op de dag check je met z'n vieren 10 minuten van tevoren in en hoor je je baan.</p></div></div>
     </div>
   </div>
 
@@ -343,23 +342,22 @@ footer p b{color:var(--bone)}
                   <div class="field" id="fw-s3"><label for="s3">Speler 3 <button type="button" class="vk" data-i="2" aria-pressed="true">verkleed</button></label><input id="s3" name="speler_3" placeholder="Naam"><span class="err">Vul een naam in, voornaam is genoeg.</span></div>
                   <div class="field" id="fw-s4"><label for="s4">Speler 4 <button type="button" class="vk" data-i="3" aria-pressed="true">verkleed</button></label><input id="s4" name="speler_4" placeholder="Naam"><span class="err">Vul een naam in, voornaam is genoeg.</span></div>
                 </div>
-                <p class="sub-h full" style="margin-top:6px">Contact <span>voor de bevestigingen</span></p>
+                <p class="sub-h full" style="margin-top:6px">Contact <span>voor je bevestigingsmail</span></p>
                 <div class="field" id="fw-email"><label for="email">E-mailadres</label><input id="email" name="email" type="email" autocomplete="email" placeholder="jij@voorbeeld.nl"><span class="err">Vul een e-mailadres in met een @ en een punt.</span></div>
                 <div class="field" id="fw-tel"><label for="tel">Telefoonnummer</label><input id="tel" name="telefoon" type="tel" autocomplete="tel" placeholder="06 12345678"><span class="err">Vul een telefoonnummer in van minimaal 9 cijfers.</span></div>
                 <div class="field full"><label for="opm">Opmerking (mag leeg)</label><textarea id="opm" name="opmerking" placeholder="Bijvoorbeeld: we willen graag naast onze vrienden spelen, of we zijn met z'n achten en willen twee banen."></textarea></div>
                 <label class="check full" id="fw-ok"><input type="checkbox" id="ok" name="akkoord_verkleed" value="ja">
-                  <span>Ik snap dat de korting alleen geldt voor wie <b>echt verkleed of geschminkt</b> is. Wie dat bij de check-in niet is, betaalt het verschil voor zijn of haar deel bij.</span></label>
+                  <span>Ik snap dat de korting bedoeld is voor wie <b>echt verkleed of geschminkt</b> komt. We doen ons best!</span></label>
                 <div class="send-row full">
                   <button class="cta" type="submit" id="send">Betaal €28,13</button>
-                  <p>Je betaalt direct met iDEAL. Daarna boeken wij de baan bij Poort Padel en krijg je een tweede bevestiging zodra hij voor jullie vastligt.</p>
+                  <p>Je betaalt direct met iDEAL. Betaald is bevestigd: je baan ligt vast en je krijgt meteen een bevestigingsmail.</p>
                 </div>
-                <p class="late full">Boek je op het laatste moment? Dan kan je tijd net vol zitten. We nemen dan contact met je op voor een andere tijd, en past die niet, dan krijg je je geld terug.</p>
                 <p class="form-err full" id="ferr">Kies eerst een begintijd hierboven.</p>
               </div>
             </form>
             <div class="done" id="done" aria-live="polite">
               <h3>Boooek!</h3>
-              <p>Je boeking is binnen. We sturen een betaallink naar <b id="d-mail"></b>. Zodra je hebt betaald en de baan geboekt is, krijg je een tweede bevestiging.</p>
+              <p>Je boeking is binnen. Na je betaling ligt je baan vast en krijg je een bevestigingsmail op <b id="d-mail"></b>.</p>
               <div class="sum" id="d-sum"></div>
               <p style="color:var(--fog);font-size:14px">Nog een baan nodig voor de rest van je vrienden? <a href="#boeken" id="again">Boek nog een baan</a>.</p>
             </div>
@@ -386,7 +384,7 @@ footer p b{color:var(--bone)}
       <div class="sec-head">
         <span class="eyebrow">Spelregels</span>
         <h2>Echt verkleed, dus doe je best</h2>
-        <p>De korting zit al in je betaling, maar is voor spelers die er werk van maken. Bij de check-in kijken we wie echt verkleed is.</p>
+        <p>De korting zit al in je betaling en is bedoeld voor spelers die er echt werk van maken. Laat zien wat je hebt!</p>
       </div>
       <div class="rules">
         <div class="rule yes"><h3>Dit telt</h3><ul>
@@ -406,8 +404,8 @@ footer p b{color:var(--bone)}
       <div class="checkin">
         <div><b>10 min van tevoren</b><p>Kom met z'n vieren naar de bar van Poort Padel, 10 minuten voor jullie begintijd.</p></div>
         <div><b>Compleet?</b><p>Noem de naam van de boeker. Wij hebben de namen van alle vier de spelers en kijken of jullie compleet zijn.</p></div>
-        <div><b>Kostuumcheck en baan</b><p>We kijken wie echt verkleed of geschminkt is. Daarna hoor je pas op welke baan jullie staan.</p></div>
-        <div><b>Toch niet verkleed?</b><p>Dan betaal je ter plekke het verschil voor jouw deel bij. Bij 1,5 uur is dat €7,03.</p></div>
+        <div><b>Kostuums en baan</b><p>We bewonderen jullie kostuums en pas dan hoor je op welke baan jullie staan.</p></div>
+        <div><b>Spelen!</b><p>De baan is van jullie voor de hele geboekte tijd. Veel griezelplezier.</p></div>
       </div>
       <div class="note"><span class="eyebrow" style="flex:none">Tip</span><p><b>Kies een kostuum waarin je veilig kunt spelen.</b> Je moet de bal goed kunnen zien, en losse onderdelen horen niet op de baan te vallen. Een cape is prima, een masker dat je zicht wegneemt niet. De mooiste outfits van de dag zetten we op onze Instagram.</p></div>
     </div>
@@ -419,9 +417,8 @@ footer p b{color:var(--bone)}
       <div class="faq">
         <details><summary>Wat kost een baan op 31 oktober?</summary><p>Een dubbelbaan kost in het weekend €37,50 per uur. Voor 1,5 uur is dat €56,25, oftewel €14,06 per persoon als je met z'n vieren speelt. Wie echt verkleed komt, betaalt de helft: €7,03. Komen jullie alle vier verkleed, dan betalen jullie samen €28,13 in plaats van €56,25.</p></details>
         <details><summary>Moet iedereen verkleed zijn?</summary><p>Nee. De korting telt per speler. Komen er twee van de vier verkleed, dan krijgen die twee de helft van hun deel korting en betalen de andere twee het gewone deel.</p></details>
-        <details><summary>Wat als iemand toch niet verkleed komt?</summary><p>Dan betaalt die speler bij de check-in het verschil bij voor zijn of haar deel. Voor 1,5 uur is dat €7,03.</p></details>
-        <details><summary>Hoe en wanneer betaal ik?</summary><p>Vooraf, direct bij het boeken, met iDEAL. Je betaalt het totaal voor de hele baan in één keer. Na je betaling boeken wij de baan bij Poort Padel en krijg je een tweede mail zodra hij voor jullie vastligt.</p></details>
-        <details><summary>Wat als mijn tijd al vol is?</summary><p>Boek je op het laatste moment, dan kan het zijn dat je tijd net vol zit. We nemen dan contact met je op voor een andere tijd. Past die niet, dan krijg je je geld terug.</p></details>
+        <details><summary>Hoe en wanneer betaal ik?</summary><p>Vooraf, direct bij het boeken, met iDEAL. Je betaalt het totaal voor de hele baan in één keer. Betaald is bevestigd: je baan ligt vast en je krijgt meteen een bevestigingsmail met jullie tijd en namen.</p></details>
+        <details><summary>Geen bevestigingsmail gekregen?</summary><p>Kijk even in je spam of reclamemap. Staat hij er niet, mail dan naar l.debruin@allcourtacademy.com, dan sturen we hem opnieuw.</p></details>
         <details><summary>We zijn met meer dan vier spelers.</summary><p>Boek per baan apart, of zet in het opmerkingenveld hoeveel banen je wilt en naast wie je wilt spelen. Dan regelen we het samen.</p></details>
         <details><summary>Waar is het?</summary><p>Bij Poort Padel, Neonweg 62 in Almere Poort. De Halloween Padel Special is op zaterdag 31 oktober van 16:00 tot 23:00.</p></details>
       </div>

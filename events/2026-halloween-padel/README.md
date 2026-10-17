@@ -129,6 +129,10 @@ Lars vond versie 7 (horrorfilm) het vetst, maar wilde de energie van 3 of 1 erin
 | 13 | kerkhofbaan, door de glaswand met reuzenbal | als 3 | `b4892e0a-804c-469c-b2c0-87aa5b9060c4` |
 | 14 | filmisch zoals 7, duik terwijl het glas achter hem ontploft | als 1 | `d19b8616-69a4-4451-8a1d-ff549dc71e92` |
 
-## Check-in op de dag (`checkin/`)
+## Check-in op de dag
 
-`checkin/halloween-checkin-lijst.xlsx` (gemaakt met `checkin/build_checkin.py`): één rij per speler met starttijd, baan, boeker, naam, of de speler korting heeft betaald, en kolommen voor de check-in (aanwezig, echt verkleed, bijbetaald via). Kolom K rekent het bij te betalen bedrag uit (€37,50 × duur / 8) als iemand korting betaalde maar niet echt verkleed is. Tabblad "Uitleg check-in" is de instructie voor degene die controleert. De lijst wordt via Make automatisch gevuld bij elke betaalde boeking, zie `sites/padelpadel-fiesta/README.md`.
+Alles loopt via de Google Sheet "Halloween Padel 31 oktober · boekingen en check-in": elke betaalde boeking komt er via Make automatisch in, tab Printlijst is de lijst voor de bar. Alles is vooraf betaald, aan de bar wordt niets bijbetaald. Zie `sites/padelpadel-fiesta/README.md`.
+
+## Bevestigingsmail (`mail/`)
+
+Na elke betaling stuurt Make automatisch een bevestigingsmail in Halloween-stijl (All Court Academy × Poort Padel): tijd, duur, bedrag, de vier spelers met hun korting, de check-in in drie stappen, kostuumtip en een knop voor in de agenda. `python3 mail/build_mail.py` maakt `mail/bevestigingsmail-make.html` (de versie met Make-velden die in het scenario staat) en `mail/voorbeeld.html` met voorbeelddata.

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>Je baan staat vast, Halloween Padel Special</title>
+</head>
+<body style="margin:0;padding:0;background:#070d10">
+<div style="display:none;max-height:0;overflow:hidden;color:#070d10">Betaald en bevestigd: zaterdag 31 oktober, {{3.start}} tot {{3.eind}} bij Poort Padel. Kom verkleed!</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#070d10" style="background:#070d10">
+  <tr><td align="center" style="padding:20px 12px 36px">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#0d181b;border:1px solid #24393b;border-radius:16px;overflow:hidden">
+
+      <tr><td><a href="https://halloween-poort-padel.netlify.app"><img src="https://halloween-poort-padel.netlify.app/assets/mail-header.jpg" width="600" alt="Halloween Padel: betaald en bevestigd" style="display:block;width:100%;height:auto;border:0"></a></td></tr>
+
+      <tr><td style="padding:30px 32px 6px">
+        <p style="margin:0 0 12px;font:900 italic 26px/1.2 Arial,Helvetica,sans-serif;color:#eef3ef">Hoi {{first(split(3.naam; " "))}}, jullie baan staat vast!</p>
+        <p style="margin:0;font:16px/1.6 Arial,Helvetica,sans-serif;color:#8fa6a0">Je betaling is binnen, dus je boeking is bevestigd. Zet je kostuum vast klaar, want op zaterdag 31 oktober wordt het griezelen bij Poort Padel.</p>
+      </td></tr>
+
+      <tr><td style="padding:22px 32px 4px">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#132326;border:2px dashed #cdfd50;border-radius:14px">
+          <tr><td style="padding:20px 22px 8px">
+            <p style="margin:0 0 6px;font:800 italic 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#cdfd50">Jouw boeking</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td valign="top" style="padding:7px 0;font:13px/1.4 Arial,Helvetica,sans-serif;color:#8fa6a0;width:110px">Datum</td>
+                <td valign="top" style="padding:7px 0;font:700 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">Zaterdag 31 oktober 2026</td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding:7px 0;font:13px/1.4 Arial,Helvetica,sans-serif;color:#8fa6a0;width:110px">Tijd</td>
+                <td valign="top" style="padding:7px 0;font:700 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">{{3.start}} tot {{3.eind}} <span style='color:#8fa6a0;font-weight:400'>({{replace(3.uren; "."; ",")}} uur)</span></td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding:7px 0;font:13px/1.4 Arial,Helvetica,sans-serif;color:#8fa6a0;width:110px">Waar</td>
+                <td valign="top" style="padding:7px 0;font:700 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">Poort Padel, Neonweg 62, Almere Poort</td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding:7px 0;font:13px/1.4 Arial,Helvetica,sans-serif;color:#8fa6a0;width:110px">Baan</td>
+                <td valign="top" style="padding:7px 0;font:700 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">Dubbelbaan, het nummer hoor je bij de check-in</td>
+              </tr>
+            </table>
+          </td></tr>
+          <tr><td style="padding:6px 22px 18px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#070d10;border-radius:10px">
+              <tr>
+                <td style="padding:14px 16px;font:13px/1.4 Arial,Helvetica,sans-serif;color:#8fa6a0">Betaald met iDEAL<br><span style="font-size:11px;color:#5d726d">ref. {{2.id}}</span></td>
+                <td align="right" style="padding:14px 16px;font:900 italic 28px/1 Arial,Helvetica,sans-serif;color:#cdfd50;white-space:nowrap">€{{formatNumber(2.amount; 2; ","; ".")}}</td>
+              </tr>
+            </table>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:26px 32px 4px">
+        <p style="margin:0 0 4px;font:900 italic 20px/1.2 Arial,Helvetica,sans-serif;color:#eef3ef">Wie spelen er</p>
+        <p style="margin:0 0 10px;font:14px/1.5 Arial,Helvetica,sans-serif;color:#8fa6a0">{{(length(3.vps) - length(replace(3.vps; "ja"; ""))) / 2}} van de 4 spelers hebben de Halloween-korting. Doe je best, dus echt verkleed of geschminkt.</p>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding:9px 0;border-top:1px solid #24393b;font:600 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">{{3.naam}}</td>
+                <td align="right" style="padding:9px 0;border-top:1px solid #24393b"><span style="display:inline-block;background:{{if(get(split(3.vps; ","); 1) = "ja"; "#ff7a1a"; "#24393b")}};color:{{if(get(split(3.vps; ","); 1) = "ja"; "#070d10"; "#eef3ef")}};font:700 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:6px">{{if(get(split(3.vps; ","); 1) = "ja"; "verkleed -50%"; "gewoon tarief")}}</span></td>
+              </tr>
+              <tr>
+                <td style="padding:9px 0;border-top:1px solid #24393b;font:600 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">{{3.s2}}</td>
+                <td align="right" style="padding:9px 0;border-top:1px solid #24393b"><span style="display:inline-block;background:{{if(get(split(3.vps; ","); 2) = "ja"; "#ff7a1a"; "#24393b")}};color:{{if(get(split(3.vps; ","); 2) = "ja"; "#070d10"; "#eef3ef")}};font:700 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:6px">{{if(get(split(3.vps; ","); 2) = "ja"; "verkleed -50%"; "gewoon tarief")}}</span></td>
+              </tr>
+              <tr>
+                <td style="padding:9px 0;border-top:1px solid #24393b;font:600 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">{{3.s3}}</td>
+                <td align="right" style="padding:9px 0;border-top:1px solid #24393b"><span style="display:inline-block;background:{{if(get(split(3.vps; ","); 3) = "ja"; "#ff7a1a"; "#24393b")}};color:{{if(get(split(3.vps; ","); 3) = "ja"; "#070d10"; "#eef3ef")}};font:700 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:6px">{{if(get(split(3.vps; ","); 3) = "ja"; "verkleed -50%"; "gewoon tarief")}}</span></td>
+              </tr>
+              <tr>
+                <td style="padding:9px 0;border-top:1px solid #24393b;font:600 15px/1.4 Arial,Helvetica,sans-serif;color:#eef3ef">{{3.s4}}</td>
+                <td align="right" style="padding:9px 0;border-top:1px solid #24393b"><span style="display:inline-block;background:{{if(get(split(3.vps; ","); 4) = "ja"; "#ff7a1a"; "#24393b")}};color:{{if(get(split(3.vps; ","); 4) = "ja"; "#070d10"; "#eef3ef")}};font:700 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:6px">{{if(get(split(3.vps; ","); 4) = "ja"; "verkleed -50%"; "gewoon tarief")}}</span></td>
+              </tr>
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:28px 32px 6px">
+        <p style="margin:0 0 16px;font:900 italic 20px/1.2 Arial,Helvetica,sans-serif;color:#eef3ef">Zo werkt het op de dag</p>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="44" valign="top" style="padding:0 0 16px"><div style="width:32px;height:32px;border-radius:16px;background:#cdfd50;color:#070d10;font:900 italic 16px/32px Arial,Helvetica,sans-serif;text-align:center">1</div></td>
+            <td valign="top" style="padding:0 0 16px;font:15px/1.55 Arial,Helvetica,sans-serif;color:#8fa6a0"><b style="color:#eef3ef">Kom 10 minuten van tevoren</b><br>Met z'n vieren naar de bar van Poort Padel, dus uiterlijk 10 minuten voor {{3.start}}.</td>
+          </tr>
+          <tr>
+            <td width="44" valign="top" style="padding:0 0 16px"><div style="width:32px;height:32px;border-radius:16px;background:#cdfd50;color:#070d10;font:900 italic 16px/32px Arial,Helvetica,sans-serif;text-align:center">2</div></td>
+            <td valign="top" style="padding:0 0 16px;font:15px/1.55 Arial,Helvetica,sans-serif;color:#8fa6a0"><b style="color:#eef3ef">Noem de naam van de boeker</b><br>Wij hebben jullie namen op de lijst staan.</td>
+          </tr>
+          <tr>
+            <td width="44" valign="top" style="padding:0 0 16px"><div style="width:32px;height:32px;border-radius:16px;background:#cdfd50;color:#070d10;font:900 italic 16px/32px Arial,Helvetica,sans-serif;text-align:center">3</div></td>
+            <td valign="top" style="padding:0 0 16px;font:15px/1.55 Arial,Helvetica,sans-serif;color:#8fa6a0"><b style="color:#eef3ef">Kostuums laten zien en spelen</b><br>Daarna hoor je op welke baan jullie staan. De baan is van jullie tot {{3.eind}}.</td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:4px 32px 8px">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td style="border-left:4px solid #ff7a1a;background:#132326;border-radius:0 10px 10px 0;padding:14px 16px;font:14px/1.55 Arial,Helvetica,sans-serif;color:#8fa6a0"><b style="color:#ff7a1a">Tip:</b> kies een kostuum waarin je veilig kunt spelen. Je moet de bal goed kunnen zien en er mag niets op de baan vallen. Een cape is prima, een masker dat je zicht wegneemt niet. De mooiste outfits zetten we op Instagram.</td>
+        </tr></table>
+      </td></tr>
+
+      <tr><td align="center" style="padding:26px 32px 8px">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td bgcolor="#cdfd50" style="border-radius:10px"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Halloween%20Padel%20Special&amp;dates=20261031T{{replace(3.start; ":"; "")}}00/20261031T{{replace(3.eind; ":"; "")}}00&amp;ctz=Europe/Amsterdam&amp;location=Poort%20Padel%2C%20Neonweg%2062%2C%20Almere&amp;details=Kom%2010%20minuten%20van%20tevoren%20verkleed%20naar%20de%20bar." style="display:inline-block;padding:14px 26px;font:900 italic 16px/1 Arial,Helvetica,sans-serif;color:#070d10;text-decoration:none">Zet in je agenda</a></td>
+        </tr></table>
+        <p style="margin:14px 0 0;font:13px/1.5 Arial,Helvetica,sans-serif"><a href="https://maps.google.com/?q=Poort+Padel+Neonweg+62+Almere" style="color:#cdfd50">Route naar Poort Padel</a> <span style="color:#24393b">&nbsp;|&nbsp;</span> <a href="https://halloween-poort-padel.netlify.app/#echt-verkleed" style="color:#cdfd50">Wat telt als verkleed?</a></p>
+      </td></tr>
+
+      <tr><td style="padding:26px 32px 30px">
+        <p style="margin:0;font:900 italic 22px/1.2 Arial,Helvetica,sans-serif;color:#cdfd50">Tot snel op de baan!</p>
+      </td></tr>
+
+      <tr><td style="padding:22px 32px 26px;border-top:1px solid #24393b;background:#070d10">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td width="50%" valign="middle"><img src="https://halloween-poort-padel.netlify.app/assets/logo-all-court-academy.png" width="150" alt="All Court Academy" style="display:block;border:0;width:150px;height:auto"></td>
+          <td width="50%" valign="middle" align="right"><img src="https://halloween-poort-padel.netlify.app/assets/logo-poort-padel.png" width="140" alt="Poort Padel" style="display:block;border:0;width:140px;height:auto;margin-left:auto"></td>
+        </tr></table>
+        <p style="margin:16px 0 0;font:12px/1.6 Arial,Helvetica,sans-serif;color:#8fa6a0">Halloween Padel Special van All Court Academy bij Poort Padel. Vragen of iets wijzigen? Mail <a href="mailto:l.debruin@allcourtacademy.com" style="color:#cdfd50">l.debruin@allcourtacademy.com</a> of app <a href="https://wa.me/31615855057" style="color:#cdfd50">+31 6 15 85 50 57</a>.</p>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>
