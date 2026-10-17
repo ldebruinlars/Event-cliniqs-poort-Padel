@@ -75,3 +75,10 @@ Stijl: matte kleifiguurtjes, expressief (A2). Sheets: bovenaan zeven koppen met 
 | 3 De Kostuumkeuring | verkleed = goedgekeurd = korting | `2438c6bd-d21d-42b2-bc62-343c532d9bcf` | https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/9c7f8637-690b-4a85-8a5a-cc8ec1bde133.jpg |
 
 Bijschriften staan in `board.py`-stijl in de Higgsfield-sandbox gemaakt (PIL, Montserrat); de panelen zelf hebben geen AI-tekst. Eindkaart voor alle versies: ZA 31 OKTOBER · KOM VERKLEED = 50% KORTING · LINK IN BIO.
+
+## Test: versie 3 met de smash uit versie 1 (Seedance 2.0 Mini, 480p, 15 s, 7,5 credits)
+
+- Job `f27f7ed2-3d7f-4882-9282-11a3aa1fc77f`. Referenties: de vijf masters plus de spookpark-master. Preset-suggestie "CLAY FIGURINE" afgewezen (`declined_preset_id`), anders worden de referenties genegeerd. `genre: comedy`.
+- Met eindkaart (`../eindkaart-v2.html`, opgeschaald naar 1080 × 1920, eindkaart vanaf 12,4 s met fade): media `5b90462b-1d1d-46ab-9e23-ebc24aef99cd`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/5b90462b-1d1d-46ab-9e23-ebc24aef99cd.mp4
+- Beoordeling: alle zes beats komen in beeld, personages blijven herkenbaar, smash met vonken voor de maan zit er duidelijk in. Kleine punten: het model zet een woordje op de scorekaart, Knekel houdt de pompoen vast in plaats van hem op te zetten.
+- Eindversie kost (15 s, 9:16): Seedance 2.5 720p 105, Seedance 2.0 1080p 180, Seedance 2.5 1080p 240 credits.
