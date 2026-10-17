@@ -247,3 +247,10 @@ Tag je team en kies vast jullie kostuums 👇
 **H1 Facebook**: zelfde tekst met "Poort Padel" in plaats van @poortpadel, en de boekregel als "Vol is vol, dus boek nu 👉 https://halloween-poort-padel.netlify.app 🦇".
 
 **Les voor volgende captions**: Lars wil geen uitleg in de post (prijzen, check-in, regels staan op de site). Haak in de eerste zin met tijd tot het event, dan sfeer, één voordeel, urgentie en de boekoproep.
+
+### C2. Halloween Reel met muziek (17 oktober 2026)
+
+- Post en Facebook van 17:00 zijn geplaatst; Lars verwijdert de Instagram-post zelf (Metricool kan geplaatste posts niet verwijderen).
+- Muziek kan via Metricool alleen op een Reel (Instagram presets → Add audio, of `audioConfiguration.audioId` via de koppeling). Zakelijke accounts krijgen alleen de rechtenvrije bibliotheek van Meta: geen hits zoals Thriller. Zoeken via de koppeling geeft kandidaten met audioId; luisteren kan alleen in Metricool of de Instagram-app.
+- Bewegende poster: achtergrond geanimeerd met Seedance 2.0 Mini (job `6c79bfd2-a83c-404e-a6d0-15d26abcada0`, 10 s, 4 credits) vanaf artwork versie 12, tekstlaag `definitief/poster.html#story-overlay` erover in de Higgsfield-sandbox. Video: https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/fd1ecf59-ead4-4bf2-9f67-797c3f581a01.mp4
+- Concept-Reel in Metricool (id 398592905, uuid 1978119984353921206), 18:15, collab @poortpadel, omslag = story-poster, gemarkeerd als AI. Muziekopties: Spooky Season (Reels Sound, Reveal) `795786439579832`, Halloween Scene (Instrumental) `1550173042257764`, Zombie Twist Rave `187099751078416`, Haunted Funhouse `313787387924301`, Ghouls Night Out `145543906097356`.
