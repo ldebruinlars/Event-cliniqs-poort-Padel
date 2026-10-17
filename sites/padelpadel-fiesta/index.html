@@ -231,6 +231,9 @@ footer p b{color:var(--bone)}
   .mbar .t{font-weight:800;font-size:20px}
   .mbar .t small{display:block;font-size:12px;font-weight:600;color:var(--fog)}
   .mbar .cta{padding:12px 20px}
+  /* balk alleen tijdens het samenstellen; weg bij de hero en zodra het formulier in beeld is */
+  .mbar{transform:translateY(110%);transition:transform .25s ease}
+  .mbar.show{transform:none}
 }
 @media (max-width:620px){
   .hero::after{background:linear-gradient(0deg,var(--night) 8%,rgba(7,13,16,.88) 45%,rgba(7,13,16,.35) 100%)}
@@ -372,7 +375,7 @@ footer p b{color:var(--bone)}
           <div class="slotline missing" id="r-slot">Nog geen begintijd gekozen</div>
           <div class="save"><span>Jullie besparen</span><span class="money" id="r-save">€28,13</span></div>
           <p class="pp" id="r-pp">Per speler: verkleed €7,03, niet verkleed €14,06.</p>
-          <a class="cta go" href="#aanvragen">Naar betalen</a>
+          <a class="cta go" href="#times" id="r-next">Kies eerst een begintijd</a>
         </aside>
       </div>
     </div>
@@ -432,9 +435,9 @@ footer p b{color:var(--bone)}
   </div>
 </footer>
 
-<div class="mbar" aria-hidden="false">
+<div class="mbar" aria-hidden="true">
   <div class="t money"><small id="m-lab">Totaal voor de baan</small><span id="m-tot">€28,12</span></div>
-  <a class="cta" href="#aanvragen">Betalen</a>
+  <a class="cta" href="#times" id="m-next">Kies je tijd</a>
 </div>
 
 <script>
@@ -559,7 +562,29 @@ function render() {
   $('f-bedrag').value = (c.total / 100).toFixed(2);
   $('f-oms').value = 'Halloween Padel za 31 okt ' + (state.start === null ? '' : hhmm(state.start) + ' ') + '(' + durTxt(state.h) + ', ' + c.n + 'x verkleed)';
   const send = $('send'); if (!send.disabled) send.textContent = 'Betaal ' + eur(c.total);
+  // volgende stap in plaats van meteen betalen: eerst een tijd, dan de spelers; betalen kan pas onder het formulier
+  const klaar = state.start !== null;
+  $('r-next').textContent = klaar ? 'Verder: spelers invullen' : 'Kies eerst een begintijd';
+  $('m-next').textContent = klaar ? 'Spelers invullen' : 'Kies je tijd';
+  ['r-next', 'm-next'].forEach(id => $(id).setAttribute('href', klaar ? '#aanvragen' : '#times'));
 }
+
+// knoppen 'volgende stap' in de bon en de balk onderin
+['r-next', 'm-next'].forEach(id => $(id).addEventListener('click', e => {
+  e.preventDefault();
+  if (state.start === null) { $('times').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+  $('aanvragen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const leeg = ['naam', 's2', 's3', 's4', 'email', 'tel'].map($).find(el => !el.value.trim());
+  if (leeg) setTimeout(() => leeg.focus({ preventScroll: true }), 600);
+}));
+if ('IntersectionObserver' in window) {
+  const mbar = document.querySelector('.mbar'); let inBoek = false, inForm = false;
+  const io = new IntersectionObserver(es => {
+    es.forEach(en => { if (en.target.id === 'boeken') inBoek = en.isIntersecting; else inForm = en.isIntersecting; });
+    const toon = inBoek && !inForm; mbar.classList.toggle('show', toon); mbar.setAttribute('aria-hidden', String(!toon));
+  });
+  io.observe($('boeken')); io.observe($('aanvragen'));
+} else document.querySelector('.mbar').classList.add('show');
 
 // boeken en betalen
 const clean = t => t.replace(/["'\\{}\[\]\r\n\t<>]/g, '').trim();
