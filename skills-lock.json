@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "filmmaker": {
+      "source": "dylantarre/animation-principles",
+      "sourceType": "github",
+      "skillPath": "skills/03-by-role-persona/filmmaker/SKILL.md",
+      "computedHash": "77becbc8dc07cda7f53812bd38a4424a7dd154b335cc9dd39e121cdcb884c775"
+    }
+  }
+}
