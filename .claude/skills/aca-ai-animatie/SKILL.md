@@ -7,6 +7,14 @@ description: Werkwijze voor korte AI-animaties (Reels, TikTok, Shorts) voor All 
 
 Lees eerst `ai-animatie/WORKFLOW.md` (eerste experimenten, kosten) en het voorbeeld `events/2026-halloween-padel/video/characters/README.md`. Gebaseerd op eigen ervaring plus de technieken uit de MIT-repo's alew3/skills (higgsfield-seedance-video-suite) en elementsix/elementsix-skills (seedance-storyboard), in eigen woorden.
 
+
+## KOSTEN: ALTIJD EERST GOEDKOOP (harde regel)
+
+- Elke video-test op **Seedance 2.0 Mini, 480p** (~2 credits per clip van 4 s). Ook bij feedback als "beter" of "meer leven": verbeter prompts, startbeelden en montage, maar blijf op Mini.
+- Seedance 2.5, 720p/1080p of een ander duur model **alleen na expliciet akkoord van Lars**, met de kosten vooraf genoemd (2.5 720p = 28 credits per clip van 4 s).
+- Les 17 okt 2026: Spookbaan v2 zonder vragen op Seedance 2.5 gezet, 315 credits, op Mini was het ~22 geweest.
+- Afbeeldingen (Nano Banana, 2 credits) mogen zonder vragen.
+
 ## Volgorde
 
 1. **Brief**: lengte (standaard 15 s, 9:16), toon, wie er meespeelt, wat de kijker moet doen (boeken). Inspiratie: Pinterest-keuzebord (zie CLAUDE.md, Make-tool Pinterest) en Lars laat per groep kiezen.
@@ -28,7 +36,7 @@ Lees eerst `ai-animatie/WORKFLOW.md` (eerste experimenten, kosten) en het voorbe
 
 ## Personages tot leven brengen (les uit De Spookbaan v1 → v2)
 
-- Eén startbeeld plus "beweeg een beetje" geeft zwevende, levenloze figuren. Gebruik Seedance 2.5 `omni_reference` met `start_image` én `end_image`: pose A (anticipatie) naar pose B (actie/reactie). Dan moet het model echt acteren.
+- Eén startbeeld plus "beweeg een beetje" geeft zwevende, levenloze figuren. Gebruik `omni_reference` met `start_image` plus het eindbeeld als `image_references` (start+end samen faalde op 2.5); test dit op Mini: pose A (anticipatie) naar pose B (actie/reactie). Dan moet het model echt acteren.
 - Per shot een echte camerahoek (worm's-eye, OTS, ECU, Dutch angle, heel laag op de baan), één camerabeweging. 180-gradenregel: team ACA links kijkt naar rechts, tegenstanders rechts kijken naar links.
 - Acting in tijdblokken met de principes uit de skill `filmmaker` (anticipatie, follow-through van haar/cape/sluier, secondary action, overdrijving, slowmo op de impact). Knippen op actie: op de gasp, de impact, de landing.
 - Shot met twee plekken of twee handelingen: splitsen in twee shots, anders morpht het.
