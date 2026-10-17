@@ -18,6 +18,14 @@ Lees eerst `ai-animatie/WORKFLOW.md` (eerste experimenten, kosten) en het voorbe
 7. **Video**: Seedance omni-reference (max 9 beelden, `mode: "omni_reference"`), elke referentie één taak ("first reference = Pompie, character reference"). Prompt: kopregel (stijl, duur, formaat, sfeer), dan tijdblokken "0-3s: camera, scène, actie, licht", dan geluid. Eén camerabeweging per shot, zeg ook wat de camera niet doet. Vermijd het woord "fast" (geeft rommel), schrijf "quick but smooth". Negatief: benoem het concrete artefact (morphing, face drift, flicker, extra fingers) en koppel aan een positieve regel. Testen op Seedance 2.0 Mini 480p, pas daarna 2.5.
 8. **Eindkaart en tekst** erover in de Higgsfield-sandbox (ffmpeg), nooit tekst laten genereren.
 
+## Echte (foto-realistische) personages
+
+- Seedance weigert (status `nsfw`, credits terug) zodra er meerdere foto-echte gezichten als referentie meegaan. Eén startbeeld met een gezicht werkt wel.
+- Daarom shot voor shot: per shot een 9:16-startbeeld met het personage in de echte omgeving vanuit de gekozen camerahoek (Nano Banana Pro met master + omgevingsmaster als referentie), dan image-to-video per shot (Seedance 2.0 Mini 4 s = 2 credits) en monteren met ffmpeg. Camerahoeken en gezichten liggen zo vast.
+- Per personage: master, hoofdsheet (5 hoeken + expressies), lijf-turnaround; plus prop-sheet (rackets merkloos!) en omgevingssheet met de camerahoeken van de shotlijst.
+- Vermijd lage hoeken van achteren op mensen in korte sportkleding (filter).
+- Voorbeeld: `events/2026-halloween-padel/video/echt/README.md`.
+
 ## Blender
 
 - `/use-blender` (Higgsfield) werkt alleen in Claude Code op Lars' eigen computer.
