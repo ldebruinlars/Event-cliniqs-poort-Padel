@@ -90,3 +90,15 @@ Feedback Lars op v5: zeg iets als "nice game", de stilte voor het lachen is te l
 - Montage: A 0-4,5 (a2 vanaf 0,5), B 4,5-9,1 (b1 vanaf 0,4), C 9,1-15,1 (r2 hele 6 s), D 15,1-20,0 (handdruk + tekst + lachen), eindkaart vanaf 18,3 s.
 - Media `00ec9261-8291-46a3-afbf-29da81f4e718`, bestand `spookbaan-v6-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/00ec9261-8291-46a3-afbf-29da81f4e718.mp4
 - Les: Seedance Mini spreekt korte Nederlandse zinnen redelijk uit; altijd met Whisper nachecken en twee varianten maken. Engels is betrouwbaarder.
+
+## v7: Engelse tekst, vaste camera, betere stemmen (Mini + Seed Audio)
+
+Feedback Lars op v6: Engelse versie, camera mag niet inzoomen, en een betere stem van een betere bron.
+
+- Video shot D, Mini 5 s, camera expliciet "locked-off, no zoom": **`20267917-519c-47f3-96b3-85db01a0151f` (gekozen, iedereen blijft in beeld)**, `71585918-8c77-4ac7-9f98-48ddf8a8fffe` (tweede variant).
+- Stemmen apart gemaakt met Higgsfield Seed Audio (TTS), map `stemmen/`:
+  - Mila "Nice game!": **Maya `35590756-3331-49ee-af52-3e52127cd471` (gekozen)**, Chloe `7a4d203e-b200-4429-93bb-b24c5f1ab91c`, Sienna `966677c5-05a5-4257-8a65-453287c4722b`.
+  - Pompoenman "You too.": **Barrett `70b4e4aa-92ac-4a57-a9c6-5662372b68af` (gekozen)**, Vlad `81656efc-5378-4375-816d-795716137d07`, Gideon `0a4203fb-7baa-45ae-a722-988d45157d02`. Bewerkt: stilte eraf, 12% lager, holle echo (ffmpeg `asetrate=48000*0.88,atempo=1.136,aecho`).
+- Mix: Seedance-stemmen tot 1,85 s weggedraaid (6%), Maya op 0,05 s, Barrett op 1,08 s (gemeten met Whisper-woordtijden), daarna de gelach-audio van Seedance gewoon door.
+- Montage gelijk aan v6. Media `dd96ad55-1bbd-4290-a56e-1d29d3f7bd0f`, bestand `spookbaan-v7-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/dd96ad55-1bbd-4290-a56e-1d29d3f7bd0f.mp4
+- Les: dialoog laten acteren door Seedance (voor lipbewegingen), de stem zelf apart met TTS maken en op de Whisper-woordtijden eroverheen leggen.
