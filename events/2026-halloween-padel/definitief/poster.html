@@ -44,6 +44,10 @@ body.story .offer{margin-top:30px} body.story .offer .b{font-size:86px} body.sto
 body.story .sub{font-size:25px;margin-top:26px} body.story .fine{font-size:19px} body.story .fine b{font-size:23px}
 body.print .sub{font-size:25px}
 
+.qr{display:none}
+body.print .qr{display:block;position:absolute;right:34px;top:1004px;width:150px;padding:10px 10px 8px;background:var(--lime);border-radius:12px;text-align:center;color:var(--base);transform:rotate(3deg);box-shadow:0 0 30px rgba(205,253,80,.35)}
+.qr img{display:block;width:130px;height:130px}
+.qr span{display:block;margin-top:6px;font-weight:900;font-style:italic;font-size:17px;line-height:1.05;letter-spacing:.5px}
 .footer{position:absolute;left:56px;right:56px;bottom:30px;display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:2px solid rgba(205,253,80,.45)}
 body.story .footer{bottom:200px} body.print .footer{bottom:36px}
 .footer .pp{height:50px} .footer .aca{height:48px}
@@ -72,6 +76,9 @@ body.story .footer{bottom:200px} body.print .footer{bottom:36px}
   <div class="sub"><span class="social">Boek en betaal je baan via de <b>link in bio</b></span><span class="paper">Boek en betaal via <b>halloween-poort-padel.netlify.app</b></span></div>
   <div class="fine"><b>Alleen voor wie écht verkleed of geschminkt is, dus doe je best!</b>Korting per speler, alleen op zaterdag 31 oktober.</div>
 </div>
+
+<!-- QR naar de boekingssite, alleen op de print -->
+<div class="qr"><img src="../build/qr-boeken.png" alt=""><span>SCAN &amp;<br>BOEK</span></div>
 
 <!-- TEKST: voet -->
 <div class="footer">

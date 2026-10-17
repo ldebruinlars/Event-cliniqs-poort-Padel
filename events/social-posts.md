@@ -4,7 +4,11 @@ Opgesteld op 20 september 2026. Captions zijn klaar om te plakken; de beelden st
 
 **Beste posttijden** (Metricool, Instagram All Court Academy): doordeweeks 10:00 tot 12:00 is het sterkst, met woensdag, donderdag en vrijdag rond 10:00 als top. Tweede piek 18:00. Weekend is ruim de helft lager, dus weekendposts alleen als reminder-story.
 
-**Hashtags**: `#padelalmere #poortpadel #almere #padel` plus per campagne `#padeldating #singlesalmere #datingalmere` of `#kidskamp #herfstvakantie #kinderactiviteiten #jeugdpadel`.
+**Hashtags**: maximaal 5 per post (Instagram telt er niet meer mee, regel van Lars, oktober 2026). Basis `#padelalmere #poortpadel #almere #padel`, plus één campagne-hashtag. Oudere captions hieronder hebben er nog meer; inkorten bij hergebruik.
+
+**Links**: op Instagram werkt alleen de link in bio (of een linksticker in een story), dus op het beeld staat "link in bio". Op Facebook is een link in de tekst klikbaar, dus daar staat de volledige link in de post. Op print staat het webadres plus een QR-code.
+
+Oude regel: `#padelalmere #poortpadel #almere #padel` plus per campagne `#padeldating #singlesalmere #datingalmere` of `#kidskamp #herfstvakantie #kinderactiviteiten #jeugdpadel`.
 
 ---
 
@@ -214,3 +218,36 @@ Reels (K2, K6, K10, D3, D8) zijn niet gegenereerd: die maak je met de telefoon i
 ## Inplannen
 
 Nog niet ingepland in Metricool; wacht op akkoord van Lars. Bij akkoord worden K1 t/m K11 en D1 t/m D12 als concept in Metricool gezet (createScheduledPostForReview), zodat je ze voor publicatie nog kunt aanpassen.
+
+---
+
+## C. Halloween Padel Special (zaterdag 31 oktober, 16:00 tot 23:00)
+
+Boekingssite: https://halloween-poort-padel.netlify.app (zet deze in de Instagram-bio). Beelden: `events/2026-halloween-padel/definitief/` (feed 4:5 en story 9:16 met "link in bio", print met webadres en QR-code).
+
+| # | Wanneer | Waar | Wat |
+|---|---|---|---|
+| H1 | ma 19 okt 10:00 | Instagram feed + Facebook | poster feed 4:5, caption hieronder; Instagram met @poortpadel als collaborator |
+| H2 | ma 19 okt 18:00 | Instagram story | story 9:16; linksticker zelf toevoegen in de app |
+
+**H1 Instagram**
+
+🎃 HALLOWEEN PADEL SPECIAL 🎃
+
+Zaterdag 31 oktober gaat @poortpadel helemaal los. Van 16:00 tot 23:00 spelen we onder de lampen in volle Halloween-sfeer, en wie verkleed komt, speelt voor de halve prijs.
+
+👻 Zo werkt het
+Kom echt verkleed of geschminkt en je krijgt 50% korting op jouw deel van de baan. Anderhalf uur kost normaal €14,06 per persoon, verkleed betaal je €7,03.
+Boek en betaal je baan via de link in bio. Betaald is bevestigd, je krijgt meteen een mail.
+Op de dag meld je je met z'n vieren aan de bar en hoor je op welke baan je staat.
+
+💀 Doe je best! Een hoedje of twee streepjes schmink telt niet. De mooiste outfits zetten we op Instagram.
+
+📍 Neonweg 62, Almere Poort
+
+Tag je padelmaatjes 👇
+
+#halloweenpadel #padelalmere #poortpadel #almere #padel
+
+**H1 Facebook**: zelfde tekst, met "@poortpadel" als "Poort Padel" en de regel over boeken als:
+Boek en betaal je baan hier 👉 https://halloween-poort-padel.netlify.app
