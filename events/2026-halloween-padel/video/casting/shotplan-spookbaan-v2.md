@@ -74,7 +74,7 @@ Feedback Lars op v3: de match moet met iedereen en de teams aan weerszijden van 
 
 Feedback Lars op v4: wedstrijd is goed; na de wedstrijd eerst een serieuze bedankje, het lachen pas aan het echte einde.
 
-- Startbeelden handshake (2 × 2 credits): H1 `77d80ef7-ca1e-4f8b-9758-4f8ad91be8f6`, **H2 `42d94764-84ed-49b3-82ea-b59de5675b75` (zijaanzicht bij de netpaal, heks in de stoel)**.
-- Video 6 s, 2 varianten: **`6627d56e-eb89-43ea-86f7-c8666625d6ea` (vanaf H1: 0-3,4 s serieuze handdruk en knik, stilte, dan lachen)** gekozen; `fbea280f-37af-4c72-aac5-28509ab20b33` (lachen kwam niet goed over).
+- Startbeelden handshake (2 × 2 credits): **H1 `77d80ef7-ca1e-4f8b-9758-4f8ad91be8f6` (dichtbij, gebruikt)**, H2 `42d94764-84ed-49b3-82ea-b59de5675b75` (zijaanzicht bij de netpaal, heks in de stoel).
+- Video 6 s, 2 varianten: **`6627d56e-eb89-43ea-86f7-c8666625d6ea` (vanaf H1: 0-3,4 s serieuze handdruk en knik, stilte, dan lachen)** gekozen; `fbea280f-37af-4c72-aac5-28509ab20b33` (vanaf H2, lachen kwam niet goed over).
 - Nieuwe montage: A 0-4,1 (a2 vanaf 0,9), B 4,1-8,5 (b1 vanaf 0,6), C 8,5-14,2 (r2), D 14,2-20,0 (handshake → lachen), eindkaart vanaf 18,4 s.
 - Media `f620203f-1482-43e4-831e-3f283a1e7cee`, bestand `spookbaan-v5-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/f620203f-1482-43e4-831e-3f283a1e7cee.mp4
