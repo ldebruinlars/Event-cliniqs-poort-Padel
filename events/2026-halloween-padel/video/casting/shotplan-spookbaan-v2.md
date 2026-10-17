@@ -44,3 +44,18 @@ Prompts: Engels, stijlblok "Japanese sumi-e ink wash animation on crumpled cream
 Eindkaart v2 vanaf 17,9 s met fade, audio fade-out vanaf 19,2 s. Media `9f39d367-8e2c-480e-ad5c-035c8a276aa5`, bestand `spookbaan-v2-20s.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/9f39d367-8e2c-480e-ad5c-035c8a276aa5.mp4
 
 Kosten: 11 clips Seedance 2.5 720p en 14 key frames; saldo na afloop 2438 credits (begin van de dag 2823, inclusief keuzeset, startbeelden en test v1).
+
+## v3: minder cuts, vloeiend (Seedance 2.0 Mini 480p)
+
+Feedback Lars op v2: te veel cuts, voelt random; bos/lantaarn eruit. Nu 4 lange shots (5-6 s), elke cut met een reden (zij kijkt over het net → wat ze ziet). Per shot twee varianten, beste gekozen. 8 clips Mini ≈ 22 credits.
+
+| Shot | Tijd | Inhoud | Gekozen job | Afgevallen |
+|---|---|---|---|---|
+| A | 0,0-4,8 | Mila en coach lopen de kerkhofbaan op, zij draait haar hoofd naar het net | `8149ff54-2512-4237-afe0-51b74cebc8d6` | `723a2694-…` (lopen naar camera) |
+| B | 4,8-9,6 | Pompoenman rijst uit de inkt, heks, weerwolf, bruid erachter, gezicht ontbrandt | `43d5a973-8916-4a69-9a7e-a2313feb8110` | `baacefd0-…` |
+| C | 9,6-15,3 | smash, bal over het net, Mila returnt, Pompoenman close | `9259c02a-0efc-4030-b4f1-8249f6a7a42d` | `4ec4735f-…` (springt naar leeg papier) |
+| D | 15,3-20,0 | samen lachen, high-five; eindkaart vanaf 17,6 s | `5506438f-fddf-4f71-9ad5-7b41cbf1708d` | `28d52314-…` (zoomt te ver uit) |
+
+Resultaat: media `a6465d87-f0d0-47fc-a437-763e6ee64d2e`, bestand `spookbaan-v3-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/a6465d87-f0d0-47fc-a437-763e6ee64d2e.mp4
+
+Les: lange shots met referenties per personage (`image_references`) en één doorlopende camerabeweging geven een rustiger, logischer film dan veel korte clips. Mini doet 4-15 s per clip.
