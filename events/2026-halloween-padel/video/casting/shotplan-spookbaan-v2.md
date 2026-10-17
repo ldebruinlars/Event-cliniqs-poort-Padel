@@ -69,3 +69,12 @@ Feedback Lars op v3: de match moet met iedereen en de teams aan weerszijden van 
 - Rally op Mini, 6 s, 3 varianten: `08c97b84-381b-4c22-8232-65bb0c82c8d4`, **`070c24c8-5115-41b8-bb9b-d43eadeb6c0a` (gekozen: service, volleys, sprong-smash, iedereen blijft aan zijn kant)**, `a03b6ac2-3017-4014-a5e1-1ebdc3b96dd8`.
 - Montage gelijk aan v3, alleen C vervangen (9,6-15,3 s). Media `0b76a885-c742-48ad-9132-e5923b38b6a1`, bestand `spookbaan-v4-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/0b76a885-c742-48ad-9132-e5923b38b6a1.mp4
 - Prompt-les: "each team stays on its own side of the net, nobody crosses the net, no characters swap sides" plus een startbeeld met de juiste opstelling houdt de teams op hun helft.
+
+## v5: eerst serieus bedanken, dan pas lachen (Seedance 2.0 Mini 480p)
+
+Feedback Lars op v4: wedstrijd is goed; na de wedstrijd eerst een serieuze bedankje, het lachen pas aan het echte einde.
+
+- Startbeelden handshake (2 × 2 credits): H1 `77d80ef7-ca1e-4f8b-9758-4f8ad91be8f6`, **H2 `42d94764-84ed-49b3-82ea-b59de5675b75` (zijaanzicht bij de netpaal, heks in de stoel)**.
+- Video 6 s, 2 varianten: **`6627d56e-eb89-43ea-86f7-c8666625d6ea` (vanaf H1: 0-3,4 s serieuze handdruk en knik, stilte, dan lachen)** gekozen; `fbea280f-37af-4c72-aac5-28509ab20b33` (lachen kwam niet goed over).
+- Nieuwe montage: A 0-4,1 (a2 vanaf 0,9), B 4,1-8,5 (b1 vanaf 0,6), C 8,5-14,2 (r2), D 14,2-20,0 (handshake → lachen), eindkaart vanaf 18,4 s.
+- Media `f620203f-1482-43e4-831e-3f283a1e7cee`, bestand `spookbaan-v5-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/f620203f-1482-43e4-831e-3f283a1e7cee.mp4
