@@ -184,11 +184,10 @@ section{scroll-margin-top:20px}
 .vk[aria-pressed="true"]{border-color:var(--pumpkin);color:var(--pumpkin);background:rgba(255,122,26,.10)}
 .sub-h{font-size:14px;font-weight:700;margin-bottom:-4px}
 .sub-h span{font-weight:500;color:var(--fog)}
-.checkin{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+.checkin{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
 .checkin div{background:var(--deep);border:1px solid var(--line);border-radius:var(--r);padding:16px}
 .checkin b{display:block;color:var(--lime);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
 .checkin p{font-size:14.5px;color:var(--bone)}
-@media (max-width:900px){.checkin{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.players,.checkin{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- echt verkleed ---------- */
@@ -335,7 +334,7 @@ footer p b{color:var(--bone)}
               <input type="hidden" name="totaal_te_betalen" id="f-totaal">
               <input type="hidden" name="per_speler" id="f-pp">
               <div class="form">
-                <p class="sub-h full">Wie spelen er? <span>Met deze namen checken we jullie in en kijken we wie echt verkleed is.</span></p>
+                <p class="sub-h full">Wie spelen er? <span>Vul alle vier de namen in. Je komt met een complete groep, wij zoeken geen spelers voor je.</span></p>
                 <div class="players full">
                   <div class="field" id="fw-naam"><label for="naam">Jij (boeker) <button type="button" class="vk" data-i="0" aria-pressed="true">verkleed</button></label><input id="naam" name="naam" autocomplete="name" placeholder="Voor- en achternaam"><span class="err">Vul je naam in.</span></div>
                   <div class="field" id="fw-s2"><label for="s2">Speler 2 <button type="button" class="vk" data-i="1" aria-pressed="true">verkleed</button></label><input id="s2" name="speler_2" placeholder="Naam"><span class="err">Vul een naam in, voornaam is genoeg.</span></div>
@@ -402,8 +401,7 @@ footer p b{color:var(--bone)}
       </div>
       <h3 style="margin-top:34px;font-size:22px;font-weight:900;font-style:italic">Zo werkt de check-in</h3>
       <div class="checkin">
-        <div><b>10 min van tevoren</b><p>Kom met z'n vieren naar de bar van Poort Padel, 10 minuten voor jullie begintijd.</p></div>
-        <div><b>Compleet?</b><p>Noem de naam van de boeker. Wij hebben de namen van alle vier de spelers en kijken of jullie compleet zijn.</p></div>
+        <div><b>10 min van tevoren</b><p>Kom met z'n vieren naar de bar van Poort Padel, 10 minuten voor jullie begintijd, en noem de naam van de boeker.</p></div>
         <div><b>Kostuums en baan</b><p>We bewonderen jullie kostuums en pas dan hoor je op welke baan jullie staan.</p></div>
         <div><b>Spelen!</b><p>De baan is van jullie voor de hele geboekte tijd. Veel griezelplezier.</p></div>
       </div>
@@ -419,6 +417,7 @@ footer p b{color:var(--bone)}
         <details><summary>Moet iedereen verkleed zijn?</summary><p>Nee. De korting telt per speler. Komen er twee van de vier verkleed, dan krijgen die twee de helft van hun deel korting en betalen de andere twee het gewone deel.</p></details>
         <details><summary>Hoe en wanneer betaal ik?</summary><p>Vooraf, direct bij het boeken, met iDEAL. Je betaalt het totaal voor de hele baan in één keer. Betaald is bevestigd: je baan ligt vast en je krijgt meteen een bevestigingsmail met jullie tijd en namen.</p></details>
         <details><summary>Geen bevestigingsmail gekregen?</summary><p>Kijk even in je spam of reclamemap. Staat hij er niet, mail dan naar l.debruin@allcourtacademy.com, dan sturen we hem opnieuw.</p></details>
+        <details><summary>We zijn met z'n tweeën of drieën.</summary><p>Je boekt een hele baan voor vier spelers, dus vul alle vier de namen in. We zoeken geen spelers voor je, zorg dat je groep compleet is.</p></details>
         <details><summary>We zijn met meer dan vier spelers.</summary><p>Boek per baan apart, of zet in het opmerkingenveld hoeveel banen je wilt en naast wie je wilt spelen. Dan regelen we het samen.</p></details>
         <details><summary>Waar is het?</summary><p>Bij Poort Padel, Neonweg 62 in Almere Poort. De Halloween Padel Special is op zaterdag 31 oktober van 16:00 tot 23:00.</p></details>
       </div>
@@ -477,6 +476,7 @@ names.forEach((nm, i) => {
   b.addEventListener('click', () => { state.dressed[i] = !state.dressed[i]; render(); });
   court.appendChild(b);
 });
+['naam', 's2', 's3', 's4', 'email', 'tel'].forEach(k => $(k).addEventListener('input', () => $('fw-' + k).classList.remove('bad')));
 document.querySelectorAll('.vk').forEach(b => b.addEventListener('click', () => { const i = +b.dataset.i; state.dressed[i] = !state.dressed[i]; render(); }));
 const nameIds = ['naam', 's2', 's3', 's4'];
 const playerName = i => clean($(nameIds[i]).value || '');
@@ -569,12 +569,14 @@ $('form').addEventListener('submit', async e => {
   const tel = $('tel'); tel.value = tel.value.replace(/[^0-9+ ]/g, '');
   const digits = tel.value.replace(/\D/g, '');
   const ok = {
-    naam: $('naam').value.length >= 2,
-    s2: $('s2').value.length >= 2, s3: $('s3').value.length >= 2, s4: $('s4').value.length >= 2,
-    email: /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test($('email').value),
+    naam: $('naam').value.trim().length >= 2,
+    s2: $('s2').value.trim().length >= 2, s3: $('s3').value.trim().length >= 2, s4: $('s4').value.trim().length >= 2,
+    email: /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test($('email').value.trim()),
     tel: digits.length >= 9 && digits.length <= 13,
     ok: $('ok').checked
   };
+  // leeg veld: "Vul dit in.", anders de uitleg wat er mis is
+  ['naam', 's2', 's3', 's4', 'email', 'tel'].forEach(k => { const e = $('fw-' + k).querySelector('.err'); e.dataset.uitleg ??= e.textContent; e.textContent = $(k).value.trim() ? e.dataset.uitleg : 'Vul dit in.'; });
   $('fw-naam').classList.toggle('bad', !ok.naam);
   ['s2', 's3', 's4'].forEach(k => $('fw-' + k).classList.toggle('bad', !ok[k]));
   $('fw-email').classList.toggle('bad', !ok.email);
