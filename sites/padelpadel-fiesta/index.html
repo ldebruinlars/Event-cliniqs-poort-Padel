@@ -274,8 +274,8 @@ footer p b{color:var(--bone)}
 <main>
   <div class="wrap">
     <div class="steps" aria-label="Zo werkt het">
-      <div class="step"><span class="n">1</span><div><h3>Kies je tijd</h3><p>1, 1,5 of 2 uur op zaterdag 31 oktober tussen 16:00 en 23:00. De meeste spelers kiezen 1,5 uur.</p></div></div>
-      <div class="step"><span class="n">2</span><div><h3>Tik aan wie verkleed komt</h3><p>Per verklede speler gaat de helft van zijn of haar deel eraf. Je ziet het bedrag direct.</p></div></div>
+      <div class="step"><span class="n">1</span><div><h3>Tik aan wie verkleed komt</h3><p>Per verklede speler gaat de helft van zijn of haar deel eraf. Je ziet het bedrag direct.</p></div></div>
+      <div class="step"><span class="n">2</span><div><h3>Kies je tijd</h3><p>1, 1,5 of 2 uur op zaterdag 31 oktober tussen 16:00 en 23:00. De meeste spelers kiezen 1,5 uur.</p></div></div>
       <div class="step"><span class="n">3</span><div><h3>Betaal en kom griezelen</h3><p>Je betaalt direct met iDEAL, de korting zit er al in. Betaald is bevestigd: je krijgt meteen een bevestigingsmail. Op de dag check je met z'n vieren 10 minuten van tevoren in en hoor je je baan.</p></div></div>
     </div>
   </div>
@@ -290,16 +290,7 @@ footer p b{color:var(--bone)}
 
       <div class="book">
         <div class="stack">
-          <div class="panel">
-            <div class="label"><h3>Hoe lang spelen jullie?</h3><span>€37,50 per uur</span></div>
-            <div class="seg" id="dur">
-              <button type="button" data-h="1" aria-pressed="false"><b>1 uur</b><span class="money">€37,50</span></button>
-              <button type="button" data-h="1.5" aria-pressed="true"><b>1,5 uur</b><span class="money">€56,25 · populair</span></button>
-              <button type="button" data-h="2" aria-pressed="false"><b>2 uur</b><span class="money">€75,00</span></button>
-            </div>
-          </div>
-
-          <div class="panel">
+          <div class="panel" id="p-verkleed">
             <div class="label"><h3>Wie komt er verkleed?</h3><span>tik op een speler</span></div>
             <div class="court" id="court">
               <span class="glass l"></span><span class="glass r"></span>
@@ -311,7 +302,16 @@ footer p b{color:var(--bone)}
             </div>
           </div>
 
-          <div class="panel">
+          <div class="panel" id="p-duur">
+            <div class="label"><h3>Hoe lang spelen jullie?</h3><span>€37,50 per uur</span></div>
+            <div class="seg" id="dur">
+              <button type="button" data-h="1" aria-pressed="false"><b>1 uur</b><span class="money">€37,50</span></button>
+              <button type="button" data-h="1.5" aria-pressed="true"><b>1,5 uur</b><span class="money">€56,25 · populair</span></button>
+              <button type="button" data-h="2" aria-pressed="false"><b>2 uur</b><span class="money">€75,00</span></button>
+            </div>
+          </div>
+
+          <div class="panel" id="p-tijd">
             <div class="label"><h3>Hoe laat wil je beginnen?</h3><span id="durnote">eindtijd uiterlijk 23:00</span></div>
             <div class="times" id="times"></div>
           </div>
@@ -437,7 +437,7 @@ footer p b{color:var(--bone)}
 
 <div class="mbar" aria-hidden="true">
   <div class="t money"><small id="m-lab">Totaal voor de baan</small><span id="m-tot">€28,12</span></div>
-  <a class="cta" href="#times" id="m-next">Kies je tijd</a>
+  <a class="cta" href="#p-duur" id="m-next">Duur en tijd kiezen</a>
 </div>
 
 <script>
@@ -562,21 +562,31 @@ function render() {
   $('f-bedrag').value = (c.total / 100).toFixed(2);
   $('f-oms').value = 'Halloween Padel za 31 okt ' + (state.start === null ? '' : hhmm(state.start) + ' ') + '(' + durTxt(state.h) + ', ' + c.n + 'x verkleed)';
   const send = $('send'); if (!send.disabled) send.textContent = 'Betaal ' + eur(c.total);
-  // volgende stap in plaats van meteen betalen: eerst een tijd, dan de spelers; betalen kan pas onder het formulier
+  // volgende stap in plaats van meteen betalen; betalen kan pas onder het formulier
   const klaar = state.start !== null;
   $('r-next').textContent = klaar ? 'Verder: spelers invullen' : 'Kies eerst een begintijd';
-  $('m-next').textContent = klaar ? 'Spelers invullen' : 'Kies je tijd';
-  ['r-next', 'm-next'].forEach(id => $(id).setAttribute('href', klaar ? '#aanvragen' : '#times'));
+  $('r-next').setAttribute('href', klaar ? '#aanvragen' : '#times');
+  zetBalk();
+}
+
+// balk onderin (telefoon): de knop wijst naar de stap na het blok dat je nu bekijkt
+let huidig = 'p-verkleed';
+function volgende() {
+  if (state.start !== null) return ['Spelers invullen', 'aanvragen'];
+  if (huidig === 'p-verkleed') return ['Duur en tijd kiezen', 'p-duur'];
+  return ['Kies je tijd', 'times'];
+}
+function zetBalk() { const [lab, doel] = volgende(); $('m-next').textContent = lab; $('m-next').setAttribute('href', '#' + doel); }
+function gaNaar(doel) {
+  $(doel).scrollIntoView({ behavior: 'smooth', block: doel === 'times' ? 'center' : 'start' });
+  if (doel !== 'aanvragen') return;
+  const leeg = ['naam', 's2', 's3', 's4', 'email', 'tel'].map($).find(el => !el.value.trim());
+  if (leeg) setTimeout(() => leeg.focus({ preventScroll: true }), 600);
 }
 
 // knoppen 'volgende stap' in de bon en de balk onderin
-['r-next', 'm-next'].forEach(id => $(id).addEventListener('click', e => {
-  e.preventDefault();
-  if (state.start === null) { $('times').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
-  $('aanvragen').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  const leeg = ['naam', 's2', 's3', 's4', 'email', 'tel'].map($).find(el => !el.value.trim());
-  if (leeg) setTimeout(() => leeg.focus({ preventScroll: true }), 600);
-}));
+$('r-next').addEventListener('click', e => { e.preventDefault(); gaNaar(state.start === null ? 'times' : 'aanvragen'); });
+$('m-next').addEventListener('click', e => { e.preventDefault(); gaNaar(volgende()[1]); });
 if ('IntersectionObserver' in window) {
   const mbar = document.querySelector('.mbar'); let inBoek = false, inForm = false;
   const io = new IntersectionObserver(es => {
@@ -584,6 +594,9 @@ if ('IntersectionObserver' in window) {
     const toon = inBoek && !inForm; mbar.classList.toggle('show', toon); mbar.setAttribute('aria-hidden', String(!toon));
   });
   io.observe($('boeken')); io.observe($('aanvragen'));
+  // welk blok staat midden in beeld
+  const blok = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { huidig = en.target.id; zetBalk(); } }), { rootMargin: '-45% 0px -45% 0px' });
+  ['p-verkleed', 'p-duur', 'p-tijd'].forEach(id => blok.observe($(id)));
 } else document.querySelector('.mbar').classList.add('show');
 
 // boeken en betalen
