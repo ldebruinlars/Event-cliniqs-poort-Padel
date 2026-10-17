@@ -230,24 +230,20 @@ Boekingssite: https://halloween-poort-padel.netlify.app (zet deze in de Instagra
 | H1 | za 17 okt 17:00 (ingepland in Metricool) | Instagram feed + Facebook | poster feed 4:5 zonder QR, caption hieronder; Instagram met @poortpadel als collaborator en getagd, Facebook met de link |
 | H2 | ma 19 okt 18:00 | Instagram story | story 9:16; linksticker zelf toevoegen in de app |
 
-**H1 Instagram**
+**H1 Instagram** (kort en hype, de uitleg staat op de site)
 
-🎃 HALLOWEEN PADEL SPECIAL 🎃
+🎃 Over 2 weken is het Halloween, en dan wordt @poortpadel één groot spookhuis 👻
 
-Zaterdag 31 oktober gaat @poortpadel helemaal los. Van 16:00 tot 23:00 spelen we onder de lampen in volle Halloween-sfeer, en wie verkleed komt, speelt voor de halve prijs.
+Zaterdag 31 oktober van 16:00 tot 23:00. Zombies tegen heksen, vampiers tegen skeletten. Wie wint er op de baan?
 
-👻 Zo werkt het
-Kom echt verkleed of geschminkt en je krijgt 50% korting op jouw deel van de baan. Anderhalf uur kost normaal €14,06 per persoon, verkleed betaal je €7,03.
-Boek en betaal je baan via de link in bio. Betaald is bevestigd, je krijgt meteen een mail.
-Op de dag meld je je met z'n vieren aan de bar en hoor je op welke baan je staat.
+Kom je verkleed of geschminkt? Dan speel je voor de halve prijs 💀
 
-💀 Doe je best! Een hoedje of twee streepjes schmink telt niet. De mooiste outfits zetten we op Instagram.
+Vol is vol, dus boek nu via de link in bio 🦇
 
-📍 Neonweg 62, Almere Poort
-
-Tag je padelmaatjes 👇
+Tag je team en kies vast jullie kostuums 👇
 
 #halloweenpadel #padelalmere #poortpadel #almere #padel
 
-**H1 Facebook**: zelfde tekst, met "@poortpadel" als "Poort Padel" en de regel over boeken als:
-Boek en betaal je baan hier 👉 https://halloween-poort-padel.netlify.app
+**H1 Facebook**: zelfde tekst met "Poort Padel" in plaats van @poortpadel, en de boekregel als "Vol is vol, dus boek nu 👉 https://halloween-poort-padel.netlify.app 🦇".
+
+**Les voor volgende captions**: Lars wil geen uitleg in de post (prijzen, check-in, regels staan op de site). Haak in de eerste zin met tijd tot het event, dan sfeer, één voordeel, urgentie en de boekoproep.
