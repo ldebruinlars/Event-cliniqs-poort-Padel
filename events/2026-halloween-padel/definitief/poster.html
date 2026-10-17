@@ -47,6 +47,8 @@ body.story .sub{font-size:25px;margin-top:26px} body.story .fine{font-size:19px}
 body.print .sub{font-size:25px}
 
 .qr{display:none}
+/* #story-overlay: alleen tekst en verloop, transparant, voor de bewegende Reel-versie */
+html:has(body.overlay),body.overlay{background:transparent} body.overlay .art{display:none}
 body.print .qr,body.withqr .qr{display:block;position:absolute;right:34px;top:1004px;width:150px;padding:10px 10px 8px;background:var(--lime);border-radius:12px;text-align:center;color:var(--base);transform:rotate(3deg);box-shadow:0 0 30px rgba(205,253,80,.35)}
 body.feed.withqr .qr{top:926px}
 .qr img{display:block;width:130px;height:130px}
@@ -90,6 +92,6 @@ body.story .footer{bottom:200px} body.print .footer{bottom:36px}
   <img class="aca" src="../build/logo-all-court-academy-wit.png" alt="All Court Academy">
 </div>
 <script>/* #feed-qr = feed met QR-code naar de boekingssite */
-document.body.className=(location.hash||'#feed').slice(1).replace('-qr',' withqr');</script>
+document.body.className=(location.hash||'#feed').slice(1).replace('-qr',' withqr').replace('-overlay',' overlay');</script>
 </body>
 </html>
