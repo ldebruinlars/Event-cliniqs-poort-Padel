@@ -21,3 +21,26 @@ Feedback Lars op v1: shots niet goed, personages komen niet tot leven, moest 20 
 | 10 | 16,5-20,0 | medium-breed aan het net | iedereen lacht, high-five over het net; eindkaart vanaf 17,3 s | lachen, racketklak | einde |
 
 Prompts: Engels, stijlblok "Japanese sumi-e ink wash animation on crumpled cream rice paper", per shot één camerabeweging, acting in tijdblokken, concrete negatieven (no morphing, no face drift, no extra limbs).
+
+## Resultaat v2 (Seedance 2.5, 720p, 4 s per shot)
+
+- Start + eindbeeld samen (`start_image` + `end_image`) faalde bij Seedance 2.5 drie keer zonder foutmelding. Werkt wel: `start_image` plus het eindbeeld als `image_references` en in de prompt "the reference image shows the final pose to reach". Het model springt rond 2,4 s naar die pose; daar knippen.
+- Preset "IN THE DARK" afgewezen met `declined_preset_id`.
+
+| # | Video-job | Knip (start / lengte) | Tijd in film |
+|---|---|---|---|
+| 1 inktdruppel (v1, Mini) | `e3c86538-8b72-40a3-ac35-80a4a91afccc` | 0,3 / 1,2 | 0,0-1,2 |
+| 2 lantaarn worm's-eye | `282ec339-924d-455b-a8e3-246ee7b8d577` | 0,2 / 1,8 | 1,2-3,0 |
+| 3 OTS Mila naar het hek | `c00c9871-c58d-4483-a5a1-2d41ddb8c3f4` | 0,3 / 1,8 | 3,0-4,8 |
+| 4 ECU Mila, knipper → gasp | `e6cf61a0-94fd-4b5c-9336-2ed794df9de6` | 1,5 / 2,0 | 4,8-6,8 |
+| 5 Pompoenman rijst uit inkt | `6a1bee7f-6b26-4701-bd04-5c3d88c835ba` | 0,8 / 2,6 | 6,8-9,4 |
+| 6 heks, weerwolf, bruid | `5650eb7c-3f5a-4117-af3a-552bc3cae390` | 0,6 / 1,6 | 9,4-11,0 |
+| 7 coach, fluitje | `400f3155-d118-4c1f-96ea-67b949332bae` | 0,8 / 1,2 | 11,0-12,2 |
+| 8 smash voor de maan | `2ac9d8fb-e4ca-4179-91c4-489eedeb3073` | 1,0 / 2,6 | 12,2-14,8 |
+| 9 Mila duikt | `f2afd913-6cb2-426e-825e-d4d406da3432` | 0,2 / 1,4 | 14,8-16,2 |
+| 10 pompoenkop draait | `282e53e9-5cf9-456a-bcaf-8d854438a537` | 0,2 / 1,2 | 16,2-17,4 |
+| 11 samen lachen, high-five | `28e1b0de-8ae9-4d1a-ba2e-b42a73645312` | 0,5 / 2,6 | 17,4-20,0 |
+
+Eindkaart v2 vanaf 17,9 s met fade, audio fade-out vanaf 19,2 s. Media `9f39d367-8e2c-480e-ad5c-035c8a276aa5`, bestand `spookbaan-v2-20s.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/9f39d367-8e2c-480e-ad5c-035c8a276aa5.mp4
+
+Kosten: 11 clips Seedance 2.5 720p (plus 3 mislukte die niet afgeschreven horen te worden) en 14 key frames.
