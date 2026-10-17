@@ -23,6 +23,11 @@ Lees eerst `ai-animatie/WORKFLOW.md` (eerste experimenten, kosten) en het voorbe
 - `/use-blender` (Higgsfield) werkt alleen in Claude Code op Lars' eigen computer.
 - In de cloud: Higgsfield 3D Jutsu (`scene_builder_3d_*`, gehoste bpy, alleen catalogusmodellen) of `pip install bpy==5.0.1` in een Python 3.11-venv (container of Higgsfield-sandbox). Goed voor camerapaden, blocking en een vaste ruimte; personages zelf animeren in Blender wordt stijf, dus figuren via Seedance.
 
+## Taal
+
+- Alle prompts naar Higgsfield, Seedance, Blender en andere AI-tools in het Engels: die modellen volgen Engels het best. Namen van personages mogen Nederlands blijven.
+- Alles wat Lars of klanten zien (bijschriften, eindkaart, captions, uitleg) in het Nederlands, en altijd zelf erover zetten, nooit door het model laten schrijven.
+
 ## Praktisch
 
 - Higgsfield-bestanden zijn niet te downloaden vanuit de container. Bekijken en samenvoegen in de Higgsfield-sandbox (`sandbox_exec` met `image_paths`), uploaden met `media_upload` + PUT + `media_confirm`.
