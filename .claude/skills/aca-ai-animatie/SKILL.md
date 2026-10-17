@@ -26,6 +26,14 @@ Lees eerst `ai-animatie/WORKFLOW.md` (eerste experimenten, kosten) en het voorbe
 - Vermijd lage hoeken van achteren op mensen in korte sportkleding (filter).
 - Voorbeeld: `events/2026-halloween-padel/video/echt/README.md`.
 
+## Personages tot leven brengen (les uit De Spookbaan v1 → v2)
+
+- Eén startbeeld plus "beweeg een beetje" geeft zwevende, levenloze figuren. Gebruik Seedance 2.5 `omni_reference` met `start_image` én `end_image`: pose A (anticipatie) naar pose B (actie/reactie). Dan moet het model echt acteren.
+- Per shot een echte camerahoek (worm's-eye, OTS, ECU, Dutch angle, heel laag op de baan), één camerabeweging. 180-gradenregel: team ACA links kijkt naar rechts, tegenstanders rechts kijken naar links.
+- Acting in tijdblokken met de principes uit de skill `filmmaker` (anticipatie, follow-through van haar/cape/sluier, secondary action, overdrijving, slowmo op de impact). Knippen op actie: op de gasp, de impact, de landing.
+- Shot met twee plekken of twee handelingen: splitsen in twee shots, anders morpht het.
+- Preset-suggestie ("IN THE DARK") altijd afwijzen met `declined_preset_id`.
+
 ## Blender
 
 - `/use-blender` (Higgsfield) werkt alleen in Claude Code op Lars' eigen computer.
