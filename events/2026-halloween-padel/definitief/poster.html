@@ -35,6 +35,7 @@ body.feed .block{top:612px} body.print .block{top:690px} body.story .block{top:8
 .offer>div{transform:skewX(10deg)}
 .offer .a,.offer .c{font-weight:800;font-style:italic;font-size:26px;letter-spacing:2px}
 .offer .b{font-weight:900;font-style:italic;font-size:80px;line-height:.95;letter-spacing:-2px}
+body.print .social,body:not(.print) .paper{display:none}
 .sub{margin-top:18px;font-weight:600;font-size:24px}.sub b{color:var(--lime)}
 .fine{margin-top:8px;font-weight:500;font-size:17px;color:rgba(255,255,255,.75)}
 .fine b{display:block;font-weight:600;font-size:20px;color:var(--lime);margin-bottom:2px}
@@ -67,15 +68,15 @@ body.story .footer{bottom:200px} body.print .footer{bottom:36px}
     <div class="c">OP JE BAAN</div>
   </div></div>
 
-  <!-- TEKST: uitleg (website-link aanpassen zodra de boekingspagina live staat) -->
-  <div class="sub">Boek en betaal je baan via <b>allcourtacademy.com</b></div>
+  <!-- TEKST: uitleg. Online (feed, story) verwijst naar de link in bio, print naar het webadres -->
+  <div class="sub"><span class="social">Boek en betaal je baan via de <b>link in bio</b></span><span class="paper">Boek en betaal via <b>halloween-poort-padel.netlify.app</b></span></div>
   <div class="fine"><b>Alleen voor wie écht verkleed of geschminkt is, dus doe je best!</b>Korting per speler, alleen op zaterdag 31 oktober.</div>
 </div>
 
 <!-- TEKST: voet -->
 <div class="footer">
   <img class="pp" src="../build/logo-poort-padel-wit.png" alt="Poort Padel">
-  <div class="where"><b>Neonweg 62 · Almere Poort</b><br>allcourtacademy.com</div>
+  <div class="where"><b>Neonweg 62 · Almere Poort</b><br>@allcourtacademy</div>
   <img class="aca" src="../build/logo-all-court-academy-wit.png" alt="All Court Academy">
 </div>
 <script>document.body.className=(location.hash||'#feed').slice(1);</script>
