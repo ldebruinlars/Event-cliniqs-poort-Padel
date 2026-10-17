@@ -30,4 +30,5 @@ Stand 17 oktober 2026: alles live en getest met een echte betaling. Details: `si
 - Renderen: Chromium op `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`, Playwright via `NODE_PATH=/opt/node22/lib/node_modules node`. Lokaal testen: `python3 -m http.server` in de sitemap.
 - Netwerk: netlify.app en hook.eu1.make.com zijn vanuit de container geblokkeerd; gebruik de Netlify- en Make-koppelingen. Niet om blokkades heen werken, melden.
 - Afbeeldingen voor Metricool: publieke raw-URL van GitHub (repo is publiek) werkt.
+- Higgsfield: bestanden (cloudfront) niet te downloaden vanuit de container; controleren en samenvoegen in de Higgsfield-sandbox (`sandbox_exec`, `image_paths` om zelf te kijken). Character sheets: workflow `character-sheet`. Blender: `/use-blender` alleen lokaal; in de cloud 3D Jutsu of `pip install bpy==5.0.1` (Python 3.11-venv). Stand animatie: `events/2026-halloween-padel/video/characters/README.md`.
 - Herbruikbaar stappenplan voor een nieuw betaald event: skill `aca-event-launch` (`.claude/skills/aca-event-launch/SKILL.md`).
