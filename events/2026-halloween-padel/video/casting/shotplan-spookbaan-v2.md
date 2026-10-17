@@ -78,3 +78,15 @@ Feedback Lars op v4: wedstrijd is goed; na de wedstrijd eerst een serieuze bedan
 - Video 6 s, 2 varianten: **`6627d56e-eb89-43ea-86f7-c8666625d6ea` (vanaf H1: 0-3,4 s serieuze handdruk en knik, stilte, dan lachen)** gekozen; `fbea280f-37af-4c72-aac5-28509ab20b33` (vanaf H2, lachen kwam niet goed over).
 - Nieuwe montage: A 0-4,1 (a2 vanaf 0,9), B 4,1-8,5 (b1 vanaf 0,6), C 8,5-14,2 (r2), D 14,2-20,0 (handshake → lachen), eindkaart vanaf 18,4 s.
 - Media `f620203f-1482-43e4-831e-3f283a1e7cee`, bestand `spookbaan-v5-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/f620203f-1482-43e4-831e-3f283a1e7cee.mp4
+
+## v6: tekst bij de handdruk, sneller naar het lachen (Seedance 2.0 Mini 480p)
+
+Feedback Lars op v5: zeg iets als "nice game", de stilte voor het lachen is te lang.
+
+- 3 varianten van 5 s vanaf startbeeld H1, met gesproken tekst in de prompt (Seedance maakt de stemmen zelf). Gecontroleerd met Whisper in de sandbox (`stt.py`, faster-whisper small):
+  - **`5852a864-b67c-4c75-aa33-4f9917bb1642` (NL, gekozen)**: "Lekker gespeeld!" / "Jij ook." bijna goed verstaanbaar, direct daarna lachen.
+  - `96d45ec7-d587-406e-b4cb-6144d0bf72d8` (NL): "gesplayeld", "Ja, ik ook": slechter.
+  - `4d3597ad-12c0-4b9c-80e3-55748f8a37e1` (EN): "Nice game." / "You too." perfect verstaanbaar, maar camera zoomt aan het eind te ver in. Reserve als Engels beter bevalt.
+- Montage: A 0-4,5 (a2 vanaf 0,5), B 4,5-9,1 (b1 vanaf 0,4), C 9,1-15,1 (r2 hele 6 s), D 15,1-20,0 (handdruk + tekst + lachen), eindkaart vanaf 18,3 s.
+- Media `00ec9261-8291-46a3-afbf-29da81f4e718`, bestand `spookbaan-v6-20s-mini.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/00ec9261-8291-46a3-afbf-29da81f4e718.mp4
+- Les: Seedance Mini spreekt korte Nederlandse zinnen redelijk uit; altijd met Whisper nachecken en twee varianten maken. Engels is betrouwbaarder.
