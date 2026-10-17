@@ -1,0 +1,118 @@
+# Castingronde en keuzeset (Halloween-short)
+
+Stand 17 oktober 2026. Nieuwe castingronde in semi-realistische 3D-filmstijl (character design cards, donkere achtergrond, koud blauw strijklicht), daarna een keuzeset in de stijl van de Instagram-reel van sanji.chien (https://www.instagram.com/p/DZLbCoSSloL/). Alle prompts in het Engels, model Nano Banana Pro (`nano_banana_2`), 2k.
+
+## Castingronde (job-id's)
+
+### Spelers (3:4)
+
+| Wie | Kort | Job |
+|---|---|---|
+| Coach | trainer midden dertig, korte donkere baard, navy coachjas met lime, fluitje, ballenmand | `213a7c01-1edb-4d4c-982c-89a8ec58911e` |
+| Daan | lange brede man, blonde buzzcut, zwart shirt met oranje | `546d53ee-57f2-48cb-94ff-a857ba1f5433` |
+| Kees | man midden zestig, kaal, grijze walrussnor, retro wit tennistenue | `9c50fbce-9ba2-446d-9874-fe215d400e10` |
+| Yara | Surinaams-Nederlandse vrouw, box braids, wit shirt met lime | `b4b1ceb6-379e-4010-a879-6659f20651c4` |
+| Lotte | meisje van elf, twee vlechten, sproeten, oranje shirt | `3c9453c5-b559-4bbe-bb77-ba74bf031999` |
+| Mila | vrouw midden twintig, koperrood krullend haar, teal shirt | `f83f0354-32db-4fc6-87b9-e9f79c42ad2e` |
+| Ravi | Nederlands-Indiase man, ronde bril, navy shirt | `d3e3bc5b-a84c-482c-8b0b-7ec092b6b804` |
+| Ingrid | vrouw midden vijftig, zilveren bob, paars jack, vizier | `b99cc1e8-dc47-48a0-ae3e-5eee75f53b78` |
+
+### Monsters (3:4)
+
+| Wie | Job |
+|---|---|
+| Pompoenman (Pumpkin Man) | `a9c2edc3-694b-4ebd-ae95-7ccff9f28a2e` |
+| Spookbruid (Ghost Bride) | `c3e8121c-abb0-4a3a-9952-3b5763e33301` |
+| Graaf Nocturn (vampier) | `0346ed07-1656-4ea5-a122-d9b818a7ef9a` |
+| Weerwolf | `15b8835b-4e98-4071-8d57-fd734c1c2c7c` |
+| Vogelverschrikker | `a914effa-087c-48ad-875d-521428a0203d` |
+| Skeletscheidsrechter | `32e1e900-40eb-4230-b577-aec64319028f` |
+| Zombiespeler | `9fa0413c-a0ea-4ba5-8323-281d619ea728` (stond nog op in_progress bij ophalen) |
+| Heks | `58178fe0-cefb-4ee3-b21e-a38a3e8af04d` (stond nog op in_progress bij ophalen) |
+
+### Omgevingen (16:9, leeg)
+
+| Wat | Job |
+|---|---|
+| Padelhal binnen, drie banen, mist | `8003a97a-ed94-4afd-ac63-69994a279728` |
+| Baan in mistig bos | `0de1be08-8b2a-4c6b-a583-404647cb3cb9` |
+| Baan in gotische spookvilla | `d77d2380-90b3-4bca-b0a8-1df257831a7b` |
+| Dakbaan in regenachtige stad | `40365caa-dfcd-4da1-84ef-3bed2817e4d6` |
+| Baan op kerkhof | `48cec54d-c169-4aa8-8076-f4b9de22d9ad` (stond nog op in_progress) |
+| Baan in maisveld | `b2a2fc25-79f9-42d0-b2c8-aaf804398509` (stond nog op in_progress) |
+
+### Stijltests (9:16, Mila + Pompoenman)
+
+| Stijl | Job |
+|---|---|
+| Near-photoreal 3D (AAA-game cinematic) | `205fd887-5392-4dbc-86f4-2fee4b9bf39d` |
+| Painterly 3D (handgeschilderde textures) | `cc107770-937e-46d9-860d-b2cc3a2145a4` |
+
+## Stijl van de reel (bekeken via Chrome)
+
+84 s talking head met B-roll in de bovenste helft. De hoofdstijl van de voorbeelden: Japanse sumi-e inktwas op gekreukeld crème rijstpapier, indigo en houtskool, veel lege ruimte, minimale silhouetten, één rode accentkleur (zon), grote schreefwoorden als "SILENCE." en "HONOR" eroverheen, storyboards als rasters van veel panelen. Daarnaast een retro oranje halftone-collage en een felle 3D-sportshot. Alleen inspiratie, niets overgenomen.
+
+Vertaling naar ons: inktwas op papier, accentkleur pompoenoranje/vermiljoen (past bij de poster), monsters en spelers als silhouetten, tekst zelf erover in het Nederlands (bijv. "DURF JIJ?", "KOM VERKLEED").
+
+**Stijlblok (woord voor woord):** Japanese sumi-e ink wash illustration on crumpled cream rice paper, indigo and charcoal ink, soft washes and dry brush edges, visible paper creases and fibers, large empty negative space, the only color is vermilion-orange. No text, no letters, no logos.
+
+## Keuzeset in inktstijl
+
+| # | Wat | Referentie | Job |
+|---|---|---|---|
+| P1 | Pompoenman | casting | `690269d6-f686-41cd-8ec9-6d7cb4e049fe` |
+| P2 | Spookbruid | casting | `174bd218-1b96-43ac-ac33-af11e0299660` |
+| P3 | Heks | zonder (casting-heks nog niet klaar) | `551b9d45-8209-4269-9433-b3f3b0df221f` |
+| P4 | Weerwolf | casting | `50364d23-8afd-458e-820c-d78d3d8d7019` |
+| P5 | Mila | casting | `92772782-8a3a-4dcf-b425-71b51a8bedfe` |
+| P6 | Coach | casting | `bd046df6-0d31-4852-ae48-9f93300389e4` |
+| O1 | Kerkhofbaan met oranje maan | | `7324248c-8dfa-49f1-933c-fe9bc17ca836` |
+| O2 | Bosbaan met lichtkegel | | `b5c0649d-2d26-4de5-a7e1-817c2e799bcd` |
+| O3 | Padelhal, pompoenen | | `45be3471-eb87-476e-be99-6f312e045af6` |
+| S1 | Storyboard "Het Duel" (Mila tegen Pompoenman, samoerai-sfeer) | | `96f0b512-a192-4464-8a5d-6f4aba6852b1` |
+| S2 | Storyboard "Inkt wordt monster" (inktdruppel wordt baan en monsters) | | `33ae8b3e-ba37-4479-9df4-75ae60c7c4fb` |
+| S3 | Storyboard "De Lantaarn" (lantaarn door het bos naar de spookbaan) | | `144f18f8-092e-479a-8195-403976a38b92` |
+
+Bestanden: `keuzeset-inkt/` (JPG per beeld, plus `00-overzicht.jpg` met alles op één blad). Labels op het overzicht zelf gezet, geen AI-tekst in de beelden.
+
+Eerste indruk: stijl komt goed over (papier, indigo, oranje accent). P1 Pompoenman houdt een racket dat op een knuppel lijkt, zo nodig opnieuw met "a clearly visible padel racket with a perforated face". Spelers en monsters zijn in deze stijl prima te combineren in één shot.
+
+## Startbeelden 9:16 (per paneel, voor image-to-video)
+
+Overzicht van beide sets: `startbeelden-overzicht.jpg`.
+
+### De Spookbaan (samengevoegd, voorkeur)
+
+Beste stukken uit S1, S2 en S3, in omgeving O2 (bos) en O1 (kerkhofbaan met oranje maan). Storyboard-blad: `fc6d1ce6-71d0-4bae-9243-2e834e0da223`. Map `startbeelden-spookbaan/`.
+
+| # | Shot | Job |
+|---|---|---|
+| 1 | inktdruppel valt op leeg papier (zelfde als S2) | `a0bba529-8cff-4cd4-a07e-6300d7a83fc9` |
+| 2 | inkt wordt bos, oranje lantaarn zweeft tussen de bomen | `d55bd923-3995-47b1-ad10-89bb757bcb65` |
+| 3 | lantaarn bij de kerkhofbaan, Mila en de coach lopen de baan op | `2b4e7578-89f7-485c-98b5-302baaecb114` |
+| 4 | aan de overkant rijzen Pompoenman, heks, weerwolf en spookbruid uit de inkt | `28e1844a-b8f7-4a09-9159-63b42c904764` |
+| 5 | Pompoenman smasht voor de maan, oranje inktstreep, Mila verdedigt | `8684ac5d-139c-492e-bd4f-7536461c0be8` |
+| 6 | iedereen samen aan het net, high-five (ruimte boven voor eindkaart) | `fe10babb-9bfe-40ac-836a-fab1c26e8972` |
+
+### S2 Inkt wordt monster
+
+Map `startbeelden-s2/`: 1 `a0bba529-8cff-4cd4-a07e-6300d7a83fc9`, 2 `e234c52d-ee35-4f29-bed0-7f5b082c9ebd`, 3 `27b70e60-d17f-41de-a0ad-f3d4ed33c77b`, 4 `39156fb9-45f9-4993-b206-6517428680c4`, 5 `1ac9d12d-9f22-45a6-95bc-78bf85ac6b94`, 6 `1ddbae56-afd7-4fd2-8314-db2c19e5e8d7`.
+
+Volgende stap: per startbeeld image-to-video op Seedance 2.0 Mini (4 s, 480p, 2 credits), monteren tot 15 s, eindkaart erover.
+
+## Test: De Spookbaan, shot voor shot (Seedance 2.0 Mini, 480p, 6 × 4 s = 12 credits)
+
+Elke shot image-to-video vanaf zijn startbeeld, prompts in het Engels ("Japanese sumi-e ink wash animation on crumpled cream rice paper ..."). Shot 2 en 3 kregen eerst preset "IN THE DARK" voorgesteld; afgewezen met `declined_preset_id`.
+
+| Shot | Video-job | Knip (start / lengte) |
+|---|---|---|
+| 1 inktdruppel | `e3c86538-8b72-40a3-ac35-80a4a91afccc` | 0,3 / 2,0 |
+| 2 lantaarn in het bos | `4fc8739b-ed38-482f-9697-98a7d4af5ac8` | 0,3 / 2,4 |
+| 3 naar de kerkhofbaan | `b4dc086e-07b8-44a2-b43d-223707645a9b` | 0,3 / 2,4 |
+| 4 monsters uit inkt | `5e04bfc3-016d-4236-b72a-b808522e41d9` | 0,3 / 2,6 |
+| 5 smash voor de maan | `129f3145-dc76-4788-9fef-c1cc0ba93957` | 0,2 / 2,8 |
+| 6 samen aan het net | `70cdfb52-a353-4a8c-8b7a-16d877b56f33` | 0,2 / 2,8 |
+
+Gemonteerd in de Higgsfield-sandbox tot precies 15 s, 1080 × 1920, eindkaart v2 vanaf 12,6 s met fade over shot 6, audio fade-out vanaf 14,2 s. Resultaat: media `65a27673-3869-4fcc-a2b6-38f21eaf71b4`, bestand `spookbaan-test-15s.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/65a27673-3869-4fcc-a2b6-38f21eaf71b4.mp4
+
+Eerste beoordeling: inktspat, lantaarn, monsters die uit inkt oprijzen en de smash met oranje inktstreep komen allemaal goed over; personages en papierstijl blijven stabiel. Eindversie: zelfde shots op Seedance 2.5 720p of 1080p.
