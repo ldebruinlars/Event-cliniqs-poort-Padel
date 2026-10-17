@@ -82,3 +82,12 @@ Bijschriften staan in `board.py`-stijl in de Higgsfield-sandbox gemaakt (PIL, Mo
 - Met eindkaart (`../eindkaart-v2.html`, opgeschaald naar 1080 × 1920, eindkaart vanaf 12,4 s met fade): media `5b90462b-1d1d-46ab-9e23-ebc24aef99cd`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/5b90462b-1d1d-46ab-9e23-ebc24aef99cd.mp4
 - Beoordeling: alle zes beats komen in beeld, personages blijven herkenbaar, smash met vonken voor de maan zit er duidelijk in. Kleine punten: het model zet een woordje op de scorekaart, Knekel houdt de pompoen vast in plaats van hem op te zetten.
 - Eindversie kost (15 s, 9:16): Seedance 2.5 720p 105, Seedance 2.0 1080p 180, Seedance 2.5 1080p 240 credits.
+
+## Test: versie 1 De Spookwedstrijd, meer actie (Seedance 2.0 Mini, 480p, 15 s, 7,5 credits)
+
+Lars koos de wedstrijd ("veel meer actie en leuker om te zien"). Prompts altijd in het Engels.
+
+- Job `5e0b7840-fce3-4c3c-9545-61d461c193d9`, `genre: action`, zelfde zes referenties, preset afgewezen. Extra in de prompt: blok COURT GEOMETRY (Team Schattig links, Team Griezel rechts, nooit dezelfde kant op kijken), drone-duik, rally met kaak eraf en bal glas-op-glas, lob naar de maan, slowmotion smash met 180 graden orbit.
+- Met eindkaart vanaf 12,6 s: media `926aa301-3bc6-4ec4-a21d-76e1cc1265bf`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/926aa301-3bc6-4ec4-a21d-76e1cc1265bf.mp4
+- Goed: bliksem-haakje, drone-duik over het park, rally, smash met grote vonkenexplosie, Vlads cape over zijn hoofd, groepsviering voor het clubhuis.
+- Verbeteren in de eindversie: de openingsclose-up van Mummie heeft de grijze studio-achtergrond van de master overgenomen. Toevoegen: "the opening close-up is set outside at night against a dark stormy sky, never a grey studio background".
