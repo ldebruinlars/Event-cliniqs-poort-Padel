@@ -99,3 +99,20 @@ Beste stukken uit S1, S2 en S3, in omgeving O2 (bos) en O1 (kerkhofbaan met oran
 Map `startbeelden-s2/`: 1 `a0bba529-8cff-4cd4-a07e-6300d7a83fc9`, 2 `e234c52d-ee35-4f29-bed0-7f5b082c9ebd`, 3 `27b70e60-d17f-41de-a0ad-f3d4ed33c77b`, 4 `39156fb9-45f9-4993-b206-6517428680c4`, 5 `1ac9d12d-9f22-45a6-95bc-78bf85ac6b94`, 6 `1ddbae56-afd7-4fd2-8314-db2c19e5e8d7`.
 
 Volgende stap: per startbeeld image-to-video op Seedance 2.0 Mini (4 s, 480p, 2 credits), monteren tot 15 s, eindkaart erover.
+
+## Test: De Spookbaan, shot voor shot (Seedance 2.0 Mini, 480p, 6 × 4 s = 12 credits)
+
+Elke shot image-to-video vanaf zijn startbeeld, prompts in het Engels ("Japanese sumi-e ink wash animation on crumpled cream rice paper ..."). Shot 2 en 3 kregen eerst preset "IN THE DARK" voorgesteld; afgewezen met `declined_preset_id`.
+
+| Shot | Video-job | Knip (start / lengte) |
+|---|---|---|
+| 1 inktdruppel | `e3c86538-8b72-40a3-ac35-80a4a91afccc` | 0,3 / 2,0 |
+| 2 lantaarn in het bos | `4fc8739b-ed38-482f-9697-98a7d4af5ac8` | 0,3 / 2,4 |
+| 3 naar de kerkhofbaan | `b4dc086e-07b8-44a2-b43d-223707645a9b` | 0,3 / 2,4 |
+| 4 monsters uit inkt | `5e04bfc3-016d-4236-b72a-b808522e41d9` | 0,3 / 2,6 |
+| 5 smash voor de maan | `129f3145-dc76-4788-9fef-c1cc0ba93957` | 0,2 / 2,8 |
+| 6 samen aan het net | `70cdfb52-a353-4a8c-8b7a-16d877b56f33` | 0,2 / 2,8 |
+
+Gemonteerd in de Higgsfield-sandbox tot precies 15 s, 1080 × 1920, eindkaart v2 vanaf 12,6 s met fade over shot 6, audio fade-out vanaf 14,2 s. Resultaat: media `65a27673-3869-4fcc-a2b6-38f21eaf71b4`, bestand `spookbaan-test-15s.mp4`, https://d2ol7oe51mr4n9.cloudfront.net/user_3DTi6Z7G6lm7S5aYIwHXC1iM486/65a27673-3869-4fcc-a2b6-38f21eaf71b4.mp4
+
+Eerste beoordeling: inktspat, lantaarn, monsters die uit inkt oprijzen en de smash met oranje inktstreep komen allemaal goed over; personages en papierstijl blijven stabiel. Eindversie: zelfde shots op Seedance 2.5 720p of 1080p.
