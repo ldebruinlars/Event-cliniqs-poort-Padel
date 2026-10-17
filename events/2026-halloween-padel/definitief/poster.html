@@ -35,7 +35,9 @@ body.feed .block{top:612px} body.print .block{top:690px} body.story .block{top:8
 .offer>div{transform:skewX(10deg)}
 .offer .a,.offer .c{font-weight:800;font-style:italic;font-size:26px;letter-spacing:2px}
 .offer .b{font-weight:900;font-style:italic;font-size:80px;line-height:.95;letter-spacing:-2px}
-body.print .social,body:not(.print) .paper{display:none}
+body.print .social,body:not(.print) .paper,.qrtext,body.withqr .social{display:none}
+body.withqr .qrtext{display:inline} body.withqr .perspeler{display:none}
+body.withqr .sub{font-size:22px;line-height:1.35;margin-top:14px}
 .sub{margin-top:18px;font-weight:600;font-size:24px}.sub b{color:var(--lime)}
 .fine{margin-top:8px;font-weight:500;font-size:17px;color:rgba(255,255,255,.75)}
 .fine b{display:block;font-weight:600;font-size:20px;color:var(--lime);margin-bottom:2px}
@@ -45,7 +47,8 @@ body.story .sub{font-size:25px;margin-top:26px} body.story .fine{font-size:19px}
 body.print .sub{font-size:25px}
 
 .qr{display:none}
-body.print .qr{display:block;position:absolute;right:34px;top:1004px;width:150px;padding:10px 10px 8px;background:var(--lime);border-radius:12px;text-align:center;color:var(--base);transform:rotate(3deg);box-shadow:0 0 30px rgba(205,253,80,.35)}
+body.print .qr,body.withqr .qr{display:block;position:absolute;right:34px;top:1004px;width:150px;padding:10px 10px 8px;background:var(--lime);border-radius:12px;text-align:center;color:var(--base);transform:rotate(3deg);box-shadow:0 0 30px rgba(205,253,80,.35)}
+body.feed.withqr .qr{top:926px}
 .qr img{display:block;width:130px;height:130px}
 .qr span{display:block;margin-top:6px;font-weight:900;font-style:italic;font-size:17px;line-height:1.05;letter-spacing:.5px}
 .footer{position:absolute;left:56px;right:56px;bottom:30px;display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:2px solid rgba(205,253,80,.45)}
@@ -73,8 +76,8 @@ body.story .footer{bottom:200px} body.print .footer{bottom:36px}
   </div></div>
 
   <!-- TEKST: uitleg. Online (feed, story) verwijst naar de link in bio, print naar het webadres -->
-  <div class="sub"><span class="social">Boek en betaal je baan via de <b>link in bio</b></span><span class="paper">Boek en betaal via <b>halloween-poort-padel.netlify.app</b></span></div>
-  <div class="fine"><b>Alleen voor wie écht verkleed of geschminkt is, dus doe je best!</b>Korting per speler, alleen op zaterdag 31 oktober.</div>
+  <div class="sub"><span class="social">Boek en betaal je baan via de <b>link in bio</b></span><span class="paper">Boek en betaal via <b>halloween-poort-padel.netlify.app</b></span><span class="qrtext">Scan de QR of ga naar <b>halloween-poort-padel.netlify.app</b><br>of boek via de <b>link in bio</b></span></div>
+  <div class="fine"><b>Alleen voor wie écht verkleed of geschminkt is, dus doe je best!</b><span class="perspeler">Korting per speler, alleen op zaterdag 31 oktober.</span></div>
 </div>
 
 <!-- QR naar de boekingssite, alleen op de print -->
@@ -86,6 +89,7 @@ body.story .footer{bottom:200px} body.print .footer{bottom:36px}
   <div class="where"><b>Neonweg 62 · Almere Poort</b><br>@allcourtacademy</div>
   <img class="aca" src="../build/logo-all-court-academy-wit.png" alt="All Court Academy">
 </div>
-<script>document.body.className=(location.hash||'#feed').slice(1);</script>
+<script>/* #feed-qr = feed met QR-code naar de boekingssite */
+document.body.className=(location.hash||'#feed').slice(1).replace('-qr',' withqr');</script>
 </body>
 </html>
