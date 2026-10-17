@@ -42,6 +42,14 @@ Lees eerst `ai-animatie/WORKFLOW.md` (eerste experimenten, kosten) en het voorbe
 - Shot met twee plekken of twee handelingen: splitsen in twee shots, anders morpht het.
 - Preset-suggestie ("IN THE DARK") altijd afwijzen met `declined_preset_id`.
 
+## Muziek
+
+- Voor video's die op meerdere kanalen komen: muziek in de video mixen (onder de geluidseffecten), zodat Instagram, Facebook, TikTok en YouTube hetzelfde hebben en Metricool alles in één keer plant.
+- Alleen rechtenvrije muziek voor zakelijk gebruik: Epidemic Sound (zakelijk abonnement, kanalen koppelen = geen claims) of Pixabay Music (gratis; nummers met een Content ID-melding overslaan). Nooit hits uit de hitlijsten: zakelijke accounts worden gedempt of geblokkeerd.
+- Lars kiest uit drie opties met een luisterlink voordat er gemixt wordt.
+- Alleen Instagram: muziek uit de Meta-bibliotheek via Metricool (`audioConfiguration.audioId`, alleen bij Reels; zoekterm geeft kandidaten, beginpunt is niet instelbaar). Facebook-Reels kunnen via Metricool geen bibliotheekmuziek krijgen.
+- Luisterlinks vinden: YouTube-zoekpagina uitlezen in de Higgsfield-sandbox (ytInitialData), zie `events/social-posts.md` sectie C2.
+
 ## Blender
 
 - `/use-blender` (Higgsfield) werkt alleen in Claude Code op Lars' eigen computer.
