@@ -76,3 +76,26 @@ Vertaling naar ons: inktwas op papier, accentkleur pompoenoranje/vermiljoen (pas
 Bestanden: `keuzeset-inkt/` (JPG per beeld, plus `00-overzicht.jpg` met alles op één blad). Labels op het overzicht zelf gezet, geen AI-tekst in de beelden.
 
 Eerste indruk: stijl komt goed over (papier, indigo, oranje accent). P1 Pompoenman houdt een racket dat op een knuppel lijkt, zo nodig opnieuw met "a clearly visible padel racket with a perforated face". Spelers en monsters zijn in deze stijl prima te combineren in één shot.
+
+## Startbeelden 9:16 (per paneel, voor image-to-video)
+
+Overzicht van beide sets: `startbeelden-overzicht.jpg`.
+
+### De Spookbaan (samengevoegd, voorkeur)
+
+Beste stukken uit S1, S2 en S3, in omgeving O2 (bos) en O1 (kerkhofbaan met oranje maan). Storyboard-blad: `fc6d1ce6-71d0-4bae-9243-2e834e0da223`. Map `startbeelden-spookbaan/`.
+
+| # | Shot | Job |
+|---|---|---|
+| 1 | inktdruppel valt op leeg papier (zelfde als S2) | `a0bba529-8cff-4cd4-a07e-6300d7a83fc9` |
+| 2 | inkt wordt bos, oranje lantaarn zweeft tussen de bomen | `d55bd923-3995-47b1-ad10-89bb757bcb65` |
+| 3 | lantaarn bij de kerkhofbaan, Mila en de coach lopen de baan op | `2b4e7578-89f7-485c-98b5-302baaecb114` |
+| 4 | aan de overkant rijzen Pompoenman, heks, weerwolf en spookbruid uit de inkt | `28e1844a-b8f7-4a09-9159-63b42c904764` |
+| 5 | Pompoenman smasht voor de maan, oranje inktstreep, Mila verdedigt | `8684ac5d-139c-492e-bd4f-7536461c0be8` |
+| 6 | iedereen samen aan het net, high-five (ruimte boven voor eindkaart) | `fe10babb-9bfe-40ac-836a-fab1c26e8972` |
+
+### S2 Inkt wordt monster
+
+Map `startbeelden-s2/`: 1 `a0bba529-8cff-4cd4-a07e-6300d7a83fc9`, 2 `e234c52d-ee35-4f29-bed0-7f5b082c9ebd`, 3 `27b70e60-d17f-41de-a0ad-f3d4ed33c77b`, 4 `39156fb9-45f9-4993-b206-6517428680c4`, 5 `1ac9d12d-9f22-45a6-95bc-78bf85ac6b94`, 6 `1ddbae56-afd7-4fd2-8314-db2c19e5e8d7`.
+
+Volgende stap: per startbeeld image-to-video op Seedance 2.0 Mini (4 s, 480p, 2 credits), monteren tot 15 s, eindkaart erover.
