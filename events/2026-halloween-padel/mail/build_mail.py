@@ -73,7 +73,7 @@ SJABLOON = f"""<!doctype html>
           <tr><td style="padding:6px 22px 18px">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:{NIGHT};border-radius:10px">
               <tr>
-                <td style="padding:14px 16px;font:13px/1.4 {FONT};color:{FOG}">Betaald met iDEAL<br><span style="font-size:11px;color:#5d726d">ref. [[mollie]]</span></td>
+                <td style="padding:14px 16px;font:14px/1.4 {FONT};color:{FOG}">Betaald met iDEAL</td>
                 <td align="right" style="padding:14px 16px;font:900 italic 28px/1 {FONT};color:{LIME};white-space:nowrap">€[[bedrag]]</td>
               </tr>
             </table>
@@ -140,7 +140,6 @@ def make_velden():
         "gstart": '{{replace(3.start; ":"; "")}}',
         "geind": '{{replace(3.eind; ":"; "")}}',
         "bedrag": '{{formatNumber(2.amount; 2; ","; ".")}}',
-        "mollie": "{{2.id}}",
         "nverkleed": '{{(length(3.vps) - length(replace(3.vps; "ja"; ""))) / 2}}',
     }
     for i, veld in enumerate(["3.naam", "3.s2", "3.s3", "3.s4"], 1):
@@ -154,7 +153,7 @@ def make_velden():
 def voorbeeld_velden(img):
     spelers = [("Sanne de Vries", True), ("Mark Jansen", True), ("Priya Bakker", False), ("Tom Visser", True)]
     v = {"img": img, "voornaam": "Sanne", "start": "18:00", "eind": "19:30", "duur": "1,5",
-         "gstart": "1800", "geind": "1930", "bedrag": "35,16", "mollie": "tr_7UhSN1zuXS", "nverkleed": "3"}
+         "gstart": "1800", "geind": "1930", "bedrag": "35,16", "nverkleed": "3"}
     for i, (naam, vk) in enumerate(spelers, 1):
         bron = AAN if vk else UIT
         v[f"speler{i}"], v[f"bg{i}"], v[f"fg{i}"], v[f"lbl{i}"] = naam, *bron
