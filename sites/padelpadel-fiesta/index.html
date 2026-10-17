@@ -588,6 +588,8 @@ $('form').addEventListener('submit', async e => {
   ferr.style.display = 'none';
   render();
   const btn = $('send'); btn.disabled = true; btn.textContent = 'Momentje…';
+  // Make zet deze velden als JSON in de Mollie-metadata en in de bevestigingsmail: geen " \ < > of enters
+  ['naam', 's2', 's3', 's4', 'email', 'tel'].forEach(k => { const el = $(k); el.value = el.value.replace(/["\\<>]/g, '').replace(/\s+/g, ' ').trim(); });
   const body = new URLSearchParams(new FormData($('form'))).toString();
   try {
     if (!VOORBEELD) {
